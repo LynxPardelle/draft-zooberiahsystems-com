@@ -1,0 +1,1468 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "default",
+  "components": [
+    {
+      "id": "pageStack",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "id": "main-content",
+        "role": "main",
+        "tabindex": -1,
+        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-overflowX-hidden ank-bg-bgColor ank-color-textColor",
+        "components": [
+          "heroSection",
+          "consultingSection",
+          "solutionsSection",
+          "applicationsSection",
+          "methodSection",
+          "aboutSection",
+          "faqSection",
+          "contactSection"
+        ]
+      }
+    },
+    {
+      "id": "heroSection",
+      "type": "container",
+      "config": {
+        "id": "inicio",
+        "tag": "section",
+        "classes": "zSection ank-paddingBlock-64px ank-paddingBlock-md-96px",
+        "components": [
+          "heroGrid"
+        ]
+      }
+    },
+    {
+      "id": "heroGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-lg-1_1fr__0_9fr ank-gap-40px ank-gap-md-64px ank-alignItems-center",
+        "components": [
+          "heroCopy",
+          "heroVisual"
+        ]
+      }
+    },
+    {
+      "id": "heroCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-20px ank-maxWidth-700px",
+        "components": [
+          "heroDescriptor",
+          "heroTitle",
+          "heroLead",
+          "heroActions",
+          "heroLocation"
+        ]
+      }
+    },
+    {
+      "id": "heroDescriptor",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.hero.descriptor",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zEyebrow"
+      }
+    },
+    {
+      "id": "heroTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.hero.title",
+      "config": {
+        "tag": "h1",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-2_7rem ank-fontSize-lg-4_6rem ank-fontWeight-900 ank-letterSpacing-MIN0_035em ank-lineHeight-0_98 ank-maxWidth-12ch"
+      }
+    },
+    {
+      "id": "heroLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.hero.lead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead"
+      }
+    },
+    {
+      "id": "heroActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-12px ank-alignItems-center",
+        "components": [
+          "heroPrimaryAction",
+          "heroSecondaryAction"
+        ]
+      }
+    },
+    {
+      "id": "heroPrimaryAction",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.hero.primary;set:config.ariaLabel,i18n,page.hero.primary",
+      "config": {
+        "href": "#contacto",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "zPrimaryAction"
+      }
+    },
+    {
+      "id": "heroSecondaryAction",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.hero.secondary;set:config.ariaLabel,i18n,page.hero.secondary",
+      "config": {
+        "href": "#consultoria",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "zSecondaryAction"
+      }
+    },
+    {
+      "id": "heroLocation",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.hero.location",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zMeta"
+      }
+    },
+    {
+      "id": "heroVisual",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "ariaHidden": true,
+        "classes": "ank-position-relative ank-width-100per ank-minHeight-360px ank-borderRadius-40px ank-overflow-hidden ank-bg-secondaryBgColor",
+        "styles": {
+          "minHeight": "360px",
+          "background": "linear-gradient(145deg, #e4eee7 0%, #f6f4ee 58%, #e4d9c5 100%)",
+          "boxShadow": "inset 0 0 0 1px rgba(16, 45, 50, 0.12)"
+        },
+        "components": [
+          "heroVisualOuterRing",
+          "heroVisualInnerRing",
+          "heroVisualCore",
+          "heroVisualNodeOne",
+          "heroVisualNodeTwo",
+          "heroVisualNodeThree"
+        ]
+      }
+    },
+    {
+      "id": "heroVisualOuterRing",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "ank-position-absolute ank-borderRadius-999px",
+        "styles": {
+          "width": "270px",
+          "height": "270px",
+          "left": "50%",
+          "top": "50%",
+          "transform": "translate(-50%, -50%)",
+          "border": "1px solid rgba(18, 107, 89, 0.42)"
+        },
+        "components": []
+      }
+    },
+    {
+      "id": "heroVisualInnerRing",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "ank-position-absolute ank-borderRadius-999px",
+        "styles": {
+          "width": "178px",
+          "height": "178px",
+          "left": "50%",
+          "top": "50%",
+          "transform": "translate(-50%, -50%)",
+          "border": "18px solid rgba(217, 239, 143, 0.74)"
+        },
+        "components": []
+      }
+    },
+    {
+      "id": "heroVisualCore",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "ank-position-absolute ank-borderRadius-24px ank-bg-HASH126B59",
+        "styles": {
+          "width": "92px",
+          "height": "92px",
+          "left": "50%",
+          "top": "50%",
+          "transform": "translate(-50%, -50%) rotate(12deg)",
+          "boxShadow": "0 24px 48px rgba(16, 45, 50, 0.18)"
+        },
+        "components": []
+      }
+    },
+    {
+      "id": "heroVisualNodeOne",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "ank-position-absolute ank-borderRadius-12px ank-bg-HASH102D32",
+        "styles": {
+          "width": "42px",
+          "height": "42px",
+          "left": "13%",
+          "top": "20%",
+          "transform": "rotate(-8deg)"
+        },
+        "components": []
+      }
+    },
+    {
+      "id": "heroVisualNodeTwo",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "ank-position-absolute ank-borderRadius-999px ank-bg-HASHD9EF8F",
+        "styles": {
+          "width": "58px",
+          "height": "58px",
+          "right": "11%",
+          "top": "16%",
+          "boxShadow": "0 0 0 1px rgba(18, 107, 89, 0.48)"
+        },
+        "components": []
+      }
+    },
+    {
+      "id": "heroVisualNodeThree",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "ank-position-absolute ank-borderRadius-12px",
+        "styles": {
+          "width": "64px",
+          "height": "64px",
+          "right": "14%",
+          "bottom": "15%",
+          "border": "12px solid #126b59",
+          "transform": "rotate(18deg)"
+        },
+        "components": []
+      }
+    },
+    {
+      "id": "consultingSection",
+      "type": "container",
+      "config": {
+        "id": "consultoria",
+        "tag": "section",
+        "classes": "zSection ank-bg-secondaryBgColor",
+        "components": [
+          "consultingInner"
+        ]
+      }
+    },
+    {
+      "id": "consultingInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zInner",
+        "components": [
+          "consultingEyebrow",
+          "consultingTitle",
+          "consultingIntro",
+          "consultingGrid",
+          "consultingClosing"
+        ]
+      }
+    },
+    {
+      "id": "consultingEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.consulting.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zEyebrow"
+      }
+    },
+    {
+      "id": "consultingTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.consulting.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zTitle"
+      }
+    },
+    {
+      "id": "consultingIntro",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.consulting.intro",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead"
+      }
+    },
+    {
+      "id": "consultingGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-lg-repeatSD3COM1frED ank-gap-18px ank-marginTop-16px",
+        "components": [
+          "technologyCard",
+          "dataCard",
+          "aiCard"
+        ]
+      }
+    },
+    {
+      "id": "technologyCard",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "zCard",
+        "components": [
+          "technologyNumber",
+          "technologyTitle",
+          "technologyDescription",
+          "technologyNeedsLabel",
+          "technologyNeeds",
+          "technologyLink"
+        ]
+      }
+    },
+    {
+      "id": "technologyNumber",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.consulting.technology.number",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "zNumber"
+      }
+    },
+    {
+      "id": "technologyTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.consulting.technology.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "zCardTitle"
+      }
+    },
+    {
+      "id": "technologyDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.consulting.technology.description",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zCardText"
+      }
+    },
+    {
+      "id": "technologyNeedsLabel",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.consulting.needsLabel",
+      "config": {
+        "tag": "strong",
+        "text": "",
+        "classes": "ank-color-titleColor ank-fontSize-0_86rem ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "technologyNeeds",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.consulting.technology.needs",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zMeta"
+      }
+    },
+    {
+      "id": "technologyLink",
+      "type": "link",
+      "eventInstructions": "trackEvent:whatsapp_click,cta,consultoria_tecnologica,location,consultoria",
+      "valueInstructions": "set:config.text,i18n,page.consulting.technology.cta;set:config.ariaLabel,i18n,page.consulting.technology.ctaAriaLabel;set:config.href,var,ctaTargets.consultingTechnologyWhatsApp",
+      "config": {
+        "href": "#",
+        "text": "",
+        "ariaLabel": "",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "zTextLink"
+      }
+    },
+    {
+      "id": "dataCard",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "zCard",
+        "components": [
+          "dataNumber",
+          "dataTitle",
+          "dataDescription",
+          "dataNeedsLabel",
+          "dataNeeds",
+          "dataLink"
+        ]
+      }
+    },
+    {
+      "id": "dataNumber",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.consulting.data.number",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "zNumber"
+      }
+    },
+    {
+      "id": "dataTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.consulting.data.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "zCardTitle"
+      }
+    },
+    {
+      "id": "dataDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.consulting.data.description",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zCardText"
+      }
+    },
+    {
+      "id": "dataNeedsLabel",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.consulting.needsLabel",
+      "config": {
+        "tag": "strong",
+        "text": "",
+        "classes": "ank-color-titleColor ank-fontSize-0_86rem ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "dataNeeds",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.consulting.data.needs",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zMeta"
+      }
+    },
+    {
+      "id": "dataLink",
+      "type": "link",
+      "eventInstructions": "trackEvent:whatsapp_click,cta,consultoria_datos,location,consultoria",
+      "valueInstructions": "set:config.text,i18n,page.consulting.data.cta;set:config.ariaLabel,i18n,page.consulting.data.ctaAriaLabel;set:config.href,var,ctaTargets.consultingDataWhatsApp",
+      "config": {
+        "href": "#",
+        "text": "",
+        "ariaLabel": "",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "zTextLink"
+      }
+    },
+    {
+      "id": "aiCard",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "zCard",
+        "components": [
+          "aiNumber",
+          "aiTitle",
+          "aiDescription",
+          "aiNeedsLabel",
+          "aiNeeds",
+          "aiLink"
+        ]
+      }
+    },
+    {
+      "id": "aiNumber",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.consulting.ai.number",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "zNumber"
+      }
+    },
+    {
+      "id": "aiTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.consulting.ai.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "zCardTitle"
+      }
+    },
+    {
+      "id": "aiDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.consulting.ai.description",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zCardText"
+      }
+    },
+    {
+      "id": "aiNeedsLabel",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.consulting.needsLabel",
+      "config": {
+        "tag": "strong",
+        "text": "",
+        "classes": "ank-color-titleColor ank-fontSize-0_86rem ank-fontWeight-900"
+      }
+    },
+    {
+      "id": "aiNeeds",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.consulting.ai.needs",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zMeta"
+      }
+    },
+    {
+      "id": "aiLink",
+      "type": "link",
+      "eventInstructions": "trackEvent:whatsapp_click,cta,consultoria_ia,location,consultoria",
+      "valueInstructions": "set:config.text,i18n,page.consulting.ai.cta;set:config.ariaLabel,i18n,page.consulting.ai.ctaAriaLabel;set:config.href,var,ctaTargets.consultingAiWhatsApp",
+      "config": {
+        "href": "#",
+        "text": "",
+        "ariaLabel": "",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "zTextLink"
+      }
+    },
+    {
+      "id": "consultingClosing",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.consulting.closing",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-maxWidth-58rem ank-paddingTop-8px ank-color-titleColor ank-fontSize-1rem ank-fontWeight-800 ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "solutionsSection",
+      "type": "container",
+      "config": {
+        "id": "soluciones",
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "solutionsInner"
+        ]
+      }
+    },
+    {
+      "id": "solutionsInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zInner",
+        "components": [
+          "solutionsEyebrow",
+          "solutionsTitle",
+          "solutionsIntro",
+          "solutionsGrid",
+          "solutionsClosing"
+        ]
+      }
+    },
+    {
+      "id": "solutionsEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.solutions.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zEyebrow"
+      }
+    },
+    {
+      "id": "solutionsTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.solutions.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zTitle"
+      }
+    },
+    {
+      "id": "solutionsIntro",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.solutions.intro",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead"
+      }
+    },
+    {
+      "id": "solutionsGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD2COM1frED ank-gap-18px ank-marginTop-16px",
+        "components": [
+          "zoolandingpageCard",
+          "zoositiowebCard",
+          "zooblogCard",
+          "zootiendadigitalCard"
+        ]
+      }
+    },
+    {
+      "id": "zoolandingpageCard",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "zCardSoft",
+        "components": [
+          "zoolandingpageStatus",
+          "zoolandingpageTitle",
+          "zoolandingpageDescription",
+          "zoolandingpageNote",
+          "zoolandingpageLink"
+        ]
+      }
+    },
+    {
+      "id": "zoolandingpageStatus",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.solutions.available",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "zBadgeAvailable"
+      }
+    },
+    {
+      "id": "zoolandingpageTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.solutions.zoolandingpage.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "zCardTitle"
+      }
+    },
+    {
+      "id": "zoolandingpageDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.solutions.zoolandingpage.description",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zCardText"
+      }
+    },
+    {
+      "id": "zoolandingpageNote",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.solutions.plansNote",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zMeta"
+      }
+    },
+    {
+      "id": "zoolandingpageLink",
+      "type": "link",
+      "eventInstructions": "trackEvent:cta_click,cta,zoolandingpage,location,soluciones",
+      "valueInstructions": "set:config.text,i18n,page.solutions.zoolandingpage.cta;set:config.ariaLabel,i18n,page.solutions.zoolandingpage.ctaAriaLabel;set:config.href,var,ctaTargets.zoolandingpagePlans",
+      "config": {
+        "href": "#",
+        "text": "",
+        "ariaLabel": "",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "zTextLink"
+      }
+    },
+    {
+      "id": "zoositiowebCard",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "zCardSoft",
+        "components": [
+          "zoositiowebStatus",
+          "zoositiowebTitle",
+          "zoositiowebDescription",
+          "zoositiowebNote",
+          "zoositiowebLink"
+        ]
+      }
+    },
+    {
+      "id": "zoositiowebStatus",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.solutions.available",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "zBadgeAvailable"
+      }
+    },
+    {
+      "id": "zoositiowebTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.solutions.zoositioweb.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "zCardTitle"
+      }
+    },
+    {
+      "id": "zoositiowebDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.solutions.zoositioweb.description",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zCardText"
+      }
+    },
+    {
+      "id": "zoositiowebNote",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.solutions.plansNote",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zMeta"
+      }
+    },
+    {
+      "id": "zoositiowebLink",
+      "type": "link",
+      "eventInstructions": "trackEvent:cta_click,cta,zoositioweb,location,soluciones",
+      "valueInstructions": "set:config.text,i18n,page.solutions.zoositioweb.cta;set:config.ariaLabel,i18n,page.solutions.zoositioweb.ctaAriaLabel;set:config.href,var,ctaTargets.zoositiowebPlans",
+      "config": {
+        "href": "#",
+        "text": "",
+        "ariaLabel": "",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "zTextLink"
+      }
+    },
+    {
+      "id": "zooblogCard",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "zCardSoft",
+        "components": [
+          "zooblogStatus",
+          "zooblogTitle",
+          "zooblogDescription",
+          "zooblogLink"
+        ]
+      }
+    },
+    {
+      "id": "zooblogStatus",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.solutions.available",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "zBadgeAvailable"
+      }
+    },
+    {
+      "id": "zooblogTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.solutions.zooblog.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "zCardTitle"
+      }
+    },
+    {
+      "id": "zooblogDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.solutions.zooblog.description",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zCardText"
+      }
+    },
+    {
+      "id": "zooblogLink",
+      "type": "link",
+      "eventInstructions": "trackEvent:whatsapp_click,cta,zooblog,location,soluciones",
+      "valueInstructions": "set:config.text,i18n,page.solutions.zooblog.cta;set:config.ariaLabel,i18n,page.solutions.zooblog.ctaAriaLabel;set:config.href,var,ctaTargets.zooblogWhatsApp",
+      "config": {
+        "href": "#",
+        "text": "",
+        "ariaLabel": "",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "zTextLink"
+      }
+    },
+    {
+      "id": "zootiendadigitalCard",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "zCardSoft",
+        "components": [
+          "zootiendadigitalStatus",
+          "zootiendadigitalTitle",
+          "zootiendadigitalDescription"
+        ]
+      }
+    },
+    {
+      "id": "zootiendadigitalStatus",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.solutions.development",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "zBadgeDevelopment"
+      }
+    },
+    {
+      "id": "zootiendadigitalTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.solutions.zootiendadigital.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "zCardTitle"
+      }
+    },
+    {
+      "id": "zootiendadigitalDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.solutions.zootiendadigital.description",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zCardText"
+      }
+    },
+    {
+      "id": "solutionsClosing",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.solutions.closing",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-maxWidth-58rem ank-color-titleColor ank-fontWeight-800 ank-lineHeight-1_6"
+      }
+    },
+    {
+      "id": "applicationsSection",
+      "type": "container",
+      "config": {
+        "id": "aplicaciones",
+        "tag": "section",
+        "classes": "zSection ank-bg-secondaryBgColor",
+        "components": [
+          "applicationsInner"
+        ]
+      }
+    },
+    {
+      "id": "applicationsInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zInner",
+        "components": [
+          "applicationsEyebrow",
+          "applicationsTitle",
+          "applicationsIntro",
+          "applicationsGrid"
+        ]
+      }
+    },
+    {
+      "id": "applicationsEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.applications.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zEyebrow"
+      }
+    },
+    {
+      "id": "applicationsTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.applications.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zTitle"
+      }
+    },
+    {
+      "id": "applicationsIntro",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.applications.intro",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead"
+      }
+    },
+    {
+      "id": "applicationsGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD2COM1frED ank-gap-18px ank-marginTop-16px",
+        "components": [
+          "roadmapCard",
+          "despensaCard"
+        ]
+      }
+    },
+    {
+      "id": "roadmapCard",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "zCard",
+        "components": [
+          "roadmapMark",
+          "roadmapTitle",
+          "roadmapDescription",
+          "roadmapLink"
+        ]
+      }
+    },
+    {
+      "id": "roadmapMark",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "R2U",
+        "ariaHidden": true,
+        "classes": "zNumber"
+      }
+    },
+    {
+      "id": "roadmapTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.applications.roadmap2u.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "zCardTitle"
+      }
+    },
+    {
+      "id": "roadmapDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.applications.roadmap2u.description",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zCardText"
+      }
+    },
+    {
+      "id": "roadmapLink",
+      "type": "link",
+      "eventInstructions": "trackEvent:cta_click,cta,roadmap2u,location,aplicaciones",
+      "valueInstructions": "set:config.text,i18n,page.applications.roadmap2u.cta;set:config.ariaLabel,i18n,page.applications.roadmap2u.ctaAriaLabel;set:config.href,var,ctaTargets.roadmap2u",
+      "config": {
+        "href": "#",
+        "text": "",
+        "ariaLabel": "",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "zTextLink"
+      }
+    },
+    {
+      "id": "despensaCard",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "zCard",
+        "components": [
+          "despensaStatus",
+          "despensaTitle",
+          "despensaDescription"
+        ]
+      }
+    },
+    {
+      "id": "despensaStatus",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.applications.development",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "zBadgeDevelopment"
+      }
+    },
+    {
+      "id": "despensaTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.applications.despensaLista.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "zCardTitle"
+      }
+    },
+    {
+      "id": "despensaDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.applications.despensaLista.description",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zCardText"
+      }
+    },
+    {
+      "id": "methodSection",
+      "type": "container",
+      "config": {
+        "id": "como-trabajamos",
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "methodInner"
+        ]
+      }
+    },
+    {
+      "id": "methodInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zInner",
+        "components": [
+          "methodEyebrow",
+          "methodTitle",
+          "methodGrid"
+        ]
+      }
+    },
+    {
+      "id": "methodEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.method.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zEyebrow"
+      }
+    },
+    {
+      "id": "methodTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.method.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zTitle"
+      }
+    },
+    {
+      "id": "methodGrid",
+      "type": "container",
+      "loopConfig": {
+        "source": "i18n",
+        "path": "page.method.steps",
+        "templateId": "methodCardTemplate",
+        "idPrefix": "methodStep",
+        "bindings": [
+          {
+            "to": "config.title",
+            "sources": [
+              "title"
+            ]
+          },
+          {
+            "to": "config.description",
+            "sources": [
+              "description"
+            ]
+          }
+        ]
+      },
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gap-16px ank-marginTop-16px",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(220px, 1fr))"
+        },
+        "components": []
+      }
+    },
+    {
+      "id": "methodCardTemplate",
+      "type": "generic-card",
+      "config": {
+        "variant": "feature",
+        "icon": "",
+        "title": "",
+        "description": "",
+        "benefits": [],
+        "href": "",
+        "linkLabel": "",
+        "classes": "zCardSoft",
+        "featureIconContainerClasses": "ank-display-none",
+        "featureIconClasses": "ank-display-none",
+        "featureTitleClasses": "zCardTitle",
+        "featureDescriptionClasses": "zCardText",
+        "benefitsListClasses": "ank-display-none",
+        "linkClasses": "ank-display-none"
+      }
+    },
+    {
+      "id": "aboutSection",
+      "type": "container",
+      "config": {
+        "id": "nosotros",
+        "tag": "section",
+        "classes": "zSection ank-bg-titleColor",
+        "components": [
+          "aboutInner"
+        ]
+      }
+    },
+    {
+      "id": "aboutInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-0_75fr__1_25fr ank-gap-32px ank-gap-md-72px ank-alignItems-start",
+        "components": [
+          "aboutHeading",
+          "aboutCopy"
+        ]
+      }
+    },
+    {
+      "id": "aboutHeading",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "aboutEyebrow",
+          "aboutTitle",
+          "aboutTagline"
+        ]
+      }
+    },
+    {
+      "id": "aboutEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.about.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-width-fitMINcontent ank-m-0 ank-color-secondaryBgColor ank-fontSize-0_78rem ank-fontWeight-900 ank-letterSpacing-0_08em ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "aboutTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.about.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zInverseTitle"
+      }
+    },
+    {
+      "id": "aboutTagline",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.about.tagline",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryBgColor ank-fontSize-1_2rem ank-fontWeight-900 ank-lineHeight-1_35"
+      }
+    },
+    {
+      "id": "aboutCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "aboutDescription",
+          "aboutApproach",
+          "aboutStory"
+        ]
+      }
+    },
+    {
+      "id": "aboutDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.about.description",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zInverseText"
+      }
+    },
+    {
+      "id": "aboutApproach",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.about.approach",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zInverseText"
+      }
+    },
+    {
+      "id": "aboutStory",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.about.story",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-padding-24px ank-borderRadius-12px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-1rem ank-fontWeight-800 ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "faqSection",
+      "type": "container",
+      "config": {
+        "id": "preguntas-frecuentes",
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "faqInner"
+        ]
+      }
+    },
+    {
+      "id": "faqInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-0_72fr__1_28fr ank-gap-32px ank-gap-md-72px ank-alignItems-start",
+        "components": [
+          "faqHeading",
+          "faqAccordion"
+        ]
+      }
+    },
+    {
+      "id": "faqHeading",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-16px",
+        "components": [
+          "faqEyebrow",
+          "faqTitle",
+          "faqLead"
+        ]
+      }
+    },
+    {
+      "id": "faqEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.faq.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zEyebrow"
+      }
+    },
+    {
+      "id": "faqTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.faq.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zTitle"
+      }
+    },
+    {
+      "id": "faqLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.faq.lead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead"
+      }
+    },
+    {
+      "id": "faqAccordion",
+      "type": "accordion",
+      "eventInstructions": "trackEventWhen:event.eventData.expanded,true,faq_open,faq,event.eventData.id",
+      "config": {
+        "itemsSource": {
+          "source": "i18n",
+          "path": "page.faq.items"
+        },
+        "mode": "single",
+        "allowToggle": true,
+        "containerClasses": "ank-display-flex ank-flexDirection-column ank-gap-10px",
+        "defaultItemContainerClasses": "ank-border-1px__solid__linkColor ank-borderRadius-12px ank-bg-secondaryBgColor ank-overflow-hidden",
+        "defaultItemButtonConfig": {
+          "classes": "ank-width-100per ank-minHeight-56px ank-boxSizing-borderMINbox ank-textAlign-left ank-paddingInline-18px ank-paddingBlock-16px ank-bg-transparent ank-color-titleColor ank-border-0 ank-fontSize-1rem ank-fontWeight-900 ank-lineHeight-1_4 ank-cursor-pointer ank-outlineFocus-3px__solid__linkColor ank-outlineOffsetFocus-MIN3px"
+        },
+        "defaultItemPanelClasses": "ank-paddingInline-18px ank-paddingBottom-18px ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "contactSection",
+      "type": "container",
+      "config": {
+        "id": "contacto",
+        "tag": "section",
+        "classes": "zSection ank-bg-secondaryBgColor",
+        "components": [
+          "contactInner"
+        ]
+      }
+    },
+    {
+      "id": "contactInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-boxSizing-borderMINbox ank-display-flex ank-flexDirection-column ank-alignItems-start ank-gap-18px ank-padding-28px ank-padding-md-48px ank-border-1px__solid__linkColor ank-borderRadius-40px ank-bg-bgColor",
+        "components": [
+          "contactEyebrow",
+          "contactTitle",
+          "contactDescription",
+          "contactAction",
+          "contactNote",
+          "contactFallback",
+          "contactLocation"
+        ]
+      }
+    },
+    {
+      "id": "contactEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.contact.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zEyebrow"
+      }
+    },
+    {
+      "id": "contactTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.contact.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zTitle"
+      }
+    },
+    {
+      "id": "contactDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.contact.description",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead"
+      }
+    },
+    {
+      "id": "contactAction",
+      "type": "link",
+      "eventInstructions": "trackEvent:whatsapp_click,cta,contacto_general,location,contacto",
+      "valueInstructions": "set:config.text,i18n,page.contact.cta;set:config.ariaLabel,i18n,page.contact.ctaAriaLabel;set:config.href,var,ctaTargets.generalWhatsApp",
+      "config": {
+        "href": "#",
+        "text": "",
+        "ariaLabel": "",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "zPrimaryAction"
+      }
+    },
+    {
+      "id": "contactNote",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.contact.note",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zMeta"
+      }
+    },
+    {
+      "id": "contactFallback",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.contact.fallback",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1rem ank-fontWeight-900 ank-lineHeight-1_5"
+      }
+    },
+    {
+      "id": "contactLocation",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.contact.location",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zMeta"
+      }
+    }
+  ]
+}

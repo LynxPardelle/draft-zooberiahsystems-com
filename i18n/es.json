@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "allPages",
+  "lang": "es",
+  "dictionary": {
+    "nav": {
+      "consulting": "Consultoría",
+      "solutions": "Soluciones",
+      "applications": "Aplicaciones",
+      "about": "Nosotros",
+      "talk": "Hablemos",
+      "talkAriaLabel": "Ir a la sección Hablemos"
+    },
+    "ui": {
+      "accessibility": {
+        "skipToContent": "Saltar al contenido principal",
+        "homeAriaLabel": "Ir al inicio de ZooBeriah Systems",
+        "primaryNavigation": "Navegación principal",
+        "footerNavigation": "Navegación del pie de página",
+        "mobileMenuAriaLabel": "Menú de navegación"
+      },
+      "common": {
+        "notifications": "Notificaciones",
+        "dismissNotification": "Cerrar notificación"
+      },
+      "contact": {
+        "whatsappMessage": "Hola, ZooBeriah Systems. Me interesa conocer sus servicios de consultoría tecnológica, datos e IA o una solución digital para mi negocio. ¿Podemos conversar sobre mi proyecto?",
+        "whatsappUrl": "https://wa.me/525522699563?text=Hola%2C%20ZooBeriah%20Systems.%20Me%20interesa%20conocer%20sus%20servicios%20de%20consultor%C3%ADa%20tecnol%C3%B3gica%2C%20datos%20e%20IA%20o%20una%20soluci%C3%B3n%20digital%20para%20mi%20negocio.%20%C2%BFPodemos%20conversar%20sobre%20mi%20proyecto%3F",
+        "footerLabel": "Hablemos por WhatsApp",
+        "footerAriaLabel": "Hablemos por WhatsApp; se abre en una pestaña nueva",
+        "visiblePhone": "+52 55 2269 9563"
+      }
+    },
+    "footer": {
+      "tagline": "Ideas que toman forma digital.",
+      "location": "Atención remota desde CDMX.",
+      "copyright": "ZooBeriah Systems"
+    },
+    "consent": {
+      "title": "Ayúdanos a mejorar este sitio",
+      "intro": "Si aceptas, usamos identificadores técnicos seudónimos para medir visitas e interacciones. No registramos el contenido de WhatsApp, tu teléfono, nombre, correo, IP ni ubicación precisa.",
+      "actions": {
+        "allow": "Permitir analítica",
+        "decline": "No permitir",
+        "later": "Más tarde"
+      },
+      "feedback": {
+        "snoozed": "Te preguntaremos de nuevo mañana."
+      }
+    }
+  }
+}

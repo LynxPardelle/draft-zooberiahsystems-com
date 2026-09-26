@@ -1,0 +1,26 @@
+{
+  "domain": "zooberiahsystems.com",
+  "authoringEndpoint": "https://api.zoolandingpage.com.mx/config-authoring",
+  "awsRegion": "us-east-1",
+  "branches": {
+    "dev": {
+      "deploys": false
+    },
+    "test": {
+      "deploys": true,
+      "environment": "test"
+    },
+    "main": {
+      "deploys": false
+    }
+  },
+  "githubVariables": {
+    "test": [
+      "AWS_ROLE_ARN",
+      "AWS_REGION",
+      "DRAFT_DOMAIN",
+      "DRAFT_ROOT",
+      "AUTHORING_ENDPOINT"
+    ]
+  }
+}

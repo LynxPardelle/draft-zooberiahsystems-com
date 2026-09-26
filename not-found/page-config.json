@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "pageId": "not-found",
+  "domain": "zooberiahsystems.com",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "pageStack",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "test-only-draft",
+    "routePurpose": "not-found-recovery"
+  },
+  "seo": {
+    "title": {
+      "es": "Página no encontrada | ZooBeriah Systems"
+    },
+    "description": {
+      "es": "La página que buscas no está disponible. Vuelve al inicio de ZooBeriah Systems o escríbenos por WhatsApp."
+    },
+    "canonical": "https://test.zoolandingpage.com.mx/404?draftDomain=zooberiahsystems.com",
+    "robots": "noindex,follow",
+    "openGraph": {
+      "title": {
+        "es": "Página no encontrada | ZooBeriah Systems"
+      },
+      "description": {
+        "es": "Vuelve al inicio de ZooBeriah Systems o conversemos sobre tu proyecto."
+      },
+      "type": "website"
+    },
+    "twitter": {
+      "title": {
+        "es": "Página no encontrada | ZooBeriah Systems"
+      },
+      "description": {
+        "es": "Vuelve al inicio de ZooBeriah Systems o conversemos sobre tu proyecto."
+      },
+      "card": "summary"
+    }
+  },
+  "analytics": {
+    "sectionIds": [],
+    "scrollMilestones": []
+  }
+}

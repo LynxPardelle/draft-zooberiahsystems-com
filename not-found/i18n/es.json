@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "not-found",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "notFound": {
+        "eyebrow": "Página no encontrada",
+        "title": "Esta ruta no forma parte del sistema.",
+        "description": "El enlace pudo cambiar o la página ya no está disponible. Puedes volver al inicio o escribirnos para conversar sobre tu proyecto.",
+        "home": "Volver al inicio",
+        "contact": "Escríbenos por WhatsApp",
+      "contactAria": "Escríbenos por WhatsApp; se abre en una pestaña nueva",
+        "contactUrl": "https://wa.me/525522699563?text=Hola%2C%20ZooBeriah%20Systems.%20Me%20interesa%20conocer%20sus%20servicios%20de%20consultor%C3%ADa%20tecnol%C3%B3gica%2C%20datos%20e%20IA%20o%20una%20soluci%C3%B3n%20digital%20para%20mi%20negocio.%20%C2%BFPodemos%20conversar%20sobre%20mi%20proyecto%3F",
+        "phone": "También puedes copiar nuestro número: +52 55 2269 9563.",
+        "code": "404",
+        "signalTitle": "No encontramos esa página.",
+        "signalText": "El sitio sigue disponible. Elige una de las opciones para retomar el camino."
+      }
+    }
+  }
+}

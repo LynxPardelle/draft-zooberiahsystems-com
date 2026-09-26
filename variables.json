@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "allPages",
+  "variables": {
+    "brand": {
+      "displayName": "ZooBeriah Systems",
+      "tagline": "Ideas que toman forma digital."
+    },
+    "navigation": [
+      {
+        "id": "consultoria",
+        "value": "/#consultoria",
+        "href": "/#consultoria",
+        "label": "Consultoría",
+        "ariaLabel": "Ir a Consultoría"
+      },
+      {
+        "id": "soluciones",
+        "value": "/#soluciones",
+        "href": "/#soluciones",
+        "label": "Soluciones",
+        "ariaLabel": "Ir a Soluciones"
+      },
+      {
+        "id": "aplicaciones",
+        "value": "/#aplicaciones",
+        "href": "/#aplicaciones",
+        "label": "Aplicaciones",
+        "ariaLabel": "Ir a Aplicaciones"
+      },
+      {
+        "id": "nosotros",
+        "value": "/#nosotros",
+        "href": "/#nosotros",
+        "label": "Nosotros",
+        "ariaLabel": "Ir a Nosotros"
+      },
+      {
+        "id": "contacto",
+        "value": "/#contacto",
+        "href": "/#contacto",
+        "label": "Hablemos",
+        "ariaLabel": "Ir a Hablemos"
+      }
+    ],
+    "assets": {
+      "logoPrincipalUrl": "",
+      "logoInverseUrl": "",
+      "faviconUrl": "",
+      "appleTouchIconUrl": "",
+      "openGraphImageUrl": ""
+    },
+    "ui": {
+      "contact": {
+        "whatsappPhone": "+525522699563",
+        "whatsappMessageKey": "ui.contact.whatsappMessage"
+      }
+    }
+  }
+}

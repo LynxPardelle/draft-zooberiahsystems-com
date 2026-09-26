@@ -1,0 +1,374 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "allPages",
+  "components": [
+    {
+      "id": "skipToMainLink",
+      "type": "link",
+      "eventInstructions": "skipToMain:main-content",
+      "valueInstructions": "set:config.text,i18n,ui.accessibility.skipToContent;set:config.ariaLabel,i18n,ui.accessibility.skipToContent",
+      "config": {
+        "id": "skip-to-main",
+        "href": "#main-content",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "zooberiahSkipLink"
+      }
+    },
+    {
+      "id": "siteHeader",
+      "type": "container",
+      "config": {
+        "tag": "header",
+        "classes": "zooberiahHeader",
+        "components": [
+          "headerInner",
+          "headerMobileMenuMount"
+        ]
+      }
+    },
+    {
+      "id": "headerInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zooberiahHeaderInner zooberiahWrap",
+        "components": [
+          "brandLink",
+          "headerDesktopCluster",
+          "headerMobileActions"
+        ]
+      }
+    },
+    {
+      "id": "brandLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,var,brand.displayName;set:config.ariaLabel,i18n,ui.accessibility.homeAriaLabel",
+      "config": {
+        "id": "site-brand",
+        "href": "/",
+        "text": "ZooBeriah Systems",
+        "ariaLabel": "",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "auto"
+        },
+        "classes": "zooberiahBrand"
+      }
+    },
+    {
+      "id": "headerDesktopCluster",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zooberiahDesktopCluster",
+        "components": [
+          "headerNav",
+          "headerTalkLink"
+        ]
+      }
+    },
+    {
+      "id": "headerNav",
+      "type": "container",
+      "valueInstructions": "set:config.ariaLabel,i18n,ui.accessibility.primaryNavigation",
+      "config": {
+        "tag": "nav",
+        "ariaLabel": "",
+        "classes": "zooberiahDesktopNav",
+        "components": [
+          "headerConsultingLink",
+          "headerSolutionsLink",
+          "headerApplicationsLink",
+          "headerAboutLink"
+        ]
+      }
+    },
+    {
+      "id": "headerConsultingLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,nav.consulting;set:config.ariaLabel,i18n,nav.consulting",
+      "config": {
+        "href": "/#consultoria",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "zooberiahNavLink"
+      }
+    },
+    {
+      "id": "headerSolutionsLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,nav.solutions;set:config.ariaLabel,i18n,nav.solutions",
+      "config": {
+        "href": "/#soluciones",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "zooberiahNavLink"
+      }
+    },
+    {
+      "id": "headerApplicationsLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,nav.applications;set:config.ariaLabel,i18n,nav.applications",
+      "config": {
+        "href": "/#aplicaciones",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "zooberiahNavLink"
+      }
+    },
+    {
+      "id": "headerAboutLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,nav.about;set:config.ariaLabel,i18n,nav.about",
+      "config": {
+        "href": "/#nosotros",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "zooberiahNavLink"
+      }
+    },
+    {
+      "id": "headerTalkLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,nav.talk;set:config.ariaLabel,i18n,nav.talkAriaLabel",
+      "config": {
+        "href": "/#contacto",
+        "text": "",
+        "ariaLabel": "",
+        "classes": "zooberiahPrimaryAction"
+      }
+    },
+    {
+      "id": "headerMobileActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zooberiahMobileActions",
+        "components": [
+          "headerMobileNav"
+        ]
+      }
+    },
+    {
+      "id": "headerMobileMenuMount",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "id": "mobile-menu-anchor",
+        "classes": "ank-display-lg-none ank-width-100per zooberiahWrap",
+        "components": []
+      }
+    },
+    {
+      "id": "headerMobileNav",
+      "type": "dropdown",
+      "condition": "all:navigation,exists",
+      "valueInstructions": "set:config.items,var,navigation;set:config.dropdownConfig.ariaLabel,i18n,ui.accessibility.mobileMenuAriaLabel",
+      "config": {
+        "items": [],
+        "dropdownConfig": {
+          "ariaLabel": "",
+          "buttonClasses": "zooberiahMobileTrigger",
+          "itemLinkClasses": "zooberiahMobileItem",
+          "menuContainerClasses": "zooberiahMobileMenuContainer",
+          "menuNavClasses": "zooberiahWrap",
+          "menuListClasses": "zooberiahMobileMenuList",
+          "renderMode": "inline",
+          "menuContainerId": "mobile-primary-navigation",
+          "inlinePortalTargetSelector": "#mobile-menu-anchor",
+          "closeOnSelect": true
+        },
+        "components": [
+          "mobileMenuIcon"
+        ]
+      }
+    },
+    {
+      "id": "mobileMenuIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "menu",
+        "ariaHidden": true,
+        "classes": "ank-display-block ank-width-24px ank-height-24px ank-color-titleColor"
+      }
+    },
+    {
+      "id": "siteFooter",
+      "type": "container",
+      "config": {
+        "tag": "footer",
+        "id": "site-footer",
+        "classes": "zooberiahFooter",
+        "components": [
+          "footerInner"
+        ]
+      }
+    },
+    {
+      "id": "footerInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zooberiahFooterInner zooberiahWrap",
+        "components": [
+          "footerBrandBlock",
+          "footerNav",
+          "footerActionBlock"
+        ]
+      }
+    },
+    {
+      "id": "footerBrandBlock",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zooberiahStack",
+        "components": [
+          "footerBrandLink",
+          "footerTagline",
+          "footerLocation"
+        ]
+      }
+    },
+    {
+      "id": "footerBrandLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,var,brand.displayName;set:config.ariaLabel,i18n,ui.accessibility.homeAriaLabel",
+      "config": {
+        "href": "/",
+        "text": "ZooBeriah Systems",
+        "ariaLabel": "",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "auto"
+        },
+        "classes": "zooberiahFooterBrand"
+      }
+    },
+    {
+      "id": "footerTagline",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,footer.tagline",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zooberiahFooterText"
+      }
+    },
+    {
+      "id": "footerLocation",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,footer.location",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zooberiahFooterText"
+      }
+    },
+    {
+      "id": "footerNav",
+      "type": "container",
+      "valueInstructions": "set:config.ariaLabel,i18n,ui.accessibility.footerNavigation",
+      "config": {
+        "tag": "nav",
+        "ariaLabel": "",
+        "classes": "zooberiahFooterNav",
+        "components": [
+          "footerConsultingLink",
+          "footerSolutionsLink",
+          "footerApplicationsLink",
+          "footerAboutLink"
+        ]
+      }
+    },
+    {
+      "id": "footerConsultingLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,nav.consulting",
+      "config": {
+        "href": "/#consultoria",
+        "text": "",
+        "classes": "zooberiahFooterLink"
+      }
+    },
+    {
+      "id": "footerSolutionsLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,nav.solutions",
+      "config": {
+        "href": "/#soluciones",
+        "text": "",
+        "classes": "zooberiahFooterLink"
+      }
+    },
+    {
+      "id": "footerApplicationsLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,nav.applications",
+      "config": {
+        "href": "/#aplicaciones",
+        "text": "",
+        "classes": "zooberiahFooterLink"
+      }
+    },
+    {
+      "id": "footerAboutLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,nav.about",
+      "config": {
+        "href": "/#nosotros",
+        "text": "",
+        "classes": "zooberiahFooterLink"
+      }
+    },
+    {
+      "id": "footerActionBlock",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zooberiahFooterAction",
+        "components": [
+          "footerWhatsappLink",
+          "footerPhone",
+          "footerCopyright"
+        ]
+      }
+    },
+    {
+      "id": "footerWhatsappLink",
+      "type": "link",
+      "eventInstructions": "trackEvent:whatsapp_click,cta,footer_contact,location,footer",
+      "valueInstructions": "set:config.text,i18n,ui.contact.footerLabel;set:config.href,i18n,ui.contact.whatsappUrl;set:config.ariaLabel,i18n,ui.contact.footerAriaLabel",
+      "config": {
+        "href": "#",
+        "text": "",
+        "ariaLabel": "",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "zooberiahFooterActionLink"
+      }
+    },
+    {
+      "id": "footerPhone",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,ui.contact.visiblePhone",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zooberiahPhoneText"
+      }
+    },
+    {
+      "id": "footerCopyright",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,footer.copyright",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zooberiahFooterText"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "pageId": "default",
+  "domain": "zooberiahsystems.com",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "pageStack",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "test-only-draft",
+    "routePurpose": "institutional-consulting-one-page"
+  },
+  "seo": {
+    "title": {
+      "es": "ZooBeriah Systems | Consultoría tecnológica, datos e IA"
+    },
+    "description": {
+      "es": "Consultoría tecnológica, de datos e IA para negocios locales. Definimos acciones y desarrollamos soluciones digitales. Atención remota desde CDMX."
+    },
+    "canonical": "https://test.zoolandingpage.com.mx/?draftDomain=zooberiahsystems.com",
+    "robots": "noindex,nofollow",
+    "keywords": {
+      "es": [
+        "consultoría tecnológica",
+        "consultoría de datos",
+        "inteligencia artificial para negocios",
+        "soluciones digitales",
+        "CDMX"
+      ]
+    },
+    "openGraph": {
+      "title": {
+        "es": "ZooBeriah Systems | Consultoría tecnológica, datos e IA"
+      },
+      "description": {
+        "es": "Consultoría tecnológica, de datos e IA para negocios locales. Definimos acciones y desarrollamos soluciones digitales. Atención remota desde CDMX."
+      },
+      "type": "website"
+    },
+    "twitter": {
+      "title": {
+        "es": "ZooBeriah Systems | Consultoría tecnológica, datos e IA"
+      },
+      "description": {
+        "es": "Consultoría tecnológica, de datos e IA para negocios locales. Definimos acciones y desarrollamos soluciones digitales. Atención remota desde CDMX."
+      },
+      "card": "summary"
+    }
+  },
+  "analytics": {
+    "sectionIds": [
+      "consultoria",
+      "soluciones",
+      "aplicaciones",
+      "como-trabajamos",
+      "nosotros",
+      "preguntas-frecuentes",
+      "contacto"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}

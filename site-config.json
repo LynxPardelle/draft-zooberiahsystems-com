@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "aliases": [],
+  "defaultPageId": "default",
+  "routes": [
+    {
+      "path": "/",
+      "pageId": "default",
+      "label": "Inicio"
+    },
+    {
+      "path": "/404",
+      "pageId": "not-found",
+      "label": "Página no encontrada"
+    }
+  ],
+  "site": {
+    "theme": {
+      "defaultMode": "light",
+      "palettes": {
+        "light": {
+          "bgColor": "#F6F4EE",
+          "textColor": "#102D32",
+          "titleColor": "#102D32",
+          "linkColor": "#126B59",
+          "accentColor": "#126B59",
+          "secondaryBgColor": "#E4EEE7",
+          "secondaryTextColor": "#536765",
+          "secondaryTitleColor": "#102D32",
+          "secondaryLinkColor": "#126B59",
+          "secondaryAccentColor": "#D9EF8F",
+          "successColor": "#126B59",
+          "onSuccessColor": "#FFFFFF",
+          "errorColor": "#102D32",
+          "onErrorColor": "#FFFFFF",
+          "warningColor": "#D9EF8F",
+          "onWarningColor": "#102D32",
+          "infoColor": "#E4EEE7",
+          "onInfoColor": "#102D32"
+        },
+        "dark": {
+          "bgColor": "#102D32",
+          "textColor": "#F6F4EE",
+          "titleColor": "#FFFFFF",
+          "linkColor": "#D9EF8F",
+          "accentColor": "#D9EF8F",
+          "secondaryBgColor": "#126B59",
+          "secondaryTextColor": "#F6F4EE",
+          "secondaryTitleColor": "#FFFFFF",
+          "secondaryLinkColor": "#D9EF8F",
+          "secondaryAccentColor": "#E4D9C5",
+          "successColor": "#D9EF8F",
+          "onSuccessColor": "#102D32",
+          "errorColor": "#E4D9C5",
+          "onErrorColor": "#102D32",
+          "warningColor": "#D9EF8F",
+          "onWarningColor": "#102D32",
+          "infoColor": "#126B59",
+          "onInfoColor": "#FFFFFF"
+        }
+      }
+    },
+    "appIdentity": {
+      "identifier": "zooberiahsystemscom",
+      "name": "ZooBeriah Systems",
+      "version": "1.0.0",
+      "description": "Consultoría tecnológica, de datos e IA para negocios locales."
+    },
+    "seo": {
+      "siteName": "ZooBeriah Systems",
+      "title": "ZooBeriah Systems | Consultoría tecnológica, datos e IA",
+      "description": "Consultoría tecnológica, de datos e IA para negocios locales. Definimos acciones y desarrollamos soluciones digitales. Atención remota desde CDMX.",
+      "openGraph": {
+        "type": "website",
+        "site_name": "ZooBeriah Systems"
+      },
+      "twitter": {
+        "card": "summary"
+      },
+      "keywords": {
+        "es": [
+          "consultoría tecnológica",
+          "consultoría de datos",
+          "inteligencia artificial para negocios",
+          "soluciones digitales",
+          "ZooBeriah Systems"
+        ]
+      },
+      "robots": "noindex,nofollow"
+    },
+    "i18n": {
+      "defaultLanguage": "es",
+      "supportedLanguages": [
+        {
+          "code": "es",
+          "label": "ES",
+          "dir": "ltr",
+          "ogLocale": "es_MX"
+        }
+      ]
+    },
+    "icons": {
+      "themeColor": "#102D32"
+    }
+  },
+  "defaults": {
+    "brand": {
+      "displayName": "ZooBeriah Systems",
+      "tagline": "Ideas que toman forma digital."
+    },
+    "ui": {
+      "contact": {
+        "whatsappPhone": "+525522699563",
+        "whatsappMessageKey": "ui.contact.whatsappMessage"
+      },
+      "toast": {
+        "hostClasses": "ank-position-fixed ank-display-flex ank-flexDirection-column ank-gap-8px ank-zIndex-1400 ank-pointerEvents-none",
+        "hostTopClasses": "ank-top-16px",
+        "hostBottomClasses": "ank-bottom-16px",
+        "hostLeftClasses": "ank-left-16px",
+        "hostRightClasses": "ank-right-16px",
+        "hostCenterClasses": "ank-left-50per ank-transform-translateXSDMIN50perED",
+        "itemClasses": "ank-position-relative ank-width-92vw ank-maxWidth-26rem ank-display-flex ank-alignItems-stretch ank-gap-12px ank-padding-16px ank-borderRadius-12px ank-boxShadow-0__16px__40px__rgbaSD16COM45COM50COM0_18ED ank-border-1px__solid ank-pointerEvents-auto ank-overflow-hidden ank-bg-bgColor ank-color-textColor",
+        "hoveredItemClasses": "ank-boxShadow-0__16px__40px__rgbaSD16COM45COM50COM0_18ED",
+        "levelSuccessClasses": "ank-bg-successColor ank-color-onSuccessColor ank-borderColor-successColor",
+        "levelErrorClasses": "ank-bg-errorColor ank-color-onErrorColor ank-borderColor-errorColor",
+        "levelWarningClasses": "ank-bg-warningColor ank-color-onWarningColor ank-borderColor-warningColor",
+        "levelInfoClasses": "ank-bg-infoColor ank-color-onInfoColor ank-borderColor-accentColor",
+        "progressClasses": "ank-position-absolute ank-bottom-0 ank-left-0 ank-right-0 ank-height-2px ank-overflow-hidden",
+        "progressBarClasses": "ank-height-100per",
+        "progressBarSurfaceClasses": "ank-bg-accentColor",
+        "iconSurfaceClasses": "ank-bg-bgColorOPA__0_28 ank-color-inherit",
+        "iconContainerClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-center ank-flexShrink-0 ank-width-24px ank-height-24px ank-borderRadius-50per",
+        "contentClasses": "ank-display-flex ank-flexDirection-column ank-gap-4px ank-flex-1 ank-minWidth-0",
+        "titleClasses": "ank-fontSize-1rem ank-fontWeight-600 ank-lineHeight-1_3",
+        "textClasses": "ank-fontSize-0_9rem ank-lineHeight-1_5",
+        "actionsClasses": "ank-display-flex ank-flexWrap-wrap ank-gap-8px ank-marginTop-8px",
+        "actionButtonClasses": "ank-minHeight-44px ank-paddingInline-12px ank-paddingBlock-8px ank-borderRadius-12px ank-cursor-pointer ank-fontWeight-600 ank-outlineFocus-3px__solid__accentColor ank-outlineOffsetFocus-4px",
+        "actionPrimaryClasses": "ank-border-1px__solid__accentColor ank-bg-accentColor ank-color-bgColor",
+        "actionSecondaryClasses": "ank-border-1px__solid__accentColor ank-bg-transparent ank-color-titleColor",
+        "dismissButtonClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-center ank-flexShrink-0 ank-width-44px ank-height-44px ank-bg-transparent ank-border-0 ank-borderRadius-12px ank-cursor-pointer ank-color-inherit ank-outlineFocus-3px__solid__accentColor ank-outlineOffsetFocus-4px"
+      }
+    }
+  },
+  "runtime": {
+    "localStorage": {
+      "theme": "zooberiah-theme",
+      "language": "zooberiah-language",
+      "userPreferences": "zooberiah-preferences",
+      "id": "zooberiah-id",
+      "sessionId": "zooberiah-session-id",
+      "allowAnalytics": "zooberiah-allow-analytics",
+      "analyticsConsentSnooze": "zooberiah-analytics-consent-snooze",
+      "pageViewCount": "zooberiah-page-view-count"
+    },
+    "features": {
+      "debugMode": false
+    },
+    "navigation": {
+      "scrollRestoration": {
+        "mode": "preserve",
+        "behavior": "auto"
+      }
+    },
+    "analytics": {
+      "enabled": true,
+      "consentUI": "toast",
+      "consentSnoozeSeconds": 86400,
+      "track": [
+        "language",
+        "platform",
+        "screenWidth",
+        "screenHeight",
+        "timezone"
+      ],
+      "events": {
+        "page_view": "page_view",
+        "nav_click": "nav_click",
+        "section_view": "section_view",
+        "scroll_depth": "scroll_depth",
+        "faq_open": "faq_open",
+        "cta_click": "cta_click",
+        "whatsapp_click": "whatsapp_click"
+      },
+      "categories": {
+        "navigation": "navigation",
+        "engagement": "engagement",
+        "faq": "faq",
+        "cta": "cta"
+      },
+      "quickStats": {
+        "pageView": {
+          "event": "page_view",
+          "path": "metrics.pageViews",
+          "by": 1
+        },
+        "events": [
+          {
+            "name": "cta_click",
+            "path": "metrics.ctaClicks",
+            "by": 1
+          },
+          {
+            "name": "whatsapp_click",
+            "path": "metrics.whatsappClicks",
+            "by": 1
+          }
+        ]
+      }
+    }
+  },
+  "notFoundPageId": "not-found",
+  "sitemap": {
+    "excludePaths": [
+      "/404"
+    ]
+  }
+}

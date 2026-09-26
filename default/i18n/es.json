@@ -1,0 +1,185 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "default",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "hero": {
+        "descriptor": "Consultoría tecnológica, datos e IA.",
+        "title": "Tecnología, datos e IA para dar el siguiente paso.",
+        "lead": "Ayudamos a negocios locales a entender su información, definir acciones y aplicar herramientas digitales. Desde una primera presencia web hasta un proyecto de consultoría, empezamos por lo que tu negocio necesita.",
+        "primary": "Hablemos de tu proyecto",
+        "secondary": "Conoce cómo podemos ayudarte",
+        "location": "Atención remota desde CDMX.",
+        "visualLabel": "Entender, definir y construir",
+        "visualSteps": [
+          "Información clara",
+          "Acciones concretas",
+          "Herramientas útiles"
+        ]
+      },
+      "consulting": {
+        "eyebrow": "Consultoría",
+        "title": "Información clara. Acciones concretas. Herramientas útiles.",
+        "intro": "No necesitas llegar con una solución elegida. Podemos empezar por lo que quieres resolver y definir un camino adecuado para tu negocio.",
+        "needsLabel": "Ejemplos de necesidades",
+        "technology": {
+          "number": "01",
+          "title": "Consultoría tecnológica",
+          "description": "Te ayudamos a entender qué necesita tu negocio, priorizar mejoras y elegir las herramientas adecuadas. Revisamos contigo cómo pasar de una necesidad a un plan de trabajo.",
+          "needs": "Ordenar procesos, evaluar herramientas y planear la digitalización.",
+          "cta": "Conversar sobre mi proyecto",
+          "ctaAriaLabel": "Conversar sobre mi proyecto por WhatsApp; se abre en una pestaña nueva"
+        },
+        "data": {
+          "number": "02",
+          "title": "Consultoría de datos",
+          "description": "Te ayudamos a organizar y analizar tu información para convertirla en indicadores, reportes y decisiones más claras. El punto de partida son tus preguntas y los datos disponibles.",
+          "needs": "Entender información de ventas u operación, definir indicadores y detectar oportunidades.",
+          "cta": "Conversar sobre mis datos",
+          "ctaAriaLabel": "Conversar sobre mis datos por WhatsApp; se abre en una pestaña nueva"
+        },
+        "ai": {
+          "number": "03",
+          "title": "Consultoría de inteligencia artificial",
+          "description": "Evaluamos dónde la IA puede aportar valor y cómo incorporarla a tareas concretas, con supervisión y cuidado de la información. La herramienta viene después del problema, no al revés.",
+          "needs": "Identificar tareas repetitivas, evaluar herramientas y probar un caso de uso acotado.",
+          "cta": "Explorar una necesidad de IA",
+          "ctaAriaLabel": "Explorar una necesidad de IA por WhatsApp; se abre en una pestaña nueva"
+        },
+        "closing": "Cada proyecto tiene un alcance propio. Conversamos sobre tu necesidad y preparamos una cotización con los entregables y condiciones correspondientes."
+      },
+      "solutions": {
+        "eyebrow": "Soluciones para negocios",
+        "title": "Un punto de partida para tu presencia digital.",
+        "intro": "Elige una solución para presentar tu negocio o cuéntanos qué necesitas para definir el siguiente paso.",
+        "available": "Disponible para contratación",
+        "development": "En desarrollo",
+        "plansNote": "Consulta el alcance y las condiciones en el sitio del producto.",
+        "zoolandingpage": {
+          "title": "Zoolandingpage",
+          "description": "Lo esencial de tu negocio en una primera presencia digital. Presenta lo que haces y comparte la información que tus clientes necesitan conocer.",
+          "cta": "Ver planes",
+          "ctaAriaLabel": "Ver planes de Zoolandingpage; se abre en una pestaña nueva"
+        },
+        "zoositioweb": {
+          "title": "Zoositioweb",
+          "description": "Un sitio más completo para mostrar quién eres, qué ofreces y cómo quieres presentar tu marca en internet.",
+          "cta": "Ver planes",
+          "ctaAriaLabel": "Ver planes de Zoositioweb; se abre en una pestaña nueva"
+        },
+        "zooblog": {
+          "title": "Zooblog",
+          "description": "Un espacio para organizar publicaciones, compartir lo que sabes y mantener la conversación con tu audiencia.",
+          "cta": "Cotizar mi blog",
+          "ctaAriaLabel": "Cotizar mi blog por WhatsApp; se abre en una pestaña nueva"
+        },
+        "zootiendadigital": {
+          "title": "Zootiendadigital",
+          "description": "Estamos desarrollando una solución para dar forma a la venta en línea de los negocios."
+        },
+        "closing": "Consulta los planes en los sitios de cada producto o escríbenos para una cotización por proyecto."
+      },
+      "applications": {
+        "eyebrow": "Aplicaciones propias",
+        "title": "También creamos herramientas para el día a día.",
+        "intro": "Productos propios con propósitos distintos a nuestros servicios para negocios.",
+        "development": "En desarrollo",
+        "roadmap2u": {
+          "title": "RoadMap2U",
+          "description": "Organiza tus metas como un árbol de caminos. Revisa dónde estás y adapta tus siguientes pasos, sin convertir un cambio de ritmo en un fracaso.",
+          "cta": "Conocer RoadMap2U",
+          "ctaAriaLabel": "Conocer RoadMap2U; se abre en una pestaña nueva"
+        },
+        "despensaLista": {
+          "title": "Despensa Lista",
+          "description": "Estamos desarrollando una aplicación para organizar existencias, consultar caducidades y planear compras con base en lo que registras en tu despensa."
+        }
+      },
+      "method": {
+        "eyebrow": "Cómo trabajamos",
+        "title": "Primero entendemos. Después construimos.",
+        "steps": [
+          {
+            "number": "01",
+            "title": "01 · Entender",
+            "description": "Conversamos sobre tu negocio, tu información y lo que necesitas resolver."
+          },
+          {
+            "number": "02",
+            "title": "02 · Definir",
+            "description": "Priorizamos acciones y acordamos una propuesta con alcance y cotización."
+          },
+          {
+            "number": "03",
+            "title": "03 · Desarrollar",
+            "description": "Configuramos o construimos lo acordado, según las necesidades del proyecto."
+          },
+          {
+            "number": "04",
+            "title": "04 · Revisar",
+            "description": "Revisamos los entregables contigo y definimos los siguientes pasos previstos en el alcance."
+          }
+        ]
+      },
+      "about": {
+        "eyebrow": "Nosotros",
+        "title": "Somos ZooBeriah Systems.",
+        "description": "Somos una consultora de tecnología, datos e inteligencia artificial con base en CDMX y atención remota. Queremos apoyar a los negocios locales con información que se entienda, acciones que tengan sentido y herramientas útiles.",
+        "approach": "Desarrollamos soluciones web y aplicaciones propias, pero no partimos de venderte una herramienta: partimos de entender qué necesitas.",
+        "story": "ZooBeriah reúne nuestra familia de productos con una idea que nos mueve: crear. Dar forma a lo que todavía es una necesidad y convertirlo en una solución digital.",
+        "tagline": "Ideas que toman forma digital."
+      },
+      "faq": {
+        "eyebrow": "Preguntas frecuentes",
+        "title": "Respuestas claras antes de empezar.",
+        "lead": "Lo esencial sobre nuestros servicios, productos y forma de trabajo.",
+        "items": [
+          {
+            "title": "¿Solo hacen páginas web?",
+            "content": "No. Además de nuestras soluciones web y aplicaciones propias, ofrecemos consultoría tecnológica, de datos e inteligencia artificial. Cada proyecto se define a partir de una necesidad concreta."
+          },
+          {
+            "title": "¿Puedo empezar si mis datos están desordenados?",
+            "content": "Sí podemos conversar desde ese punto. Primero revisamos qué información existe y qué quieres resolver para proponer un alcance adecuado; no hace falta llegar con un tablero terminado."
+          },
+          {
+            "title": "¿Necesito IA para mejorar mi negocio?",
+            "content": "No necesariamente. Primero evaluamos la necesidad. La solución puede estar en organizar información, ajustar un proceso o utilizar una herramienta existente; la IA se considera cuando tiene sentido para el caso."
+          },
+          {
+            "title": "¿Cuál es la diferencia entre Zoolandingpage y Zoositioweb?",
+            "content": "Zoolandingpage ofrece una primera presencia digital con lo esencial del negocio. Zoositioweb permite una presentación de marca más completa. Consulta el alcance de los planes en sus páginas."
+          },
+          {
+            "title": "¿Ya puedo contratar Zooblog?",
+            "content": "Sí. Puedes solicitar una cotización por WhatsApp, aunque todavía no tenga un sitio comercial propio."
+          },
+          {
+            "title": "¿Cómo se determina el precio?",
+            "content": "Trabajamos con cotizaciones por proyecto. Zoolandingpage y Zoositioweb también tienen planes publicados en sus sitios; el alcance y las condiciones se revisan según la solución elegida."
+          },
+          {
+            "title": "¿Cómo trabajan y dónde están?",
+            "content": "Tenemos base en CDMX y atendemos de forma remota. Puedes escribirnos por WhatsApp para conversar sobre tu proyecto."
+          },
+          {
+            "title": "¿Ya puedo usar todos sus productos?",
+            "content": "Puedes conocer RoadMap2U en su sitio. Zootiendadigital y Despensa Lista siguen en desarrollo; no se anuncia una fecha de lanzamiento."
+          }
+        ]
+      },
+      "contact": {
+        "eyebrow": "Hablemos",
+        "title": "Cuéntanos qué necesitas resolver.",
+        "description": "¿Buscas una solución web o quieres explorar cómo la tecnología, los datos o la IA pueden ayudar a tu negocio? Conversemos sobre tu proyecto.",
+        "cta": "Escríbenos por WhatsApp",
+        "ctaAriaLabel": "Escríbenos por WhatsApp; se abre en una pestaña nueva",
+        "note": "Se abrirá una conversación en WhatsApp.",
+        "fallback": "También puedes copiar nuestro número: +52 55 2269 9563.",
+        "location": "Atención remota desde CDMX."
+      }
+    }
+  }
+}

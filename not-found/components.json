@@ -1,0 +1,213 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "not-found",
+  "components": [
+    {
+      "id": "pageStack",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "id": "main-content",
+        "role": "main",
+        "tabindex": -1,
+        "classes": "zooberiahMain ank-width-100per ank-minWidth-0",
+        "components": [
+          "notFoundSection"
+        ]
+      }
+    },
+    {
+      "id": "notFoundSection",
+      "type": "container",
+      "config": {
+        "id": "not-found",
+        "tag": "section",
+        "classes": "zooberiahSection",
+        "components": [
+          "notFoundWrap"
+        ],
+        "styles": {
+          "minHeight": "min(720px, calc(100svh - 180px))",
+          "alignItems": "center"
+        }
+      }
+    },
+    {
+      "id": "notFoundWrap",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zooberiahWrap",
+        "components": [
+          "notFoundLayout"
+        ]
+      }
+    },
+    {
+      "id": "notFoundLayout",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-minWidth-0",
+        "components": [
+          "notFoundCopy",
+          "notFoundSignal"
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 320px), 1fr))",
+          "gap": "clamp(32px, 7vw, 88px)",
+          "alignItems": "center"
+        }
+      }
+    },
+    {
+      "id": "notFoundCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zooberiahStack",
+        "components": [
+          "notFoundEyebrow",
+          "notFoundTitle",
+          "notFoundDescription",
+          "notFoundActions",
+          "notFoundPhone"
+        ]
+      }
+    },
+    {
+      "id": "notFoundEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.notFound.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zooberiahEyebrow"
+      }
+    },
+    {
+      "id": "notFoundTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.notFound.title",
+      "config": {
+        "tag": "h1",
+        "text": "",
+        "classes": "zooberiahPageTitle"
+      }
+    },
+    {
+      "id": "notFoundDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.notFound.description",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zooberiahBody"
+      }
+    },
+    {
+      "id": "notFoundActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-12px",
+        "components": [
+          "notFoundHome",
+          "notFoundContact"
+        ]
+      }
+    },
+    {
+      "id": "notFoundHome",
+      "type": "link",
+      "eventInstructions": "trackEvent:cta_click,cta,not-found-home,location,not-found",
+      "valueInstructions": "set:config.text,i18n,page.notFound.home;set:config.ariaLabel,i18n,page.notFound.home",
+      "config": {
+        "href": "/",
+        "text": "",
+        "ariaLabel": "",
+        "target": "_self",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "auto"
+        },
+        "classes": "zooberiahPrimaryAction"
+      }
+    },
+    {
+      "id": "notFoundContact",
+      "type": "link",
+      "eventInstructions": "trackEvent:whatsapp_click,cta,not-found-contacto,location,not-found",
+      "valueInstructions": "set:config.text,i18n,page.notFound.contact;set:config.ariaLabel,i18n,page.notFound.contactAria;set:config.href,i18n,page.notFound.contactUrl",
+      "config": {
+        "href": "#",
+        "text": "",
+        "ariaLabel": "",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "zooberiahSecondaryAction"
+      }
+    },
+    {
+      "id": "notFoundPhone",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.notFound.phone",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zooberiahPhoneText"
+      }
+    },
+    {
+      "id": "notFoundSignal",
+      "type": "container",
+      "config": {
+        "tag": "aside",
+        "ariaLabel": "Error 404",
+        "classes": "ank-minWidth-0 ank-boxSizing-borderMINbox ank-display-flex ank-flexDirection-column ank-justifyContent-center ank-gap-16px ank-padding-32px ank-padding-md-48px ank-borderRadius-40px ank-bg-titleColor ank-color-bgColor",
+        "components": [
+          "notFoundCode",
+          "notFoundSignalTitle",
+          "notFoundSignalText"
+        ],
+        "styles": {
+          "minHeight": "clamp(280px, 40vw, 440px)",
+          "border": "1px solid var(--ank-secondaryBgColor)",
+          "boxShadow": "18px 18px 0 var(--ank-accentColor)"
+        }
+      }
+    },
+    {
+      "id": "notFoundCode",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.notFound.code",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryBgColor ank-fontSize-4rem ank-fontSize-md-6rem ank-fontWeight-900 ank-lineHeight-0_95"
+      }
+    },
+    {
+      "id": "notFoundSignalTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.notFound.signalTitle",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-bgColor ank-fontSize-1_5rem ank-fontSize-md-2rem ank-fontWeight-900 ank-lineHeight-1_15"
+      }
+    },
+    {
+      "id": "notFoundSignalText",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.notFound.signalText",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-bgColor ank-fontSize-1rem ank-lineHeight-1_6"
+      }
+    }
+  ]
+}

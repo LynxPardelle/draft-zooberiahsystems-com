@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "pageId": "default",
+  "domain": "zooberiahsystems.com",
+  "combos": {
+    "zSection": [
+      "ank-width-100per ank-display-flex ank-justifyContent-center ank-boxSizing-borderMINbox ank-paddingInline-24px ank-paddingInline-md-40px ank-paddingBlock-80px ank-paddingBlock-md-112px"
+    ],
+    "zInner": [
+      "ank-width-100per ank-maxWidth-1200px ank-display-flex ank-flexDirection-column ank-gap-24px"
+    ],
+    "zEyebrow": [
+      "ank-width-fitMINcontent ank-m-0 ank-color-linkColor ank-fontSize-0_78rem ank-fontWeight-900 ank-letterSpacing-0_08em ank-textTransform-uppercase"
+    ],
+    "zTitle": [
+      "ank-m-0 ank-color-titleColor ank-fontSize-2rem ank-fontSize-md-3_25rem ank-fontWeight-900 ank-lineHeight-1_06 ank-maxWidth-18ch"
+    ],
+    "zLead": [
+      "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-fontSize-md-1_12rem ank-lineHeight-1_65 ank-maxWidth-58rem"
+    ],
+    "zCard": [
+      "ank-minWidth-0 ank-height-100per ank-boxSizing-borderMINbox ank-display-flex ank-flexDirection-column ank-gap-16px ank-padding-24px ank-padding-md-32px ank-border-1px__solid__linkColor ank-borderRadius-24px ank-bg-bgColor"
+    ],
+    "zCardSoft": [
+      "ank-minWidth-0 ank-height-100per ank-boxSizing-borderMINbox ank-display-flex ank-flexDirection-column ank-gap-16px ank-padding-24px ank-padding-md-32px ank-border-1px__solid__linkColor ank-borderRadius-24px ank-bg-secondaryBgColor"
+    ],
+    "zCardDark": [
+      "ank-minWidth-0 ank-height-100per ank-boxSizing-borderMINbox ank-display-flex ank-flexDirection-column ank-gap-16px ank-padding-24px ank-padding-md-32px ank-border-1px__solid__secondaryBgColor ank-borderRadius-24px ank-bg-titleColor ank-color-bgColor"
+    ],
+    "zCardTitle": [
+      "ank-m-0 ank-color-titleColor ank-fontSize-1_2rem ank-fontSize-md-1_35rem ank-fontWeight-900 ank-lineHeight-1_25"
+    ],
+    "zCardText": [
+      "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_62"
+    ],
+    "zNumber": [
+      "ank-display-inlineMINflex ank-alignItems-center ank-justifyContent-center ank-width-48px ank-height-48px ank-borderRadius-12px ank-bg-accentColor ank-color-bgColor ank-fontWeight-900 ank-fontSize-0_92rem"
+    ],
+    "zBadgeAvailable": [
+      "ank-width-fitMINcontent ank-display-inlineMINflex ank-alignItems-center ank-minHeight-28px ank-paddingInline-10px ank-paddingBlock-4px ank-border-1px__solid__linkColor ank-borderRadius-999px ank-bg-bgColor ank-color-linkColor ank-fontSize-0_78rem ank-fontWeight-900"
+    ],
+    "zBadgeDevelopment": [
+      "ank-width-fitMINcontent ank-display-inlineMINflex ank-alignItems-center ank-minHeight-28px ank-paddingInline-10px ank-paddingBlock-4px ank-borderRadius-999px ank-bg-accentColor ank-color-bgColor ank-fontSize-0_78rem ank-fontWeight-900"
+    ],
+    "zPrimaryAction": [
+      "ank-display-inlineMINflex ank-alignItems-center ank-justifyContent-center ank-maxWidth-100per ank-minHeight-48px ank-boxSizing-borderMINbox ank-paddingInline-22px ank-paddingBlock-12px ank-border-1px__solid__linkColor ank-borderRadius-12px ank-bg-linkColor ank-color-bgColor ank-fontWeight-900 ank-textAlign-center ank-textDecoration-none ank-overflowWrap-anywhere ank-outlineFocus-3px__solid__accentColor ank-outlineOffsetFocus-4px"
+    ],
+    "zSecondaryAction": [
+      "ank-display-inlineMINflex ank-alignItems-center ank-justifyContent-center ank-maxWidth-100per ank-minHeight-48px ank-boxSizing-borderMINbox ank-paddingInline-22px ank-paddingBlock-12px ank-border-1px__solid__linkColor ank-borderRadius-12px ank-bg-bgColor ank-color-titleColor ank-fontWeight-900 ank-textAlign-center ank-textDecoration-none ank-overflowWrap-anywhere ank-outlineFocus-3px__solid__linkColor ank-outlineOffsetFocus-4px"
+    ],
+    "zTextLink": [
+      "ank-width-fitMINcontent ank-display-inlineMINflex ank-alignItems-center ank-minHeight-44px ank-marginTop-auto ank-color-linkColor ank-fontWeight-900 ank-textDecoration-none ank-outlineFocus-3px__solid__accentColor ank-outlineOffsetFocus-4px"
+    ],
+    "zMeta": [
+      "ank-m-0 ank-color-secondaryTextColor ank-fontSize-0_9rem ank-fontWeight-700 ank-lineHeight-1_5"
+    ],
+    "zInverseTitle": [
+      "ank-m-0 ank-color-bgColor ank-fontSize-2rem ank-fontSize-md-3_25rem ank-fontWeight-900 ank-lineHeight-1_06 ank-maxWidth-18ch"
+    ],
+    "zInverseText": [
+      "ank-m-0 ank-color-bgColor ank-fontSize-1rem ank-fontSize-md-1_12rem ank-lineHeight-1_65 ank-maxWidth-58rem"
+    ]
+  }
+}

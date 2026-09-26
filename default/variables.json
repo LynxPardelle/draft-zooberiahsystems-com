@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "pageId": "default",
+  "domain": "zooberiahsystems.com",
+  "variables": {
+    "ctaTargets": {
+      "consultingTechnologyWhatsApp": "https://wa.me/525522699563?text=Hola%2C%20ZooBeriah%20Systems.%20Me%20interesa%20conversar%20sobre%20consultor%C3%ADa%20tecnol%C3%B3gica%20para%20mi%20negocio.",
+      "consultingDataWhatsApp": "https://wa.me/525522699563?text=Hola%2C%20ZooBeriah%20Systems.%20Me%20interesa%20conversar%20sobre%20consultor%C3%ADa%20de%20datos%20para%20mi%20negocio.",
+      "consultingAiWhatsApp": "https://wa.me/525522699563?text=Hola%2C%20ZooBeriah%20Systems.%20Me%20interesa%20conversar%20sobre%20un%20proyecto%20de%20IA%20para%20mi%20negocio.",
+      "zooblogWhatsApp": "https://wa.me/525522699563?text=Hola%2C%20ZooBeriah%20Systems.%20Me%20interesa%20conversar%20sobre%20Zooblog%20para%20mi%20negocio.",
+      "generalWhatsApp": "https://wa.me/525522699563?text=Hola%2C%20ZooBeriah%20Systems.%20Me%20interesa%20conocer%20sus%20servicios%20de%20consultor%C3%ADa%20tecnol%C3%B3gica%2C%20datos%20e%20IA%20o%20una%20soluci%C3%B3n%20digital%20para%20mi%20negocio.%20%C2%BFPodemos%20conversar%20sobre%20mi%20proyecto%3F",
+      "zoolandingpagePlans": "https://zoolandingpage.com.mx/",
+      "zoositiowebPlans": "https://zoositioweb.com.mx/planes",
+      "roadmap2u": "https://roadmap2u.com"
+    }
+  }
+}
