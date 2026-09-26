@@ -13,7 +13,7 @@
         "href": "#main-content",
         "text": "",
         "ariaLabel": "",
-        "classes": "zooberiahSkipLink"
+        "classes": "zooberiahSkipLink ank-color-bgColor"
       }
     },
     {
@@ -54,7 +54,7 @@
           "mode": "top",
           "behavior": "auto"
         },
-        "classes": "zooberiahBrand"
+        "classes": "zooberiahBrand ank-color-titleColor"
       }
     },
     {
@@ -93,7 +93,7 @@
         "href": "/#consultoria",
         "text": "",
         "ariaLabel": "",
-        "classes": "zooberiahNavLink"
+        "classes": "zooberiahNavLink ank-color-textColor"
       }
     },
     {
@@ -104,7 +104,7 @@
         "href": "/#soluciones",
         "text": "",
         "ariaLabel": "",
-        "classes": "zooberiahNavLink"
+        "classes": "zooberiahNavLink ank-color-textColor"
       }
     },
     {
@@ -115,7 +115,7 @@
         "href": "/#aplicaciones",
         "text": "",
         "ariaLabel": "",
-        "classes": "zooberiahNavLink"
+        "classes": "zooberiahNavLink ank-color-textColor"
       }
     },
     {
@@ -126,7 +126,7 @@
         "href": "/#nosotros",
         "text": "",
         "ariaLabel": "",
-        "classes": "zooberiahNavLink"
+        "classes": "zooberiahNavLink ank-color-textColor"
       }
     },
     {
@@ -137,7 +137,7 @@
         "href": "/#contacto",
         "text": "",
         "ariaLabel": "",
-        "classes": "zooberiahPrimaryAction"
+        "classes": "zooberiahPrimaryAction ank-color-bgColor"
       }
     },
     {
@@ -171,7 +171,7 @@
         "dropdownConfig": {
           "ariaLabel": "",
           "buttonClasses": "zooberiahMobileTrigger",
-          "itemLinkClasses": "zooberiahMobileItem",
+          "itemLinkClasses": "zooberiahMobileItem ank-color-titleColor",
           "menuContainerClasses": "zooberiahMobileMenuContainer",
           "menuNavClasses": "zooberiahWrap",
           "menuListClasses": "zooberiahMobileMenuList",
@@ -200,7 +200,7 @@
       "config": {
         "tag": "footer",
         "id": "site-footer",
-        "classes": "zooberiahFooter",
+        "classes": "zooberiahFooter ank-color-HASHF6F4EE",
         "components": [
           "footerInner"
         ]
@@ -347,7 +347,7 @@
         "ariaLabel": "",
         "target": "_blank",
         "rel": "noopener noreferrer",
-        "classes": "zooberiahFooterActionLink"
+        "classes": "zooberiahFooterActionLink ank-color-HASH102D32"
       }
     },
     {

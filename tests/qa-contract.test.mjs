@@ -64,6 +64,27 @@ const collectKeys = (value) => {
   if (!isRecord(value)) return [];
   return [...Object.keys(value), ...Object.values(value).flatMap(collectKeys)];
 };
+const classTokens = (value) => String(value ?? '').split(/\s+/).filter(Boolean);
+const rgb = (hex) => {
+  const clean = hex.replace('#', '').slice(0, 6);
+  assert.match(clean, /^[0-9a-f]{6}$/i);
+  return [0, 2, 4].map((index) => Number.parseInt(clean.slice(index, index + 2), 16));
+};
+const luminance = (hex) => rgb(hex)
+  .map((value) => {
+    const channel = value / 255;
+    return channel <= 0.04045 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4;
+  })
+  .reduce((sum, value, index) => sum + value * [0.2126, 0.7152, 0.0722][index], 0);
+const contrast = (first, second) => {
+  const firstLuminance = luminance(first);
+  const secondLuminance = luminance(second);
+  return (Math.max(firstLuminance, secondLuminance) + 0.05) / (Math.min(firstLuminance, secondLuminance) + 0.05);
+};
+const assertContrast = (label, foreground, background, minimum) => {
+  const ratio = contrast(foreground, background);
+  assert.ok(ratio >= minimum, `${label}: ${ratio.toFixed(2)}:1 < ${minimum}:1`);
+};
 const localizedSpanish = (value) => typeof value === 'string' ? value : value?.es;
 const valueAtPath = (value, path) => path.split('.').reduce((current, key) => current?.[key], value);
 const robotsTokens = (value) => new Set(localizedSpanish(value).split(',').map((token) => token.trim()));
@@ -303,4 +324,98 @@ test('QA-008 excludes unsupported claims, placeholders and personal analytics me
   assert.equal(metadata.includes(PHONE), false);
   assert.equal(metadata.includes(DISPLAY_PHONE), false);
   assert.doesNotMatch(metadata, /@|whatsappMessage|phone|email|nombre|correo/i);
+});
+
+test('QA-009 keeps action and footer colors as direct utilities', () => {
+  for (const [componentsPath, expected] of [
+    ['components.json', {
+      skipToMainLink: 'ank-color-bgColor',
+      headerTalkLink: 'ank-color-bgColor',
+      siteFooter: 'ank-color-HASHF6F4EE',
+      footerWhatsappLink: 'ank-color-HASH102D32',
+    }],
+    ['default/components.json', {
+      heroPrimaryAction: 'ank-color-bgColor',
+      heroSecondaryAction: 'ank-color-titleColor',
+      technologyLink: 'ank-color-titleColor',
+      dataLink: 'ank-color-titleColor',
+      aiLink: 'ank-color-titleColor',
+      zoolandingpageLink: 'ank-color-titleColor',
+      zoositiowebLink: 'ank-color-titleColor',
+      zooblogLink: 'ank-color-titleColor',
+      roadmapLink: 'ank-color-titleColor',
+      contactAction: 'ank-color-bgColor',
+    }],
+    ['not-found/components.json', {
+      notFoundHome: 'ank-color-bgColor',
+      notFoundContact: 'ank-color-linkColor',
+    }],
+  ]) {
+    const components = readJson(componentsPath).components;
+    for (const [id, color] of Object.entries(expected)) {
+      const component = components.find((candidate) => candidate.id === id);
+      assert.ok(classTokens(component?.config?.classes).includes(color), `${componentsPath}:${id} needs ${color}`);
+    }
+  }
+
+  const mobileNav = readJson('components.json').components.find(({ id }) => id === 'headerMobileNav');
+  const mobileDirect = new Set(classTokens(mobileNav.config.dropdownConfig.itemLinkClasses));
+  assert.ok(mobileDirect.has('ank-color-titleColor'), 'mobile menu links need direct foreground color');
+});
+
+test('QA-010 keeps every configured foreground pair WCAG-safe', () => {
+  const site = readJson('site-config.json');
+  const shared = readJson('angora-combos.json');
+  const home = readJson('default/angora-combos.json');
+  const comboText = collectStrings([shared.combos, home.combos]).join(' ');
+  assert.doesNotMatch(comboText, /\bank-color-HASH[0-9a-f]+\b/i, 'arbitrary text colors compile empty in combos');
+  assert.ok(classTokens(shared.combos.zooberiahFooter.join(' ')).includes('ank-color-white'));
+  assert.ok(classTokens(shared.combos.zooberiahFooterText.join(' ')).includes('ank-color-white'));
+
+  for (const [mode, palette] of Object.entries(site.site.theme.palettes)) {
+    for (const [label, foreground, background, minimum] of [
+      ['header primary', palette.bgColor, palette.accentColor, 4.5],
+      ['page primary', palette.bgColor, palette.linkColor, 4.5],
+      ['text link/page', palette.linkColor, palette.bgColor, 4.5],
+      ['text link/card', palette.linkColor, palette.secondaryBgColor, 4.5],
+      ['secondary action', palette.titleColor, palette.bgColor, 4.5],
+      ['mobile icon', palette.titleColor, palette.secondaryBgColor, 3],
+      ['mobile border', palette.accentColor, palette.bgColor, 3],
+      ['focus ring', palette.accentColor, palette.bgColor, 3],
+      ['development badge', palette.bgColor, palette.accentColor, 4.5],
+      ['warning action', palette.onWarningColor, palette.warningColor, 4.5],
+    ]) assertContrast(`${mode} ${label}`, foreground, background, minimum);
+  }
+  assertContrast('footer text', '#FFFFFF', '#102D32', 4.5);
+});
+
+test('QA-011 keeps controls identifiable and tablet layouts readable', () => {
+  const shared = readJson('angora-combos.json').combos;
+  const homeComponents = readJson('default/components.json').components;
+  const skip = new Set(classTokens(shared.zooberiahSkipLink.join(' ')));
+  const menu = new Set(classTokens(shared.zooberiahMobileTrigger.join(' ')));
+  assert.ok(skip.has('ank-outlineFocus-3px__solid__titleColor'));
+  assert.ok(menu.has('ank-border-1px__solid__accentColor'));
+
+  for (const id of ['technologyLink', 'dataLink', 'aiLink', 'zoolandingpageLink', 'zoositiowebLink', 'zooblogLink', 'roadmapLink']) {
+    const link = homeComponents.find((component) => component.id === id);
+    const classes = new Set(classTokens(link?.config?.classes));
+    const actionId = id.replace(/Link$/, 'Action');
+    const action = homeComponents.find((component) => component.id === actionId);
+    assert.ok(classes.has('zSecondaryAction'), `${id} must look like a secondary action`);
+    assert.ok(classes.has('ank-color-titleColor'), `${id} needs a direct foreground color`);
+    assert.ok(classTokens(action?.config?.classes).includes('zCardAction'), `${actionId} must align with sibling card actions`);
+    assert.deepEqual(action?.config?.components, [id], `${actionId} must wrap ${id}`);
+  }
+
+  for (const id of ['aboutInner', 'faqInner']) {
+    const layout = homeComponents.find((component) => component.id === id)?.config?.classes ?? '';
+    assert.match(layout, /ank-gridTemplateColumns-lg-/);
+    assert.doesNotMatch(layout, /ank-gridTemplateColumns-md-/);
+  }
+
+  const faq = homeComponents.find((component) => component.id === 'faqAccordion');
+  assert.equal(faq?.config?.defaultItemButtonConfig?.icon, 'expand_more');
+  assert.match(faq?.config?.defaultItemButtonConfig?.classes ?? '', /ank-justifyContent-spaceMINbetween/);
+  assert.match(faq?.config?.defaultItemIconIsExpandedClasses ?? '', /ank-tr-rotateSD180degED/);
 });
