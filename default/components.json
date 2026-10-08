@@ -113,7 +113,7 @@
         "href": "#contacto",
         "text": "",
         "ariaLabel": "",
-        "classes": "zPrimaryAction"
+        "classes": "zPrimaryAction ank-color-bgColor"
       }
     },
     {
@@ -124,7 +124,7 @@
         "href": "#consultoria",
         "text": "",
         "ariaLabel": "",
-        "classes": "zSecondaryAction"
+        "classes": "zSecondaryAction ank-color-titleColor"
       }
     },
     {
@@ -341,7 +341,7 @@
           "technologyDescription",
           "technologyNeedsLabel",
           "technologyNeeds",
-          "technologyLink"
+          "technologyAction"
         ]
       }
     },
@@ -406,7 +406,18 @@
         "ariaLabel": "",
         "target": "_blank",
         "rel": "noopener noreferrer",
-        "classes": "zTextLink"
+        "classes": "zSecondaryAction ank-color-titleColor"
+      }
+    },
+    {
+      "id": "technologyAction",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zCardAction",
+        "components": [
+          "technologyLink"
+        ]
       }
     },
     {
@@ -421,7 +432,7 @@
           "dataDescription",
           "dataNeedsLabel",
           "dataNeeds",
-          "dataLink"
+          "dataAction"
         ]
       }
     },
@@ -486,7 +497,18 @@
         "ariaLabel": "",
         "target": "_blank",
         "rel": "noopener noreferrer",
-        "classes": "zTextLink"
+        "classes": "zSecondaryAction ank-color-titleColor"
+      }
+    },
+    {
+      "id": "dataAction",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zCardAction",
+        "components": [
+          "dataLink"
+        ]
       }
     },
     {
@@ -501,7 +523,7 @@
           "aiDescription",
           "aiNeedsLabel",
           "aiNeeds",
-          "aiLink"
+          "aiAction"
         ]
       }
     },
@@ -566,7 +588,18 @@
         "ariaLabel": "",
         "target": "_blank",
         "rel": "noopener noreferrer",
-        "classes": "zTextLink"
+        "classes": "zSecondaryAction ank-color-titleColor"
+      }
+    },
+    {
+      "id": "aiAction",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zCardAction",
+        "components": [
+          "aiLink"
+        ]
       }
     },
     {
@@ -661,7 +694,7 @@
           "zoolandingpageTitle",
           "zoolandingpageDescription",
           "zoolandingpageNote",
-          "zoolandingpageLink"
+          "zoolandingpageAction"
         ]
       }
     },
@@ -716,7 +749,18 @@
         "ariaLabel": "",
         "target": "_blank",
         "rel": "noopener noreferrer",
-        "classes": "zTextLink"
+        "classes": "zSecondaryAction ank-color-titleColor"
+      }
+    },
+    {
+      "id": "zoolandingpageAction",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zCardAction",
+        "components": [
+          "zoolandingpageLink"
+        ]
       }
     },
     {
@@ -730,7 +774,7 @@
           "zoositiowebTitle",
           "zoositiowebDescription",
           "zoositiowebNote",
-          "zoositiowebLink"
+          "zoositiowebAction"
         ]
       }
     },
@@ -785,7 +829,18 @@
         "ariaLabel": "",
         "target": "_blank",
         "rel": "noopener noreferrer",
-        "classes": "zTextLink"
+        "classes": "zSecondaryAction ank-color-titleColor"
+      }
+    },
+    {
+      "id": "zoositiowebAction",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zCardAction",
+        "components": [
+          "zoositiowebLink"
+        ]
       }
     },
     {
@@ -798,7 +853,7 @@
           "zooblogStatus",
           "zooblogTitle",
           "zooblogDescription",
-          "zooblogLink"
+          "zooblogAction"
         ]
       }
     },
@@ -843,7 +898,18 @@
         "ariaLabel": "",
         "target": "_blank",
         "rel": "noopener noreferrer",
-        "classes": "zTextLink"
+        "classes": "zSecondaryAction ank-color-titleColor"
+      }
+    },
+    {
+      "id": "zooblogAction",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zCardAction",
+        "components": [
+          "zooblogLink"
+        ]
       }
     },
     {
@@ -977,7 +1043,7 @@
           "roadmapMark",
           "roadmapTitle",
           "roadmapDescription",
-          "roadmapLink"
+          "roadmapAction"
         ]
       }
     },
@@ -1022,7 +1088,18 @@
         "ariaLabel": "",
         "target": "_blank",
         "rel": "noopener noreferrer",
-        "classes": "zTextLink"
+        "classes": "zSecondaryAction ank-color-titleColor"
+      }
+    },
+    {
+      "id": "roadmapAction",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zCardAction",
+        "components": [
+          "roadmapLink"
+        ]
       }
     },
     {
@@ -1182,7 +1259,7 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-0_75fr__1_25fr ank-gap-32px ank-gap-md-72px ank-alignItems-start",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-lg-0_75fr__1_25fr ank-gap-32px ank-gap-lg-72px ank-alignItems-start",
         "components": [
           "aboutHeading",
           "aboutCopy"
@@ -1292,7 +1369,7 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-0_72fr__1_28fr ank-gap-32px ank-gap-md-72px ank-alignItems-start",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-lg-0_72fr__1_28fr ank-gap-32px ank-gap-lg-72px ank-alignItems-start",
         "components": [
           "faqHeading",
           "faqAccordion"
@@ -1356,8 +1433,12 @@
         "containerClasses": "ank-display-flex ank-flexDirection-column ank-gap-10px",
         "defaultItemContainerClasses": "ank-border-1px__solid__linkColor ank-borderRadius-12px ank-bg-secondaryBgColor ank-overflow-hidden",
         "defaultItemButtonConfig": {
-          "classes": "ank-width-100per ank-minHeight-56px ank-boxSizing-borderMINbox ank-textAlign-left ank-paddingInline-18px ank-paddingBlock-16px ank-bg-transparent ank-color-titleColor ank-border-0 ank-fontSize-1rem ank-fontWeight-900 ank-lineHeight-1_4 ank-cursor-pointer ank-outlineFocus-3px__solid__linkColor ank-outlineOffsetFocus-MIN3px"
+          "classes": "ank-width-100per ank-minHeight-56px ank-boxSizing-borderMINbox ank-display-flex ank-alignItems-center ank-justifyContent-spaceMINbetween ank-gap-16px ank-textAlign-left ank-paddingInline-18px ank-paddingBlock-16px ank-bg-transparent ank-color-titleColor ank-border-0 ank-fontSize-1rem ank-fontWeight-900 ank-lineHeight-1_4 ank-cursor-pointer ank-outlineFocus-3px__solid__linkColor ank-outlineOffsetFocus-MIN3px",
+          "icon": "expand_more",
+          "iconPosition": "after",
+          "iconClasses": "ank-flexShrink-0 ank-width-24px ank-height-24px"
         },
+        "defaultItemIconIsExpandedClasses": "ank-tr-rotateSD180degED",
         "defaultItemPanelClasses": "ank-paddingInline-18px ank-paddingBottom-18px ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_65"
       }
     },
@@ -1431,7 +1512,7 @@
         "ariaLabel": "",
         "target": "_blank",
         "rel": "noopener noreferrer",
-        "classes": "zPrimaryAction"
+        "classes": "zPrimaryAction ank-color-bgColor"
       }
     },
     {

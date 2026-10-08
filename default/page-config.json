@@ -10,7 +10,7 @@
   ],
   "modalRootIds": [],
   "metadata": {
-    "status": "test-only-draft",
+    "status": "production-ready",
     "routePurpose": "institutional-consulting-one-page"
   },
   "seo": {
@@ -20,8 +20,8 @@
     "description": {
       "es": "Consultoría tecnológica, de datos e IA para negocios locales. Definimos acciones y desarrollamos soluciones digitales. Atención remota desde CDMX."
     },
-    "canonical": "https://test.zoolandingpage.com.mx/?draftDomain=zooberiahsystems.com",
-    "robots": "noindex,nofollow",
+    "canonical": "https://zooberiahsystems.com/",
+    "robots": "index,follow",
     "keywords": {
       "es": [
         "consultoría tecnológica",

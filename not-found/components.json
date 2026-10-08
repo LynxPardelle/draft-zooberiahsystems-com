@@ -133,7 +133,7 @@
           "mode": "top",
           "behavior": "auto"
         },
-        "classes": "zooberiahPrimaryAction"
+        "classes": "zooberiahPrimaryAction ank-color-bgColor"
       }
     },
     {
@@ -147,7 +147,7 @@
         "ariaLabel": "",
         "target": "_blank",
         "rel": "noopener noreferrer",
-        "classes": "zooberiahSecondaryAction"
+        "classes": "zooberiahSecondaryAction ank-color-linkColor"
       }
     },
     {
