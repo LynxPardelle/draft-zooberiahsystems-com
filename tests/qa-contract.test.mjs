@@ -107,7 +107,7 @@ test('QA-001 declares only the approved Spanish home and 404 routes', () => {
   assert.equal(site.domain, DOMAIN);
   assert.equal(site.defaultPageId, 'default');
   assert.equal(site.notFoundPageId, 'not-found');
-  assert.deepEqual(site.aliases, []);
+  assert.deepEqual(site.aliases, ['www.zooberiahsystems.com']);
   assert.deepEqual(site.routes.map(({ path, pageId }) => ({ path, pageId })), ROUTES);
   assert.equal(site.site?.i18n?.defaultLanguage, 'es');
   assert.deepEqual(site.site?.i18n?.supportedLanguages?.map(({ code, label }) => ({ code, label })), [{ code: 'es', label: 'ES' }]);
@@ -285,19 +285,23 @@ test('QA-006 keeps page analytics exact and the 404 free of section or scroll tr
   assert.equal(notFoundInstructions.some((value) => /section_view|scroll_depth|nav_click/.test(value)), false);
 });
 
-test('QA-007 is test-only, declares route canonicals and uses route-appropriate robots', () => {
+test('QA-007 is production-ready, declares route canonicals and uses route-appropriate robots', () => {
   const site = readJson('site-config.json');
   const home = readJson('default/page-config.json');
   const notFound = readJson('not-found/page-config.json');
   for (const page of [site.site?.seo?.robots, home.seo?.robots]) {
     const tokens = robotsTokens(page);
-    assert.ok(tokens.has('noindex'));
-    assert.ok(tokens.has('nofollow'));
+    assert.ok(tokens.has('index'));
+    assert.ok(tokens.has('follow'));
   }
   assert.deepEqual(robotsTokens(notFound.seo?.robots), new Set(['noindex', 'follow']));
-  assert.equal(Object.hasOwn(site.site?.seo ?? {}, 'canonicalOrigin'), false);
-  assert.equal(home.seo?.canonical, 'https://test.zoolandingpage.com.mx/?draftDomain=zooberiahsystems.com');
-  assert.equal(notFound.seo?.canonical, 'https://test.zoolandingpage.com.mx/404?draftDomain=zooberiahsystems.com');
+  assert.equal(site.site?.seo?.canonicalOrigin, 'https://zooberiahsystems.com');
+  assert.equal(site.site?.seo?.enforceCanonicalHost, true);
+  assert.equal(site.site?.seo?.forceHttps, true);
+  assert.equal(home.seo?.canonical, 'https://zooberiahsystems.com/');
+  assert.equal(notFound.seo?.canonical, 'https://zooberiahsystems.com/404');
+  assert.equal(home.metadata?.status, 'production-ready');
+  assert.equal(notFound.metadata?.status, 'production-ready');
   assert.equal(Object.hasOwn(home, 'structuredData'), false);
   assert.equal(Object.hasOwn(notFound, 'structuredData'), false);
   assert.ok(site.sitemap?.excludePaths?.includes('/404'));
@@ -305,8 +309,9 @@ test('QA-007 is test-only, declares route canonicals and uses route-appropriate 
   const config = readJson('draft-repo.config.json');
   assert.equal(config.branches?.test?.deploys, true);
   assert.equal(config.branches?.test?.environment, 'test');
-  assert.equal(config.branches?.main?.deploys, false);
-  assert.deepEqual(Object.keys(config.githubVariables ?? {}), ['test']);
+  assert.equal(config.branches?.main?.deploys, true);
+  assert.equal(config.branches?.main?.environment, 'production');
+  assert.deepEqual(Object.keys(config.githubVariables ?? {}), ['test', 'production']);
 });
 
 test('QA-008 excludes unsupported claims, placeholders and personal analytics metadata', () => {

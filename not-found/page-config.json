@@ -10,7 +10,7 @@
   ],
   "modalRootIds": [],
   "metadata": {
-    "status": "test-only-draft",
+    "status": "production-ready",
     "routePurpose": "not-found-recovery"
   },
   "seo": {
@@ -20,7 +20,7 @@
     "description": {
       "es": "La página que buscas no está disponible. Vuelve al inicio de ZooBeriah Systems o escríbenos por WhatsApp."
     },
-    "canonical": "https://test.zoolandingpage.com.mx/404?draftDomain=zooberiahsystems.com",
+    "canonical": "https://zooberiahsystems.com/404",
     "robots": "noindex,follow",
     "openGraph": {
       "title": {

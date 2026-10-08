@@ -17,7 +17,7 @@ Shared procedures are routed through the Zoolandingpage hub. Start with [AGENTS.
 Critical repository-specific safety, deployment, and rollback rules remain local.
 <!-- zoolanding-hub-routing:end -->
 
-Sanitized, Spanish source for the test-only ZooBeriah Systems consulting website draft.
+Sanitized, Spanish source for the ZooBeriah Systems consulting website.
 
 ## Start Here
 
@@ -33,7 +33,8 @@ Read only the task-specific route in `AGENTS.md`; do not duplicate shared hub pr
 
 - Routes: `/` and `/404`
 - Language: Spanish (`es`)
-- Environment: `test` only; `main` does not deploy
+- Environments: protected `test` and `production` promotion
 - Shared preview: `https://test.zoolandingpage.com.mx/?draftDomain=zooberiahsystems.com`
+- Production canonical: `https://zooberiahsystems.com`
 
-The public domain, production canonical URL, aliases, DNS, Google measurement destination, and production release are intentionally unconfigured. Public asset URLs remain empty until the approved upload workflow returns verified HTTPS URLs.
+The production site uses the apex as canonical and redirects `www`. Analytics remain consented and first-party; no Google measurement destination is configured. Public asset URLs remain empty until the approved upload workflow returns verified HTTPS URLs.
