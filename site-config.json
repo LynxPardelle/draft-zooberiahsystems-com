@@ -1,7 +1,9 @@
 {
   "version": 1,
   "domain": "zooberiahsystems.com",
-  "aliases": [],
+  "aliases": [
+    "www.zooberiahsystems.com"
+  ],
   "defaultPageId": "default",
   "routes": [
     {
@@ -71,6 +73,9 @@
       "siteName": "ZooBeriah Systems",
       "title": "ZooBeriah Systems | Consultoría tecnológica, datos e IA",
       "description": "Consultoría tecnológica, de datos e IA para negocios locales. Definimos acciones y desarrollamos soluciones digitales. Atención remota desde CDMX.",
+      "canonicalOrigin": "https://zooberiahsystems.com",
+      "enforceCanonicalHost": true,
+      "forceHttps": true,
       "openGraph": {
         "type": "website",
         "site_name": "ZooBeriah Systems"
@@ -87,7 +92,7 @@
           "ZooBeriah Systems"
         ]
       },
-      "robots": "noindex,nofollow"
+      "robots": "index,follow"
     },
     "i18n": {
       "defaultLanguage": "es",
