@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "blog",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "sharedBlogMain",
+    "siteFooter"
+  ],
+  "seo": {
+    "title": "Blog de ZooBeriah Systems",
+    "description": "Guías y comparativas sobre sitios web, campañas, datos y aplicaciones para negocios.",
+    "canonical": "https://zooberiahsystems.com/blog"
+  }
+}

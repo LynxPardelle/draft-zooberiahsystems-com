@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "blog-article",
+  "components": [
+    {
+      "id": "sharedArticleMain",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "id": "main-content",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-mx-auto ank-display-flex ank-flexDirection-column ank-gap-24px ank-px-18px ank-py-48px",
+        "components": [
+          "sharedArticleBack",
+          "sharedArticleContent"
+        ]
+      }
+    },
+    {
+      "id": "sharedArticleBack",
+      "type": "link",
+      "config": {
+        "href": "/blog",
+        "text": "Volver al blog",
+        "classes": "zooberiahNavLink ank-color-titleColor ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "sharedArticleContent",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px ank-maxWidth-820px ank-width-100per ank-mx-auto",
+        "components": [
+          "sharedArticleTitle",
+          "sharedArticleSummary",
+          "sharedArticleCover",
+          "sharedArticleBody"
+        ]
+      }
+    },
+    {
+      "id": "sharedArticleTitle",
+      "type": "text",
+      "config": {
+        "tag": "h1",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-42px ank-lineHeight-1_1"
+      },
+      "valueInstructions": "set:config.text,var,contentHub.currentArticle.title"
+    },
+    {
+      "id": "sharedArticleSummary",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-textColor ank-fontSize-18px"
+      },
+      "valueInstructions": "set:config.text,var,contentHub.currentArticle.summary"
+    },
+    {
+      "id": "sharedArticleCover",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "",
+        "alt": "",
+        "width": 1280,
+        "height": 720,
+        "loading": "eager",
+        "classes": "ank-width-100per ank-height-auto ank-display-block ank-borderRadius-12px",
+        "styles": {
+          "width": "100%",
+          "height": "auto",
+          "aspectRatio": "16 / 9",
+          "objectFit": "cover"
+        }
+      },
+      "condition": "all:var,contentHub.currentArticle.imageSrc",
+      "valueInstructions": "set:config.src,var,contentHub.currentArticle.imageSrc;set:config.alt,var,contentHub.currentArticle.imageAlt"
+    },
+    {
+      "id": "sharedArticleBody",
+      "type": "text",
+      "config": {
+        "tag": "div",
+        "html": "",
+        "classes": "zoositeArticleRichText ank-color-textColor ank-fontSize-17px ank-lineHeight-1_7",
+        "styles": {
+          "overflowWrap": "anywhere"
+        }
+      },
+      "valueInstructions": "set:config.html,richTextHtmlOr,articleContent,"
+    }
+  ]
+}
