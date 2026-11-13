@@ -12,6 +12,16 @@
       "label": "Inicio"
     },
     {
+      "path": "/blog",
+      "pageId": "blog",
+      "label": "Blog"
+    },
+    {
+      "path": "/blog/:categorySlug/:articleSlug",
+      "pageId": "blog-article",
+      "label": "Artículo"
+    },
+    {
       "path": "/404",
       "pageId": "not-found",
       "label": "Página no encontrada"
@@ -149,6 +159,19 @@
     }
   },
   "runtime": {
+    "contentHubs": [
+      {
+        "hubId": "zoosite-main",
+        "ownerDraftDomain": "zoositioweb.com.mx",
+        "source": "authorized",
+        "defaultLocale": "es",
+        "locales": ["es"],
+        "routeBasePath": "/blog",
+        "listPath": "/blog",
+        "articlePathPattern": "/blog/:categorySlug/:articleSlug",
+        "canonicalMode": "noindex-shared"
+      }
+    ],
     "localStorage": {
       "theme": "zooberiah-theme",
       "language": "zooberiah-language",

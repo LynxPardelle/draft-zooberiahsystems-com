@@ -81,6 +81,7 @@
           "headerConsultingLink",
           "headerSolutionsLink",
           "headerApplicationsLink",
+          "headerBlogLink",
           "headerAboutLink"
         ]
       }
@@ -115,6 +116,15 @@
         "href": "/#aplicaciones",
         "text": "",
         "ariaLabel": "",
+        "classes": "zooberiahNavLink ank-color-textColor"
+      }
+    },
+    {
+      "id": "headerBlogLink",
+      "type": "link",
+      "config": {
+        "href": "/blog",
+        "text": "Blog",
         "classes": "zooberiahNavLink ank-color-textColor"
       }
     },
@@ -279,6 +289,7 @@
           "footerConsultingLink",
           "footerSolutionsLink",
           "footerApplicationsLink",
+          "footerBlogLink",
           "footerAboutLink"
         ]
       }
@@ -310,6 +321,15 @@
       "config": {
         "href": "/#aplicaciones",
         "text": "",
+        "classes": "zooberiahFooterLink"
+      }
+    },
+    {
+      "id": "footerBlogLink",
+      "type": "link",
+      "config": {
+        "href": "/blog",
+        "text": "Blog",
         "classes": "zooberiahFooterLink"
       }
     },
