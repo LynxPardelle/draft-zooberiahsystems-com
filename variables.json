@@ -30,6 +30,13 @@
         "ariaLabel": "Ir a Aplicaciones"
       },
       {
+        "id": "blog",
+        "value": "/blog",
+        "href": "/blog",
+        "label": "Blog",
+        "ariaLabel": "Ir al blog"
+      },
+      {
         "id": "nosotros",
         "value": "/#nosotros",
         "href": "/#nosotros",

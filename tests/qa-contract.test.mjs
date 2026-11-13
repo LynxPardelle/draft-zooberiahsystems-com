@@ -7,9 +7,11 @@ const PHONE = '525522699563';
 const DISPLAY_PHONE = '+52 55 2269 9563';
 const ROUTES = [
   { path: '/', pageId: 'default' },
+  { path: '/blog', pageId: 'blog' },
+  { path: '/blog/:categorySlug/:articleSlug', pageId: 'blog-article' },
   { path: '/404', pageId: 'not-found' },
 ];
-const PAGE_IDS = ROUTES.map(({ pageId }) => pageId);
+const PAGE_IDS = ['default', 'not-found'];
 const REQUIRED_PAGE_FILES = [
   'page-config.json',
   'components.json',
@@ -102,13 +104,16 @@ const allComponents = () => [
   ...PAGE_IDS.flatMap((pageId) => readJson(`${pageId}/components.json`).components),
 ];
 
-test('QA-001 declares only the approved Spanish home and 404 routes', () => {
+test('QA-001 declares the Spanish home, public blog and 404 routes', () => {
   const site = readJson('site-config.json');
   assert.equal(site.domain, DOMAIN);
   assert.equal(site.defaultPageId, 'default');
   assert.equal(site.notFoundPageId, 'not-found');
   assert.deepEqual(site.aliases, ['www.zooberiahsystems.com']);
   assert.deepEqual(site.routes.map(({ path, pageId }) => ({ path, pageId })), ROUTES);
+  assert.equal(site.runtime.contentHubs[0].ownerDraftDomain, 'zoositioweb.com.mx');
+  assert.equal(site.runtime.contentHubs[0].source, 'authorized');
+  assert.equal(site.runtime.contentHubs[0].canonicalMode, 'noindex-shared');
   assert.equal(site.site?.i18n?.defaultLanguage, 'es');
   assert.deepEqual(site.site?.i18n?.supportedLanguages?.map(({ code, label }) => ({ code, label })), [{ code: 'es', label: 'ES' }]);
 

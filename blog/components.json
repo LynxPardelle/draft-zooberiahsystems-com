@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "blog",
+  "components": [
+    {
+      "id": "sharedBlogMain",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "id": "main-content",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-mx-auto ank-display-flex ank-flexDirection-column ank-gap-24px ank-px-18px ank-py-48px",
+        "components": [
+          "sharedBlogTitle",
+          "sharedBlogIntro",
+          "sharedBlogCards",
+          "sharedBlogEmpty"
+        ]
+      }
+    },
+    {
+      "id": "sharedBlogTitle",
+      "type": "text",
+      "config": {
+        "tag": "h1",
+        "text": "Blog de ZooBeriah Systems",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-42px ank-lineHeight-1_1"
+      }
+    },
+    {
+      "id": "sharedBlogIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Guías y comparativas sobre sitios web, campañas, datos y aplicaciones para negocios.",
+        "classes": "ank-m-0 ank-color-textColor ank-fontSize-18px ank-maxWidth-700px"
+      }
+    },
+    {
+      "id": "sharedBlogCards",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "ariaLabel": "Artículos publicados",
+        "classes": "ank-display-grid ank-gap-18px",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 280px), 1fr))"
+        },
+        "components": []
+      },
+      "loopConfig": {
+        "source": "var",
+        "path": "contentHub.publicArticles.items",
+        "templateId": "sharedBlogCard",
+        "idPrefix": "sharedBlogCard",
+        "bindings": [
+          {
+            "to": "config.title",
+            "sources": [
+              "title"
+            ]
+          },
+          {
+            "to": "config.description",
+            "sources": [
+              "summary"
+            ]
+          },
+          {
+            "to": "config.href",
+            "sources": [
+              "path"
+            ]
+          },
+          {
+            "to": "config.imageSrc",
+            "sources": [
+              "imageSrc"
+            ]
+          },
+          {
+            "to": "config.imageAlt",
+            "sources": [
+              "imageAlt"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "sharedBlogCard",
+      "type": "generic-card",
+      "config": {
+        "variant": "feature",
+        "title": "",
+        "description": "",
+        "href": "",
+        "linkLabel": "Leer artículo",
+        "imageSrc": "",
+        "imageAlt": "",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-12px ank-bg-secondaryBgColor ank-borderRadius-12px ank-p-16px ank-width-100per",
+        "imageContainerClasses": "ank-height-180px ank-overflow-hidden ank-borderRadius-8px",
+        "imageClasses": "ank-width-100per ank-height-100per ank-objectFit-cover",
+        "featureTitleClasses": "ank-color-titleColor ank-fontSize-22px ank-m-0",
+        "featureDescriptionClasses": "ank-color-textColor ank-fontSize-16px ank-lineHeight-1_5",
+        "linkClasses": "zooberiahNavLink ank-color-titleColor ank-fontWeight-800"
+      }
+    },
+    {
+      "id": "sharedBlogEmpty",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Todavía no hay artículos publicados en esta sección.",
+        "classes": "ank-color-textColor ank-m-0"
+      },
+      "condition": "all:varLenEq,contentHub.publicArticles.items,0"
+    }
+  ]
+}

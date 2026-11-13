@@ -31,7 +31,7 @@ Read only the task-specific route in `AGENTS.md`; do not duplicate shared hub pr
 
 ## Scope And Preview
 
-- Routes: `/` and `/404`
+- Routes: `/`, `/blog`, `/blog/:categorySlug/:articleSlug`, and `/404`
 - Language: Spanish (`es`)
 - Environments: protected `test` and `production` promotion
 - Shared preview: `https://test.zoolandingpage.com.mx/?draftDomain=zooberiahsystems.com`
