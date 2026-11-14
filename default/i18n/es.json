@@ -79,7 +79,8 @@
           "title": "Zootiendadigital",
           "description": "Estamos desarrollando una solución para dar forma a la venta en línea de los negocios."
         },
-        "closing": "Consulta los planes en los sitios de cada producto o escríbenos para una cotización por proyecto."
+        "closing": "Consulta los planes en los sitios de cada producto o escríbenos para una cotización por proyecto.",
+        "productsLink": "Ver nuestros productos"
       },
       "applications": {
         "eyebrow": "Aplicaciones propias",

@@ -81,6 +81,7 @@
           "headerConsultingLink",
           "headerSolutionsLink",
           "headerApplicationsLink",
+          "headerProductsLink",
           "headerBlogLink",
           "headerAboutLink"
         ]
@@ -116,6 +117,20 @@
         "href": "/#aplicaciones",
         "text": "",
         "ariaLabel": "",
+        "classes": "zooberiahNavLink ank-color-textColor"
+      }
+    },
+    {
+      "id": "headerProductsLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,nav.products",
+      "config": {
+        "href": "/productos",
+        "text": "",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "auto"
+        },
         "classes": "zooberiahNavLink ank-color-textColor"
       }
     },
@@ -289,6 +304,7 @@
           "footerConsultingLink",
           "footerSolutionsLink",
           "footerApplicationsLink",
+          "footerProductsLink",
           "footerBlogLink",
           "footerAboutLink"
         ]
@@ -321,6 +337,20 @@
       "config": {
         "href": "/#aplicaciones",
         "text": "",
+        "classes": "zooberiahFooterLink"
+      }
+    },
+    {
+      "id": "footerProductsLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,nav.products",
+      "config": {
+        "href": "/productos",
+        "text": "",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "auto"
+        },
         "classes": "zooberiahFooterLink"
       }
     },

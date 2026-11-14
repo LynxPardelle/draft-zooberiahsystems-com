@@ -12,6 +12,11 @@
       "label": "Inicio"
     },
     {
+      "path": "/productos",
+      "pageId": "productos",
+      "label": "Productos"
+    },
+    {
       "path": "/blog",
       "pageId": "blog",
       "label": "Blog"

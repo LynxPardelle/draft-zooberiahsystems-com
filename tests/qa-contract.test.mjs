@@ -7,6 +7,7 @@ const PHONE = '525522699563';
 const DISPLAY_PHONE = '+52 55 2269 9563';
 const ROUTES = [
   { path: '/', pageId: 'default' },
+  { path: '/productos', pageId: 'productos' },
   { path: '/blog', pageId: 'blog' },
   { path: '/blog/:categorySlug/:articleSlug', pageId: 'blog-article' },
   { path: '/404', pageId: 'not-found' },
@@ -104,7 +105,7 @@ const allComponents = () => [
   ...PAGE_IDS.flatMap((pageId) => readJson(`${pageId}/components.json`).components),
 ];
 
-test('QA-001 declares the Spanish home, public blog and 404 routes', () => {
+test('QA-001 declares the Spanish home, products, public blog and 404 routes', () => {
   const site = readJson('site-config.json');
   assert.equal(site.domain, DOMAIN);
   assert.equal(site.defaultPageId, 'default');
@@ -150,6 +151,40 @@ test('QA-001 declares the Spanish home, public blog and 404 routes', () => {
       assert.deepEqual(homeLink?.config?.scrollRestoration, { mode: 'top', behavior: 'auto' });
     }
   }
+});
+
+test('the product catalog is discoverable and links to the public products', () => {
+  const site = readJson('site-config.json');
+  const page = readJson('productos/page-config.json');
+  const components = readJson('productos/components.json').components;
+  const catalog = readJson('productos/i18n/es.json').dictionary.page.catalog;
+  const navigation = readJson('variables.json').variables.navigation;
+  const home = readJson('default/components.json').components;
+  const shared = readJson('components.json').components;
+
+  assert.equal(page.seo.canonical, 'https://zooberiahsystems.com/productos');
+  assert.equal(page.seo.robots ?? site.site.seo.robots, 'index,follow');
+  assert.ok(!site.sitemap.excludePaths.includes('/productos'));
+  assert.ok(navigation.some(({ href }) => href === '/productos'));
+  for (const id of ['headerNav', 'footerNav']) {
+    const nav = shared.find((component) => component.id === id);
+    assert.ok(nav.config.components.some((linkId) =>
+      shared.some((link) => link.id === linkId && link.config.href === '/productos')));
+  }
+  assert.ok(home.some(({ config }) => config?.href === '/productos'));
+  assert.equal(components.filter(({ config }) => config?.tag === 'h1').length, 1);
+  const catalogSections = components.filter(({ loopConfig }) => loopConfig?.source === 'i18n');
+  assert.deepEqual(catalogSections.map(({ loopConfig }) => loopConfig.path), [
+    'page.catalog.webProducts',
+    'page.catalog.apps',
+  ]);
+  assert.deepEqual([...catalog.webProducts, ...catalog.apps].map(({ title, href }) => [title, href]), [
+    ['Zoolandingpage', 'https://zoolandingpage.com.mx/'],
+    ['ZooSitioWeb', 'https://zoositioweb.com.mx/planes'],
+    ['RoadMap2U', 'https://roadmap2u.com'],
+    ['GTR Lab', 'https://clasesdemusica.zoolandingpage.com.mx/gtr-lab'],
+    ['Despensa Lista', ''],
+  ]);
 });
 
 test('QA-002 preserves the approved brand, one-page sections, products and applications', () => {

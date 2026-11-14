@@ -1,0 +1,305 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "productos",
+  "components": [
+    {
+      "id": "productsMain",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "zooberiahMain",
+        "components": [
+          "productsHero",
+          "productsWebSection",
+          "productsAppsSection",
+          "productsContact"
+        ],
+        "id": "main-content",
+        "role": "main",
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "productsHero",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zooberiahSection ank-bg-secondaryBgColor",
+        "components": [
+          "productsHeroInner"
+        ],
+        "ariaLabelledby": "products-heading"
+      }
+    },
+    {
+      "id": "productsHeroInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zooberiahWrap zooberiahStack ank-gap-20px",
+        "components": [
+          "productsTitle",
+          "productsIntro"
+        ]
+      }
+    },
+    {
+      "id": "productsTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.catalog.title",
+      "config": {
+        "tag": "h1",
+        "text": "",
+        "classes": "zooberiahPageTitle ank-maxWidth-16ch",
+        "id": "products-heading"
+      }
+    },
+    {
+      "id": "productsIntro",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.catalog.intro",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zooberiahBody ank-color-textColor"
+      }
+    },
+    {
+      "id": "productsWebSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zooberiahSection",
+        "components": [
+          "productsWebInner"
+        ],
+        "ariaLabelledby": "web-products-heading"
+      }
+    },
+    {
+      "id": "productsWebInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zooberiahWrap zooberiahStack ank-gap-24px",
+        "components": [
+          "productsWebTitle",
+          "productsWebList"
+        ]
+      }
+    },
+    {
+      "id": "productsWebTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.catalog.webTitle",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_7rem ank-fontSize-md-2_3rem ank-fontWeight-600 ank-lineHeight-1_15",
+        "id": "web-products-heading"
+      }
+    },
+    {
+      "id": "productsWebList",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD2COMminmaxSD0COM1frEDED ank-gap-32px ank-gap-md-48px",
+        "components": []
+      },
+      "loopConfig": {
+        "source": "i18n",
+        "path": "page.catalog.webProducts",
+        "templateId": "productsEntry",
+        "idPrefix": "productsWebList",
+        "bindings": [
+          {
+            "to": "config.title",
+            "sources": [
+              "title"
+            ]
+          },
+          {
+            "to": "config.description",
+            "sources": [
+              "description"
+            ]
+          },
+          {
+            "to": "config.href",
+            "sources": [
+              "href"
+            ]
+          },
+          {
+            "to": "config.linkLabel",
+            "sources": [
+              "linkLabel"
+            ]
+          },
+          {
+            "to": "config.linkEventInstructions",
+            "sources": [
+              "linkEventInstructions"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "productsAppsSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zooberiahSection ank-paddingTop-0",
+        "components": [
+          "productsAppsInner"
+        ],
+        "ariaLabelledby": "apps-products-heading"
+      }
+    },
+    {
+      "id": "productsAppsInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zooberiahWrap zooberiahStack ank-gap-24px",
+        "components": [
+          "productsAppsTitle",
+          "productsAppsList"
+        ]
+      }
+    },
+    {
+      "id": "productsAppsTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.catalog.appsTitle",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_7rem ank-fontSize-md-2_3rem ank-fontWeight-600 ank-lineHeight-1_15",
+        "id": "apps-products-heading"
+      }
+    },
+    {
+      "id": "productsAppsList",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD2COMminmaxSD0COM1frEDED ank-gap-32px ank-gap-md-48px",
+        "components": []
+      },
+      "loopConfig": {
+        "source": "i18n",
+        "path": "page.catalog.apps",
+        "templateId": "productsEntry",
+        "idPrefix": "productsAppsList",
+        "bindings": [
+          {
+            "to": "config.title",
+            "sources": [
+              "title"
+            ]
+          },
+          {
+            "to": "config.description",
+            "sources": [
+              "description"
+            ]
+          },
+          {
+            "to": "config.href",
+            "sources": [
+              "href"
+            ]
+          },
+          {
+            "to": "config.linkLabel",
+            "sources": [
+              "linkLabel"
+            ]
+          },
+          {
+            "to": "config.linkEventInstructions",
+            "sources": [
+              "linkEventInstructions"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "productsEntry",
+      "type": "generic-card",
+      "config": {
+        "variant": "feature",
+        "title": "",
+        "description": "",
+        "href": "",
+        "linkLabel": "",
+        "linkEventInstructions": "",
+        "classes": "ank-display-flex ank-flexDirection-column ank-alignItems-start ank-gap-12px ank-minWidth-0 ank-height-100per ank-boxSizing-borderMINbox ank-borderTop-1px__solid__accentColor ank-paddingTop-18px",
+        "featureTitleClasses": "ank-m-0 ank-color-titleColor ank-fontSize-1_3rem ank-fontSize-md-1_55rem ank-fontWeight-600 ank-lineHeight-1_2",
+        "featureDescriptionClasses": "zooberiahBody",
+        "linkClasses": "ank-display-inlineMINflex ank-alignItems-center ank-minHeight-44px ank-marginTop-auto ank-color-linkColor ank-fontWeight-600 ank-textDecoration-underline ank-textUnderlineOffset-4px ank-outlineFocus-3px__solid__accentColor ank-outlineOffsetFocus-4px"
+      }
+    },
+    {
+      "id": "productsContact",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zooberiahSection ank-bg-secondaryBgColor",
+        "components": [
+          "productsContactInner"
+        ],
+        "ariaLabelledby": "products-contact-heading"
+      }
+    },
+    {
+      "id": "productsContactInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zooberiahWrap zooberiahStack ank-gap-16px",
+        "components": [
+          "productsContactTitle",
+          "productsContactText",
+          "productsContactLink"
+        ]
+      }
+    },
+    {
+      "id": "productsContactTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.catalog.contactTitle",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_7rem ank-fontSize-md-2_3rem ank-fontWeight-600 ank-lineHeight-1_15",
+        "id": "products-contact-heading"
+      }
+    },
+    {
+      "id": "productsContactText",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.catalog.contactText",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zooberiahBody ank-color-textColor"
+      }
+    },
+    {
+      "id": "productsContactLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.catalog.contactLink",
+      "config": {
+        "href": "/#contacto",
+        "text": "",
+        "classes": "zooberiahPrimaryAction ank-color-bgColor ank-alignSelf-start"
+      }
+    }
+  ]
+}

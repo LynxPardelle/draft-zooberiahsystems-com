@@ -23,7 +23,7 @@ Sanitized, Spanish source for the ZooBeriah Systems consulting website.
 
 - AI and contributor routing: [AGENTS.md](AGENTS.md)
 - Verified domain, branches, environments, and required variables: [draft-repo.config.json](draft-repo.config.json)
-- Draft routes and payload: `site-config.json`, `default/`, and `not-found/`
+- Draft routes and payload: `site-config.json` and the page folders
 - Deployment implementation: [.github/workflows/](.github/workflows/) and [tools/deploy-draft.mjs](tools/deploy-draft.mjs)
 - Shared authoring, safety, release, asset, and alias guidance: [Zoolandingpage documentation hub](https://github.com/LynxPardelle/zoolandingpage/blob/main/docs/README.md)
 
@@ -31,7 +31,7 @@ Read only the task-specific route in `AGENTS.md`; do not duplicate shared hub pr
 
 ## Scope And Preview
 
-- Routes: `/`, `/blog`, `/blog/:categorySlug/:articleSlug`, and `/404`
+- Routes: `/`, `/productos`, `/blog`, `/blog/:categorySlug/:articleSlug`, and `/404`
 - Language: Spanish (`es`)
 - Environments: protected `test` and `production` promotion
 - Shared preview: `https://test.zoolandingpage.com.mx/?draftDomain=zooberiahsystems.com`

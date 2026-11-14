@@ -635,8 +635,23 @@
           "solutionsTitle",
           "solutionsIntro",
           "solutionsGrid",
-          "solutionsClosing"
+          "solutionsClosing",
+          "solutionsProductsLink"
         ]
+      }
+    },
+    {
+      "id": "solutionsProductsLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.solutions.productsLink",
+      "config": {
+        "href": "/productos",
+        "text": "",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "auto"
+        },
+        "classes": "zooberiahSecondaryAction ank-color-linkColor ank-alignSelf-start"
       }
     },
     {

@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "productos",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "productsMain",
+    "siteFooter"
+  ],
+  "seo": {
+    "title": "Productos de ZooBeriah Systems",
+    "description": "Conoce Zoolandingpage, ZooSitioWeb, RoadMap2U, GTR Lab y Despensa Lista. Herramientas para publicar en internet, organizarte y practicar guitarra.",
+    "canonical": "https://zooberiahsystems.com/productos",
+    "openGraph": {
+      "type": "website",
+      "title": "Productos de ZooBeriah Systems",
+      "description": "Conoce nuestras herramientas para publicar en internet, organizarte y practicar guitarra."
+    }
+  }
+}

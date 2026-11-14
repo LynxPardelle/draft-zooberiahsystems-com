@@ -30,6 +30,17 @@
         "ariaLabel": "Ir a Aplicaciones"
       },
       {
+        "id": "productos",
+        "value": "/productos",
+        "href": "/productos",
+        "label": "Productos",
+        "ariaLabel": "Ir a Productos",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "auto"
+        }
+      },
+      {
         "id": "blog",
         "value": "/blog",
         "href": "/blog",
