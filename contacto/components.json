@@ -1,0 +1,564 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "contacto",
+  "components": [
+    {
+      "id": "contactEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.contactEyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zEyebrow"
+      }
+    },
+    {
+      "id": "contactTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.contactTitle",
+      "config": {
+        "tag": "h1",
+        "text": "",
+        "classes": "zPageTitle",
+        "id": "contact-title"
+      }
+    },
+    {
+      "id": "contactIntro",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.contactIntro",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead"
+      }
+    },
+    {
+      "id": "contactWhatsappIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "chat",
+        "ariaHidden": true,
+        "classes": "ank-display-block ank-width-19px ank-height-19px ank-flexShrink-0 ank-color-inherit"
+      }
+    },
+    {
+      "id": "contactWhatsapp",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.contactWhatsapp;set:config.ariaLabel,i18n,page.contactWhatsappAriaLabel;set:config.href,i18n,ui.contact.whatsappUrl",
+      "eventInstructions": "trackEvent:whatsapp_click,cta,contacto_general,location,contacto",
+      "config": {
+        "href": "https://wa.me/525522699563",
+        "text": "",
+        "classes": "zPrimaryAction ank-color-bgColor ank-gap-10px",
+        "ariaLabel": "",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "components": [
+          "contactWhatsappIcon"
+        ]
+      }
+    },
+    {
+      "id": "contactActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zActions",
+        "components": [
+          "contactWhatsapp"
+        ]
+      }
+    },
+    {
+      "id": "contactNumber",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,ui.contact.visiblePhone",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontWeight-700 ank-fontSize-1rem"
+      }
+    },
+    {
+      "id": "contactHeroCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "contactEyebrow",
+          "contactTitle",
+          "contactIntro",
+          "contactActions",
+          "contactNumber"
+        ]
+      }
+    },
+    {
+      "id": "contactPrepTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.contactPrepTitle",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zSectionTitle",
+        "id": "contact-prep-title"
+      }
+    },
+    {
+      "id": "businessIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "storefront",
+        "ariaHidden": true,
+        "classes": "zIcon"
+      }
+    },
+    {
+      "id": "businessName",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.businessName",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_26rem ank-lineHeight-1_22 ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "businessDetail",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.businessDetail",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "businessContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-4px",
+        "components": [
+          "businessName",
+          "businessDetail"
+        ]
+      }
+    },
+    {
+      "id": "businessRow",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zRow",
+        "components": [
+          "businessIcon",
+          "businessContent"
+        ],
+        "styles": {
+          "gridTemplateColumns": "30px minmax(0, 1fr)"
+        }
+      }
+    },
+    {
+      "id": "needIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "flag",
+        "ariaHidden": true,
+        "classes": "zIcon"
+      }
+    },
+    {
+      "id": "needName",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.needName",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_26rem ank-lineHeight-1_22 ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "needDetail",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.needDetail",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "needContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-4px",
+        "components": [
+          "needName",
+          "needDetail"
+        ]
+      }
+    },
+    {
+      "id": "needRow",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zRow",
+        "components": [
+          "needIcon",
+          "needContent"
+        ],
+        "styles": {
+          "gridTemplateColumns": "30px minmax(0, 1fr)"
+        }
+      }
+    },
+    {
+      "id": "contextIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "description",
+        "ariaHidden": true,
+        "classes": "zIcon"
+      }
+    },
+    {
+      "id": "contextName",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.contextName",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_26rem ank-lineHeight-1_22 ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "contextDetail",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.contextDetail",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "contextContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-4px",
+        "components": [
+          "contextName",
+          "contextDetail"
+        ]
+      }
+    },
+    {
+      "id": "contextRow",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zRow",
+        "components": [
+          "contextIcon",
+          "contextContent"
+        ],
+        "styles": {
+          "gridTemplateColumns": "30px minmax(0, 1fr)"
+        }
+      }
+    },
+    {
+      "id": "contactTopicList",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zList",
+        "components": [
+          "businessRow",
+          "needRow",
+          "contextRow"
+        ]
+      }
+    },
+    {
+      "id": "contactPrep",
+      "type": "container",
+      "config": {
+        "tag": "aside",
+        "classes": "zProse ank-paddingBlock-20px ank-paddingInline-md-24px",
+        "components": [
+          "contactPrepTitle",
+          "contactTopicList"
+        ],
+        "ariaLabelledby": "contact-prep-title"
+      }
+    },
+    {
+      "id": "contactHeroInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zSplit",
+        "components": [
+          "contactHeroCopy",
+          "contactPrep"
+        ]
+      }
+    },
+    {
+      "id": "contactHero",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zPageHero",
+        "components": [
+          "contactHeroInner"
+        ],
+        "id": "contacto",
+        "ariaLabelledby": "contact-title",
+        "styles": {
+          "backgroundImage": "linear-gradient(135deg, var(--ank-secondaryBgColor), var(--ank-bgColor))"
+        }
+      }
+    },
+    {
+      "id": "contactShopTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.contactShopTitle",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zSectionTitle",
+        "id": "contact-shop-title"
+      }
+    },
+    {
+      "id": "contactShopIntro",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.contactShopIntro",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead"
+      }
+    },
+    {
+      "id": "contactShopLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.contactShopLink",
+      "config": {
+        "href": "/tiendas-en-linea",
+        "text": "",
+        "classes": "zTextLink",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "auto"
+        }
+      }
+    },
+    {
+      "id": "contactShopCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "contactShopIntro",
+          "contactShopLink"
+        ]
+      }
+    },
+    {
+      "id": "contactShopInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zSplit",
+        "components": [
+          "contactShopTitle",
+          "contactShopCopy"
+        ]
+      }
+    },
+    {
+      "id": "contactShopSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection ank-bg-secondaryBgColor",
+        "components": [
+          "contactShopInner"
+        ],
+        "ariaLabelledby": "contact-shop-title"
+      }
+    },
+    {
+      "id": "contactFaqTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.contactFaqTitle",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zSectionTitle",
+        "id": "contact-faq-title"
+      }
+    },
+    {
+      "id": "scopeQuestion",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.scopeQuestion",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_26rem ank-lineHeight-1_22 ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "scopeAnswer",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.scopeAnswer",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "scopeAnswerRow",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zRow ank-display-grid ank-gap-12px ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM1frED__minmaxSD0COM1_35frED",
+        "components": [
+          "scopeQuestion",
+          "scopeAnswer"
+        ]
+      }
+    },
+    {
+      "id": "priceQuestion",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.priceQuestion",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_26rem ank-lineHeight-1_22 ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "priceAnswer",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.priceAnswer",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "priceAnswerRow",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zRow ank-display-grid ank-gap-12px ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM1frED__minmaxSD0COM1_35frED",
+        "components": [
+          "priceQuestion",
+          "priceAnswer"
+        ]
+      }
+    },
+    {
+      "id": "locationQuestion",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.locationQuestion",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_26rem ank-lineHeight-1_22 ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "locationAnswer",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.locationAnswer",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "locationAnswerRow",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zRow ank-display-grid ank-gap-12px ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM1frED__minmaxSD0COM1_35frED",
+        "components": [
+          "locationQuestion",
+          "locationAnswer"
+        ]
+      }
+    },
+    {
+      "id": "contactFaqList",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zList",
+        "components": [
+          "scopeAnswerRow",
+          "priceAnswerRow",
+          "locationAnswerRow"
+        ]
+      }
+    },
+    {
+      "id": "contactFaqInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zProse",
+        "components": [
+          "contactFaqTitle",
+          "contactFaqList"
+        ]
+      }
+    },
+    {
+      "id": "contactFaqSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "contactFaqInner"
+        ],
+        "id": "preguntas-frecuentes",
+        "ariaLabelledby": "contact-faq-title"
+      }
+    },
+    {
+      "id": "contactMain",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "zMain",
+        "components": [
+          "contactHero",
+          "contactShopSection",
+          "contactFaqSection"
+        ],
+        "id": "main-content",
+        "tabindex": -1
+      }
+    }
+  ]
+}

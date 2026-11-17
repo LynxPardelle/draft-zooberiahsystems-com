@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "contacto",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "contactEyebrow": "Contacto",
+      "contactTitle": "Hablemos de tu proyecto",
+      "contactIntro": "Escríbenos por WhatsApp si quieres explorar un proyecto de consultoría, datos, IA o desarrollo web para tu negocio.",
+      "contactWhatsapp": "Abrir WhatsApp",
+      "contactWhatsappAriaLabel": "Abrir WhatsApp para hablar de mi proyecto (pestaña nueva)",
+      "contactPrepTitle": "Qué contarnos al escribir",
+      "businessName": "Tu negocio",
+      "businessDetail": "Qué ofreces y a qué tipo de clientes atiendes.",
+      "needName": "La necesidad",
+      "needDetail": "Qué quieres mejorar, crear o poner en marcha.",
+      "contextName": "Lo que ya tienes",
+      "contextDetail": "Si cuentas con una página, un catálogo o información que te gustaría aprovechar.",
+      "contactShopTitle": "¿Quieres vender en línea?",
+      "contactShopIntro": "Podemos diseñar una tienda alrededor de tus productos y de cómo cobras y entregas los pedidos. Cuéntanos si ya tienes un catálogo o vendes en otros canales.",
+      "contactShopLink": "Conocer el servicio de tiendas en línea",
+      "contactFaqTitle": "Preguntas frecuentes",
+      "scopeQuestion": "¿Necesito tener definido el proyecto?",
+      "scopeAnswer": "Puedes escribirnos con una idea o necesidad. Revisamos juntos el punto de partida y los siguientes pasos.",
+      "priceQuestion": "¿Cómo se determina el costo?",
+      "priceAnswer": "Para un desarrollo a medida o una consultoría, cotizamos según el alcance y los entregables acordados. Los productos con planes publicados muestran sus condiciones en sus propios sitios.",
+      "locationQuestion": "¿Desde dónde atienden?",
+      "locationAnswer": "Trabajamos de forma remota desde Ciudad de México. El primer contacto se hace por WhatsApp."
+    }
+  }
+}

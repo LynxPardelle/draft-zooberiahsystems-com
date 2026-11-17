@@ -1,0 +1,626 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "tiendas-en-linea",
+  "components": [
+    {
+      "id": "storeMain",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "zMain",
+        "components": [
+          "storeHero",
+          "storeScope",
+          "storeFaq",
+          "storeStart"
+        ],
+        "id": "main-content",
+        "role": "main",
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "storeEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.storeEyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zEyebrow"
+      }
+    },
+    {
+      "id": "storeTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.storeTitle",
+      "config": {
+        "tag": "h1",
+        "text": "",
+        "classes": "zPageTitle"
+      }
+    },
+    {
+      "id": "storeLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.storeLead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead"
+      }
+    },
+    {
+      "id": "storeHeroContact",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.storeHeroContact;set:config.ariaLabel,i18n,page.storeHeroContactLabel",
+      "eventInstructions": "trackEvent:whatsapp_click,cta,storeHeroContact,location,tienda-inicio",
+      "config": {
+        "href": "https://wa.me/525522699563?text=Hola%2C%20ZooBeriah%20Systems.%20Quiero%20cotizar%20una%20tienda%20en%20l%C3%ADnea%20a%20medida%20para%20mi%20negocio.",
+        "text": "",
+        "classes": "zPrimaryAction ank-color-bgColor",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "ariaLabel": ""
+      }
+    },
+    {
+      "id": "storeHeroActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zActions",
+        "components": [
+          "storeHeroContact"
+        ]
+      }
+    },
+    {
+      "id": "storeHeroCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-grid ank-gap-20px",
+        "components": [
+          "storeEyebrow",
+          "storeTitle",
+          "storeLead",
+          "storeHeroActions"
+        ]
+      }
+    },
+    {
+      "id": "storeVisual",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/commerce.webp",
+        "alt": "",
+        "width": 1280,
+        "height": 720,
+        "loading": "eager",
+        "decoding": "async",
+        "fetchPriority": "high",
+        "classes": "zMedia"
+      }
+    },
+    {
+      "id": "storeHeroShell",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zSplit",
+        "components": [
+          "storeHeroCopy",
+          "storeVisual"
+        ]
+      }
+    },
+    {
+      "id": "storeHero",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zPageHero",
+        "components": [
+          "storeHeroShell"
+        ],
+        "id": "tienda-inicio"
+      }
+    },
+    {
+      "id": "storeScopeTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.storeScopeTitle",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zSectionTitle"
+      }
+    },
+    {
+      "id": "storeScopeLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.storeScopeLead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-maxWidth-66ch ank-color-secondaryTextColor ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "storeCatalogIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "storefront",
+        "ariaHidden": true,
+        "classes": "zIcon"
+      }
+    },
+    {
+      "id": "storeCatalogTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.storeCatalogTitle",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_3rem ank-fontWeight-700 ank-lineHeight-1_2"
+      }
+    },
+    {
+      "id": "storeCatalogBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.storeCatalogBody",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-maxWidth-66ch ank-color-secondaryTextColor ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "storeCatalogCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-grid ank-gap-8px",
+        "components": [
+          "storeCatalogTitle",
+          "storeCatalogBody"
+        ]
+      }
+    },
+    {
+      "id": "storeCatalog",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow ank-gridTemplateColumns-34px__minmaxSD0COM1frED",
+        "components": [
+          "storeCatalogIcon",
+          "storeCatalogCopy"
+        ]
+      }
+    },
+    {
+      "id": "storePaymentIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "payments",
+        "ariaHidden": true,
+        "classes": "zIcon"
+      }
+    },
+    {
+      "id": "storePaymentTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.storePaymentTitle",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_3rem ank-fontWeight-700 ank-lineHeight-1_2"
+      }
+    },
+    {
+      "id": "storePaymentBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.storePaymentBody",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-maxWidth-66ch ank-color-secondaryTextColor ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "storePaymentCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-grid ank-gap-8px",
+        "components": [
+          "storePaymentTitle",
+          "storePaymentBody"
+        ]
+      }
+    },
+    {
+      "id": "storePayment",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow ank-gridTemplateColumns-34px__minmaxSD0COM1frED",
+        "components": [
+          "storePaymentIcon",
+          "storePaymentCopy"
+        ]
+      }
+    },
+    {
+      "id": "storeDeliveryIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "assignment",
+        "ariaHidden": true,
+        "classes": "zIcon"
+      }
+    },
+    {
+      "id": "storeDeliveryTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.storeDeliveryTitle",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_3rem ank-fontWeight-700 ank-lineHeight-1_2"
+      }
+    },
+    {
+      "id": "storeDeliveryBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.storeDeliveryBody",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-maxWidth-66ch ank-color-secondaryTextColor ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "storeDeliveryCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-grid ank-gap-8px",
+        "components": [
+          "storeDeliveryTitle",
+          "storeDeliveryBody"
+        ]
+      }
+    },
+    {
+      "id": "storeDelivery",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow ank-gridTemplateColumns-34px__minmaxSD0COM1frED",
+        "components": [
+          "storeDeliveryIcon",
+          "storeDeliveryCopy"
+        ]
+      }
+    },
+    {
+      "id": "storeScopeList",
+      "type": "container",
+      "config": {
+        "tag": "ul",
+        "classes": "zList",
+        "components": [
+          "storeCatalog",
+          "storePayment",
+          "storeDelivery"
+        ],
+        "role": "list"
+      }
+    },
+    {
+      "id": "storeScopeShell",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell ank-display-grid ank-gap-22px",
+        "components": [
+          "storeScopeTitle",
+          "storeScopeLead",
+          "storeScopeList"
+        ]
+      }
+    },
+    {
+      "id": "storeScope",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "storeScopeShell"
+        ],
+        "id": "alcance-de-la-tienda"
+      }
+    },
+    {
+      "id": "storeFaqTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.storeFaqTitle",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zSectionTitle"
+      }
+    },
+    {
+      "id": "storeFaqPriceIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "help_outline",
+        "ariaHidden": true,
+        "classes": "zIcon"
+      }
+    },
+    {
+      "id": "storeFaqPriceTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.storeFaqPriceTitle",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_3rem ank-fontWeight-700 ank-lineHeight-1_2"
+      }
+    },
+    {
+      "id": "storeFaqPriceBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.storeFaqPriceBody",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-maxWidth-66ch ank-color-secondaryTextColor ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "storeFaqPriceCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-grid ank-gap-8px",
+        "components": [
+          "storeFaqPriceTitle",
+          "storeFaqPriceBody"
+        ]
+      }
+    },
+    {
+      "id": "storeFaqPrice",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "zRow ank-gridTemplateColumns-34px__minmaxSD0COM1frED",
+        "components": [
+          "storeFaqPriceIcon",
+          "storeFaqPriceCopy"
+        ]
+      }
+    },
+    {
+      "id": "storeFaqWhatsAppIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "chat",
+        "ariaHidden": true,
+        "classes": "zIcon"
+      }
+    },
+    {
+      "id": "storeFaqWhatsAppTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.storeFaqWhatsAppTitle",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_3rem ank-fontWeight-700 ank-lineHeight-1_2"
+      }
+    },
+    {
+      "id": "storeFaqWhatsAppBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.storeFaqWhatsAppBody",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-maxWidth-66ch ank-color-secondaryTextColor ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "storeFaqWhatsAppCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-grid ank-gap-8px",
+        "components": [
+          "storeFaqWhatsAppTitle",
+          "storeFaqWhatsAppBody"
+        ]
+      }
+    },
+    {
+      "id": "storeFaqWhatsApp",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "zRow ank-gridTemplateColumns-34px__minmaxSD0COM1frED",
+        "components": [
+          "storeFaqWhatsAppIcon",
+          "storeFaqWhatsAppCopy"
+        ]
+      }
+    },
+    {
+      "id": "storeFaqExistingIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "manage_search",
+        "ariaHidden": true,
+        "classes": "zIcon"
+      }
+    },
+    {
+      "id": "storeFaqExistingTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.storeFaqExistingTitle",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_3rem ank-fontWeight-700 ank-lineHeight-1_2"
+      }
+    },
+    {
+      "id": "storeFaqExistingBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.storeFaqExistingBody",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-maxWidth-66ch ank-color-secondaryTextColor ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "storeFaqExistingCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-grid ank-gap-8px",
+        "components": [
+          "storeFaqExistingTitle",
+          "storeFaqExistingBody"
+        ]
+      }
+    },
+    {
+      "id": "storeFaqExisting",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "zRow ank-gridTemplateColumns-34px__minmaxSD0COM1frED",
+        "components": [
+          "storeFaqExistingIcon",
+          "storeFaqExistingCopy"
+        ]
+      }
+    },
+    {
+      "id": "storeFaqList",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zList",
+        "components": [
+          "storeFaqPrice",
+          "storeFaqWhatsApp",
+          "storeFaqExisting"
+        ]
+      }
+    },
+    {
+      "id": "storeFaqShell",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell ank-display-grid ank-gap-22px",
+        "components": [
+          "storeFaqTitle",
+          "storeFaqList"
+        ]
+      }
+    },
+    {
+      "id": "storeFaq",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "storeFaqShell"
+        ],
+        "id": "preguntas-sobre-tiendas"
+      }
+    },
+    {
+      "id": "storeStartTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.storeStartTitle",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zSectionTitle"
+      }
+    },
+    {
+      "id": "storeStartBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.storeStartBody",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-maxWidth-66ch ank-color-secondaryTextColor ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "storeStartContact",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.storeStartContact;set:config.ariaLabel,i18n,page.storeStartContactLabel",
+      "eventInstructions": "trackEvent:whatsapp_click,cta,storeStartContact,location,consultar-por-whatsapp",
+      "config": {
+        "href": "https://wa.me/525522699563?text=Hola%2C%20ZooBeriah%20Systems.%20Quiero%20cotizar%20una%20tienda%20en%20l%C3%ADnea%20a%20medida%20para%20mi%20negocio.",
+        "text": "",
+        "classes": "zPrimaryAction ank-color-bgColor",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "ariaLabel": ""
+      }
+    },
+    {
+      "id": "storeStartActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zActions",
+        "components": [
+          "storeStartContact"
+        ]
+      }
+    },
+    {
+      "id": "storeStartShell",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell ank-display-grid ank-gap-22px",
+        "components": [
+          "storeStartTitle",
+          "storeStartBody",
+          "storeStartActions"
+        ]
+      }
+    },
+    {
+      "id": "storeStart",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection ank-bg-secondaryBgColor",
+        "components": [
+          "storeStartShell"
+        ],
+        "id": "consultar-por-whatsapp"
+      }
+    }
+  ]
+}

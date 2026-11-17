@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "contacto",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "contactMain",
+    "siteFooter"
+  ],
+  "seo": {
+    "title": "Contacto por WhatsApp | ZooBeriah Systems",
+    "description": "Habla con ZooBeriah Systems por WhatsApp sobre consultoría, datos, IA o una solución web a medida. Atendemos de forma remota desde Ciudad de México.",
+    "canonical": "https://zooberiahsystems.com/contacto",
+    "robots": "index,follow",
+    "openGraph": {
+      "title": "Contacto por WhatsApp | ZooBeriah Systems",
+      "description": "Habla con ZooBeriah Systems por WhatsApp sobre consultoría, datos, IA o una solución web a medida. Atendemos de forma remota desde Ciudad de México.",
+      "type": "website"
+    },
+    "twitter": {
+      "title": "Contacto por WhatsApp | ZooBeriah Systems",
+      "description": "Habla con ZooBeriah Systems por WhatsApp sobre consultoría, datos, IA o una solución web a medida. Atendemos de forma remota desde Ciudad de México.",
+      "card": "summary_large_image"
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://zooberiahsystems.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contacto",
+            "item": "https://zooberiahsystems.com/contacto"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "@id": "https://zooberiahsystems.com/contacto#webpage",
+        "name": "Contacto de ZooBeriah Systems",
+        "description": "Habla con ZooBeriah Systems por WhatsApp sobre consultoría, datos, IA o una solución web a medida. Atendemos de forma remota desde Ciudad de México.",
+        "url": "https://zooberiahsystems.com/contacto",
+        "inLanguage": "es-MX",
+        "about": {
+          "@type": "Organization",
+          "@id": "https://zooberiahsystems.com/#organization",
+          "name": "ZooBeriah Systems",
+          "url": "https://zooberiahsystems.com/"
+        }
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "contacto",
+      "preguntas-frecuentes"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}

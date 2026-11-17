@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "proyectos",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "projectsMain",
+    "siteFooter"
+  ],
+  "seo": {
+    "title": "Proyectos y productos digitales | ZooBeriah Systems",
+    "description": "Conoce DespensaLista, nuestra app de despensa y compras, y explora RoadMap2U, Zoolandingpage, Zoositioweb y Zooblog.",
+    "canonical": "https://zooberiahsystems.com/proyectos",
+    "openGraph": {
+      "title": "Proyectos y productos digitales | ZooBeriah Systems",
+      "description": "Conoce DespensaLista, nuestra app de despensa y compras, y explora RoadMap2U, Zoolandingpage, Zoositioweb y Zooblog.",
+      "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/despensalista.webp",
+      "type": "website",
+      "locale": "es_MX",
+      "image:alt": "Página de inicio de DespensaLista con el lema «Tu despensa, a la vista» y una alacena con frascos."
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Proyectos y productos digitales | ZooBeriah Systems",
+      "description": "Conoce DespensaLista, nuestra app de despensa y compras, y explora RoadMap2U, Zoolandingpage, Zoositioweb y Zooblog.",
+      "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/despensalista.webp",
+      "image:alt": "Página de inicio de DespensaLista con el lema «Tu despensa, a la vista» y una alacena con frascos."
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Proyectos y productos digitales",
+        "description": "Conoce DespensaLista, nuestra app de despensa y compras, y explora RoadMap2U, Zoolandingpage, Zoositioweb y Zooblog.",
+        "url": "https://zooberiahsystems.com/proyectos",
+        "inLanguage": "es-MX",
+        "mainEntity": {
+          "@id": "https://despensalista.com/#app"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "@id": "https://despensalista.com/#app",
+        "name": "DespensaLista",
+        "url": "https://despensalista.com/",
+        "applicationCategory": "LifestyleApplication",
+        "description": "Aplicación para organizar lo que tienes en la despensa, usar primero los alimentos que caducan pronto y compartir la lista de compras con tu hogar.",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://zooberiahsystems.com/#organization",
+          "name": "ZooBeriah Systems",
+          "url": "https://zooberiahsystems.com/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://zooberiahsystems.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Proyectos",
+            "item": "https://zooberiahsystems.com/proyectos"
+          }
+        ]
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "proyectos-inicio",
+      "aplicaciones",
+      "soluciones"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "servicios",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "servicesMain",
+    "siteFooter"
+  ],
+  "seo": {
+    "title": "Consultoría tecnológica, datos e IA | ZooBeriah Systems",
+    "description": "Consultoría tecnológica, de datos e inteligencia artificial para negocios. Ordena tus procesos, aprovecha tu información y define una solución digital.",
+    "canonical": "https://zooberiahsystems.com/servicios",
+    "robots": "index,follow",
+    "openGraph": {
+      "title": "Consultoría tecnológica, datos e IA | ZooBeriah Systems",
+      "description": "Consultoría tecnológica, de datos e inteligencia artificial para negocios. Ordena tus procesos, aprovecha tu información y define una solución digital.",
+      "type": "website"
+    },
+    "twitter": {
+      "title": "Consultoría tecnológica, datos e IA | ZooBeriah Systems",
+      "description": "Consultoría tecnológica, de datos e inteligencia artificial para negocios. Ordena tus procesos, aprovecha tu información y define una solución digital.",
+      "card": "summary_large_image"
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://zooberiahsystems.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Servicios",
+            "item": "https://zooberiahsystems.com/servicios"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://zooberiahsystems.com/servicios#consultoria-tecnologica",
+        "serviceType": "Consultoría tecnológica",
+        "name": "Consultoría tecnológica",
+        "description": "Revisamos cómo trabaja tu negocio, qué herramientas utiliza y dónde se pierde tiempo. Con esa información te ayudamos a priorizar mejoras y planear su implementación.",
+        "url": "https://zooberiahsystems.com/servicios#consultoria-tecnologica",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://zooberiahsystems.com/#organization",
+          "name": "ZooBeriah Systems",
+          "url": "https://zooberiahsystems.com/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://zooberiahsystems.com/servicios#consultoria-de-datos",
+        "serviceType": "Consultoría de datos",
+        "name": "Consultoría de datos",
+        "description": "Partimos de las preguntas que quieres responder y de la información disponible. Te ayudamos a organizarla y traducirla en indicadores, reportes o tableros que puedas usar.",
+        "url": "https://zooberiahsystems.com/servicios#consultoria-de-datos",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://zooberiahsystems.com/#organization",
+          "name": "ZooBeriah Systems",
+          "url": "https://zooberiahsystems.com/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://zooberiahsystems.com/servicios#consultoria-de-inteligencia-artificial",
+        "serviceType": "Consultoría de inteligencia artificial",
+        "name": "Consultoría de inteligencia artificial",
+        "description": "Evaluamos qué tareas se beneficiarían de la IA y qué información requiere cada caso. Podemos diseñar una prueba acotada y acordar dónde se necesita revisión humana.",
+        "url": "https://zooberiahsystems.com/servicios#consultoria-de-inteligencia-artificial",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://zooberiahsystems.com/#organization",
+          "name": "ZooBeriah Systems",
+          "url": "https://zooberiahsystems.com/"
+        }
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "consultoria",
+      "soluciones",
+      "como-trabajamos"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}
