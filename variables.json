@@ -16,11 +16,25 @@
         "ariaLabel": "Servicios"
       },
       {
+        "id": "sitios-web",
+        "value": "/sitios-web",
+        "href": "/sitios-web",
+        "label": "Sitios web",
+        "ariaLabel": "Sitios web"
+      },
+      {
         "id": "tiendas-en-linea",
         "value": "/tiendas-en-linea",
         "href": "/tiendas-en-linea",
         "label": "Tiendas en línea",
         "ariaLabel": "Tiendas en línea"
+      },
+      {
+        "id": "soluciones-para-negocios",
+        "value": "/soluciones-para-negocios",
+        "href": "/soluciones-para-negocios",
+        "label": "Soluciones",
+        "ariaLabel": "Soluciones"
       },
       {
         "id": "proyectos",
@@ -45,7 +59,7 @@
       }
     ],
     "assets": {
-      "logoPrincipalUrl": "",
+      "logoPrincipalUrl": "/assets/brand/zoolandingpage-default-favicon.svg",
       "logoInverseUrl": "",
       "faviconUrl": "",
       "appleTouchIconUrl": "",
@@ -56,6 +70,7 @@
         "whatsappPhone": "+525522699563",
         "whatsappMessageKey": "ui.contact.whatsappMessage"
       }
-    }
+    },
+    "activeNav": ""
   }
 }

@@ -16,16 +16,16 @@
       "ank-minHeight-56px ank-display-flex ank-alignItems-center ank-justifyContent-spaceMINbetween ank-gap-16px"
     ],
     "zooberiahBrand": [
-      "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-color-titleColor ank-colorHover-linkColor ank-fontSize-1_07rem ank-fontSize-md-1_2rem ank-fontWeight-800 ank-letterSpacing-MIN0_035em ank-textDecoration-none ank-outlineFocus-3px__solid__accentColor ank-outlineOffsetFocus-4px"
+      "ank-display-flex ank-alignItems-center ank-flexDirection-rowMINreverse ank-gap-10px ank-flexShrink-0 ank-minHeight-44px ank-color-titleColor ank-colorHover-linkColor ank-fontSize-1_07rem ank-fontSize-md-1_2rem ank-fontWeight-800 ank-letterSpacing-MIN0_035em ank-textDecoration-none ank-outlineFocus-none ank-textDecorationFocus-underline ank-textUnderlineOffset-6px"
     ],
     "zooberiahDesktopCluster": [
-      "ank-display-none ank-display-lg-flex ank-alignItems-center ank-gap-20px ank-marginLeft-auto"
+      "ank-display-none ank-display-xl-flex ank-alignItems-center ank-gap-20px ank-marginLeft-auto"
     ],
     "zooberiahDesktopNav": [
-      "ank-display-flex ank-alignItems-center ank-flexWrap-wrap ank-gap-4px"
+      "ank-display-flex ank-alignItems-center ank-gap-8px ank-gap-xxl-14px"
     ],
     "zooberiahNavLink": [
-      "ank-display-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-44px ank-paddingInline-10px ank-paddingBlock-8px ank-borderRadius-3px ank-bgHover-secondaryBgColor ank-color-textColor ank-fontSize-0_9rem ank-fontWeight-500 ank-textDecoration-none ank-outlineFocus-3px__solid__accentColor ank-outlineOffsetFocus-4px"
+      "ank-display-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-44px ank-paddingInline-12px ank-paddingBlock-8px ank-bgHover-secondaryBgColor ank-textDecorationFocus-underline ank-textUnderlineOffset-6px ank-outlineFocus-none ank-color-textColor ank-fontSize-0_93rem ank-fontWeight-600 ank-textDecoration-none ank-whiteSpace-nowrap"
     ],
     "zooberiahPrimaryAction": [
       "ank-display-inlineMINflex ank-alignItems-center ank-justifyContent-center ank-gap-10px ank-boxSizing-borderMINbox ank-minHeight-48px ank-paddingBlock-12px ank-paddingInline-20px ank-borderRadius-3px ank-fontWeight-700 ank-textAlign-center ank-textDecoration-none ank-overflowWrap-anywhere ank-transition-backgroundMINcolor__180ms__ease ank-outlineFocus-3px__solid__accentColor ank-outlineOffsetFocus-4px ank-bg-accentColor ank-color-bgColor ank-bgHover-titleColor ank-border-1px__solid__accentColor"
@@ -34,22 +34,22 @@
       "ank-display-inlineMINflex ank-alignItems-center ank-justifyContent-center ank-minWidth-44px ank-minHeight-44px ank-boxSizing-borderMINbox ank-paddingInline-20px ank-paddingBlock-12px ank-border-1px__solid__accentColor ank-borderRadius-3px ank-bg-transparent ank-bgHover-secondaryBgColor ank-color-linkColor ank-fontWeight-600 ank-textAlign-center ank-textDecoration-none ank-overflowWrap-anywhere ank-outlineFocus-3px__solid__accentColor ank-outlineOffsetFocus-4px"
     ],
     "zooberiahMobileActions": [
-      "ank-display-flex ank-display-lg-none ank-alignItems-center"
+      "ank-display-flex ank-display-xl-none ank-alignItems-center"
     ],
     "zooberiahMobileTrigger": [
       "ank-display-flex ank-alignItems-center ank-justifyContent-center ank-width-44px ank-height-44px ank-border-1px__solid__accentColor ank-borderRadius-3px ank-bg-secondaryBgColor ank-color-titleColor ank-cursor-pointer ank-padding-0 ank-outlineFocus-3px__solid__accentColor ank-outlineOffsetFocus-4px"
     ],
     "zooberiahMobileItem": [
-      "ank-display-flex ank-alignItems-center ank-minHeight-48px ank-paddingInline-16px ank-paddingBlock-12px ank-borderRadius-3px ank-textDecoration-none ank-bg-secondaryBgColor ank-bgHover-bgColor ank-color-titleColor ank-fontWeight-600 ank-outlineFocus-3px__solid__accentColor ank-outlineOffsetFocus-4px"
+      "ank-display-flex ank-alignItems-center ank-minHeight-48px ank-paddingInline-16px ank-paddingBlock-12px ank-bgHover-secondaryBgColor ank-textDecorationFocus-underline ank-textUnderlineOffset-6px ank-outlineFocus-none ank-textDecoration-none ank-color-titleColor ank-fontWeight-600"
     ],
     "zooberiahMobileMenuContainer": [
-      "ank-display-lg-none ank-width-100per ank-boxSizing-borderMINbox ank-marginTop-12px ank-paddingInline-24px ank-paddingBottom-16px ank-bg-bgColor ank-borderTop-1px__solid__accentColor"
+      "ank-display-xl-none ank-width-100per ank-boxSizing-borderMINbox ank-marginTop-12px ank-paddingInline-24px ank-paddingBottom-16px ank-bg-bgColor ank-borderTop-1px__solid__accentColor"
     ],
     "zooberiahMobileMenuList": [
       "ank-listStyle-none ank-padding-0 ank-margin-0 ank-display-flex ank-flexDirection-column ank-gap-8px"
     ],
     "zooberiahMain": [
-      "ank-width-100per ank-minHeight-60vh ank-bg-bgColor ank-color-textColor ank-outline-none"
+      "ank-width-100per ank-minHeight-60vh ank-bg-bgColor ank-color-textColor ank-outline-none ank-outlineFocus-none"
     ],
     "zooberiahSection": [
       "ank-width-100per ank-display-flex ank-justifyContent-center ank-boxSizing-borderMINbox ank-paddingInline-24px ank-paddingInline-md-40px ank-paddingBlock-64px ank-paddingBlock-md-96px"
@@ -94,7 +94,7 @@
       "ank-display-inlineMINflex ank-alignItems-center ank-justifyContent-center ank-minHeight-44px ank-paddingInline-18px ank-paddingBlock-12px ank-border-1px__solid__HASHD9EF8F ank-borderRadius-3px ank-bg-HASHD9EF8F ank-bgHover-white ank-color-titleColor ank-fontWeight-600 ank-textAlign-center ank-textDecoration-none ank-outlineFocus-3px__solid__HASHD9EF8F ank-outlineOffsetFocus-4px ank-gap-9px ank-transition-backgroundMINcolor__180ms__ease"
     ],
     "zMain": [
-      "ank-width-100per ank-minHeight-60vh ank-bg-bgColor ank-color-textColor ank-outline-none"
+      "ank-width-100per ank-minHeight-60vh ank-bg-bgColor ank-color-textColor ank-outline-none ank-outlineFocus-none"
     ],
     "zShell": [
       "ank-width-100per ank-maxWidth-1220px ank-marginInline-auto ank-boxSizing-borderMINbox"
@@ -148,7 +148,7 @@
       "ank-display-inlineMINflex ank-alignItems-center ank-justifyContent-center ank-width-34px ank-height-34px ank-fontSize-27px ank-color-linkColor"
     ],
     "zBrandMark": [
-      "ank-display-flex ank-alignItems-center ank-justifyContent-center ank-width-35px ank-height-35px ank-bg-accentColor ank-color-bgColor ank-borderRadius-3px ank-fontSize-22px"
+      "ank-display-block ank-width-35px ank-height-35px ank-flexShrink-0"
     ],
     "zHeroSurface": [
       "ank-paddingInline-24px ank-paddingInline-md-40px ank-position-relative ank-isolation-isolate ank-display-flex ank-alignItems-center ank-overflow-hidden ank-minHeight-540px ank-minHeight-lg-590px ank-paddingBlock-54px ank-paddingBlock-lg-72px ank-color-white ank-bg-HASH102D32"

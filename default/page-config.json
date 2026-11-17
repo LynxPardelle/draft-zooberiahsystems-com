@@ -15,19 +15,19 @@
   },
   "seo": {
     "title": "ZooBeriah Systems | Consultoría y desarrollo digital en CDMX",
-    "description": "Consultoría tecnológica, datos e inteligencia artificial. Desarrollamos sitios web, tiendas en línea a medida y aplicaciones. Atención remota desde CDMX.",
+    "description": "Diseñamos sitios web, tiendas en línea y sistemas a medida para negocios. Consultoría tecnológica, datos e inteligencia artificial desde Ciudad de México.",
     "canonical": "https://zooberiahsystems.com/",
     "robots": "index,follow,max-image-preview:large",
     "openGraph": {
       "title": "ZooBeriah Systems | Consultoría y desarrollo digital en CDMX",
-      "description": "Consultoría tecnológica, datos e inteligencia artificial. Desarrollamos sitios web, tiendas en línea a medida y aplicaciones. Atención remota desde CDMX.",
+      "description": "Diseñamos sitios web, tiendas en línea y sistemas a medida para negocios. Consultoría tecnológica, datos e inteligencia artificial desde Ciudad de México.",
       "type": "website",
       "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/hero.webp",
       "image:alt": "Sesión de planeación en un espacio de trabajo"
     },
     "twitter": {
       "title": "ZooBeriah Systems | Consultoría y desarrollo digital en CDMX",
-      "description": "Consultoría tecnológica, datos e inteligencia artificial. Desarrollamos sitios web, tiendas en línea a medida y aplicaciones. Atención remota desde CDMX.",
+      "description": "Diseñamos sitios web, tiendas en línea y sistemas a medida para negocios. Consultoría tecnológica, datos e inteligencia artificial desde Ciudad de México.",
       "card": "summary_large_image",
       "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/hero.webp",
       "image:alt": "Sesión de planeación en un espacio de trabajo"
@@ -37,6 +37,7 @@
     "sectionIds": [
       "consultoria",
       "soluciones",
+      "sitios-web",
       "aplicaciones",
       "como-trabajamos",
       "nosotros",
@@ -58,7 +59,8 @@
         "@id": "https://zooberiahsystems.com/#organization",
         "name": "ZooBeriah Systems",
         "url": "https://zooberiahsystems.com/",
-        "description": "Consultoría tecnológica, datos e inteligencia artificial. Desarrollamos sitios web, tiendas en línea a medida y aplicaciones. Atención remota desde CDMX."
+        "description": "Diseñamos sitios web, tiendas en línea y sistemas a medida para negocios. Consultoría tecnológica, datos e inteligencia artificial desde Ciudad de México.",
+        "logo": "https://zooberiahsystems.com/assets/brand/zoolandingpage-default-favicon.svg"
       },
       {
         "@context": "https://schema.org",

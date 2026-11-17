@@ -83,8 +83,7 @@
         "components": [
           "projectsEyebrow",
           "projectsTitle",
-          "projectsLead",
-          "projectsHeroActions"
+          "projectsLead"
         ]
       }
     },
@@ -97,9 +96,8 @@
         "alt": "Página de inicio de DespensaLista con el lema «Tu despensa, a la vista» y una alacena con frascos.",
         "width": 1280,
         "height": 800,
-        "loading": "eager",
+        "loading": "lazy",
         "decoding": "async",
-        "fetchPriority": "high",
         "classes": "zMedia"
       }
     },
@@ -110,8 +108,7 @@
         "tag": "div",
         "classes": "zShell zSplit",
         "components": [
-          "projectsHeroCopy",
-          "projectsDespensaImage"
+          "projectsHeroCopy"
         ]
       }
     },
@@ -145,19 +142,10 @@
       "config": {
         "href": "https://roadmap2u.com/",
         "text": "",
-        "classes": "zTextLink ank-justifySelf-start",
+        "classes": "zPrimaryAction ank-color-bgColor",
         "target": "_blank",
         "rel": "noopener noreferrer",
         "ariaLabel": ""
-      }
-    },
-    {
-      "id": "projectsRoadmapIcon",
-      "type": "icon",
-      "config": {
-        "iconName": "account_tree",
-        "ariaHidden": true,
-        "classes": "zIcon"
       }
     },
     {
@@ -167,7 +155,7 @@
       "config": {
         "tag": "h3",
         "text": "",
-        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_3rem ank-fontWeight-700 ank-lineHeight-1_2"
+        "classes": "zSectionTitle"
       }
     },
     {
@@ -177,7 +165,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "ank-m-0 ank-maxWidth-66ch ank-color-secondaryTextColor ank-lineHeight-1_65"
+        "classes": "zLead"
       }
     },
     {
@@ -185,36 +173,12 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-minWidth-0 ank-display-grid ank-gap-8px",
+        "classes": "zProse",
         "components": [
           "projectsRoadmapTitle",
           "projectsRoadmapBody",
-          "projectsRoadmapLink"
+          "projectsRoadmapActions"
         ]
-      }
-    },
-    {
-      "id": "projectsRoadmap",
-      "type": "container",
-      "config": {
-        "tag": "li",
-        "classes": "zRow ank-gridTemplateColumns-34px__minmaxSD0COM1frED",
-        "components": [
-          "projectsRoadmapIcon",
-          "projectsRoadmapCopy"
-        ]
-      }
-    },
-    {
-      "id": "projectsAppsList",
-      "type": "container",
-      "config": {
-        "tag": "ul",
-        "classes": "zList",
-        "components": [
-          "projectsRoadmap"
-        ],
-        "role": "list"
       }
     },
     {
@@ -222,10 +186,11 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "zShell ank-display-grid ank-gap-22px",
+        "classes": "zShell ank-display-grid ank-gap-38px ank-gap-lg-50px",
         "components": [
           "projectsAppsTitle",
-          "projectsAppsList"
+          "projectsDespensaFeature",
+          "projectsRoadmapFeature"
         ]
       }
     },
@@ -572,6 +537,103 @@
           "projectsBusinessShell"
         ],
         "id": "soluciones"
+      }
+    },
+    {
+      "id": "projectsDespensaFeature",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "zSplit ank-scrollMarginTop-96px",
+        "components": [
+          "projectsDespensaCopy",
+          "projectsDespensaImage"
+        ],
+        "id": "despensalista"
+      }
+    },
+    {
+      "id": "projectsDespensaCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "projectsDespensaTitle",
+          "projectsDespensaLead",
+          "projectsHeroActions"
+        ]
+      }
+    },
+    {
+      "id": "projectsRoadmapFeature",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "zSplit ank-scrollMarginTop-96px ank-paddingTop-34px ank-borderTop-1px__solid__HASH9EB5AD",
+        "components": [
+          "projectsRoadmapCopy",
+          "projectsRoadmapImage"
+        ],
+        "id": "roadmap2u"
+      }
+    },
+    {
+      "id": "projectsRoadmapActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zActions",
+        "components": [
+          "projectsRoadmapLink",
+          "projectsRoadmapDemo"
+        ]
+      }
+    },
+    {
+      "id": "projectsRoadmapDemo",
+      "type": "link",
+      "config": {
+        "href": "https://roadmap2u.com/#product",
+        "classes": "zSecondaryAction ank-color-titleColor",
+        "text": "Ver la demostración",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "ariaLabel": "Ver la demostración (se abre en una pestaña nueva)"
+      }
+    },
+    {
+      "id": "projectsRoadmapImage",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/roadmap2u-demostracion.webp",
+        "alt": "Demostración de RoadMap2U con una meta de aprender francés y ramas para practicar, escuchar, conversar y leer",
+        "width": 1280,
+        "height": 920,
+        "classes": "zMedia",
+        "loading": "lazy",
+        "decoding": "async"
+      }
+    },
+    {
+      "id": "projectsDespensaTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.projectsDespensaTitle",
+      "config": {
+        "tag": "h3",
+        "text": "DespensaLista",
+        "classes": "zSectionTitle"
+      }
+    },
+    {
+      "id": "projectsDespensaLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.projectsDespensaLead",
+      "config": {
+        "tag": "p",
+        "text": "Registra los alimentos que tienes, revisa qué caduca pronto y comparte la lista de compras con tu hogar.",
+        "classes": "zLead"
       }
     }
   ]

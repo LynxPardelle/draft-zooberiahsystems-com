@@ -13,13 +13,13 @@
       "aiDetail": "Identificamos tareas donde la IA puede ayudar y validamos un primer caso de uso con criterios claros.",
       "heroDescriptor": "ZooBeriah Systems · Ciudad de México",
       "heroTitle": "Consultoría tecnológica y desarrollo digital",
-      "heroLead": "Ayudamos a negocios a ordenar sus datos, automatizar procesos y desarrollar sitios web, tiendas en línea y aplicaciones.",
+      "heroLead": "Creamos sitios web, tiendas en línea y sistemas a medida. También ayudamos a negocios a ordenar sus datos y automatizar procesos.",
       "consultingLabel": "Servicios",
       "consultingTitle": "Tecnología, datos e IA para tu negocio",
       "commerceLabel": "Comercio electrónico",
       "commerceTitle": "Tu tienda en línea, hecha a medida",
       "commerceLead": "Diseñamos la tienda según tu catálogo y cómo cobras, preparas pedidos y haces entregas. Cuéntanos por WhatsApp cómo vendes hoy para definir el alcance.",
-      "projectLabel": "Proyecto disponible",
+      "projectLabel": "Aplicación disponible",
       "projectTitle": "DespensaLista",
       "projectLead": "DespensaLista.com ya está disponible. Te ayuda a saber qué hay en casa, revisar próximas caducidades y organizar la lista del súper.",
       "aboutTitle": "Quiénes somos",
@@ -32,7 +32,14 @@
       "faqRemoteQuestion": "¿Puedo consultar mi proyecto a distancia?",
       "faqRemoteAnswer": "Sí. Atendemos de forma remota desde Ciudad de México. Puedes iniciar la conversación directamente por WhatsApp.",
       "contactTitle": "Cuéntanos qué necesita tu negocio",
-      "contactLead": "Comparte el objetivo de tu proyecto y cómo resuelves hoy ese proceso."
+      "contactLead": "Comparte el objetivo de tu proyecto y cómo resuelves hoy ese proceso.",
+      "websiteLabel": "Diseño y desarrollo web",
+      "websiteTitle": "Sitios web hechos a la medida de tu negocio",
+      "websiteLead": "Diseñamos sitios corporativos y páginas para campañas o servicios. Organiza tu oferta por página, recibe consultas por WhatsApp o formularios, y prepara el sitio para búsquedas locales y asistentes de IA.",
+      "featuredProjectsTitle": "Proyectos disponibles",
+      "roadmapLabel": "Aplicación disponible",
+      "roadmapTitle": "RoadMap2U",
+      "roadmapLead": "Convierte una meta en un árbol visual. Cada rama es un paso, una tarea o una alternativa. Puedes reorganizar el plan y trabajar sin conexión después de crear la cuenta."
     }
   }
 }

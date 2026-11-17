@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "soluciones-seguimiento",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "offerTitle": "Sistema para dar seguimiento a solicitudes y cotizaciones",
+      "offerLead": "Si una solicitud pasa por varias personas antes de resolverse, diseñamos un flujo para que el equipo vea quién la atiende, en qué estado está y cuándo debe retomarla.",
+      "offerContact": "Consultar por mi flujo de trabajo",
+      "offerCatalog": "Ver todas las soluciones",
+      "offerExampleTitle": "Si tienes un equipo de atención y otro de operación",
+      "offerExampleText": "Atención registra la solicitud y le asigna un responsable. Cuando el cliente aprueba la cotización, operación consulta la fecha acordada y registra el cierre de la orden de trabajo.",
+      "offerScopeTitle": "Qué puede incluir el proyecto",
+      "offerScopeItem1Title": "Registro con los datos necesarios",
+      "offerScopeItem1Text": "Definimos qué campos necesita la persona que recibe la solicitud y qué información debe conservarse durante el seguimiento.",
+      "offerScopeItem2Title": "Etapas y permisos",
+      "offerScopeItem2Text": "Podemos plantear un flujo que pase por recepción, revisión, cotización y cierre. Acordamos quién puede consultar o mover cada solicitud.",
+      "offerScopeItem3Title": "Vista de pendientes",
+      "offerScopeItem3Text": "El equipo puede comparar solicitudes por responsable, estado o próxima fecha. Definimos qué indicadores sirven, por ejemplo cuántas cotizaciones llevan más de una semana abiertas.",
+      "offerFaqTitle": "Preguntas frecuentes",
+      "offerFaqQuestion1Title": "¿Puedo conservar mis canales actuales de atención?",
+      "offerFaqQuestion1Text": "Sí. Revisamos cómo llegan hoy las solicitudes y dónde conviene registrarlas. Si buscas una importación automática, validamos qué opciones ofrece cada canal.",
+      "offerFaqQuestion2Title": "¿Cómo deciden quién puede ver o editar una solicitud?",
+      "offerFaqQuestion2Text": "Dibujamos el flujo con tu equipo para identificar qué rol recibe, revisa, cotiza o entrega. A partir de eso se acuerdan los permisos del proyecto y los datos que verá cada persona.",
+      "offerFaqQuestion3Title": "¿Puede empezar por un solo tipo de solicitud?",
+      "offerFaqQuestion3Text": "Sí. Podemos delimitar la primera versión a un flujo frecuente, por ejemplo las cotizaciones de instalación, y acordar cómo evaluar si te resulta útil.",
+      "offerEndTitle": "Qué necesitamos para cotizar",
+      "offerEndLead": "Comparte de dónde llegan las solicitudes, qué áreas participan y qué información necesitan para pasar al siguiente paso.",
+      "offerEndContact": "Consultar por mi flujo de trabajo",
+      "offerRelated1": "Ver consultoría tecnológica"
+    }
+  }
+}

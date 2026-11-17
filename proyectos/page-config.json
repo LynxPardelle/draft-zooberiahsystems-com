@@ -10,11 +10,11 @@
   ],
   "seo": {
     "title": "Proyectos y productos digitales | ZooBeriah Systems",
-    "description": "Conoce DespensaLista, nuestra app de despensa y compras, y explora RoadMap2U, Zoolandingpage, Zoositioweb y Zooblog.",
+    "description": "Conoce DespensaLista, la app de despensa y compras, y RoadMap2U, una app que convierte metas y tareas en árboles visuales.",
     "canonical": "https://zooberiahsystems.com/proyectos",
     "openGraph": {
       "title": "Proyectos y productos digitales | ZooBeriah Systems",
-      "description": "Conoce DespensaLista, nuestra app de despensa y compras, y explora RoadMap2U, Zoolandingpage, Zoositioweb y Zooblog.",
+      "description": "Conoce DespensaLista, la app de despensa y compras, y RoadMap2U, una app que convierte metas y tareas en árboles visuales.",
       "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/despensalista.webp",
       "type": "website",
       "locale": "es_MX",
@@ -23,7 +23,7 @@
     "twitter": {
       "card": "summary_large_image",
       "title": "Proyectos y productos digitales | ZooBeriah Systems",
-      "description": "Conoce DespensaLista, nuestra app de despensa y compras, y explora RoadMap2U, Zoolandingpage, Zoositioweb y Zooblog.",
+      "description": "Conoce DespensaLista, la app de despensa y compras, y RoadMap2U, una app que convierte metas y tareas en árboles visuales.",
       "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/despensalista.webp",
       "image:alt": "Página de inicio de DespensaLista con el lema «Tu despensa, a la vista» y una alacena con frascos."
     }
@@ -34,12 +34,17 @@
         "@context": "https://schema.org",
         "@type": "CollectionPage",
         "name": "Proyectos y productos digitales",
-        "description": "Conoce DespensaLista, nuestra app de despensa y compras, y explora RoadMap2U, Zoolandingpage, Zoositioweb y Zooblog.",
+        "description": "Conoce DespensaLista, la app de despensa y compras, y RoadMap2U, una app que convierte metas y tareas en árboles visuales.",
         "url": "https://zooberiahsystems.com/proyectos",
         "inLanguage": "es-MX",
-        "mainEntity": {
-          "@id": "https://despensalista.com/#app"
-        }
+        "mainEntity": [
+          {
+            "@id": "https://despensalista.com/#app"
+          },
+          {
+            "@id": "https://roadmap2u.com/#app"
+          }
+        ]
       },
       {
         "@context": "https://schema.org",
@@ -49,6 +54,22 @@
         "url": "https://despensalista.com/",
         "applicationCategory": "LifestyleApplication",
         "description": "Aplicación para organizar lo que tienes en la despensa, usar primero los alimentos que caducan pronto y compartir la lista de compras con tu hogar.",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://zooberiahsystems.com/#organization",
+          "name": "ZooBeriah Systems",
+          "url": "https://zooberiahsystems.com/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "@id": "https://roadmap2u.com/#app",
+        "name": "RoadMap2U",
+        "url": "https://roadmap2u.com/",
+        "applicationCategory": "ProductivityApplication",
+        "description": "Aplicación para organizar metas y tareas en árboles visuales con ramas para cada paso o alternativa.",
+        "screenshot": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/roadmap2u-demostracion.webp",
         "publisher": {
           "@type": "Organization",
           "@id": "https://zooberiahsystems.com/#organization",
