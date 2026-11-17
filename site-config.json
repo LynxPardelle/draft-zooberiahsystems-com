@@ -17,19 +17,39 @@
       "label": "Servicios"
     },
     {
+      "path": "/sitios-web",
+      "pageId": "sitios-web",
+      "label": "Sitios web"
+    },
+    {
       "path": "/tiendas-en-linea",
       "pageId": "tiendas-en-linea",
       "label": "Tiendas en línea"
     },
     {
+      "path": "/soluciones-para-negocios",
+      "pageId": "soluciones-para-negocios",
+      "label": "Soluciones"
+    },
+    {
+      "path": "/soluciones-para-negocios/restaurantes",
+      "pageId": "soluciones-restaurantes",
+      "label": "Sistemas para restaurantes"
+    },
+    {
+      "path": "/soluciones-para-negocios/inventario",
+      "pageId": "soluciones-inventario",
+      "label": "Control de inventario"
+    },
+    {
+      "path": "/soluciones-para-negocios/seguimiento-de-solicitudes",
+      "pageId": "soluciones-seguimiento",
+      "label": "Seguimiento de solicitudes"
+    },
+    {
       "path": "/proyectos",
       "pageId": "proyectos",
       "label": "Proyectos"
-    },
-    {
-      "path": "/contacto",
-      "pageId": "contacto",
-      "label": "Contacto"
     },
     {
       "path": "/blog",
@@ -40,6 +60,11 @@
       "path": "/blog/:categorySlug/:articleSlug",
       "pageId": "blog-article",
       "label": "Artículo"
+    },
+    {
+      "path": "/contacto",
+      "pageId": "contacto",
+      "label": "Contacto"
     },
     {
       "path": "/404",
@@ -97,12 +122,12 @@
       "identifier": "zooberiahsystemscom",
       "name": "ZooBeriah Systems",
       "version": "1.0.0",
-      "description": "Consultoría tecnológica, datos e inteligencia artificial. Desarrollamos sitios web, tiendas en línea a medida y aplicaciones. Atención remota desde CDMX."
+      "description": "Diseñamos sitios web, tiendas en línea y sistemas a medida para negocios. Consultoría tecnológica, datos e inteligencia artificial desde Ciudad de México."
     },
     "seo": {
       "siteName": "ZooBeriah Systems",
       "title": "ZooBeriah Systems | Consultoría y desarrollo digital en CDMX",
-      "description": "Consultoría tecnológica, datos e inteligencia artificial. Desarrollamos sitios web, tiendas en línea a medida y aplicaciones. Atención remota desde CDMX.",
+      "description": "Diseñamos sitios web, tiendas en línea y sistemas a medida para negocios. Consultoría tecnológica, datos e inteligencia artificial desde Ciudad de México.",
       "canonicalOrigin": "https://zooberiahsystems.com",
       "enforceCanonicalHost": true,
       "forceHttps": true,

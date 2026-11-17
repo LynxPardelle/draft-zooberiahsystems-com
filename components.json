@@ -35,7 +35,7 @@
         "tag": "div",
         "classes": "zooberiahHeaderInner zooberiahWrap",
         "components": [
-          "headerBrand",
+          "brandLink",
           "headerDesktopCluster",
           "headerMobileActions"
         ]
@@ -54,7 +54,10 @@
           "mode": "top",
           "behavior": "auto"
         },
-        "classes": "zooberiahBrand ank-color-titleColor"
+        "classes": "zooberiahBrand ank-color-titleColor",
+        "components": [
+          "headerBrandMark"
+        ]
       }
     },
     {
@@ -64,8 +67,7 @@
         "tag": "div",
         "classes": "zooberiahDesktopCluster",
         "components": [
-          "headerNav",
-          "headerTalkLink"
+          "headerNav"
         ]
       }
     },
@@ -79,21 +81,24 @@
         "classes": "zooberiahDesktopNav",
         "components": [
           "headerServicesLink",
+          "headerWebLink",
           "headerCommerceLink",
+          "headerBusinessLink",
           "headerProjectsLink",
-          "headerBlogLink"
+          "headerBlogLink",
+          "headerTalkLink"
         ]
       }
     },
     {
       "id": "headerTalkLink",
       "type": "link",
-      "valueInstructions": "set:config.text,i18n,nav.contact",
+      "valueInstructions": "set:config.classes,when,\"all:varEq,activeNav,contacto\",\"zooberiahNavLink ank-color-textColor ank-bg-secondaryBgColor ank-fontWeight-800\",\"zooberiahNavLink ank-color-textColor\";set:config.ariaCurrent,when,\"all:varEq,activeNav,contacto\",page,null",
       "config": {
         "href": "/contacto",
         "text": "Contacto",
         "ariaLabel": "Contacto",
-        "classes": "zooberiahPrimaryAction ank-color-bgColor"
+        "classes": "zooberiahNavLink ank-color-textColor"
       },
       "eventInstructions": "trackEvent:nav_click,navigation,contact,location,header"
     },
@@ -114,7 +119,7 @@
       "config": {
         "tag": "div",
         "id": "mobile-menu-anchor",
-        "classes": "ank-display-lg-none ank-width-100per zooberiahWrap",
+        "classes": "ank-display-xl-none ank-width-100per zooberiahWrap",
         "components": []
       }
     },
@@ -122,7 +127,7 @@
       "id": "headerMobileNav",
       "type": "dropdown",
       "condition": "all:navigation,exists",
-      "valueInstructions": "set:config.items,var,navigation;set:config.dropdownConfig.ariaLabel,i18n,ui.accessibility.mobileMenuAriaLabel",
+      "valueInstructions": "set:config.items,var,navigation;set:config.dropdownConfig.ariaLabel,i18n,ui.accessibility.mobileMenuAriaLabel;set:config.dropdownConfig.selectedItemId,var,activeNav",
       "config": {
         "items": [],
         "dropdownConfig": {
@@ -135,7 +140,8 @@
           "renderMode": "inline",
           "menuContainerId": "mobile-primary-navigation",
           "inlinePortalTargetSelector": "#mobile-menu-anchor",
-          "closeOnSelect": true
+          "closeOnSelect": true,
+          "selectedItemClasses": "ank-bg-secondaryBgColor ank-fontWeight-800"
         },
         "components": [
           "mobileMenuIcon"
@@ -234,7 +240,9 @@
         "classes": "zooberiahFooterNav",
         "components": [
           "footerServicesLink",
+          "footerWebLink",
           "footerCommerceLink",
+          "footerBusinessLink",
           "footerProjectsLink",
           "footerBlogLink",
           "footerContactLink"
@@ -292,25 +300,18 @@
       }
     },
     {
-      "id": "headerBrand",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-display-flex ank-alignItems-center ank-gap-10px",
-        "components": [
-          "headerBrandMark",
-          "brandLink"
-        ]
-      }
-    },
-    {
       "id": "headerBrandMark",
-      "type": "icon",
+      "type": "media",
       "config": {
-        "iconName": "dashboard_customize",
-        "classes": "zBrandMark",
-        "ariaHidden": true
-      }
+        "tag": "image",
+        "src": "/assets/brand/zoolandingpage-default-favicon.svg",
+        "alt": "",
+        "width": 35,
+        "height": 35,
+        "decoding": "async",
+        "classes": "zBrandMark"
+      },
+      "valueInstructions": "set:config.src,var,assets.logoPrincipalUrl"
     },
     {
       "id": "footerWhatsappIcon",
@@ -329,7 +330,8 @@
         "href": "/servicios",
         "classes": "zooberiahNavLink ank-color-textColor"
       },
-      "eventInstructions": "trackEvent:nav_click,navigation,servicios,location,header"
+      "eventInstructions": "trackEvent:nav_click,navigation,servicios,location,header",
+      "valueInstructions": "set:config.classes,when,\"all:varEq,activeNav,servicios\",\"zooberiahNavLink ank-color-textColor ank-bg-secondaryBgColor ank-fontWeight-800\",\"zooberiahNavLink ank-color-textColor\";set:config.ariaCurrent,when,\"all:varEq,activeNav,servicios\",page,null"
     },
     {
       "id": "headerCommerceLink",
@@ -339,7 +341,8 @@
         "href": "/tiendas-en-linea",
         "classes": "zooberiahNavLink ank-color-textColor"
       },
-      "eventInstructions": "trackEvent:nav_click,navigation,tiendas-en-linea,location,header"
+      "eventInstructions": "trackEvent:nav_click,navigation,tiendas-en-linea,location,header",
+      "valueInstructions": "set:config.classes,when,\"all:varEq,activeNav,tiendas-en-linea\",\"zooberiahNavLink ank-color-textColor ank-bg-secondaryBgColor ank-fontWeight-800\",\"zooberiahNavLink ank-color-textColor\";set:config.ariaCurrent,when,\"all:varEq,activeNav,tiendas-en-linea\",page,null"
     },
     {
       "id": "headerProjectsLink",
@@ -349,7 +352,8 @@
         "href": "/proyectos",
         "classes": "zooberiahNavLink ank-color-textColor"
       },
-      "eventInstructions": "trackEvent:nav_click,navigation,proyectos,location,header"
+      "eventInstructions": "trackEvent:nav_click,navigation,proyectos,location,header",
+      "valueInstructions": "set:config.classes,when,\"all:varEq,activeNav,proyectos\",\"zooberiahNavLink ank-color-textColor ank-bg-secondaryBgColor ank-fontWeight-800\",\"zooberiahNavLink ank-color-textColor\";set:config.ariaCurrent,when,\"all:varEq,activeNav,proyectos\",page,null"
     },
     {
       "id": "headerBlogLink",
@@ -359,7 +363,8 @@
         "href": "/blog",
         "classes": "zooberiahNavLink ank-color-textColor"
       },
-      "eventInstructions": "trackEvent:nav_click,navigation,blog,location,header"
+      "eventInstructions": "trackEvent:nav_click,navigation,blog,location,header",
+      "valueInstructions": "set:config.classes,when,\"all:varEq,activeNav,blog\",\"zooberiahNavLink ank-color-textColor ank-bg-secondaryBgColor ank-fontWeight-800\",\"zooberiahNavLink ank-color-textColor\";set:config.ariaCurrent,when,\"all:varEq,activeNav,blog\",page,null"
     },
     {
       "id": "footerServicesLink",
@@ -404,6 +409,46 @@
         "text": "Contacto",
         "href": "/contacto",
         "classes": "zooberiahFooterLink"
+      }
+    },
+    {
+      "id": "headerWebLink",
+      "type": "link",
+      "config": {
+        "href": "/sitios-web",
+        "classes": "zooberiahNavLink ank-color-textColor",
+        "text": "Sitios web"
+      },
+      "valueInstructions": "set:config.classes,when,\"all:varEq,activeNav,sitios-web\",\"zooberiahNavLink ank-color-textColor ank-bg-secondaryBgColor ank-fontWeight-800\",\"zooberiahNavLink ank-color-textColor\";set:config.ariaCurrent,when,\"all:varEq,activeNav,sitios-web\",page,null",
+      "eventInstructions": "trackEvent:nav_click,navigation,sitios-web,location,header"
+    },
+    {
+      "id": "footerWebLink",
+      "type": "link",
+      "config": {
+        "href": "/sitios-web",
+        "classes": "zooberiahFooterLink",
+        "text": "Sitios web"
+      }
+    },
+    {
+      "id": "headerBusinessLink",
+      "type": "link",
+      "config": {
+        "href": "/soluciones-para-negocios",
+        "classes": "zooberiahNavLink ank-color-textColor",
+        "text": "Soluciones"
+      },
+      "valueInstructions": "set:config.classes,when,\"all:varEq,activeNav,soluciones-para-negocios\",\"zooberiahNavLink ank-color-textColor ank-bg-secondaryBgColor ank-fontWeight-800\",\"zooberiahNavLink ank-color-textColor\";set:config.ariaCurrent,when,\"all:varEq,activeNav,soluciones-para-negocios\",page,null",
+      "eventInstructions": "trackEvent:nav_click,navigation,soluciones-para-negocios,location,header"
+    },
+    {
+      "id": "footerBusinessLink",
+      "type": "link",
+      "config": {
+        "href": "/soluciones-para-negocios",
+        "classes": "zooberiahFooterLink",
+        "text": "Soluciones"
       }
     }
   ]

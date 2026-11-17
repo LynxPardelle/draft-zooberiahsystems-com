@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "sitios-web",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "customWebMain",
+    "siteFooter"
+  ],
+  "seo": {
+    "title": "Sitios web a medida para empresas | ZooBeriah Systems",
+    "description": "Diseñamos sitios web corporativos, landing pages y catálogos a medida para empresas. Navegación móvil, contenido y SEO técnico desde el diseño.",
+    "canonical": "https://zooberiahsystems.com/sitios-web",
+    "openGraph": {
+      "title": "Sitios web a medida para empresas | ZooBeriah Systems",
+      "description": "Diseñamos sitios web corporativos, landing pages y catálogos a medida para empresas. Navegación móvil, contenido y SEO técnico desde el diseño.",
+      "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/zoositioweb.webp",
+      "image:alt": "Página de ZooSitioWeb sobre sitios para consultorios y contacto por WhatsApp.",
+      "type": "website",
+      "locale": "es_MX"
+    },
+    "twitter": {
+      "title": "Sitios web a medida para empresas | ZooBeriah Systems",
+      "description": "Diseñamos sitios web corporativos, landing pages y catálogos a medida para empresas. Navegación móvil, contenido y SEO técnico desde el diseño.",
+      "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/zoositioweb.webp",
+      "image:alt": "Página de ZooSitioWeb sobre sitios para consultorios y contacto por WhatsApp.",
+      "card": "summary_large_image"
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://zooberiahsystems.com/sitios-web#servicio",
+        "name": "Diseño y desarrollo de sitios web a medida",
+        "serviceType": "Diseño y desarrollo de sitios web para empresas",
+        "description": "Diseñamos sitios web corporativos, landing pages y catálogos a medida para empresas. Navegación móvil, contenido y SEO técnico desde el diseño.",
+        "url": "https://zooberiahsystems.com/sitios-web",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://zooberiahsystems.com/#organization",
+          "name": "ZooBeriah Systems",
+          "url": "https://zooberiahsystems.com/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://zooberiahsystems.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Sitios web",
+            "item": "https://zooberiahsystems.com/sitios-web"
+          }
+        ]
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "sitios-web",
+      "tipos-de-sitio",
+      "proceso-de-diseno",
+      "preguntas-sitios-web",
+      "cotizar-sitio-web"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}

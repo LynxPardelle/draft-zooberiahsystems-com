@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "soluciones-restaurantes",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "offerTitle": "Menú digital a medida para restaurantes",
+      "offerLead": "Tu cliente escanea el código QR, revisa platos y precios desde el celular y elige cómo comunicarse con el restaurante. Diseñamos la página alrededor del menú y de la atención que ya ofrece tu equipo.",
+      "offerContact": "Cotizar mi menú digital",
+      "offerCatalog": "Ver todas las soluciones",
+      "offerExampleTitle": "Si tienes varias sucursales",
+      "offerExampleText": "Cada sucursal puede tener su propio enlace o QR para mostrar horarios, ubicación y precios correctos. Una sucursal puede recibir pedidos por WhatsApp y otra usar el enlace de reservaciones que ya tiene.",
+      "offerScopeTitle": "Qué puede incluir el proyecto",
+      "offerScopeItem1Title": "Carta web por sucursal",
+      "offerScopeItem1Text": "Mostramos secciones, platos, precios y fotos en un formato que se pueda leer desde el celular. Definimos qué datos cambian por sucursal.",
+      "offerScopeItem2Title": "QR para mesas y materiales impresos",
+      "offerScopeItem2Text": "El QR puede apuntar a una dirección web estable. Así puedes cambiar el contenido de la carta sin volver a imprimirlo si conservas la misma URL.",
+      "offerScopeItem3Title": "Solicitudes de mesa o pedidos",
+      "offerScopeItem3Text": "Podemos enviar a los visitantes al WhatsApp de la sucursal o al servicio de reservas que ya uses. Acordamos cómo confirma cada solicitud tu equipo.",
+      "offerFaqTitle": "Preguntas frecuentes",
+      "offerFaqQuestion1Title": "¿Puedo usar un QR para todo el restaurante?",
+      "offerFaqQuestion1Text": "Sí. Un solo QR basta si todas las mesas consultan el mismo menú. Si cada sucursal tiene horarios o precios distintos, conviene usar una URL y un QR para cada una.",
+      "offerFaqQuestion2Title": "¿El enlace a WhatsApp confirma automáticamente una reservación?",
+      "offerFaqQuestion2Text": "El enlace abre un mensaje. El restaurante confirma si hay mesa y comunica sus condiciones. Si necesitas disponibilidad en tiempo real, primero revisamos el sistema de reservas que utilizas.",
+      "offerFaqQuestion3Title": "¿Puedo conservar el mismo QR al actualizar los precios?",
+      "offerFaqQuestion3Text": "Sí, si el QR apunta a una dirección web que seguirá activa. El contenido puede cambiar sin modificar esa dirección.",
+      "offerEndTitle": "Qué necesitamos para cotizar",
+      "offerEndLead": "Comparte tu carta, el número de sucursales y cómo reciben hoy pedidos o reservaciones. Con eso definimos qué mostrar en cada página.",
+      "offerEndContact": "Cotizar mi menú digital",
+      "offerRelated1": "Conocer los sitios web a medida",
+      "offerRelated2": "Ver control de inventario para insumos"
+    }
+  }
+}

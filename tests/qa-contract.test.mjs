@@ -8,14 +8,20 @@ const DISPLAY_PHONE = '+52 55 2269 9563';
 const ROUTES = [
   { path: '/', pageId: 'default' },
   { path: '/servicios', pageId: 'servicios' },
+  { path: '/sitios-web', pageId: 'sitios-web' },
   { path: '/tiendas-en-linea', pageId: 'tiendas-en-linea' },
+  { path: '/soluciones-para-negocios', pageId: 'soluciones-para-negocios' },
+  { path: '/soluciones-para-negocios/restaurantes', pageId: 'soluciones-restaurantes' },
+  { path: '/soluciones-para-negocios/inventario', pageId: 'soluciones-inventario' },
+  { path: '/soluciones-para-negocios/seguimiento-de-solicitudes', pageId: 'soluciones-seguimiento' },
   { path: '/proyectos', pageId: 'proyectos' },
-  { path: '/contacto', pageId: 'contacto' },
   { path: '/blog', pageId: 'blog' },
   { path: '/blog/:categorySlug/:articleSlug', pageId: 'blog-article' },
+  { path: '/contacto', pageId: 'contacto' },
   { path: '/404', pageId: 'not-found' },
 ];
-const MARKETING_PAGES = ['servicios', 'tiendas-en-linea', 'proyectos', 'contacto'];
+const MARKETING_ROUTES = ROUTES.filter(({ pageId }) => !['default', 'not-found', 'blog', 'blog-article'].includes(pageId));
+const MARKETING_PAGES = MARKETING_ROUTES.map(({ pageId }) => pageId);
 const PAGE_IDS = ['default', 'not-found', ...MARKETING_PAGES];
 const REQUIRED_PAGE_FILES = [
   'page-config.json',
@@ -27,6 +33,7 @@ const REQUIRED_PAGE_FILES = [
 const HOME_SECTIONS = [
   'consultoria',
   'soluciones',
+  'sitios-web',
   'aplicaciones',
   'como-trabajamos',
   'nosotros',
@@ -162,7 +169,7 @@ test('QA-002 preserves legacy home anchors and promotes the products on dedicate
   assert.doesNotMatch(copy, /ZooBeriha|Zooberiha|Zooberiah Systems/);
   const sectionIds = new Set(readJson('default/components.json').components.map(({ config }) => config?.id).filter(Boolean));
   for (const sectionId of HOME_SECTIONS) assert.ok(sectionIds.has(sectionId), 'Missing home section #' + sectionId);
-  for (const name of ['Zoolandingpage', 'Zoositioweb', 'Zooblog', 'RoadMap2U', 'DespensaLista']) {
+  for (const name of ['ZooLandingPage', 'ZooSitioWeb', 'ZooBlog', 'RoadMap2U', 'DespensaLista', 'ZooTiendaOnline']) {
     assert.ok(copy.includes(name), 'Missing product: ' + name);
   }
 });
@@ -295,13 +302,13 @@ test('QA-007 is production-ready, declares route canonicals and uses route-appro
   assert.equal(notFound.metadata?.status, 'production-ready');
   assert.deepEqual(home.structuredData.entries.map((entry) => entry['@type']), ['Organization', 'WebSite']);
   const seenTitles = new Set([localizedSpanish(home.seo.title)]);
-  for (const slug of MARKETING_PAGES) {
-    const page = readJson(slug + '/page-config.json');
+  for (const { path, pageId } of MARKETING_ROUTES) {
+    const page = readJson(pageId + '/page-config.json');
     const seo = page.seo;
     assert.ok(localizedSpanish(seo.title) && localizedSpanish(seo.description));
     assert.ok(!seenTitles.has(localizedSpanish(seo.title)));
     seenTitles.add(localizedSpanish(seo.title));
-    assert.equal(seo.canonical, 'https://' + DOMAIN + '/' + slug);
+    assert.equal(seo.canonical, 'https://' + DOMAIN + path);
     assert.ok(page.structuredData.entries.some((entry) => entry['@type'] === 'BreadcrumbList'));
   }
   assert.equal(Object.hasOwn(notFound, 'structuredData'), false);
@@ -318,7 +325,8 @@ test('QA-007 is production-ready, declares route canonicals and uses route-appro
 test('QA-008 excludes unsupported claims, placeholders and personal analytics metadata', () => {
   const payloads = allPayloads();
   const copy = collectStrings(payloads).join('\n');
-  assert.doesNotMatch(copy, /lorem ipsum|\bTODO\b|\bTBD\b|replace[_ -]?me|example\.com|placeholder/i);
+  assert.doesNotMatch(copy, /lorem ipsum|replace[_ -]?me|example\.com|placeholder/i);
+  assert.doesNotMatch(copy, /\b(?:TODO|TBD)\b/);
   assert.doesNotMatch(copy, /24\s*\/\s*7|diagn[oó]stico gratuito|resultados? garantizados?|certificaci[oó]n|cobertura nacional|todo M[eé]xico/i);
 
   const seoKeys = collectKeys(PAGE_IDS.map((pageId) => readJson(`${pageId}/page-config.json`).seo));
@@ -336,7 +344,7 @@ test('QA-009 keeps action and footer colors as direct utilities', () => {
   for (const [componentsPath, expected] of [
     ['components.json', {
       skipToMainLink: 'ank-color-bgColor',
-      headerTalkLink: 'ank-color-bgColor',
+      headerTalkLink: 'ank-color-textColor',
       siteFooter: 'ank-color-HASHF6F4EE',
       footerWhatsappLink: 'ank-color-HASH102D32',
     }],
@@ -393,10 +401,14 @@ test('QA-010 keeps every configured foreground pair WCAG-safe', () => {
 test('QA-011 shares available routes across desktop, mobile, footer and first-party links', () => {
   const components = readJson('components.json').components;
   const configById = (id) => components.find((component) => component.id === id).config;
-  const expected = ['/servicios', '/tiendas-en-linea', '/proyectos', '/blog', '/contacto'];
-  assert.deepEqual([...configById('headerNav').components, 'headerTalkLink'].map((id) => configById(id).href), expected);
+  const expected = ['/servicios', '/sitios-web', '/tiendas-en-linea', '/soluciones-para-negocios', '/proyectos', '/blog', '/contacto'];
+  assert.deepEqual(configById('headerNav').components.map((id) => configById(id).href), expected);
   assert.deepEqual(configById('footerNav').components.map((id) => configById(id).href), expected);
   assert.deepEqual(readJson('variables.json').variables.navigation.map(({ href }) => href), expected);
+  assert.equal(configById('headerBrandMark').src, '/assets/brand/zoolandingpage-default-favicon.svg');
+  for (const { path, pageId } of [...MARKETING_ROUTES, { path: '/blog', pageId: 'blog' }, { path: '/blog', pageId: 'blog-article' }]) {
+    assert.equal(readJson(pageId + '/variables.json').variables.activeNav, path.split('/')[1]);
+  }
 
   const routes = new Map(ROUTES.map(({ path, pageId }) => [path, pageId]));
   for (const component of allComponents().filter(({ type, config }) => type === 'link' && config?.href.startsWith('/'))) {

@@ -13,6 +13,7 @@
           "heroSection",
           "consultingSection",
           "solutionsSection",
+          "websiteSection",
           "applicationsSection",
           "aboutSection",
           "faqSection",
@@ -113,19 +114,7 @@
       "config": {
         "text": "Explorar servicios",
         "href": "/servicios",
-        "classes": "zHeroPrimary ank-color-HASH102D32",
-        "components": [
-          "heroServiceIcon"
-        ]
-      }
-    },
-    {
-      "id": "heroServiceIcon",
-      "type": "icon",
-      "config": {
-        "iconName": "arrow_forward",
-        "classes": "ank-fontSize-21px",
-        "ariaHidden": true
+        "classes": "zHeroPrimary ank-color-HASH102D32"
       }
     },
     {
@@ -281,9 +270,9 @@
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "zSection",
+        "classes": "zSection zBand",
         "components": [
-          "projectShell"
+          "featuredProjects"
         ],
         "id": "aplicaciones"
       }
@@ -292,7 +281,7 @@
       "id": "projectShell",
       "type": "container",
       "config": {
-        "tag": "div",
+        "tag": "article",
         "classes": "zShell zSplit",
         "components": [
           "projectCopy",
@@ -335,28 +324,16 @@
         "classes": "zPrimaryAction ank-color-bgColor",
         "target": "_blank",
         "rel": "noopener noreferrer",
-        "components": [
-          "projectOpenIcon"
-        ],
         "ariaLabel": "Visitar DespensaLista (se abre en una pestaña nueva)"
-      }
-    },
-    {
-      "id": "projectOpenIcon",
-      "type": "icon",
-      "config": {
-        "iconName": "arrow_forward",
-        "classes": "ank-fontSize-17px",
-        "ariaHidden": true
       }
     },
     {
       "id": "projectDetails",
       "type": "link",
       "config": {
-        "text": "Ver más proyectos",
-        "href": "/proyectos",
-        "classes": "zTextLink"
+        "text": "Conocer DespensaLista",
+        "href": "/proyectos#despensalista",
+        "classes": "zSecondaryAction ank-color-titleColor"
       }
     },
     {
@@ -702,7 +679,7 @@
       "config": {
         "tag": "h1",
         "text": "Consultoría tecnológica y desarrollo digital",
-        "classes": "zHeroTitle"
+        "classes": "zHeroTitle ank-outline-none ank-outlineFocus-none"
       }
     },
     {
@@ -711,7 +688,7 @@
       "valueInstructions": "set:config.text,i18n,page.heroLead",
       "config": {
         "tag": "p",
-        "text": "Ayudamos a negocios a ordenar sus datos, automatizar procesos y desarrollar sitios web, tiendas en línea y aplicaciones.",
+        "text": "Creamos sitios web, tiendas en línea y sistemas a medida. También ayudamos a negocios a ordenar sus datos y automatizar procesos.",
         "classes": "ank-m-0 ank-color-white ank-fontSize-1_08rem ank-fontSize-md-1_22rem ank-lineHeight-1_65 ank-maxWidth-46ch"
       }
     },
@@ -780,7 +757,7 @@
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.projectTitle",
       "config": {
-        "tag": "h2",
+        "tag": "h3",
         "text": "DespensaLista",
         "classes": "zSectionTitle"
       }
@@ -903,6 +880,244 @@
         "tag": "p",
         "text": "Comparte el objetivo de tu proyecto y cómo resuelves hoy ese proceso.",
         "classes": "ank-m-0 ank-color-secondaryTextColor ank-lineHeight-1_65 ank-maxWidth-68ch"
+      }
+    },
+    {
+      "id": "websiteSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "websiteShell"
+        ],
+        "id": "sitios-web"
+      }
+    },
+    {
+      "id": "websiteShell",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zSplit",
+        "components": [
+          "websiteCopy",
+          "websiteImage"
+        ]
+      }
+    },
+    {
+      "id": "websiteCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "websiteLabel",
+          "websiteTitle",
+          "websiteLead",
+          "websiteActions"
+        ]
+      }
+    },
+    {
+      "id": "websiteActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zActions",
+        "components": [
+          "websiteLink",
+          "businessLink"
+        ]
+      }
+    },
+    {
+      "id": "websiteLink",
+      "type": "link",
+      "config": {
+        "href": "/sitios-web",
+        "classes": "zPrimaryAction ank-color-bgColor",
+        "text": "Explorar sitios web"
+      }
+    },
+    {
+      "id": "businessLink",
+      "type": "link",
+      "config": {
+        "href": "/soluciones-para-negocios",
+        "classes": "zSecondaryAction ank-color-titleColor",
+        "text": "Ver soluciones para negocios"
+      }
+    },
+    {
+      "id": "websiteImage",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/zoositioweb.webp",
+        "alt": "Página de ZooSitioWeb sobre sitios para consultorios y contacto por WhatsApp",
+        "width": 1280,
+        "height": 800,
+        "classes": "zMedia",
+        "loading": "lazy",
+        "decoding": "async"
+      }
+    },
+    {
+      "id": "featuredProjects",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell ank-display-grid ank-gap-38px ank-gap-lg-50px",
+        "components": [
+          "featuredProjectsTitle",
+          "projectShell",
+          "roadmapShell"
+        ]
+      }
+    },
+    {
+      "id": "roadmapShell",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "zSplit ank-paddingTop-34px ank-borderTop-1px__solid__HASH9EB5AD",
+        "components": [
+          "roadmapCopy",
+          "roadmapImage"
+        ]
+      }
+    },
+    {
+      "id": "roadmapCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "roadmapLabel",
+          "roadmapTitle",
+          "roadmapLead",
+          "roadmapActions"
+        ]
+      }
+    },
+    {
+      "id": "roadmapActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zActions",
+        "components": [
+          "roadmapVisit",
+          "roadmapDetails"
+        ]
+      }
+    },
+    {
+      "id": "roadmapVisit",
+      "type": "link",
+      "config": {
+        "href": "https://roadmap2u.com/",
+        "classes": "zPrimaryAction ank-color-bgColor",
+        "text": "Visitar RoadMap2U",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "ariaLabel": "Visitar RoadMap2U (se abre en una pestaña nueva)"
+      }
+    },
+    {
+      "id": "roadmapDetails",
+      "type": "link",
+      "config": {
+        "href": "/proyectos#roadmap2u",
+        "classes": "zSecondaryAction ank-color-titleColor",
+        "text": "Conocer RoadMap2U"
+      }
+    },
+    {
+      "id": "roadmapImage",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/roadmap2u.webp",
+        "alt": "Portada de RoadMap2U con una ilustración de árbol y la frase «Tus metas y tareas, en un árbol visual»",
+        "width": 1280,
+        "height": 800,
+        "classes": "zMedia",
+        "loading": "lazy",
+        "decoding": "async"
+      }
+    },
+    {
+      "id": "websiteLabel",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.websiteLabel",
+      "config": {
+        "tag": "p",
+        "text": "Diseño y desarrollo web",
+        "classes": "zEyebrow"
+      }
+    },
+    {
+      "id": "websiteTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.websiteTitle",
+      "config": {
+        "tag": "h2",
+        "text": "Sitios web hechos a la medida de tu negocio",
+        "classes": "zSectionTitle"
+      }
+    },
+    {
+      "id": "websiteLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.websiteLead",
+      "config": {
+        "tag": "p",
+        "text": "Diseñamos sitios corporativos y páginas para campañas o servicios. Organiza tu oferta por página, recibe consultas por WhatsApp o formularios, y prepara el sitio para búsquedas locales y asistentes de IA.",
+        "classes": "zLead"
+      }
+    },
+    {
+      "id": "featuredProjectsTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.featuredProjectsTitle",
+      "config": {
+        "tag": "h2",
+        "text": "Proyectos disponibles",
+        "classes": "zSectionTitle"
+      }
+    },
+    {
+      "id": "roadmapLabel",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.roadmapLabel",
+      "config": {
+        "tag": "p",
+        "text": "Aplicación disponible",
+        "classes": "zEyebrow"
+      }
+    },
+    {
+      "id": "roadmapTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.roadmapTitle",
+      "config": {
+        "tag": "h3",
+        "text": "RoadMap2U",
+        "classes": "zSectionTitle"
+      }
+    },
+    {
+      "id": "roadmapLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.roadmapLead",
+      "config": {
+        "tag": "p",
+        "text": "Convierte una meta en un árbol visual. Cada rama es un paso, una tarea o una alternativa. Puedes reorganizar el plan y trabajar sin conexión después de crear la cuenta.",
+        "classes": "zLead"
       }
     }
   ]

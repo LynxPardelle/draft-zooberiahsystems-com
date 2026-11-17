@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "soluciones-inventario",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "offerTitle": "Sistema de control de inventario a medida",
+      "offerLead": "Diseñamos un flujo de inventario para que cada equipo registre sus movimientos y consulte las existencias que necesita para operar. Acordamos qué nivel de detalle hace falta en cada sucursal.",
+      "offerContact": "Consultar por mi inventario",
+      "offerCatalog": "Ver todas las soluciones",
+      "offerExampleTitle": "Si compras para más de una ubicación",
+      "offerExampleText": "Una sucursal registra una entrada al recibir mercancía y una salida cuando la usa. La persona encargada de comprar consulta las cantidades por ubicación y revisa las diferencias antes de reponer.",
+      "offerScopeTitle": "Qué puede incluir el proyecto",
+      "offerScopeItem1Title": "Catálogo y unidades de medida",
+      "offerScopeItem1Text": "Definimos si registras piezas, cajas o kilos. También revisamos cómo se identifican los insumos y si hace falta separarlos por lote o ubicación.",
+      "offerScopeItem2Title": "Movimientos y conteos",
+      "offerScopeItem2Text": "Acordamos qué se registra al recibir, trasladar, consumir o ajustar existencias. Definimos quién puede registrar movimientos y quién revisa diferencias.",
+      "offerScopeItem3Title": "Consultas para reponer",
+      "offerScopeItem3Text": "Acordamos qué necesita ver el equipo al comprar, como las existencias por sucursal o los artículos por debajo de la cantidad acordada.",
+      "offerFaqTitle": "Preguntas frecuentes",
+      "offerFaqQuestion1Title": "¿Pueden usar mi hoja de cálculo como punto de partida?",
+      "offerFaqQuestion1Text": "La revisamos para confirmar cuáles son los productos, sus unidades y los saldos por ubicación. Acordamos qué datos se pueden importar y cuáles requieren limpieza.",
+      "offerFaqQuestion2Title": "¿El sistema se conecta con mi punto de venta?",
+      "offerFaqQuestion2Text": "Depende de cómo tu proveedor permite extraer datos. Revisamos sus exportaciones o API, los permisos y la frecuencia de sincronización antes de proponer una conexión.",
+      "offerFaqQuestion3Title": "¿Se pueden controlar lotes y caducidades?",
+      "offerFaqQuestion3Text": "Podemos considerarlo si es parte de tu operación. Primero definimos cuándo se captura el lote, qué fechas importan y quién consultará las alertas.",
+      "offerEndTitle": "Qué necesitamos para cotizar",
+      "offerEndLead": "Comparte un ejemplo de cómo haces el conteo, qué ubicaciones participan y qué dudas aparecen al decidir una compra.",
+      "offerEndContact": "Consultar por mi inventario",
+      "offerRelated1": "Ver consultoría de datos y tecnología"
+    }
+  }
+}

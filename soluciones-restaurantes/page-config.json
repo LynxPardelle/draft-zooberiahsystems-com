@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "soluciones-restaurantes",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "offerMain",
+    "siteFooter"
+  ],
+  "seo": {
+    "title": "Menú digital a medida para restaurantes | ZooBeriah Systems",
+    "description": "Diseñamos menús web para restaurantes, con acceso por QR, horarios por sucursal y enlaces para solicitar reservaciones o pedidos por WhatsApp.",
+    "canonical": "https://zooberiahsystems.com/soluciones-para-negocios/restaurantes",
+    "openGraph": {
+      "title": "Menú digital a medida para restaurantes | ZooBeriah Systems",
+      "description": "Diseñamos menús web para restaurantes, con acceso por QR, horarios por sucursal y enlaces para solicitar reservaciones o pedidos por WhatsApp.",
+      "type": "website",
+      "locale": "es_MX"
+    },
+    "twitter": {
+      "title": "Menú digital a medida para restaurantes | ZooBeriah Systems",
+      "description": "Diseñamos menús web para restaurantes, con acceso por QR, horarios por sucursal y enlaces para solicitar reservaciones o pedidos por WhatsApp.",
+      "card": "summary"
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://zooberiahsystems.com/soluciones-para-negocios/restaurantes#servicio",
+        "name": "Menú digital a medida para restaurantes",
+        "serviceType": "Diseño de menús digitales y sitios web para restaurantes",
+        "description": "Diseñamos menús web para restaurantes, con acceso por QR, horarios por sucursal y enlaces para solicitar reservaciones o pedidos por WhatsApp.",
+        "url": "https://zooberiahsystems.com/soluciones-para-negocios/restaurantes",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://zooberiahsystems.com/#organization",
+          "name": "ZooBeriah Systems",
+          "url": "https://zooberiahsystems.com/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://zooberiahsystems.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Soluciones para negocios",
+            "item": "https://zooberiahsystems.com/soluciones-para-negocios"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Restaurantes",
+            "item": "https://zooberiahsystems.com/soluciones-para-negocios/restaurantes"
+          }
+        ]
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "restaurantes",
+      "alcance-del-proyecto",
+      "preguntas-frecuentes",
+      "consultar-proyecto"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}

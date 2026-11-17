@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "soluciones-para-negocios",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "businessSolutionsMain",
+    "siteFooter"
+  ],
+  "seo": {
+    "title": "Software a medida para negocios | ZooBeriah Systems",
+    "description": "Diseñamos soluciones a medida para restaurantes y negocios que necesitan organizar inventario, ventas o seguimiento de solicitudes y cotizaciones.",
+    "canonical": "https://zooberiahsystems.com/soluciones-para-negocios",
+    "openGraph": {
+      "title": "Software a medida para negocios | ZooBeriah Systems",
+      "description": "Diseñamos soluciones a medida para restaurantes y negocios que necesitan organizar inventario, ventas o seguimiento de solicitudes y cotizaciones.",
+      "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/consulting.webp",
+      "image:alt": "Personas revisando datos y material de trabajo en una mesa.",
+      "type": "website",
+      "locale": "es_MX"
+    },
+    "twitter": {
+      "title": "Software a medida para negocios | ZooBeriah Systems",
+      "description": "Diseñamos soluciones a medida para restaurantes y negocios que necesitan organizar inventario, ventas o seguimiento de solicitudes y cotizaciones.",
+      "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/consulting.webp",
+      "image:alt": "Personas revisando datos y material de trabajo en una mesa.",
+      "card": "summary_large_image"
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://zooberiahsystems.com/soluciones-para-negocios#servicio",
+        "name": "Desarrollo de software a medida para negocios",
+        "serviceType": "Software de gestión y soluciones operativas a medida",
+        "description": "Diseñamos soluciones a medida para restaurantes y negocios que necesitan organizar inventario, ventas o seguimiento de solicitudes y cotizaciones.",
+        "url": "https://zooberiahsystems.com/soluciones-para-negocios",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://zooberiahsystems.com/#organization",
+          "name": "ZooBeriah Systems",
+          "url": "https://zooberiahsystems.com/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://zooberiahsystems.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Soluciones para negocios",
+            "item": "https://zooberiahsystems.com/soluciones-para-negocios"
+          }
+        ]
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "soluciones-para-negocios",
+      "restaurantes",
+      "inventario",
+      "seguimiento-de-solicitudes",
+      "preguntas-soluciones",
+      "consultar-solucion"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}

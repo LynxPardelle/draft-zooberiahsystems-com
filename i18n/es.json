@@ -9,7 +9,9 @@
       "commerce": "Tiendas en línea",
       "projects": "Proyectos",
       "blog": "Blog",
-      "contact": "Contacto"
+      "contact": "Contacto",
+      "web": "Sitios web",
+      "business": "Soluciones"
     },
     "ui": {
       "accessibility": {
