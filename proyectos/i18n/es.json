@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "proyectos",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "projectsEyebrow": "Proyectos de ZooBeriah Systems",
+      "projectsTitle": "Proyectos y productos digitales",
+      "projectsLead": "DespensaLista ya está disponible. La creamos para saber qué tienes en casa, qué usar primero y qué falta comprar. Puedes compartir la lista de compras con tu hogar.",
+      "projectsDespensaLink": "Visitar despensalista.com",
+      "projectsDespensaLinkLabel": "Visitar despensalista.com (se abre en una pestaña nueva)",
+      "projectsAppsTitle": "Aplicaciones propias",
+      "projectsRoadmapLink": "Conocer RoadMap2U",
+      "projectsRoadmapLinkLabel": "Conocer RoadMap2U (se abre en una pestaña nueva)",
+      "projectsRoadmapTitle": "RoadMap2U",
+      "projectsRoadmapBody": "Organiza tus metas como un árbol de caminos. Revisa dónde estás y ajusta tus siguientes pasos cuando cambien tus prioridades.",
+      "projectsBusinessTitle": "Soluciones web para negocios",
+      "projectsBusinessLead": "Elige el formato web según lo que necesitas hacer: lanzar una campaña, presentar tus servicios, publicar contenido o vender en línea.",
+      "projectsLandingLink": "Ver Zoolandingpage",
+      "projectsLandingLinkLabel": "Ver Zoolandingpage (se abre en una pestaña nueva)",
+      "projectsLandingTitle": "Zoolandingpage",
+      "projectsLandingBody": "Páginas de aterrizaje para dirigir una campaña hacia una acción concreta, como recibir cotizaciones o registrar interesados.",
+      "projectsWebLink": "Ver planes de Zoositioweb",
+      "projectsWebLinkLabel": "Ver planes de Zoositioweb (se abre en una pestaña nueva)",
+      "projectsWebTitle": "Zoositioweb",
+      "projectsWebBody": "Sitios web para presentar tu negocio, explicar tus servicios y dar a tus clientes una forma clara de contactarte.",
+      "projectsBlogLink": "Cotizar Zooblog por WhatsApp",
+      "projectsBlogLinkLabel": "Cotizar Zooblog por WhatsApp (se abre en una pestaña nueva)",
+      "projectsBlogTitle": "Zooblog",
+      "projectsBlogBody": "Un espacio editorial para organizar publicaciones y compartir guías, novedades o información de tu especialidad.",
+      "projectsStoreLink": "Ver tiendas en línea a medida",
+      "projectsStoreTitle": "Zootiendadigital",
+      "projectsStoreBody": "Diseñamos tu tienda según tus productos, tu forma de cobrar y cómo haces las entregas."
+    }
+  }
+}

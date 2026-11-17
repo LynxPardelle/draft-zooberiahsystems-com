@@ -35,7 +35,7 @@
         "tag": "div",
         "classes": "zooberiahHeaderInner zooberiahWrap",
         "components": [
-          "brandLink",
+          "headerBrand",
           "headerDesktopCluster",
           "headerMobileActions"
         ]
@@ -78,77 +78,24 @@
         "ariaLabel": "",
         "classes": "zooberiahDesktopNav",
         "components": [
-          "headerConsultingLink",
-          "headerSolutionsLink",
-          "headerApplicationsLink",
-          "headerBlogLink",
-          "headerAboutLink"
+          "headerServicesLink",
+          "headerCommerceLink",
+          "headerProjectsLink",
+          "headerBlogLink"
         ]
-      }
-    },
-    {
-      "id": "headerConsultingLink",
-      "type": "link",
-      "valueInstructions": "set:config.text,i18n,nav.consulting;set:config.ariaLabel,i18n,nav.consulting",
-      "config": {
-        "href": "/#consultoria",
-        "text": "",
-        "ariaLabel": "",
-        "classes": "zooberiahNavLink ank-color-textColor"
-      }
-    },
-    {
-      "id": "headerSolutionsLink",
-      "type": "link",
-      "valueInstructions": "set:config.text,i18n,nav.solutions;set:config.ariaLabel,i18n,nav.solutions",
-      "config": {
-        "href": "/#soluciones",
-        "text": "",
-        "ariaLabel": "",
-        "classes": "zooberiahNavLink ank-color-textColor"
-      }
-    },
-    {
-      "id": "headerApplicationsLink",
-      "type": "link",
-      "valueInstructions": "set:config.text,i18n,nav.applications;set:config.ariaLabel,i18n,nav.applications",
-      "config": {
-        "href": "/#aplicaciones",
-        "text": "",
-        "ariaLabel": "",
-        "classes": "zooberiahNavLink ank-color-textColor"
-      }
-    },
-    {
-      "id": "headerBlogLink",
-      "type": "link",
-      "config": {
-        "href": "/blog",
-        "text": "Blog",
-        "classes": "zooberiahNavLink ank-color-textColor"
-      }
-    },
-    {
-      "id": "headerAboutLink",
-      "type": "link",
-      "valueInstructions": "set:config.text,i18n,nav.about;set:config.ariaLabel,i18n,nav.about",
-      "config": {
-        "href": "/#nosotros",
-        "text": "",
-        "ariaLabel": "",
-        "classes": "zooberiahNavLink ank-color-textColor"
       }
     },
     {
       "id": "headerTalkLink",
       "type": "link",
-      "valueInstructions": "set:config.text,i18n,nav.talk;set:config.ariaLabel,i18n,nav.talkAriaLabel",
+      "valueInstructions": "set:config.text,i18n,nav.contact",
       "config": {
-        "href": "/#contacto",
-        "text": "",
-        "ariaLabel": "",
+        "href": "/contacto",
+        "text": "Contacto",
+        "ariaLabel": "Contacto",
         "classes": "zooberiahPrimaryAction ank-color-bgColor"
-      }
+      },
+      "eventInstructions": "trackEvent:nav_click,navigation,contact,location,header"
     },
     {
       "id": "headerMobileActions",
@@ -286,61 +233,12 @@
         "ariaLabel": "",
         "classes": "zooberiahFooterNav",
         "components": [
-          "footerConsultingLink",
-          "footerSolutionsLink",
-          "footerApplicationsLink",
+          "footerServicesLink",
+          "footerCommerceLink",
+          "footerProjectsLink",
           "footerBlogLink",
-          "footerAboutLink"
+          "footerContactLink"
         ]
-      }
-    },
-    {
-      "id": "footerConsultingLink",
-      "type": "link",
-      "valueInstructions": "set:config.text,i18n,nav.consulting",
-      "config": {
-        "href": "/#consultoria",
-        "text": "",
-        "classes": "zooberiahFooterLink"
-      }
-    },
-    {
-      "id": "footerSolutionsLink",
-      "type": "link",
-      "valueInstructions": "set:config.text,i18n,nav.solutions",
-      "config": {
-        "href": "/#soluciones",
-        "text": "",
-        "classes": "zooberiahFooterLink"
-      }
-    },
-    {
-      "id": "footerApplicationsLink",
-      "type": "link",
-      "valueInstructions": "set:config.text,i18n,nav.applications",
-      "config": {
-        "href": "/#aplicaciones",
-        "text": "",
-        "classes": "zooberiahFooterLink"
-      }
-    },
-    {
-      "id": "footerBlogLink",
-      "type": "link",
-      "config": {
-        "href": "/blog",
-        "text": "Blog",
-        "classes": "zooberiahFooterLink"
-      }
-    },
-    {
-      "id": "footerAboutLink",
-      "type": "link",
-      "valueInstructions": "set:config.text,i18n,nav.about",
-      "config": {
-        "href": "/#nosotros",
-        "text": "",
-        "classes": "zooberiahFooterLink"
       }
     },
     {
@@ -367,7 +265,10 @@
         "ariaLabel": "",
         "target": "_blank",
         "rel": "noopener noreferrer",
-        "classes": "zooberiahFooterActionLink ank-color-HASH102D32"
+        "classes": "zooberiahFooterActionLink ank-color-HASH102D32",
+        "components": [
+          "footerWhatsappIcon"
+        ]
       }
     },
     {
@@ -388,6 +289,121 @@
         "tag": "p",
         "text": "",
         "classes": "zooberiahFooterText"
+      }
+    },
+    {
+      "id": "headerBrand",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-alignItems-center ank-gap-10px",
+        "components": [
+          "headerBrandMark",
+          "brandLink"
+        ]
+      }
+    },
+    {
+      "id": "headerBrandMark",
+      "type": "icon",
+      "config": {
+        "iconName": "dashboard_customize",
+        "classes": "zBrandMark",
+        "ariaHidden": true
+      }
+    },
+    {
+      "id": "footerWhatsappIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "chat",
+        "classes": "ank-fontSize-18px",
+        "ariaHidden": true
+      }
+    },
+    {
+      "id": "headerServicesLink",
+      "type": "link",
+      "config": {
+        "text": "Servicios",
+        "href": "/servicios",
+        "classes": "zooberiahNavLink ank-color-textColor"
+      },
+      "eventInstructions": "trackEvent:nav_click,navigation,servicios,location,header"
+    },
+    {
+      "id": "headerCommerceLink",
+      "type": "link",
+      "config": {
+        "text": "Tiendas en línea",
+        "href": "/tiendas-en-linea",
+        "classes": "zooberiahNavLink ank-color-textColor"
+      },
+      "eventInstructions": "trackEvent:nav_click,navigation,tiendas-en-linea,location,header"
+    },
+    {
+      "id": "headerProjectsLink",
+      "type": "link",
+      "config": {
+        "text": "Proyectos",
+        "href": "/proyectos",
+        "classes": "zooberiahNavLink ank-color-textColor"
+      },
+      "eventInstructions": "trackEvent:nav_click,navigation,proyectos,location,header"
+    },
+    {
+      "id": "headerBlogLink",
+      "type": "link",
+      "config": {
+        "text": "Blog",
+        "href": "/blog",
+        "classes": "zooberiahNavLink ank-color-textColor"
+      },
+      "eventInstructions": "trackEvent:nav_click,navigation,blog,location,header"
+    },
+    {
+      "id": "footerServicesLink",
+      "type": "link",
+      "config": {
+        "text": "Servicios",
+        "href": "/servicios",
+        "classes": "zooberiahFooterLink"
+      }
+    },
+    {
+      "id": "footerCommerceLink",
+      "type": "link",
+      "config": {
+        "text": "Tiendas en línea",
+        "href": "/tiendas-en-linea",
+        "classes": "zooberiahFooterLink"
+      }
+    },
+    {
+      "id": "footerProjectsLink",
+      "type": "link",
+      "config": {
+        "text": "Proyectos",
+        "href": "/proyectos",
+        "classes": "zooberiahFooterLink"
+      }
+    },
+    {
+      "id": "footerBlogLink",
+      "type": "link",
+      "config": {
+        "text": "Blog",
+        "href": "/blog",
+        "classes": "zooberiahFooterLink"
+      }
+    },
+    {
+      "id": "footerContactLink",
+      "type": "link",
+      "config": {
+        "text": "Contacto",
+        "href": "/contacto",
+        "classes": "zooberiahFooterLink"
       }
     }
   ]

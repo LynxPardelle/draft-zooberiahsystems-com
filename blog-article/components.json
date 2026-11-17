@@ -13,7 +13,8 @@
         "components": [
           "sharedArticleBack",
           "sharedArticleContent"
-        ]
+        ],
+        "tabindex": -1
       }
     },
     {

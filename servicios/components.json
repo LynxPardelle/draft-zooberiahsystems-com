@@ -1,0 +1,726 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "servicios",
+  "components": [
+    {
+      "id": "technologyIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "account_tree",
+        "ariaHidden": true,
+        "classes": "zIcon"
+      }
+    },
+    {
+      "id": "technologyTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.technologyTitle",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_26rem ank-lineHeight-1_22 ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "technologyLabel",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-alignItems-center ank-gap-12px",
+        "components": [
+          "technologyIcon",
+          "technologyTitle"
+        ]
+      }
+    },
+    {
+      "id": "technologyDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.technologyDescription",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "technologyExample",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.technologyExample",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "technologyCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "technologyDescription",
+          "technologyExample"
+        ]
+      }
+    },
+    {
+      "id": "technologyRow",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "zRow ank-display-grid ank-gap-12px ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM1frED__minmaxSD0COM1_35frED",
+        "components": [
+          "technologyLabel",
+          "technologyCopy"
+        ],
+        "id": "consultoria-tecnologica"
+      }
+    },
+    {
+      "id": "dataIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "insights",
+        "ariaHidden": true,
+        "classes": "zIcon"
+      }
+    },
+    {
+      "id": "dataTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.dataTitle",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_26rem ank-lineHeight-1_22 ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "dataLabel",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-alignItems-center ank-gap-12px",
+        "components": [
+          "dataIcon",
+          "dataTitle"
+        ]
+      }
+    },
+    {
+      "id": "dataDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.dataDescription",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "dataExample",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.dataExample",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "dataCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "dataDescription",
+          "dataExample"
+        ]
+      }
+    },
+    {
+      "id": "dataRow",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "zRow ank-display-grid ank-gap-12px ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM1frED__minmaxSD0COM1_35frED",
+        "components": [
+          "dataLabel",
+          "dataCopy"
+        ],
+        "id": "consultoria-de-datos"
+      }
+    },
+    {
+      "id": "aiIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "auto_awesome",
+        "ariaHidden": true,
+        "classes": "zIcon"
+      }
+    },
+    {
+      "id": "aiTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.aiTitle",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_26rem ank-lineHeight-1_22 ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "aiLabel",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-alignItems-center ank-gap-12px",
+        "components": [
+          "aiIcon",
+          "aiTitle"
+        ]
+      }
+    },
+    {
+      "id": "aiDescription",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.aiDescription",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "aiExample",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.aiExample",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "aiCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "aiDescription",
+          "aiExample"
+        ]
+      }
+    },
+    {
+      "id": "aiRow",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "zRow ank-display-grid ank-gap-12px ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM1frED__minmaxSD0COM1_35frED",
+        "components": [
+          "aiLabel",
+          "aiCopy"
+        ],
+        "id": "consultoria-de-inteligencia-artificial"
+      }
+    },
+    {
+      "id": "step1Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.step1Title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_26rem ank-lineHeight-1_22 ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "step1Detail",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.step1Detail",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "step1Row",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow",
+        "components": [
+          "step1Title",
+          "step1Detail"
+        ]
+      }
+    },
+    {
+      "id": "step2Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.step2Title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_26rem ank-lineHeight-1_22 ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "step2Detail",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.step2Detail",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "step2Row",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow",
+        "components": [
+          "step2Title",
+          "step2Detail"
+        ]
+      }
+    },
+    {
+      "id": "step3Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.step3Title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_26rem ank-lineHeight-1_22 ank-fontWeight-700"
+      }
+    },
+    {
+      "id": "step3Detail",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.step3Detail",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "step3Row",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow",
+        "components": [
+          "step3Title",
+          "step3Detail"
+        ]
+      }
+    },
+    {
+      "id": "servicesEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.servicesEyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zEyebrow"
+      }
+    },
+    {
+      "id": "servicesTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.servicesTitle",
+      "config": {
+        "tag": "h1",
+        "text": "",
+        "classes": "zPageTitle",
+        "id": "services-title"
+      }
+    },
+    {
+      "id": "servicesIntro",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.servicesIntro",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead"
+      }
+    },
+    {
+      "id": "servicesContact",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.servicesContact",
+      "config": {
+        "href": "/contacto",
+        "text": "",
+        "classes": "zPrimaryAction ank-color-bgColor",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "auto"
+        }
+      }
+    },
+    {
+      "id": "servicesHeroActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zActions",
+        "components": [
+          "servicesContact"
+        ]
+      }
+    },
+    {
+      "id": "servicesHeroCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "servicesEyebrow",
+          "servicesTitle",
+          "servicesIntro",
+          "servicesHeroActions"
+        ]
+      }
+    },
+    {
+      "id": "servicesHeroImage",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/consulting.webp",
+        "alt": "Revisión de gráficas y materiales de trabajo en una mesa",
+        "width": 1280,
+        "height": 720,
+        "loading": "eager",
+        "fetchPriority": "high",
+        "decoding": "async",
+        "classes": "zMedia"
+      }
+    },
+    {
+      "id": "servicesHeroFigure",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "classes": "ank-m-0 ank-minWidth-0",
+        "components": [
+          "servicesHeroImage"
+        ]
+      }
+    },
+    {
+      "id": "servicesHeroInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zSplit",
+        "components": [
+          "servicesHeroCopy",
+          "servicesHeroFigure"
+        ]
+      }
+    },
+    {
+      "id": "servicesHero",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zPageHero",
+        "components": [
+          "servicesHeroInner"
+        ],
+        "ariaLabelledby": "services-title",
+        "styles": {
+          "backgroundImage": "linear-gradient(135deg, var(--ank-secondaryBgColor), var(--ank-bgColor))"
+        }
+      }
+    },
+    {
+      "id": "consultingTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.consultingTitle",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zSectionTitle",
+        "id": "services-consulting-title"
+      }
+    },
+    {
+      "id": "consultingList",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zList",
+        "components": [
+          "technologyRow",
+          "dataRow",
+          "aiRow"
+        ]
+      }
+    },
+    {
+      "id": "consultingInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zProse",
+        "components": [
+          "consultingTitle",
+          "consultingList"
+        ]
+      }
+    },
+    {
+      "id": "consultingSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "consultingInner"
+        ],
+        "id": "consultoria",
+        "ariaLabelledby": "services-consulting-title"
+      }
+    },
+    {
+      "id": "digitalEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.digitalEyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zEyebrow"
+      }
+    },
+    {
+      "id": "digitalTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.digitalTitle",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zSectionTitle",
+        "id": "services-digital-title"
+      }
+    },
+    {
+      "id": "digitalHeading",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "digitalEyebrow",
+          "digitalTitle"
+        ]
+      }
+    },
+    {
+      "id": "digitalIntro",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.digitalIntro",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead"
+      }
+    },
+    {
+      "id": "digitalShopLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.digitalShopLink",
+      "config": {
+        "href": "/tiendas-en-linea",
+        "text": "",
+        "classes": "zPrimaryAction ank-color-bgColor",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "auto"
+        }
+      }
+    },
+    {
+      "id": "digitalProjectsLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.digitalProjectsLink",
+      "config": {
+        "href": "/proyectos",
+        "text": "",
+        "classes": "zSecondaryAction ank-color-titleColor",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "auto"
+        }
+      }
+    },
+    {
+      "id": "digitalActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zActions",
+        "components": [
+          "digitalShopLink",
+          "digitalProjectsLink"
+        ]
+      }
+    },
+    {
+      "id": "digitalCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "digitalIntro",
+          "digitalActions"
+        ]
+      }
+    },
+    {
+      "id": "digitalInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zSplit",
+        "components": [
+          "digitalHeading",
+          "digitalCopy"
+        ]
+      }
+    },
+    {
+      "id": "digitalSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection ank-bg-secondaryBgColor",
+        "components": [
+          "digitalInner"
+        ],
+        "id": "soluciones",
+        "ariaLabelledby": "services-digital-title"
+      }
+    },
+    {
+      "id": "methodTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.methodTitle",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zSectionTitle",
+        "id": "services-method-title"
+      }
+    },
+    {
+      "id": "methodIntro",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.methodIntro",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead"
+      }
+    },
+    {
+      "id": "methodContact",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.methodContact",
+      "config": {
+        "href": "/contacto",
+        "text": "",
+        "classes": "zTextLink",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "auto"
+        }
+      }
+    },
+    {
+      "id": "methodCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "methodTitle",
+          "methodIntro",
+          "methodContact"
+        ]
+      }
+    },
+    {
+      "id": "methodList",
+      "type": "container",
+      "config": {
+        "tag": "ol",
+        "classes": "zList",
+        "components": [
+          "step1Row",
+          "step2Row",
+          "step3Row"
+        ],
+        "role": "list"
+      }
+    },
+    {
+      "id": "methodInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zSplit",
+        "components": [
+          "methodCopy",
+          "methodList"
+        ]
+      }
+    },
+    {
+      "id": "methodSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "methodInner"
+        ],
+        "id": "como-trabajamos",
+        "ariaLabelledby": "services-method-title"
+      }
+    },
+    {
+      "id": "servicesMain",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "zMain",
+        "components": [
+          "servicesHero",
+          "consultingSection",
+          "digitalSection",
+          "methodSection"
+        ],
+        "id": "main-content",
+        "tabindex": -1
+      }
+    }
+  ]
+}

@@ -1,0 +1,578 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "proyectos",
+  "components": [
+    {
+      "id": "projectsMain",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "zMain",
+        "components": [
+          "projectsHero",
+          "projectsApps",
+          "projectsBusiness"
+        ],
+        "id": "main-content",
+        "role": "main",
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "projectsEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.projectsEyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zEyebrow"
+      }
+    },
+    {
+      "id": "projectsTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.projectsTitle",
+      "config": {
+        "tag": "h1",
+        "text": "",
+        "classes": "zPageTitle"
+      }
+    },
+    {
+      "id": "projectsLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.projectsLead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead"
+      }
+    },
+    {
+      "id": "projectsDespensaLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.projectsDespensaLink;set:config.ariaLabel,i18n,page.projectsDespensaLinkLabel",
+      "eventInstructions": "trackEvent:cta_click,cta,projectsDespensaLink,location,proyectos-inicio",
+      "config": {
+        "href": "https://despensalista.com/",
+        "text": "",
+        "classes": "zPrimaryAction ank-color-bgColor",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "ariaLabel": ""
+      }
+    },
+    {
+      "id": "projectsHeroActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zActions",
+        "components": [
+          "projectsDespensaLink"
+        ]
+      }
+    },
+    {
+      "id": "projectsHeroCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-grid ank-gap-20px",
+        "components": [
+          "projectsEyebrow",
+          "projectsTitle",
+          "projectsLead",
+          "projectsHeroActions"
+        ]
+      }
+    },
+    {
+      "id": "projectsDespensaImage",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/despensalista.webp",
+        "alt": "Página de inicio de DespensaLista con el lema «Tu despensa, a la vista» y una alacena con frascos.",
+        "width": 1280,
+        "height": 800,
+        "loading": "eager",
+        "decoding": "async",
+        "fetchPriority": "high",
+        "classes": "zMedia"
+      }
+    },
+    {
+      "id": "projectsHeroShell",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zSplit",
+        "components": [
+          "projectsHeroCopy",
+          "projectsDespensaImage"
+        ]
+      }
+    },
+    {
+      "id": "projectsHero",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zPageHero",
+        "components": [
+          "projectsHeroShell"
+        ],
+        "id": "proyectos-inicio"
+      }
+    },
+    {
+      "id": "projectsAppsTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.projectsAppsTitle",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zSectionTitle"
+      }
+    },
+    {
+      "id": "projectsRoadmapLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.projectsRoadmapLink;set:config.ariaLabel,i18n,page.projectsRoadmapLinkLabel",
+      "eventInstructions": "trackEvent:cta_click,cta,roadmap2u,location,aplicaciones",
+      "config": {
+        "href": "https://roadmap2u.com/",
+        "text": "",
+        "classes": "zTextLink ank-justifySelf-start",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "ariaLabel": ""
+      }
+    },
+    {
+      "id": "projectsRoadmapIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "account_tree",
+        "ariaHidden": true,
+        "classes": "zIcon"
+      }
+    },
+    {
+      "id": "projectsRoadmapTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.projectsRoadmapTitle",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_3rem ank-fontWeight-700 ank-lineHeight-1_2"
+      }
+    },
+    {
+      "id": "projectsRoadmapBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.projectsRoadmapBody",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-maxWidth-66ch ank-color-secondaryTextColor ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "projectsRoadmapCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-grid ank-gap-8px",
+        "components": [
+          "projectsRoadmapTitle",
+          "projectsRoadmapBody",
+          "projectsRoadmapLink"
+        ]
+      }
+    },
+    {
+      "id": "projectsRoadmap",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow ank-gridTemplateColumns-34px__minmaxSD0COM1frED",
+        "components": [
+          "projectsRoadmapIcon",
+          "projectsRoadmapCopy"
+        ]
+      }
+    },
+    {
+      "id": "projectsAppsList",
+      "type": "container",
+      "config": {
+        "tag": "ul",
+        "classes": "zList",
+        "components": [
+          "projectsRoadmap"
+        ],
+        "role": "list"
+      }
+    },
+    {
+      "id": "projectsAppsShell",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell ank-display-grid ank-gap-22px",
+        "components": [
+          "projectsAppsTitle",
+          "projectsAppsList"
+        ]
+      }
+    },
+    {
+      "id": "projectsApps",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "projectsAppsShell"
+        ],
+        "id": "aplicaciones"
+      }
+    },
+    {
+      "id": "projectsBusinessTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.projectsBusinessTitle",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zSectionTitle"
+      }
+    },
+    {
+      "id": "projectsBusinessLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.projectsBusinessLead",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-maxWidth-66ch ank-color-secondaryTextColor ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "projectsLandingLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.projectsLandingLink;set:config.ariaLabel,i18n,page.projectsLandingLinkLabel",
+      "eventInstructions": "trackEvent:cta_click,cta,zoolandingpage,location,soluciones",
+      "config": {
+        "href": "https://zoolandingpage.com.mx/",
+        "text": "",
+        "classes": "zTextLink ank-justifySelf-start",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "ariaLabel": ""
+      }
+    },
+    {
+      "id": "projectsLandingIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "ads_click",
+        "ariaHidden": true,
+        "classes": "zIcon"
+      }
+    },
+    {
+      "id": "projectsLandingTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.projectsLandingTitle",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_3rem ank-fontWeight-700 ank-lineHeight-1_2"
+      }
+    },
+    {
+      "id": "projectsLandingBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.projectsLandingBody",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-maxWidth-66ch ank-color-secondaryTextColor ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "projectsLandingCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-grid ank-gap-8px",
+        "components": [
+          "projectsLandingTitle",
+          "projectsLandingBody",
+          "projectsLandingLink"
+        ]
+      }
+    },
+    {
+      "id": "projectsLanding",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow ank-gridTemplateColumns-34px__minmaxSD0COM1frED",
+        "components": [
+          "projectsLandingIcon",
+          "projectsLandingCopy"
+        ]
+      }
+    },
+    {
+      "id": "projectsWebLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.projectsWebLink;set:config.ariaLabel,i18n,page.projectsWebLinkLabel",
+      "eventInstructions": "trackEvent:cta_click,cta,zoositioweb,location,soluciones",
+      "config": {
+        "href": "https://zoositioweb.com.mx/planes",
+        "text": "",
+        "classes": "zTextLink ank-justifySelf-start",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "ariaLabel": ""
+      }
+    },
+    {
+      "id": "projectsWebIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "view_quilt",
+        "ariaHidden": true,
+        "classes": "zIcon"
+      }
+    },
+    {
+      "id": "projectsWebTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.projectsWebTitle",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_3rem ank-fontWeight-700 ank-lineHeight-1_2"
+      }
+    },
+    {
+      "id": "projectsWebBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.projectsWebBody",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-maxWidth-66ch ank-color-secondaryTextColor ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "projectsWebCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-grid ank-gap-8px",
+        "components": [
+          "projectsWebTitle",
+          "projectsWebBody",
+          "projectsWebLink"
+        ]
+      }
+    },
+    {
+      "id": "projectsWeb",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow ank-gridTemplateColumns-34px__minmaxSD0COM1frED",
+        "components": [
+          "projectsWebIcon",
+          "projectsWebCopy"
+        ]
+      }
+    },
+    {
+      "id": "projectsBlogLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.projectsBlogLink;set:config.ariaLabel,i18n,page.projectsBlogLinkLabel",
+      "eventInstructions": "trackEvent:whatsapp_click,cta,zooblog,location,soluciones",
+      "config": {
+        "href": "https://wa.me/525522699563?text=Hola%2C%20ZooBeriah%20Systems.%20Me%20interesa%20conversar%20sobre%20Zooblog%20para%20mi%20negocio.",
+        "text": "",
+        "classes": "zTextLink ank-justifySelf-start",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "ariaLabel": ""
+      }
+    },
+    {
+      "id": "projectsBlogIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "book-open",
+        "ariaHidden": true,
+        "classes": "zIcon"
+      }
+    },
+    {
+      "id": "projectsBlogTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.projectsBlogTitle",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_3rem ank-fontWeight-700 ank-lineHeight-1_2"
+      }
+    },
+    {
+      "id": "projectsBlogBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.projectsBlogBody",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-maxWidth-66ch ank-color-secondaryTextColor ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "projectsBlogCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-grid ank-gap-8px",
+        "components": [
+          "projectsBlogTitle",
+          "projectsBlogBody",
+          "projectsBlogLink"
+        ]
+      }
+    },
+    {
+      "id": "projectsBlog",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow ank-gridTemplateColumns-34px__minmaxSD0COM1frED",
+        "components": [
+          "projectsBlogIcon",
+          "projectsBlogCopy"
+        ]
+      }
+    },
+    {
+      "id": "projectsStoreLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.projectsStoreLink",
+      "eventInstructions": "trackEvent:cta_click,cta,projectsStoreLink,location,soluciones",
+      "config": {
+        "href": "/tiendas-en-linea",
+        "text": "",
+        "classes": "zTextLink ank-justifySelf-start",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "auto"
+        }
+      }
+    },
+    {
+      "id": "projectsStoreIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "storefront",
+        "ariaHidden": true,
+        "classes": "zIcon"
+      }
+    },
+    {
+      "id": "projectsStoreTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.projectsStoreTitle",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_3rem ank-fontWeight-700 ank-lineHeight-1_2"
+      }
+    },
+    {
+      "id": "projectsStoreBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.projectsStoreBody",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "ank-m-0 ank-maxWidth-66ch ank-color-secondaryTextColor ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "projectsStoreCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-grid ank-gap-8px",
+        "components": [
+          "projectsStoreTitle",
+          "projectsStoreBody",
+          "projectsStoreLink"
+        ]
+      }
+    },
+    {
+      "id": "projectsStore",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow ank-gridTemplateColumns-34px__minmaxSD0COM1frED",
+        "components": [
+          "projectsStoreIcon",
+          "projectsStoreCopy"
+        ]
+      }
+    },
+    {
+      "id": "projectsBusinessList",
+      "type": "container",
+      "config": {
+        "tag": "ul",
+        "classes": "zList",
+        "components": [
+          "projectsLanding",
+          "projectsWeb",
+          "projectsBlog",
+          "projectsStore"
+        ],
+        "role": "list"
+      }
+    },
+    {
+      "id": "projectsBusinessShell",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell ank-display-grid ank-gap-22px",
+        "components": [
+          "projectsBusinessTitle",
+          "projectsBusinessLead",
+          "projectsBusinessList"
+        ]
+      }
+    },
+    {
+      "id": "projectsBusiness",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "projectsBusinessShell"
+        ],
+        "id": "soluciones"
+      }
+    }
+  ]
+}

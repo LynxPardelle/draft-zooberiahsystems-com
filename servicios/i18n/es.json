@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "servicios",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "technologyTitle": "Consultoría tecnológica",
+      "technologyDescription": "Revisamos cómo trabaja tu negocio, qué herramientas utiliza y dónde se pierde tiempo. Con esa información te ayudamos a priorizar mejoras y planear su implementación.",
+      "technologyExample": "Por ejemplo, organizar cómo recibes pedidos o comparar herramientas para digitalizar un proceso.",
+      "dataTitle": "Consultoría de datos",
+      "dataDescription": "Partimos de las preguntas que quieres responder y de la información disponible. Te ayudamos a organizarla y traducirla en indicadores, reportes o tableros que puedas usar.",
+      "dataExample": "Por ejemplo, entender qué productos se venden más o dar seguimiento a tus ventas por canal.",
+      "aiTitle": "Consultoría de inteligencia artificial",
+      "aiDescription": "Evaluamos qué tareas se beneficiarían de la IA y qué información requiere cada caso. Podemos diseñar una prueba acotada y acordar dónde se necesita revisión humana.",
+      "aiExample": "Por ejemplo, preparar borradores de respuestas frecuentes para que tu equipo los revise.",
+      "step1Title": "Entendemos la necesidad",
+      "step1Detail": "Conversamos sobre lo que quieres resolver, cómo opera tu negocio y qué información tenemos para empezar.",
+      "step2Title": "Acordamos el alcance",
+      "step2Detail": "Priorizamos acciones y preparamos una propuesta con entregables y cotización.",
+      "step3Title": "Desarrollamos y revisamos",
+      "step3Detail": "Construimos o configuramos lo acordado y revisamos los entregables contigo.",
+      "servicesEyebrow": "Qué hacemos",
+      "servicesTitle": "Consultoría tecnológica, datos e IA",
+      "servicesIntro": "Ayudamos a negocios locales a ordenar sus procesos, aprovechar sus datos y decidir qué herramientas digitales les convienen.",
+      "servicesContact": "Hablar de mi proyecto",
+      "consultingTitle": "¿En qué podemos ayudarte?",
+      "digitalEyebrow": "Desarrollo web",
+      "digitalTitle": "Soluciones digitales para tu negocio",
+      "digitalIntro": "Desarrollamos páginas de presentación, sitios empresariales, blogs y tiendas en línea. El alcance depende de lo que tus clientes necesitan hacer en el sitio.",
+      "digitalShopLink": "Ver tiendas en línea",
+      "digitalProjectsLink": "Explorar proyectos",
+      "methodTitle": "Cómo trabajamos",
+      "methodIntro": "Podemos empezar con una necesidad, una idea o una lista de problemas que quieres resolver.",
+      "methodContact": "Cuéntanos qué necesitas"
+    }
+  }
+}
