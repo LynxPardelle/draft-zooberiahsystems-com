@@ -350,13 +350,14 @@
     },
     {
       "id": "sharedBlogResetFilters",
-      "type": "link",
+      "type": "button",
       "config": {
-        "href": "/blog",
-        "text": "Restablecer",
-        "classes": "zTextLink ank-color-linkColor",
+        "type": "reset",
+        "label": "Restablecer",
+        "classes": "zTextLink ank-color-linkColor ank-bg-transparent ank-border-none ank-p-0 ank-fontSize-16px ank-cursor-pointer",
         "ariaLabel": "Restablecer búsqueda y filtros"
-      }
+      },
+      "eventInstructions": "resetScope;setScopeValue:q,;setScopeValue:tema,all;setScopeValue:orden,recientes;navigateToUrl:/blog"
     },
     {
       "id": "sharedBlogResults",

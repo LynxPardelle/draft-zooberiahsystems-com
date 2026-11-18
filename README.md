@@ -31,7 +31,7 @@ Read only the task-specific route in `AGENTS.md`; do not duplicate shared hub pr
 
 ## Scope And Preview
 
-- Routes: `/`, `/servicios`, `/sitios-web`, `/tiendas-en-linea`, `/soluciones-para-negocios`, `/proyectos`, `/contacto`, `/blog`, `/blog/:categorySlug/:articleSlug`, and `/404`
+- Routes: `/`, `/servicios`, `/sitios-web`, `/tiendas-en-linea`, `/soluciones-para-negocios`, `/proyectos`, `/contacto`, `/blog`, `/blog/web`, `/blog/:categorySlug/:articleSlug`, and `/404`
 - Custom operations consultations: `/soluciones-para-negocios/restaurantes`, `/soluciones-para-negocios/inventario`, and `/soluciones-para-negocios/seguimiento-de-solicitudes`
 - Language: Spanish (`es`)
 - Environments: protected `test` and `production` promotion
