@@ -16,11 +16,12 @@ const ROUTES = [
   { path: '/soluciones-para-negocios/seguimiento-de-solicitudes', pageId: 'soluciones-seguimiento' },
   { path: '/proyectos', pageId: 'proyectos' },
   { path: '/blog', pageId: 'blog' },
+  { path: '/blog/web', pageId: 'blog-category' },
   { path: '/blog/:categorySlug/:articleSlug', pageId: 'blog-article' },
   { path: '/contacto', pageId: 'contacto' },
   { path: '/404', pageId: 'not-found' },
 ];
-const MARKETING_ROUTES = ROUTES.filter(({ pageId }) => !['default', 'not-found', 'blog', 'blog-article'].includes(pageId));
+const MARKETING_ROUTES = ROUTES.filter(({ pageId }) => !['default', 'not-found', 'blog', 'blog-category', 'blog-article'].includes(pageId));
 const MARKETING_PAGES = MARKETING_ROUTES.map(({ pageId }) => pageId);
 const PAGE_IDS = ['default', 'not-found', ...MARKETING_PAGES];
 const REQUIRED_PAGE_FILES = [
@@ -161,6 +162,28 @@ test('QA-001 declares Spanish marketing pages, the public blog and 404', () => {
       assert.deepEqual(homeLink?.config?.scrollRestoration, { mode: 'top', behavior: 'auto' });
     }
   }
+});
+
+test('the discoverable web archive resolves with its own canonical and matching category counts', () => {
+  const page = readJson('blog-category/page-config.json');
+  assert.equal(page.pageId, 'blog-category');
+  assert.equal(page.seo.canonical, 'https://' + DOMAIN + '/blog/web');
+  assert.notEqual(page.seo.title, readJson('blog/page-config.json').seo.title);
+  const payload = readJson('blog-category/components.json');
+  assert.equal(payload.pageId, 'blog-category');
+  const sharedIds = new Set(readJson('components.json').components.map(({ id }) => id));
+  const localIds = new Set(payload.components.map(({ id }) => id));
+  for (const id of page.rootIds) assert.ok(sharedIds.has(id) || localIds.has(id), 'Archive root must resolve: ' + id);
+  const cardFilters = payload.components.find(({ id }) => id === 'sharedBlogCards').loopConfig.view.filters;
+  const countFilters = payload.components.find(({ id }) => id === 'sharedBlogPagination').config.view.filters;
+  assert.deepEqual(cardFilters, countFilters, 'Archive pagination must count the same rows as its cards');
+  assert.ok(cardFilters.some(({ path, op, value }) => path === 'categorySlug' && op === 'equals' && value === 'web'));
+  assert.match(payload.components.find(({ id }) => id === 'sharedBlogFilters').config.submitEventInstructions, /^navigateWithScopeQuery:\/blog\/web,/);
+  const reset = payload.components.find(({ id }) => id === 'sharedBlogResetFilters');
+  assert.equal(reset.type, 'button');
+  assert.equal(reset.config.type, 'reset');
+  assert.match(reset.eventInstructions, /;navigateToUrl:\/blog\/web$/);
+  assert.equal(readJson('blog-category/variables.json').variables.activeNav, 'blog');
 });
 
 test('QA-002 preserves legacy home anchors and promotes the products on dedicated pages', () => {
