@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "sitios-web",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "customWebEyebrow": "Diseño y desarrollo web",
+      "customWebTitle": "Sitios web a medida para empresas",
+      "customWebLead": "Creamos sitios web para presentar tus servicios, recibir solicitudes y mostrar tu catálogo. Organizamos cada página a partir de lo que tus clientes necesitan saber y de cómo se ponen en contacto contigo.",
+      "customWebContact": "Cotizar mi sitio web",
+      "customWebProjects": "Ver proyectos",
+      "customWebZooSitioWeb": "Ver el ejemplo en ZooSitioWeb",
+      "customWebZooSitioWebAria": "Ver el ejemplo en ZooSitioWeb (se abre en una pestaña nueva)",
+      "customWebScopeTitle": "Qué sitio necesita tu negocio",
+      "customWebType1Title": "Sitio corporativo",
+      "customWebType1Text": "Presenta tu empresa, sus servicios, casos y datos de contacto. Podemos dar a cada servicio una página con contenido y llamadas a la acción propios.",
+      "customWebType2Title": "Página de campaña o landing page",
+      "customWebType2Text": "Enfoca la visita en una sola acción, como solicitar una cotización, registrarse en un evento o conocer un lanzamiento.",
+      "customWebType3Title": "Catálogo web",
+      "customWebType3Text": "Publica productos o servicios por categoría y permite que los visitantes pidan información. Si también necesitas cobros y entregas, podemos diseñar una tienda en línea.",
+      "customWebStore": "Ver tiendas en línea a medida",
+      "customWebProcessTitle": "Cómo construimos tu sitio",
+      "customWebProcessLead": "Partimos de las preguntas reales de tus clientes y de la acción que te interesa que den después de visitarlo.",
+      "customWebProcessStep1Text": "Definimos qué debe resolver el sitio y qué páginas, contenido e imágenes necesita.",
+      "customWebProcessStep2Text": "Diseñamos la navegación y probamos el contenido en pantallas móviles y de escritorio.",
+      "customWebProcessStep3Text": "Revisamos enlaces, títulos, descripciones y rastreo antes de acordar la publicación y el mantenimiento.",
+      "customWebFaqTitle": "Preguntas sobre sitios web a medida",
+      "customWebFaqQuestion1Title": "¿Cuánto cuesta desarrollar un sitio web?",
+      "customWebFaqQuestion1Text": "La cotización depende de la cantidad de páginas, del contenido disponible y de funciones como formularios, catálogo o edición de información. Para preparar una propuesta, cuéntanos qué quieres lograr y qué tienes listo.",
+      "customWebFaqQuestion2Title": "¿Pueden rediseñar un sitio web que ya tengo?",
+      "customWebFaqQuestion2Text": "Sí. Podemos revisar tu contenido y tus páginas más importantes antes de definir el rediseño. Si cambian las URLs, incluimos el plan de redirecciones en el alcance.",
+      "customWebFaqQuestion3Title": "¿Qué incluye el SEO de un sitio a medida?",
+      "customWebFaqQuestion3Text": "Revisamos la estructura de encabezados y enlaces, los títulos y descripciones por página, las URLs canónicas y el sitemap. También organizamos el texto para responder con claridad a las preguntas que traen tus clientes.",
+      "customWebFaqQuestion4Title": "¿Cuál es la diferencia entre un sitio web y una tienda en línea?",
+      "customWebFaqQuestion4Text": "Un sitio web muestra lo que haces y facilita que te contacten. Una tienda en línea añade un flujo de compra con catálogo, pagos y entrega, según lo que necesite tu negocio.",
+      "customWebEndTitle": "Cuéntanos qué debe hacer tu sitio",
+      "customWebEndLead": "Comparte a quién va dirigido, qué quieres que haga alguien al visitarlo y si ya tienes dominio, logotipo o contenido. Con eso aterrizamos el primer alcance.",
+      "customWebEndLink": "Hablar de mi sitio web"
+    }
+  }
+}

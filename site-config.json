@@ -12,6 +12,46 @@
       "label": "Inicio"
     },
     {
+      "path": "/servicios",
+      "pageId": "servicios",
+      "label": "Servicios"
+    },
+    {
+      "path": "/sitios-web",
+      "pageId": "sitios-web",
+      "label": "Sitios web"
+    },
+    {
+      "path": "/tiendas-en-linea",
+      "pageId": "tiendas-en-linea",
+      "label": "Tiendas en línea"
+    },
+    {
+      "path": "/soluciones-para-negocios",
+      "pageId": "soluciones-para-negocios",
+      "label": "Soluciones"
+    },
+    {
+      "path": "/soluciones-para-negocios/restaurantes",
+      "pageId": "soluciones-restaurantes",
+      "label": "Sistemas para restaurantes"
+    },
+    {
+      "path": "/soluciones-para-negocios/inventario",
+      "pageId": "soluciones-inventario",
+      "label": "Control de inventario"
+    },
+    {
+      "path": "/soluciones-para-negocios/seguimiento-de-solicitudes",
+      "pageId": "soluciones-seguimiento",
+      "label": "Seguimiento de solicitudes"
+    },
+    {
+      "path": "/proyectos",
+      "pageId": "proyectos",
+      "label": "Proyectos"
+    },
+    {
       "path": "/blog",
       "pageId": "blog",
       "label": "Blog"
@@ -20,6 +60,11 @@
       "path": "/blog/:categorySlug/:articleSlug",
       "pageId": "blog-article",
       "label": "Artículo"
+    },
+    {
+      "path": "/contacto",
+      "pageId": "contacto",
+      "label": "Contacto"
     },
     {
       "path": "/404",
@@ -77,21 +122,23 @@
       "identifier": "zooberiahsystemscom",
       "name": "ZooBeriah Systems",
       "version": "1.0.0",
-      "description": "Consultoría tecnológica, de datos e IA para negocios locales."
+      "description": "Diseñamos sitios web, tiendas en línea y sistemas a medida para negocios. Consultoría tecnológica, datos e inteligencia artificial desde Ciudad de México."
     },
     "seo": {
       "siteName": "ZooBeriah Systems",
-      "title": "ZooBeriah Systems | Consultoría tecnológica, datos e IA",
-      "description": "Consultoría tecnológica, de datos e IA para negocios locales. Definimos acciones y desarrollamos soluciones digitales. Atención remota desde CDMX.",
+      "title": "ZooBeriah Systems | Consultoría y desarrollo digital en CDMX",
+      "description": "Diseñamos sitios web, tiendas en línea y sistemas a medida para negocios. Consultoría tecnológica, datos e inteligencia artificial desde Ciudad de México.",
       "canonicalOrigin": "https://zooberiahsystems.com",
       "enforceCanonicalHost": true,
       "forceHttps": true,
       "openGraph": {
         "type": "website",
-        "site_name": "ZooBeriah Systems"
+        "site_name": "ZooBeriah Systems",
+        "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/hero.webp"
       },
       "twitter": {
-        "card": "summary"
+        "card": "summary_large_image",
+        "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/hero.webp"
       },
       "keywords": {
         "es": [
@@ -165,7 +212,9 @@
         "ownerDraftDomain": "zoositioweb.com.mx",
         "source": "authorized",
         "defaultLocale": "es",
-        "locales": ["es"],
+        "locales": [
+          "es"
+        ],
         "routeBasePath": "/blog",
         "listPath": "/blog",
         "articlePathPattern": "/blog/:categorySlug/:articleSlug",
@@ -187,7 +236,7 @@
     },
     "navigation": {
       "scrollRestoration": {
-        "mode": "preserve",
+        "mode": "top",
         "behavior": "auto"
       }
     },
@@ -241,7 +290,8 @@
   "notFoundPageId": "not-found",
   "sitemap": {
     "excludePaths": [
-      "/404"
+      "/404",
+      "/blog/:categorySlug/:articleSlug"
     ]
   }
 }

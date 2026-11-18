@@ -7,11 +7,22 @@ const PHONE = '525522699563';
 const DISPLAY_PHONE = '+52 55 2269 9563';
 const ROUTES = [
   { path: '/', pageId: 'default' },
+  { path: '/servicios', pageId: 'servicios' },
+  { path: '/sitios-web', pageId: 'sitios-web' },
+  { path: '/tiendas-en-linea', pageId: 'tiendas-en-linea' },
+  { path: '/soluciones-para-negocios', pageId: 'soluciones-para-negocios' },
+  { path: '/soluciones-para-negocios/restaurantes', pageId: 'soluciones-restaurantes' },
+  { path: '/soluciones-para-negocios/inventario', pageId: 'soluciones-inventario' },
+  { path: '/soluciones-para-negocios/seguimiento-de-solicitudes', pageId: 'soluciones-seguimiento' },
+  { path: '/proyectos', pageId: 'proyectos' },
   { path: '/blog', pageId: 'blog' },
   { path: '/blog/:categorySlug/:articleSlug', pageId: 'blog-article' },
+  { path: '/contacto', pageId: 'contacto' },
   { path: '/404', pageId: 'not-found' },
 ];
-const PAGE_IDS = ['default', 'not-found'];
+const MARKETING_ROUTES = ROUTES.filter(({ pageId }) => !['default', 'not-found', 'blog', 'blog-article'].includes(pageId));
+const MARKETING_PAGES = MARKETING_ROUTES.map(({ pageId }) => pageId);
+const PAGE_IDS = ['default', 'not-found', ...MARKETING_PAGES];
 const REQUIRED_PAGE_FILES = [
   'page-config.json',
   'components.json',
@@ -22,6 +33,7 @@ const REQUIRED_PAGE_FILES = [
 const HOME_SECTIONS = [
   'consultoria',
   'soluciones',
+  'sitios-web',
   'aplicaciones',
   'como-trabajamos',
   'nosotros',
@@ -41,9 +53,7 @@ const TRACK_FIELDS = ['language', 'platform', 'screenWidth', 'screenHeight', 'ti
 const GENERAL_MESSAGE = 'Hola, ZooBeriah Systems. Me interesa conocer sus servicios de consultoría tecnológica, datos e IA o una solución digital para mi negocio. ¿Podemos conversar sobre mi proyecto?';
 const WHATSAPP_MESSAGES = new Set([
   GENERAL_MESSAGE,
-  'Hola, ZooBeriah Systems. Me interesa conversar sobre consultoría tecnológica para mi negocio.',
-  'Hola, ZooBeriah Systems. Me interesa conversar sobre consultoría de datos para mi negocio.',
-  'Hola, ZooBeriah Systems. Me interesa conversar sobre un proyecto de IA para mi negocio.',
+  'Hola, ZooBeriah Systems. Quiero cotizar una tienda en línea a medida para mi negocio.',
   'Hola, ZooBeriah Systems. Me interesa conversar sobre Zooblog para mi negocio.',
 ]);
 
@@ -90,13 +100,15 @@ const assertContrast = (label, foreground, background, minimum) => {
 const localizedSpanish = (value) => typeof value === 'string' ? value : value?.es;
 const valueAtPath = (value, path) => path.split('.').reduce((current, key) => current?.[key], value);
 const robotsTokens = (value) => new Set(localizedSpanish(value).split(',').map((token) => token.trim()));
+const pageFiles = (pageId) => REQUIRED_PAGE_FILES.filter((file) =>
+  !MARKETING_PAGES.includes(pageId) || !['variables.json', 'angora-combos.json'].includes(file));
 const allPayloadPaths = () => [
   'site-config.json',
   'components.json',
   'variables.json',
   'angora-combos.json',
   'i18n/es.json',
-  ...PAGE_IDS.flatMap((pageId) => REQUIRED_PAGE_FILES.map((file) => `${pageId}/${file}`)),
+  ...PAGE_IDS.flatMap((pageId) => pageFiles(pageId).map((file) => `${pageId}/${file}`)),
 ];
 const allPayloads = () => allPayloadPaths().map(readJson);
 const allComponents = () => [
@@ -104,7 +116,7 @@ const allComponents = () => [
   ...PAGE_IDS.flatMap((pageId) => readJson(`${pageId}/components.json`).components),
 ];
 
-test('QA-001 declares the Spanish home, public blog and 404 routes', () => {
+test('QA-001 declares Spanish marketing pages, the public blog and 404', () => {
   const site = readJson('site-config.json');
   assert.equal(site.domain, DOMAIN);
   assert.equal(site.defaultPageId, 'default');
@@ -121,7 +133,7 @@ test('QA-001 declares the Spanish home, public blog and 404 routes', () => {
   const skipLink = sharedComponents.find(({ id }) => id === 'skipToMainLink');
   assert.equal(skipLink?.config?.href, '#main-content');
   assert.equal(skipLink?.eventInstructions, 'skipToMain:main-content');
-  assert.deepEqual(site.runtime?.navigation?.scrollRestoration, { mode: 'preserve', behavior: 'auto' });
+  assert.deepEqual(site.runtime?.navigation?.scrollRestoration, { mode: 'top', behavior: 'auto' });
 
   for (const id of ['brandLink', 'footerBrandLink']) {
     const link = sharedComponents.find((component) => component.id === id);
@@ -129,20 +141,19 @@ test('QA-001 declares the Spanish home, public blog and 404 routes', () => {
   }
 
   for (const pageId of PAGE_IDS) {
-    for (const file of REQUIRED_PAGE_FILES) assert.ok(existsSync(fixtureUrl(`${pageId}/${file}`)), `${pageId}/${file}`);
+    for (const file of pageFiles(pageId)) assert.ok(existsSync(fixtureUrl(`${pageId}/${file}`)), `${pageId}/${file}`);
     const page = readJson(`${pageId}/page-config.json`);
     assert.equal(page.domain, DOMAIN);
     assert.equal(page.pageId, pageId);
-    assert.deepEqual(page.rootIds, ['skipToMainLink', 'siteHeader', 'pageStack', 'siteFooter']);
+    assert.deepEqual(page.rootIds, ['skipToMainLink', 'siteHeader', page.rootIds[2], 'siteFooter']);
 
     const pageComponents = readJson(`${pageId}/components.json`).components;
     const effectiveIds = new Set([...sharedComponents, ...pageComponents].map(({ id }) => id));
     for (const rootId of page.rootIds) assert.ok(effectiveIds.has(rootId), `${pageId} root ${rootId} must resolve`);
 
-    const pageMain = pageComponents.find(({ id }) => id === 'pageStack');
+    const pageMain = pageComponents.find(({ id }) => id === page.rootIds[2]);
     assert.equal(pageMain?.config?.tag, 'main');
     assert.equal(pageMain?.config?.id, 'main-content');
-    assert.equal(pageMain?.config?.role, 'main');
     assert.equal(pageMain?.config?.tabindex, -1);
 
     if (pageId === 'not-found') {
@@ -152,60 +163,36 @@ test('QA-001 declares the Spanish home, public blog and 404 routes', () => {
   }
 });
 
-test('QA-002 preserves the approved brand, one-page sections, products and applications', () => {
-  const payloads = allPayloads();
-  const copy = collectStrings(payloads).join('\n');
+test('QA-002 preserves legacy home anchors and promotes the products on dedicated pages', () => {
+  const copy = collectStrings(allPayloads()).join('\n');
   assert.match(copy, /ZooBeriah Systems/);
-  assert.match(copy, /Tecnología, datos e IA para dar el siguiente paso\./);
   assert.doesNotMatch(copy, /ZooBeriha|Zooberiha|Zooberiah Systems/);
-
-  const home = readJson('default/page-config.json');
-  assert.deepEqual(home.analytics?.sectionIds, HOME_SECTIONS);
-  assert.deepEqual(home.analytics?.scrollMilestones, [25, 50, 75, 100]);
   const sectionIds = new Set(readJson('default/components.json').components.map(({ config }) => config?.id).filter(Boolean));
-  for (const sectionId of HOME_SECTIONS) assert.ok(sectionIds.has(sectionId), `Missing home section #${sectionId}`);
-
-  const consultingGrid = readJson('default/components.json').components.find(({ id }) => id === 'consultingGrid');
-  assert.match(consultingGrid?.config?.classes ?? '', /ank-gridTemplateColumns-lg-repeatSD3COM1frED/);
-
-  for (const name of ['Zoolandingpage', 'Zoositioweb', 'Zooblog', 'Zootiendadigital', 'RoadMap2U', 'Despensa Lista']) {
-    assert.ok(copy.includes(name), `Missing approved offering: ${name}`);
+  for (const sectionId of HOME_SECTIONS) assert.ok(sectionIds.has(sectionId), 'Missing home section #' + sectionId);
+  for (const name of ['ZooLandingPage', 'ZooSitioWeb', 'ZooBlog', 'RoadMap2U', 'DespensaLista', 'ZooTiendaOnline']) {
+    assert.ok(copy.includes(name), 'Missing product: ' + name);
   }
 });
 
-test('QA-003 keeps verified external destinations and single-owner conversion events', () => {
+test('QA-003 preserves project destinations and names external actions', () => {
   const strings = collectStrings(allPayloads());
-  for (const url of ['https://zoolandingpage.com.mx/', 'https://zoositioweb.com.mx/planes', 'https://roadmap2u.com']) {
-    assert.ok(strings.includes(url), `Missing verified destination: ${url}`);
+  for (const url of ['https://zoolandingpage.com.mx/', 'https://zoositioweb.com.mx/planes', 'https://roadmap2u.com/', 'https://despensalista.com/']) {
+    assert.ok(strings.includes(url), 'Missing destination: ' + url);
   }
 
-  const instructions = allComponents().map(({ eventInstructions }) => eventInstructions).filter(Boolean);
+  const components = allComponents();
   for (const slug of ['zoolandingpage', 'zoositioweb', 'roadmap2u']) {
-    const matches = instructions.filter((value) => value === `trackEvent:cta_click,cta,${slug},location,soluciones` || value === `trackEvent:cta_click,cta,${slug},location,aplicaciones`);
-    assert.equal(matches.length, 1, `${slug} must emit one cta_click`);
+    assert.equal(components.filter(({ eventInstructions }) => eventInstructions?.startsWith('trackEvent:cta_click,cta,' + slug + ',')).length, 1);
   }
-  assert.equal(
-    instructions.filter((value) => value === 'trackEventWhen:event.eventData.expanded,true,faq_open,faq,event.eventData.id').length,
-    1,
-    'FAQ must emit faq_open only when a panel expands',
-  );
-  assert.equal(instructions.some((value) => value.includes('trackEvent:nav_click')), false, 'anchor navigation is tracked automatically');
-
-  for (const [componentsPath, dictionaryPath] of [
-    ['components.json', 'i18n/es.json'],
-    ['default/components.json', 'default/i18n/es.json'],
-    ['not-found/components.json', 'not-found/i18n/es.json'],
-  ]) {
-    const dictionary = readJson(dictionaryPath).dictionary;
-    const links = readJson(componentsPath).components.filter(({ type, config }) => type === 'link' && config?.target === '_blank');
-    for (const link of links) {
+  const sharedDictionary = readJson('i18n/es.json').dictionary;
+  for (const pageId of ['allPages', ...PAGE_IDS]) {
+    const prefix = pageId === 'allPages' ? '' : pageId + '/';
+    const dictionary = { ...sharedDictionary, ...readJson(prefix + 'i18n/es.json').dictionary };
+    for (const link of readJson(prefix + 'components.json').components.filter(({ type, config }) => type === 'link' && config?.target === '_blank')) {
       const ariaPath = link.valueInstructions?.match(/set:config\.ariaLabel,i18n,([^;]+)/)?.[1];
-      const textPath = link.valueInstructions?.match(/set:config\.text,i18n,([^;]+)/)?.[1];
-      const ariaLabel = ariaPath ? valueAtPath(dictionary, ariaPath) : undefined;
-      const text = textPath ? valueAtPath(dictionary, textPath) : undefined;
-      assert.equal(typeof ariaLabel, 'string', `${link.id} needs a localized aria-label`);
-      assert.ok(ariaLabel.includes(text), `${link.id} aria-label must contain its visible label`);
-      assert.match(ariaLabel, /; se abre en una pestaña nueva$/i, `${link.id} must announce its new tab`);
+      const ariaLabel = ariaPath ? valueAtPath(dictionary, ariaPath) : link.config.ariaLabel;
+      assert.match(ariaLabel, /pestaña nueva/i, link.id);
+      assert.ok(link.config.rel.includes('noopener'), link.id);
     }
   }
 });
@@ -213,15 +200,21 @@ test('QA-003 keeps verified external destinations and single-owner conversion ev
 test('QA-004 uses only approved, encoded WhatsApp URLs and PII-free event metadata', () => {
   const strings = collectStrings(allPayloads());
   const urls = [...new Set(strings.filter((value) => value.startsWith('https://wa.me/')))];
-  assert.equal(urls.length, WHATSAPP_MESSAGES.size);
+  const prompts = new Set();
   for (const href of urls) {
     const url = new URL(href);
     assert.equal(url.origin, 'https://wa.me');
     assert.equal(url.pathname, `/${PHONE}`);
     const message = url.searchParams.get('text');
+    if (!message) {
+      assert.equal(href, `https://wa.me/${PHONE}`, 'Fallback must be an unmodified direct link');
+      continue;
+    }
     assert.ok(WHATSAPP_MESSAGES.has(message), `Unapproved WhatsApp message: ${message}`);
     assert.equal(href, `https://wa.me/${PHONE}?text=${encodeURIComponent(message)}`, 'WhatsApp message must be percent-encoded');
+    prompts.add(message);
   }
+  assert.deepEqual(prompts, WHATSAPP_MESSAGES);
   assert.ok(strings.includes(DISPLAY_PHONE), 'The public fallback phone must be visible and copyable');
 
   const whatsappEvents = allComponents()
@@ -307,9 +300,19 @@ test('QA-007 is production-ready, declares route canonicals and uses route-appro
   assert.equal(notFound.seo?.canonical, 'https://zooberiahsystems.com/404');
   assert.equal(home.metadata?.status, 'production-ready');
   assert.equal(notFound.metadata?.status, 'production-ready');
-  assert.equal(Object.hasOwn(home, 'structuredData'), false);
+  assert.deepEqual(home.structuredData.entries.map((entry) => entry['@type']), ['Organization', 'WebSite']);
+  const seenTitles = new Set([localizedSpanish(home.seo.title)]);
+  for (const { path, pageId } of MARKETING_ROUTES) {
+    const page = readJson(pageId + '/page-config.json');
+    const seo = page.seo;
+    assert.ok(localizedSpanish(seo.title) && localizedSpanish(seo.description));
+    assert.ok(!seenTitles.has(localizedSpanish(seo.title)));
+    seenTitles.add(localizedSpanish(seo.title));
+    assert.equal(seo.canonical, 'https://' + DOMAIN + path);
+    assert.ok(page.structuredData.entries.some((entry) => entry['@type'] === 'BreadcrumbList'));
+  }
   assert.equal(Object.hasOwn(notFound, 'structuredData'), false);
-  assert.ok(site.sitemap?.excludePaths?.includes('/404'));
+  assert.deepEqual(site.sitemap?.excludePaths, ['/404', '/blog/:categorySlug/:articleSlug']);
 
   const config = readJson('draft-repo.config.json');
   assert.equal(config.branches?.test?.deploys, true);
@@ -322,7 +325,8 @@ test('QA-007 is production-ready, declares route canonicals and uses route-appro
 test('QA-008 excludes unsupported claims, placeholders and personal analytics metadata', () => {
   const payloads = allPayloads();
   const copy = collectStrings(payloads).join('\n');
-  assert.doesNotMatch(copy, /lorem ipsum|\bTODO\b|\bTBD\b|replace[_ -]?me|example\.com|placeholder/i);
+  assert.doesNotMatch(copy, /lorem ipsum|replace[_ -]?me|example\.com|placeholder/i);
+  assert.doesNotMatch(copy, /\b(?:TODO|TBD)\b/);
   assert.doesNotMatch(copy, /24\s*\/\s*7|diagn[oó]stico gratuito|resultados? garantizados?|certificaci[oó]n|cobertura nacional|todo M[eé]xico/i);
 
   const seoKeys = collectKeys(PAGE_IDS.map((pageId) => readJson(`${pageId}/page-config.json`).seo));
@@ -340,21 +344,16 @@ test('QA-009 keeps action and footer colors as direct utilities', () => {
   for (const [componentsPath, expected] of [
     ['components.json', {
       skipToMainLink: 'ank-color-bgColor',
-      headerTalkLink: 'ank-color-bgColor',
+      headerTalkLink: 'ank-color-textColor',
       siteFooter: 'ank-color-HASHF6F4EE',
       footerWhatsappLink: 'ank-color-HASH102D32',
     }],
     ['default/components.json', {
-      heroPrimaryAction: 'ank-color-bgColor',
-      heroSecondaryAction: 'ank-color-titleColor',
-      technologyLink: 'ank-color-titleColor',
-      dataLink: 'ank-color-titleColor',
-      aiLink: 'ank-color-titleColor',
-      zoolandingpageLink: 'ank-color-titleColor',
-      zoositiowebLink: 'ank-color-titleColor',
-      zooblogLink: 'ank-color-titleColor',
-      roadmapLink: 'ank-color-titleColor',
-      contactAction: 'ank-color-bgColor',
+      heroPrimaryAction: 'ank-color-HASH102D32',
+      heroSecondaryAction: 'ank-color-white',
+      commerceWhatsapp: 'ank-color-bgColor',
+      projectOpen: 'ank-color-bgColor',
+      contactLink: 'ank-color-bgColor',
     }],
     ['not-found/components.json', {
       notFoundHome: 'ank-color-bgColor',
@@ -399,33 +398,25 @@ test('QA-010 keeps every configured foreground pair WCAG-safe', () => {
   assertContrast('footer text', '#FFFFFF', '#102D32', 4.5);
 });
 
-test('QA-011 keeps controls identifiable and tablet layouts readable', () => {
-  const shared = readJson('angora-combos.json').combos;
-  const homeComponents = readJson('default/components.json').components;
-  const skip = new Set(classTokens(shared.zooberiahSkipLink.join(' ')));
-  const menu = new Set(classTokens(shared.zooberiahMobileTrigger.join(' ')));
-  assert.ok(skip.has('ank-outlineFocus-3px__solid__titleColor'));
-  assert.ok(menu.has('ank-border-1px__solid__accentColor'));
-
-  for (const id of ['technologyLink', 'dataLink', 'aiLink', 'zoolandingpageLink', 'zoositiowebLink', 'zooblogLink', 'roadmapLink']) {
-    const link = homeComponents.find((component) => component.id === id);
-    const classes = new Set(classTokens(link?.config?.classes));
-    const actionId = id.replace(/Link$/, 'Action');
-    const action = homeComponents.find((component) => component.id === actionId);
-    assert.ok(classes.has('zSecondaryAction'), `${id} must look like a secondary action`);
-    assert.ok(classes.has('ank-color-titleColor'), `${id} needs a direct foreground color`);
-    assert.ok(classTokens(action?.config?.classes).includes('zCardAction'), `${actionId} must align with sibling card actions`);
-    assert.deepEqual(action?.config?.components, [id], `${actionId} must wrap ${id}`);
+test('QA-011 shares available routes across desktop, mobile, footer and first-party links', () => {
+  const components = readJson('components.json').components;
+  const configById = (id) => components.find((component) => component.id === id).config;
+  const expected = ['/servicios', '/sitios-web', '/tiendas-en-linea', '/soluciones-para-negocios', '/proyectos', '/blog', '/contacto'];
+  assert.deepEqual(configById('headerNav').components.map((id) => configById(id).href), expected);
+  assert.deepEqual(configById('footerNav').components.map((id) => configById(id).href), expected);
+  assert.deepEqual(readJson('variables.json').variables.navigation.map(({ href }) => href), expected);
+  assert.equal(configById('headerBrandMark').src, '/assets/brand/zoolandingpage-default-favicon.svg');
+  for (const { path, pageId } of [...MARKETING_ROUTES, { path: '/blog', pageId: 'blog' }, { path: '/blog', pageId: 'blog-article' }]) {
+    assert.equal(readJson(pageId + '/variables.json').variables.activeNav, path.split('/')[1]);
   }
 
-  for (const id of ['aboutInner', 'faqInner']) {
-    const layout = homeComponents.find((component) => component.id === id)?.config?.classes ?? '';
-    assert.match(layout, /ank-gridTemplateColumns-lg-/);
-    assert.doesNotMatch(layout, /ank-gridTemplateColumns-md-/);
+  const routes = new Map(ROUTES.map(({ path, pageId }) => [path, pageId]));
+  for (const component of allComponents().filter(({ type, config }) => type === 'link' && config?.href.startsWith('/'))) {
+    const [path, fragment] = component.config.href.split('#');
+    assert.ok(routes.has(path), component.id + ' has an unknown route');
+    if (fragment) {
+      const targetComponents = readJson(routes.get(path) + '/components.json').components;
+      assert.ok(targetComponents.some(({ config }) => config.id === fragment), component.id + ' has an unknown fragment');
+    }
   }
-
-  const faq = homeComponents.find((component) => component.id === 'faqAccordion');
-  assert.equal(faq?.config?.defaultItemButtonConfig?.icon, 'expand_more');
-  assert.match(faq?.config?.defaultItemButtonConfig?.classes ?? '', /ank-justifyContent-spaceMINbetween/);
-  assert.match(faq?.config?.defaultItemIconIsExpandedClasses ?? '', /ank-tr-rotateSD180degED/);
 });

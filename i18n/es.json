@@ -5,12 +5,13 @@
   "lang": "es",
   "dictionary": {
     "nav": {
-      "consulting": "Consultoría",
-      "solutions": "Soluciones",
-      "applications": "Aplicaciones",
-      "about": "Nosotros",
-      "talk": "Hablemos",
-      "talkAriaLabel": "Ir a la sección Hablemos"
+      "services": "Servicios",
+      "commerce": "Tiendas en línea",
+      "projects": "Proyectos",
+      "blog": "Blog",
+      "contact": "Contacto",
+      "web": "Sitios web",
+      "business": "Soluciones"
     },
     "ui": {
       "accessibility": {
@@ -33,7 +34,7 @@
       }
     },
     "footer": {
-      "tagline": "Ideas que toman forma digital.",
+      "tagline": "Consultoría tecnológica y desarrollo digital.",
       "location": "Atención remota desde CDMX.",
       "copyright": "ZooBeriah Systems"
     },
