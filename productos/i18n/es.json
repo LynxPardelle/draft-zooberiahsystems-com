@@ -5,54 +5,25 @@
   "lang": "es",
   "dictionary": {
     "page": {
-      "catalog": {
-        "title": "Productos de ZooBeriah Systems",
-        "intro": "Crea y publica sitios web, organiza tus metas, practica guitarra o lleva el control de tu despensa con nuestras herramientas.",
-        "webTitle": "Landing pages y sitios web",
-        "appsTitle": "Aplicaciones para el día a día",
-        "webProducts": [
-          {
-            "title": "Zoolandingpage",
-            "description": "Publica una página para presentar un servicio, curso o campaña y llevar a tus visitantes a una acción concreta, como reservar o pedir informes.",
-            "href": "https://zoolandingpage.com.mx/",
-            "linkLabel": "Conocer Zoolandingpage",
-            "linkEventInstructions": "trackEvent:cta_click,cta,zoolandingpage,location,productos"
-          },
-          {
-            "title": "ZooSitioWeb",
-            "description": "Reúne los servicios de tu negocio, información sobre tu equipo y opciones de contacto en un sitio con espacio para más páginas.",
-            "href": "https://zoositioweb.com.mx/planes",
-            "linkLabel": "Ver planes de ZooSitioWeb",
-            "linkEventInstructions": "trackEvent:cta_click,cta,zoositioweb,location,productos"
-          }
-        ],
-        "apps": [
-          {
-            "title": "RoadMap2U",
-            "description": "Organiza tus metas y tareas en árboles visuales. Divide cada meta en pasos y revisa qué queda por hacer a medida que avanzas.",
-            "href": "https://roadmap2u.com",
-            "linkLabel": "Conocer RoadMap2U",
-            "linkEventInstructions": "trackEvent:cta_click,cta,roadmap2u,location,productos"
-          },
-          {
-            "title": "GTR Lab",
-            "description": "Estudia notas, acordes y escalas en un diapasón interactivo para guitarra acústica y eléctrica. Empieza con el reto gratuito de pentatónica de La menor.",
-            "href": "https://clasesdemusica.zoolandingpage.com.mx/gtr-lab",
-            "linkLabel": "Conocer GTR Lab",
-            "linkEventInstructions": "trackEvent:cta_click,cta,gtr_lab,location,productos"
-          },
-          {
-            "title": "Despensa Lista",
-            "description": "Estamos desarrollando una aplicación para registrar qué tienes en casa, consultar caducidades y planear qué necesitas reponer.",
-            "href": "",
-            "linkLabel": "",
-            "linkEventInstructions": ""
-          }
-        ],
-        "contactTitle": "¿Qué necesitas publicar?",
-        "contactText": "Cuéntanos qué quieres ofrecer y te ayudamos a elegir entre una landing page y un sitio completo.",
-        "contactLink": "Hablar sobre mi proyecto"
-      }
+      "productsEyebrow": "ZooBeriah Systems",
+      "productsTitle": "Productos de ZooBeriah Systems",
+      "productsLead": "Herramientas para aprender, practicar y organizar el día a día. Descubre qué resuelve cada producto y entra a conocerlo.",
+      "product0Eyebrow": "Da forma a tus metas",
+      "product0Title": "RoadMap2U",
+      "product0Description": "Convierte una meta en un árbol visual. Organiza pasos, tareas y alternativas, reorganiza tu plan y trabaja sin conexión después de crear tu cuenta.",
+      "product0Visit": "Conocer RoadMap2U",
+      "product1Eyebrow": "Tu despensa y tus compras, en orden",
+      "product1Title": "Despensa Lista",
+      "product1Description": "Registra los alimentos que tienes, revisa qué caduca pronto y comparte la lista de compras con tu hogar.",
+      "product1Visit": "Conocer Despensa Lista",
+      "product2Eyebrow": "Práctica de guitarra con dirección",
+      "product2Title": "GTR Lab",
+      "product2Description": "Explora el diapasón y relaciona notas y posiciones para estudiar guitarra. Conoce la metodología y prueba el ejercicio público de pentatónica de La menor, con las clases de Héctor Coronado como acompañamiento.",
+      "product2Visit": "Conocer GTR Lab",
+      "productsWebTitle": "¿Buscas una página para tu negocio?",
+      "productsWebText": "También creamos sitios y landing pages con Zoolandingpage y ZooSitioWeb. Explora las páginas publicadas y cuéntanos qué necesitas.",
+      "productsGallery": "Explorar landing pages",
+      "productsContact": "Hablar de mi proyecto"
     }
   }
 }

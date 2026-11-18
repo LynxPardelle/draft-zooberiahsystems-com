@@ -4,16 +4,400 @@
   "pageId": "productos",
   "components": [
     {
+      "id": "productsEyebrow",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zEyebrow"
+      },
+      "valueInstructions": "set:config.text,i18n,page.productsEyebrow"
+    },
+    {
+      "id": "productsTitle",
+      "type": "text",
+      "config": {
+        "tag": "h1",
+        "text": "",
+        "classes": "zPageTitle ank-maxWidth-22ch"
+      },
+      "valueInstructions": "set:config.text,i18n,page.productsTitle"
+    },
+    {
+      "id": "productsLead",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead ank-maxWidth-65ch"
+      },
+      "valueInstructions": "set:config.text,i18n,page.productsLead"
+    },
+    {
+      "id": "productsHero",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zPageHero",
+        "components": [
+          "productsHeroContent"
+        ],
+        "id": "productos"
+      }
+    },
+    {
+      "id": "product0Image",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/roadmap2u-demostracion.webp",
+        "alt": "Interfaz de RoadMap2U para organizar una ruta de aprendizaje.",
+        "width": 1280,
+        "height": 800,
+        "loading": "eager",
+        "fetchPriority": "high",
+        "decoding": "async",
+        "classes": "zMedia"
+      }
+    },
+    {
+      "id": "product0Eyebrow",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zEyebrow"
+      },
+      "valueInstructions": "set:config.text,i18n,page.product0Eyebrow"
+    },
+    {
+      "id": "product0Title",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zSectionTitle"
+      },
+      "valueInstructions": "set:config.text,i18n,page.product0Title"
+    },
+    {
+      "id": "product0Description",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead"
+      },
+      "valueInstructions": "set:config.text,i18n,page.product0Description"
+    },
+    {
+      "id": "product0Visit",
+      "type": "link",
+      "config": {
+        "text": "",
+        "href": "https://roadmap2u.com/",
+        "classes": "zPrimaryAction ank-color-bgColor"
+      },
+      "valueInstructions": "set:config.text,i18n,page.product0Visit"
+    },
+    {
+      "id": "product0Copy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "product0Eyebrow",
+          "product0Title",
+          "product0Description",
+          "product0Visit"
+        ]
+      }
+    },
+    {
+      "id": "product0Split",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zSplit",
+        "components": [
+          "product0Image",
+          "product0Copy"
+        ]
+      }
+    },
+    {
+      "id": "product0Section",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "product0SectionContent"
+        ],
+        "id": "roadmap2u"
+      }
+    },
+    {
+      "id": "product1Image",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/despensalista.webp",
+        "alt": "Interfaz de Despensa Lista para organizar productos y compras.",
+        "width": 1280,
+        "height": 800,
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "zMedia"
+      }
+    },
+    {
+      "id": "product1Eyebrow",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zEyebrow"
+      },
+      "valueInstructions": "set:config.text,i18n,page.product1Eyebrow"
+    },
+    {
+      "id": "product1Title",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zSectionTitle"
+      },
+      "valueInstructions": "set:config.text,i18n,page.product1Title"
+    },
+    {
+      "id": "product1Description",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead"
+      },
+      "valueInstructions": "set:config.text,i18n,page.product1Description"
+    },
+    {
+      "id": "product1Visit",
+      "type": "link",
+      "config": {
+        "text": "",
+        "href": "https://despensalista.com/",
+        "classes": "zPrimaryAction ank-color-bgColor"
+      },
+      "valueInstructions": "set:config.text,i18n,page.product1Visit"
+    },
+    {
+      "id": "product1Copy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "product1Eyebrow",
+          "product1Title",
+          "product1Description",
+          "product1Visit"
+        ]
+      }
+    },
+    {
+      "id": "product1Split",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zSplit",
+        "components": [
+          "product1Image",
+          "product1Copy"
+        ]
+      }
+    },
+    {
+      "id": "product1Section",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "product1SectionContent"
+        ],
+        "id": "despensa-lista"
+      }
+    },
+    {
+      "id": "product2Image",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://clasesdemusica.zoolandingpage.com.mx/drafts/clasesdemusica.zoolandingpage.com.mx/assets/gtr-lab-diapason.jpg",
+        "alt": "Diapasón interactivo de GTR Lab con posiciones y notas para estudiar guitarra.",
+        "width": 1280,
+        "height": 800,
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "zMedia"
+      }
+    },
+    {
+      "id": "product2Eyebrow",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zEyebrow"
+      },
+      "valueInstructions": "set:config.text,i18n,page.product2Eyebrow"
+    },
+    {
+      "id": "product2Title",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zSectionTitle"
+      },
+      "valueInstructions": "set:config.text,i18n,page.product2Title"
+    },
+    {
+      "id": "product2Description",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead"
+      },
+      "valueInstructions": "set:config.text,i18n,page.product2Description"
+    },
+    {
+      "id": "product2Visit",
+      "type": "link",
+      "config": {
+        "text": "",
+        "href": "https://clasesdemusica.zoolandingpage.com.mx/gtr-lab",
+        "classes": "zPrimaryAction ank-color-bgColor"
+      },
+      "valueInstructions": "set:config.text,i18n,page.product2Visit"
+    },
+    {
+      "id": "product2Copy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "product2Eyebrow",
+          "product2Title",
+          "product2Description",
+          "product2Visit"
+        ]
+      }
+    },
+    {
+      "id": "product2Split",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zSplit",
+        "components": [
+          "product2Image",
+          "product2Copy"
+        ]
+      }
+    },
+    {
+      "id": "product2Section",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "product2SectionContent"
+        ],
+        "id": "gtr-lab"
+      }
+    },
+    {
+      "id": "productsWebTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zSectionTitle"
+      },
+      "valueInstructions": "set:config.text,i18n,page.productsWebTitle"
+    },
+    {
+      "id": "productsWebText",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead"
+      },
+      "valueInstructions": "set:config.text,i18n,page.productsWebText"
+    },
+    {
+      "id": "productsGallery",
+      "type": "link",
+      "config": {
+        "text": "",
+        "href": "/landingpages",
+        "classes": "zTextLink ank-color-linkColor"
+      },
+      "valueInstructions": "set:config.text,i18n,page.productsGallery"
+    },
+    {
+      "id": "productsContact",
+      "type": "link",
+      "config": {
+        "text": "",
+        "href": "/contacto",
+        "classes": "zTextLink ank-color-linkColor"
+      },
+      "valueInstructions": "set:config.text,i18n,page.productsContact"
+    },
+    {
+      "id": "productsWebActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zActions",
+        "components": [
+          "productsGallery",
+          "productsContact"
+        ]
+      }
+    },
+    {
+      "id": "productsWeb",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "productsWebContent"
+        ],
+        "id": "crear-landingpage"
+      }
+    },
+    {
       "id": "productsMain",
       "type": "container",
       "config": {
         "tag": "main",
-        "classes": "zooberiahMain",
+        "classes": "zMain",
         "components": [
           "productsHero",
-          "productsWebSection",
-          "productsAppsSection",
-          "productsContact"
+          "product0Section",
+          "product1Section",
+          "product2Section",
+          "productsWeb"
         ],
         "id": "main-content",
         "role": "main",
@@ -21,284 +405,62 @@
       }
     },
     {
-      "id": "productsHero",
-      "type": "container",
-      "config": {
-        "tag": "section",
-        "classes": "zooberiahSection ank-bg-secondaryBgColor",
-        "components": [
-          "productsHeroInner"
-        ],
-        "ariaLabelledby": "products-heading"
-      }
-    },
-    {
-      "id": "productsHeroInner",
+      "id": "productsHeroContent",
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "zooberiahWrap zooberiahStack ank-gap-20px",
+        "classes": "zShell zProse",
         "components": [
+          "productsEyebrow",
           "productsTitle",
-          "productsIntro"
+          "productsLead"
         ]
       }
     },
     {
-      "id": "productsTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.catalog.title",
-      "config": {
-        "tag": "h1",
-        "text": "",
-        "classes": "zooberiahPageTitle ank-maxWidth-16ch",
-        "id": "products-heading"
-      }
-    },
-    {
-      "id": "productsIntro",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.catalog.intro",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zooberiahBody ank-color-textColor"
-      }
-    },
-    {
-      "id": "productsWebSection",
-      "type": "container",
-      "config": {
-        "tag": "section",
-        "classes": "zooberiahSection",
-        "components": [
-          "productsWebInner"
-        ],
-        "ariaLabelledby": "web-products-heading"
-      }
-    },
-    {
-      "id": "productsWebInner",
+      "id": "product0SectionContent",
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "zooberiahWrap zooberiahStack ank-gap-24px",
+        "classes": "zShell",
+        "components": [
+          "product0Split"
+        ]
+      }
+    },
+    {
+      "id": "product1SectionContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell",
+        "components": [
+          "product1Split"
+        ]
+      }
+    },
+    {
+      "id": "product2SectionContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell",
+        "components": [
+          "product2Split"
+        ]
+      }
+    },
+    {
+      "id": "productsWebContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zProse",
         "components": [
           "productsWebTitle",
-          "productsWebList"
+          "productsWebText",
+          "productsWebActions"
         ]
-      }
-    },
-    {
-      "id": "productsWebTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.catalog.webTitle",
-      "config": {
-        "tag": "h2",
-        "text": "",
-        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_7rem ank-fontSize-md-2_3rem ank-fontWeight-600 ank-lineHeight-1_15",
-        "id": "web-products-heading"
-      }
-    },
-    {
-      "id": "productsWebList",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD2COMminmaxSD0COM1frEDED ank-gap-32px ank-gap-md-48px",
-        "components": []
-      },
-      "loopConfig": {
-        "source": "i18n",
-        "path": "page.catalog.webProducts",
-        "templateId": "productsEntry",
-        "idPrefix": "productsWebList",
-        "bindings": [
-          {
-            "to": "config.title",
-            "sources": [
-              "title"
-            ]
-          },
-          {
-            "to": "config.description",
-            "sources": [
-              "description"
-            ]
-          },
-          {
-            "to": "config.href",
-            "sources": [
-              "href"
-            ]
-          },
-          {
-            "to": "config.linkLabel",
-            "sources": [
-              "linkLabel"
-            ]
-          },
-          {
-            "to": "config.linkEventInstructions",
-            "sources": [
-              "linkEventInstructions"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "productsAppsSection",
-      "type": "container",
-      "config": {
-        "tag": "section",
-        "classes": "zooberiahSection ank-paddingTop-0",
-        "components": [
-          "productsAppsInner"
-        ],
-        "ariaLabelledby": "apps-products-heading"
-      }
-    },
-    {
-      "id": "productsAppsInner",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "zooberiahWrap zooberiahStack ank-gap-24px",
-        "components": [
-          "productsAppsTitle",
-          "productsAppsList"
-        ]
-      }
-    },
-    {
-      "id": "productsAppsTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.catalog.appsTitle",
-      "config": {
-        "tag": "h2",
-        "text": "",
-        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_7rem ank-fontSize-md-2_3rem ank-fontWeight-600 ank-lineHeight-1_15",
-        "id": "apps-products-heading"
-      }
-    },
-    {
-      "id": "productsAppsList",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD2COMminmaxSD0COM1frEDED ank-gap-32px ank-gap-md-48px",
-        "components": []
-      },
-      "loopConfig": {
-        "source": "i18n",
-        "path": "page.catalog.apps",
-        "templateId": "productsEntry",
-        "idPrefix": "productsAppsList",
-        "bindings": [
-          {
-            "to": "config.title",
-            "sources": [
-              "title"
-            ]
-          },
-          {
-            "to": "config.description",
-            "sources": [
-              "description"
-            ]
-          },
-          {
-            "to": "config.href",
-            "sources": [
-              "href"
-            ]
-          },
-          {
-            "to": "config.linkLabel",
-            "sources": [
-              "linkLabel"
-            ]
-          },
-          {
-            "to": "config.linkEventInstructions",
-            "sources": [
-              "linkEventInstructions"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "productsEntry",
-      "type": "generic-card",
-      "config": {
-        "variant": "feature",
-        "title": "",
-        "description": "",
-        "href": "",
-        "linkLabel": "",
-        "linkEventInstructions": "",
-        "classes": "ank-display-flex ank-flexDirection-column ank-alignItems-start ank-gap-12px ank-minWidth-0 ank-height-100per ank-boxSizing-borderMINbox ank-borderTop-1px__solid__accentColor ank-paddingTop-18px",
-        "featureTitleClasses": "ank-m-0 ank-color-titleColor ank-fontSize-1_3rem ank-fontSize-md-1_55rem ank-fontWeight-600 ank-lineHeight-1_2",
-        "featureDescriptionClasses": "zooberiahBody",
-        "linkClasses": "ank-display-inlineMINflex ank-alignItems-center ank-minHeight-44px ank-marginTop-auto ank-color-linkColor ank-fontWeight-600 ank-textDecoration-underline ank-textUnderlineOffset-4px ank-outlineFocus-3px__solid__accentColor ank-outlineOffsetFocus-4px"
-      }
-    },
-    {
-      "id": "productsContact",
-      "type": "container",
-      "config": {
-        "tag": "section",
-        "classes": "zooberiahSection ank-bg-secondaryBgColor",
-        "components": [
-          "productsContactInner"
-        ],
-        "ariaLabelledby": "products-contact-heading"
-      }
-    },
-    {
-      "id": "productsContactInner",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "zooberiahWrap zooberiahStack ank-gap-16px",
-        "components": [
-          "productsContactTitle",
-          "productsContactText",
-          "productsContactLink"
-        ]
-      }
-    },
-    {
-      "id": "productsContactTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.catalog.contactTitle",
-      "config": {
-        "tag": "h2",
-        "text": "",
-        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_7rem ank-fontSize-md-2_3rem ank-fontWeight-600 ank-lineHeight-1_15",
-        "id": "products-contact-heading"
-      }
-    },
-    {
-      "id": "productsContactText",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.catalog.contactText",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zooberiahBody ank-color-textColor"
-      }
-    },
-    {
-      "id": "productsContactLink",
-      "type": "link",
-      "valueInstructions": "set:config.text,i18n,page.catalog.contactLink",
-      "config": {
-        "href": "/#contacto",
-        "text": "",
-        "classes": "zooberiahPrimaryAction ank-color-bgColor ank-alignSelf-start"
       }
     }
   ]

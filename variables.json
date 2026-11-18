@@ -16,32 +16,18 @@
         "ariaLabel": "Servicios"
       },
       {
-        "id": "sitios-web",
-        "value": "/sitios-web",
-        "href": "/sitios-web",
-        "label": "Sitios web",
-        "ariaLabel": "Sitios web"
+        "id": "landingpages",
+        "value": "/landingpages",
+        "href": "/landingpages",
+        "label": "Landing pages",
+        "ariaLabel": "Landing pages"
       },
       {
-        "id": "tiendas-en-linea",
-        "value": "/tiendas-en-linea",
-        "href": "/tiendas-en-linea",
-        "label": "Tiendas en línea",
-        "ariaLabel": "Tiendas en línea"
-      },
-      {
-        "id": "soluciones-para-negocios",
-        "value": "/soluciones-para-negocios",
-        "href": "/soluciones-para-negocios",
-        "label": "Soluciones",
-        "ariaLabel": "Soluciones"
-      },
-      {
-        "id": "proyectos",
-        "value": "/proyectos",
-        "href": "/proyectos",
-        "label": "Proyectos",
-        "ariaLabel": "Proyectos"
+        "id": "productos",
+        "value": "/productos",
+        "href": "/productos",
+        "label": "Productos",
+        "ariaLabel": "Productos"
       },
       {
         "id": "blog",

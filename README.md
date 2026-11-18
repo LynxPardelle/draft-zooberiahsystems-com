@@ -31,11 +31,16 @@ Read only the task-specific route in `AGENTS.md`; do not duplicate shared hub pr
 
 ## Scope And Preview
 
-- Routes: `/`, `/servicios`, `/sitios-web`, `/tiendas-en-linea`, `/soluciones-para-negocios`, `/proyectos`, `/contacto`, `/blog`, `/blog/web`, `/blog/:categorySlug/:articleSlug`, and `/404`
+- Routes: `/`, `/servicios`, `/sitios-web`, `/tiendas-en-linea`, `/soluciones-para-negocios`, `/proyectos`, `/productos`, `/landingpages`, `/contacto`, `/blog`, `/blog/web`, `/blog/:categorySlug/:articleSlug`, and `/404`
+- Primary navigation: Servicios, Landing pages, Productos, Blog, Contacto. Existing service pages remain linked from Services, the home page, and the footer.
 - Custom operations consultations: `/soluciones-para-negocios/restaurantes`, `/soluciones-para-negocios/inventario`, and `/soluciones-para-negocios/seguimiento-de-solicitudes`
 - Language: Spanish (`es`)
 - Environments: protected `test` and `production` promotion
 - Shared preview: `https://test.zoolandingpage.com.mx/?draftDomain=zooberiahsystems.com`
 - Production canonical: `https://zooberiahsystems.com`
 
-The production site uses the apex as canonical and redirects `www`. Analytics use first-party collection with consent. Marketing images are served as WebP from the Zoolanding public asset CDN.
+The production site uses the apex as canonical and redirects `www`. Analytics use first-party collection with consent. The catalogs reuse existing public images from the Zoolanding asset CDN and the linked product sites.
+
+The local `/productos` and `/landingpages` catalog changes are drafts. They require the protected promotion workflow before publication; this documentation does not indicate that they are live.
+
+`/productos` lists RoadMap2U, Despensa Lista, and GTR Lab. The initial `/landingpages` selection contains the owned guitar, GTR Lab, Zoolandingpage, and ZooSitioWeb pages. Other discovered pages remain outside the runtime payload until selected for the catalog.

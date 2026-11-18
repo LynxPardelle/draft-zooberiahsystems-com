@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "landingpages",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "landingCatalogEyebrow": "ZooBeriah Systems",
+      "landingCatalogTitle": "Landing pages hechas con Zoolandingpage",
+      "landingCatalogLead": "Explora páginas para presentar servicios, mostrar productos y recibir contactos. Cada ejemplo tiene un objetivo y una forma de llevar al visitante al siguiente paso.",
+      "landingGalleryTitle": "Explora nuestras landing pages",
+      "landingContactTitle": "La siguiente puede ser la de tu negocio",
+      "landingContactLead": "Definimos el objetivo, organizamos tu contenido y construimos una página que guíe a las personas a contactarte. Zoolandingpage es la plataforma de ZooBeriah Systems que hace posible estos proyectos.",
+      "landingContactLink": "Quiero una landing page",
+      "landingPlatformLink": "Conocer Zoolandingpage",
+      "landingProductsLink": "Ver nuestras aplicaciones"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "landingpages",
+  "variables": {
+    "activeNav": "landingpages",
+    "catalog": {
+      "items": [
+        {
+          "id": "clasesdemusica-zoolandingpage-com-mx-guitarra",
+          "title": "Clases de guitarra con Héctor Coronado",
+          "description": "Landing de clases de guitarra acústica y eléctrica, en CDMX y en línea. Presenta al profesor, ofrece un ejercicio de GTR Lab y permite agendar por WhatsApp.",
+          "url": "https://clasesdemusica.zoolandingpage.com.mx/guitarra",
+          "category": "educacion",
+          "categoryLabel": "Educación y música",
+          "imageSrc": "https://clasesdemusica.zoolandingpage.com.mx/drafts/clasesdemusica.zoolandingpage.com.mx/assets/gtr-lab-diapason.jpg",
+          "imageAlt": "Diapasón de GTR Lab utilizado como acompañamiento en las clases de guitarra.",
+          "searchText": "Clases de guitarra con Héctor Coronado Landing de clases de guitarra acústica y eléctrica, en CDMX y en línea. Presenta al profesor, ofrece un ejercicio de GTR Lab y permite agendar por WhatsApp. Educación y música clasesdemusica.zoolandingpage.com.mx"
+        },
+        {
+          "id": "clasesdemusica-zoolandingpage-com-mx-gtr-lab",
+          "title": "GTR Lab",
+          "description": "Landing del producto para estudiar guitarra. Explica la metodología, muestra herramientas de la aplicación y enlaza al ejercicio público y a las clases.",
+          "url": "https://clasesdemusica.zoolandingpage.com.mx/gtr-lab",
+          "category": "educacion",
+          "categoryLabel": "Educación y música",
+          "imageSrc": "https://clasesdemusica.zoolandingpage.com.mx/drafts/clasesdemusica.zoolandingpage.com.mx/assets/gtr-lab-diapason.jpg",
+          "imageAlt": "Diapasón interactivo de GTR Lab para estudiar posiciones y notas.",
+          "searchText": "GTR Lab Landing del producto para estudiar guitarra. Explica la metodología, muestra herramientas de la aplicación y enlaza al ejercicio público y a las clases. Educación y música clasesdemusica.zoolandingpage.com.mx"
+        },
+        {
+          "id": "zoolandingpage-com-mx",
+          "title": "Zoolandingpage",
+          "description": "Página comercial de nuestra plataforma de landing pages. Presenta la oferta, explica su funcionamiento y facilita el contacto para crear una página.",
+          "url": "https://zoolandingpage.com.mx/",
+          "category": "plataformas",
+          "categoryLabel": "Plataformas digitales",
+          "imageSrc": "https://zoolandingpage.com.mx/assets/og-1200x630.svg",
+          "imageAlt": "Presentación de Zoolandingpage, la plataforma de landing pages de ZooBeriah Systems.",
+          "searchText": "Zoolandingpage Página comercial de nuestra plataforma de landing pages. Presenta la oferta, explica su funcionamiento y facilita el contacto para crear una página. Plataformas digitales zoolandingpage.com.mx"
+        },
+        {
+          "id": "zoositioweb-com-mx",
+          "title": "ZooSitioWeb",
+          "description": "Página comercial de nuestra solución de sitios web para negocios. Explica el servicio y permite explorar ejemplos por sector y consultar sus planes.",
+          "url": "https://zoositioweb.com.mx/",
+          "category": "plataformas",
+          "categoryLabel": "Plataformas digitales",
+          "imageSrc": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/zoositioweb.webp",
+          "imageAlt": "Página comercial de ZooSitioWeb con ejemplos para negocios y contacto por WhatsApp.",
+          "searchText": "ZooSitioWeb Página comercial de nuestra solución de sitios web para negocios. Explica el servicio y permite explorar ejemplos por sector y consultar sus planes. Plataformas digitales zoositioweb.com.mx"
+        }
+      ]
+    }
+  }
+}

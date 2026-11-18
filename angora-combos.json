@@ -22,7 +22,7 @@
       "ank-display-none ank-display-xl-flex ank-alignItems-center ank-gap-20px ank-marginLeft-auto"
     ],
     "zooberiahDesktopNav": [
-      "ank-display-flex ank-alignItems-center ank-gap-8px ank-gap-xxl-14px"
+      "ank-display-flex ank-alignItems-center ank-gap-8px"
     ],
     "zooberiahNavLink": [
       "ank-display-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-44px ank-paddingInline-12px ank-paddingBlock-8px ank-bgHover-secondaryBgColor ank-textDecorationFocus-underline ank-textUnderlineOffset-6px ank-outlineFocus-none ank-color-textColor ank-fontSize-0_93rem ank-fontWeight-600 ank-textDecoration-none ank-whiteSpace-nowrap"

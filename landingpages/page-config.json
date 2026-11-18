@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "landingpages",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "landingCatalogMain",
+    "siteFooter"
+  ],
+  "seo": {
+    "title": "Landing pages hechas con Zoolandingpage | ZooBeriah Systems",
+    "description": "Explora landing pages hechas con Zoolandingpage para servicios y productos: clases de guitarra, GTR Lab y plataformas digitales de ZooBeriah Systems.",
+    "canonical": "https://zooberiahsystems.com/landingpages",
+    "openGraph": {
+      "title": "Landing pages hechas con Zoolandingpage | ZooBeriah Systems",
+      "description": "Explora landing pages hechas con Zoolandingpage para servicios y productos: clases de guitarra, GTR Lab y plataformas digitales de ZooBeriah Systems.",
+      "image": "https://clasesdemusica.zoolandingpage.com.mx/drafts/clasesdemusica.zoolandingpage.com.mx/assets/gtr-lab-diapason.jpg",
+      "image:alt": "Diapasón de GTR Lab utilizado como acompañamiento en las clases de guitarra.",
+      "type": "website",
+      "locale": "es_MX"
+    },
+    "twitter": {
+      "title": "Landing pages hechas con Zoolandingpage | ZooBeriah Systems",
+      "description": "Explora landing pages hechas con Zoolandingpage para servicios y productos: clases de guitarra, GTR Lab y plataformas digitales de ZooBeriah Systems.",
+      "image": "https://clasesdemusica.zoolandingpage.com.mx/drafts/clasesdemusica.zoolandingpage.com.mx/assets/gtr-lab-diapason.jpg",
+      "image:alt": "Diapasón de GTR Lab utilizado como acompañamiento en las clases de guitarra.",
+      "card": "summary_large_image"
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": "https://zooberiahsystems.com/landingpages#pagina",
+        "name": "Landing pages hechas con Zoolandingpage",
+        "url": "https://zooberiahsystems.com/landingpages",
+        "description": "Explora landing pages hechas con Zoolandingpage para servicios y productos: clases de guitarra, GTR Lab y plataformas digitales de ZooBeriah Systems.",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://zooberiahsystems.com/#organization",
+          "name": "ZooBeriah Systems",
+          "url": "https://zooberiahsystems.com/"
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Clases de guitarra con Héctor Coronado",
+              "url": "https://clasesdemusica.zoolandingpage.com.mx/guitarra"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "GTR Lab",
+              "url": "https://clasesdemusica.zoolandingpage.com.mx/gtr-lab"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Zoolandingpage",
+              "url": "https://zoolandingpage.com.mx/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "ZooSitioWeb",
+              "url": "https://zoositioweb.com.mx/"
+            }
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://zooberiahsystems.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Landing pages hechas con Zoolandingpage",
+            "item": "https://zooberiahsystems.com/landingpages"
+          }
+        ]
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "landingpages",
+      "catalogo",
+      "crear-landingpage"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}

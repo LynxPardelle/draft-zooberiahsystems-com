@@ -2,5 +2,41 @@
   "version": 1,
   "domain": "zooberiahsystems.com",
   "pageId": "productos",
-  "variables": {}
+  "variables": {
+    "activeNav": "productos",
+    "products": {
+      "items": [
+        {
+          "id": "roadmap2u",
+          "title": "RoadMap2U",
+          "eyebrow": "Da forma a tus metas",
+          "description": "Convierte una meta en un árbol visual. Organiza pasos, tareas y alternativas, reorganiza tu plan y trabaja sin conexión después de crear tu cuenta.",
+          "url": "https://roadmap2u.com/",
+          "imageSrc": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/roadmap2u-demostracion.webp",
+          "imageAlt": "Interfaz de RoadMap2U para organizar una ruta de aprendizaje.",
+          "linkLabel": "Conocer RoadMap2U"
+        },
+        {
+          "id": "despensa-lista",
+          "title": "Despensa Lista",
+          "eyebrow": "Tu despensa y tus compras, en orden",
+          "description": "Registra los alimentos que tienes, revisa qué caduca pronto y comparte la lista de compras con tu hogar.",
+          "url": "https://despensalista.com/",
+          "imageSrc": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/despensalista.webp",
+          "imageAlt": "Interfaz de Despensa Lista para organizar productos y compras.",
+          "linkLabel": "Conocer Despensa Lista"
+        },
+        {
+          "id": "gtr-lab",
+          "title": "GTR Lab",
+          "eyebrow": "Práctica de guitarra con dirección",
+          "description": "Explora el diapasón y relaciona notas y posiciones para estudiar guitarra. Conoce la metodología y prueba el ejercicio público de pentatónica de La menor, con las clases de Héctor Coronado como acompañamiento.",
+          "url": "https://clasesdemusica.zoolandingpage.com.mx/gtr-lab",
+          "imageSrc": "https://clasesdemusica.zoolandingpage.com.mx/drafts/clasesdemusica.zoolandingpage.com.mx/assets/gtr-lab-diapason.jpg",
+          "imageAlt": "Diapasón interactivo de GTR Lab con posiciones y notas para estudiar guitarra.",
+          "linkLabel": "Conocer GTR Lab"
+        }
+      ]
+    }
+  }
 }
