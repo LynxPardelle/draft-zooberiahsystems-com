@@ -8,43 +8,77 @@
       "type": "container",
       "config": {
         "tag": "main",
-        "id": "main-content",
-        "role": "main",
-        "tabindex": -1,
-        "classes": "ank-width-100per ank-display-flex ank-flexDirection-column ank-overflowX-hidden ank-bg-bgColor ank-color-textColor",
+        "classes": "zMain",
         "components": [
           "heroSection",
           "consultingSection",
           "solutionsSection",
+          "websiteSection",
           "applicationsSection",
-          "methodSection",
           "aboutSection",
           "faqSection",
           "contactSection"
-        ]
+        ],
+        "id": "main-content",
+        "tabindex": -1
       }
     },
     {
       "id": "heroSection",
       "type": "container",
       "config": {
-        "id": "inicio",
         "tag": "section",
-        "classes": "zSection ank-paddingBlock-64px ank-paddingBlock-md-96px",
+        "classes": "zHeroSurface",
         "components": [
-          "heroGrid"
-        ]
+          "heroImage",
+          "heroOverlay",
+          "heroInner"
+        ],
+        "id": "inicio"
       }
     },
     {
-      "id": "heroGrid",
+      "id": "heroImage",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/hero.webp",
+        "alt": "",
+        "width": 1672,
+        "height": 941,
+        "classes": "zHeroMedia",
+        "loading": "eager",
+        "decoding": "async",
+        "fetchPriority": "high",
+        "styles": {
+          "width": "100%",
+          "height": "100%",
+          "maxWidth": "none",
+          "objectPosition": "64% 50%"
+        }
+      }
+    },
+    {
+      "id": "heroOverlay",
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-lg-1_1fr__0_9fr ank-gap-40px ank-gap-md-64px ank-alignItems-center",
+        "classes": "zHeroOverlay gradientShiftAnimation ank-and-1400ms ank-antf-easeMINout",
+        "components": [],
+        "styles": {
+          "background": "linear-gradient(90deg, rgba(8,26,25,.91) 0%, rgba(8,26,25,.77) 52%, rgba(8,26,25,.40) 100%)",
+          "backgroundSize": "116% 100%"
+        }
+      }
+    },
+    {
+      "id": "heroInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell",
         "components": [
-          "heroCopy",
-          "heroVisual"
+          "heroCopy"
         ]
       }
     },
@@ -53,44 +87,13 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-display-flex ank-flexDirection-column ank-gap-20px ank-maxWidth-700px",
+        "classes": "zProse ank-gap-21px",
         "components": [
           "heroDescriptor",
           "heroTitle",
           "heroLead",
-          "heroActions",
-          "heroLocation"
+          "heroActions"
         ]
-      }
-    },
-    {
-      "id": "heroDescriptor",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.hero.descriptor",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zEyebrow"
-      }
-    },
-    {
-      "id": "heroTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.hero.title",
-      "config": {
-        "tag": "h1",
-        "text": "",
-        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-2_7rem ank-fontSize-lg-4_6rem ank-fontWeight-900 ank-letterSpacing-MIN0_035em ank-lineHeight-0_98 ank-maxWidth-12ch"
-      }
-    },
-    {
-      "id": "heroLead",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.hero.lead",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zLead"
       }
     },
     {
@@ -98,7 +101,7 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-12px ank-alignItems-center",
+        "classes": "zActions ank-marginTop-5px",
         "components": [
           "heroPrimaryAction",
           "heroSecondaryAction"
@@ -108,1220 +111,267 @@
     {
       "id": "heroPrimaryAction",
       "type": "link",
-      "valueInstructions": "set:config.text,i18n,page.hero.primary;set:config.ariaLabel,i18n,page.hero.primary",
       "config": {
-        "href": "#contacto",
-        "text": "",
-        "ariaLabel": "",
-        "classes": "zPrimaryAction ank-color-bgColor"
+        "text": "Explorar servicios",
+        "href": "/servicios",
+        "classes": "zHeroPrimary ank-color-HASH102D32"
       }
     },
     {
       "id": "heroSecondaryAction",
       "type": "link",
-      "valueInstructions": "set:config.text,i18n,page.hero.secondary;set:config.ariaLabel,i18n,page.hero.secondary",
       "config": {
-        "href": "#consultoria",
-        "text": "",
-        "ariaLabel": "",
-        "classes": "zSecondaryAction ank-color-titleColor"
-      }
-    },
-    {
-      "id": "heroLocation",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.hero.location",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zMeta"
-      }
-    },
-    {
-      "id": "heroVisual",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "ariaHidden": true,
-        "classes": "ank-position-relative ank-width-100per ank-minHeight-360px ank-borderRadius-40px ank-overflow-hidden ank-bg-secondaryBgColor",
-        "styles": {
-          "minHeight": "360px",
-          "background": "linear-gradient(145deg, #e4eee7 0%, #f6f4ee 58%, #e4d9c5 100%)",
-          "boxShadow": "inset 0 0 0 1px rgba(16, 45, 50, 0.12)"
-        },
-        "components": [
-          "heroVisualOuterRing",
-          "heroVisualInnerRing",
-          "heroVisualCore",
-          "heroVisualNodeOne",
-          "heroVisualNodeTwo",
-          "heroVisualNodeThree"
-        ]
-      }
-    },
-    {
-      "id": "heroVisualOuterRing",
-      "type": "container",
-      "config": {
-        "tag": "span",
-        "classes": "ank-position-absolute ank-borderRadius-999px",
-        "styles": {
-          "width": "270px",
-          "height": "270px",
-          "left": "50%",
-          "top": "50%",
-          "transform": "translate(-50%, -50%)",
-          "border": "1px solid rgba(18, 107, 89, 0.42)"
-        },
-        "components": []
-      }
-    },
-    {
-      "id": "heroVisualInnerRing",
-      "type": "container",
-      "config": {
-        "tag": "span",
-        "classes": "ank-position-absolute ank-borderRadius-999px",
-        "styles": {
-          "width": "178px",
-          "height": "178px",
-          "left": "50%",
-          "top": "50%",
-          "transform": "translate(-50%, -50%)",
-          "border": "18px solid rgba(217, 239, 143, 0.74)"
-        },
-        "components": []
-      }
-    },
-    {
-      "id": "heroVisualCore",
-      "type": "container",
-      "config": {
-        "tag": "span",
-        "classes": "ank-position-absolute ank-borderRadius-24px ank-bg-HASH126B59",
-        "styles": {
-          "width": "92px",
-          "height": "92px",
-          "left": "50%",
-          "top": "50%",
-          "transform": "translate(-50%, -50%) rotate(12deg)",
-          "boxShadow": "0 24px 48px rgba(16, 45, 50, 0.18)"
-        },
-        "components": []
-      }
-    },
-    {
-      "id": "heroVisualNodeOne",
-      "type": "container",
-      "config": {
-        "tag": "span",
-        "classes": "ank-position-absolute ank-borderRadius-12px ank-bg-HASH102D32",
-        "styles": {
-          "width": "42px",
-          "height": "42px",
-          "left": "13%",
-          "top": "20%",
-          "transform": "rotate(-8deg)"
-        },
-        "components": []
-      }
-    },
-    {
-      "id": "heroVisualNodeTwo",
-      "type": "container",
-      "config": {
-        "tag": "span",
-        "classes": "ank-position-absolute ank-borderRadius-999px ank-bg-HASHD9EF8F",
-        "styles": {
-          "width": "58px",
-          "height": "58px",
-          "right": "11%",
-          "top": "16%",
-          "boxShadow": "0 0 0 1px rgba(18, 107, 89, 0.48)"
-        },
-        "components": []
-      }
-    },
-    {
-      "id": "heroVisualNodeThree",
-      "type": "container",
-      "config": {
-        "tag": "span",
-        "classes": "ank-position-absolute ank-borderRadius-12px",
-        "styles": {
-          "width": "64px",
-          "height": "64px",
-          "right": "14%",
-          "bottom": "15%",
-          "border": "12px solid #126b59",
-          "transform": "rotate(18deg)"
-        },
-        "components": []
+        "text": "Hablemos de tu proyecto",
+        "href": "/contacto",
+        "classes": "zHeroSecondary ank-color-white"
       }
     },
     {
       "id": "consultingSection",
       "type": "container",
       "config": {
-        "id": "consultoria",
         "tag": "section",
-        "classes": "zSection ank-bg-secondaryBgColor",
+        "classes": "zSection",
         "components": [
-          "consultingInner"
-        ]
+          "consultingShell"
+        ],
+        "id": "consultoria"
       }
     },
     {
-      "id": "consultingInner",
+      "id": "consultingShell",
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "zInner",
+        "classes": "zShell",
         "components": [
-          "consultingEyebrow",
+          "consultingLabel",
           "consultingTitle",
-          "consultingIntro",
-          "consultingGrid",
-          "consultingClosing"
+          "consultingItems"
         ]
       }
     },
     {
-      "id": "consultingEyebrow",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.consulting.eyebrow",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zEyebrow"
-      }
-    },
-    {
-      "id": "consultingTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.consulting.title",
-      "config": {
-        "tag": "h2",
-        "text": "",
-        "classes": "zTitle"
-      }
-    },
-    {
-      "id": "consultingIntro",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.consulting.intro",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zLead"
-      }
-    },
-    {
-      "id": "consultingGrid",
+      "id": "consultingItems",
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-lg-repeatSD3COM1frED ank-gap-18px ank-marginTop-16px",
+        "classes": "zHomeServices",
         "components": [
-          "technologyCard",
-          "dataCard",
-          "aiCard"
+          "technologyService",
+          "dataService",
+          "aiService"
         ]
-      }
-    },
-    {
-      "id": "technologyCard",
-      "type": "container",
-      "config": {
-        "tag": "article",
-        "classes": "zCard",
-        "components": [
-          "technologyNumber",
-          "technologyTitle",
-          "technologyDescription",
-          "technologyNeedsLabel",
-          "technologyNeeds",
-          "technologyAction"
-        ]
-      }
-    },
-    {
-      "id": "technologyNumber",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.consulting.technology.number",
-      "config": {
-        "tag": "span",
-        "text": "",
-        "classes": "zNumber"
-      }
-    },
-    {
-      "id": "technologyTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.consulting.technology.title",
-      "config": {
-        "tag": "h3",
-        "text": "",
-        "classes": "zCardTitle"
-      }
-    },
-    {
-      "id": "technologyDescription",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.consulting.technology.description",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zCardText"
-      }
-    },
-    {
-      "id": "technologyNeedsLabel",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.consulting.needsLabel",
-      "config": {
-        "tag": "strong",
-        "text": "",
-        "classes": "ank-color-titleColor ank-fontSize-0_86rem ank-fontWeight-900"
-      }
-    },
-    {
-      "id": "technologyNeeds",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.consulting.technology.needs",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zMeta"
-      }
-    },
-    {
-      "id": "technologyLink",
-      "type": "link",
-      "eventInstructions": "trackEvent:whatsapp_click,cta,consultoria_tecnologica,location,consultoria",
-      "valueInstructions": "set:config.text,i18n,page.consulting.technology.cta;set:config.ariaLabel,i18n,page.consulting.technology.ctaAriaLabel;set:config.href,var,ctaTargets.consultingTechnologyWhatsApp",
-      "config": {
-        "href": "#",
-        "text": "",
-        "ariaLabel": "",
-        "target": "_blank",
-        "rel": "noopener noreferrer",
-        "classes": "zSecondaryAction ank-color-titleColor"
-      }
-    },
-    {
-      "id": "technologyAction",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "zCardAction",
-        "components": [
-          "technologyLink"
-        ]
-      }
-    },
-    {
-      "id": "dataCard",
-      "type": "container",
-      "config": {
-        "tag": "article",
-        "classes": "zCard",
-        "components": [
-          "dataNumber",
-          "dataTitle",
-          "dataDescription",
-          "dataNeedsLabel",
-          "dataNeeds",
-          "dataAction"
-        ]
-      }
-    },
-    {
-      "id": "dataNumber",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.consulting.data.number",
-      "config": {
-        "tag": "span",
-        "text": "",
-        "classes": "zNumber"
-      }
-    },
-    {
-      "id": "dataTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.consulting.data.title",
-      "config": {
-        "tag": "h3",
-        "text": "",
-        "classes": "zCardTitle"
-      }
-    },
-    {
-      "id": "dataDescription",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.consulting.data.description",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zCardText"
-      }
-    },
-    {
-      "id": "dataNeedsLabel",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.consulting.needsLabel",
-      "config": {
-        "tag": "strong",
-        "text": "",
-        "classes": "ank-color-titleColor ank-fontSize-0_86rem ank-fontWeight-900"
-      }
-    },
-    {
-      "id": "dataNeeds",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.consulting.data.needs",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zMeta"
-      }
-    },
-    {
-      "id": "dataLink",
-      "type": "link",
-      "eventInstructions": "trackEvent:whatsapp_click,cta,consultoria_datos,location,consultoria",
-      "valueInstructions": "set:config.text,i18n,page.consulting.data.cta;set:config.ariaLabel,i18n,page.consulting.data.ctaAriaLabel;set:config.href,var,ctaTargets.consultingDataWhatsApp",
-      "config": {
-        "href": "#",
-        "text": "",
-        "ariaLabel": "",
-        "target": "_blank",
-        "rel": "noopener noreferrer",
-        "classes": "zSecondaryAction ank-color-titleColor"
-      }
-    },
-    {
-      "id": "dataAction",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "zCardAction",
-        "components": [
-          "dataLink"
-        ]
-      }
-    },
-    {
-      "id": "aiCard",
-      "type": "container",
-      "config": {
-        "tag": "article",
-        "classes": "zCard",
-        "components": [
-          "aiNumber",
-          "aiTitle",
-          "aiDescription",
-          "aiNeedsLabel",
-          "aiNeeds",
-          "aiAction"
-        ]
-      }
-    },
-    {
-      "id": "aiNumber",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.consulting.ai.number",
-      "config": {
-        "tag": "span",
-        "text": "",
-        "classes": "zNumber"
-      }
-    },
-    {
-      "id": "aiTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.consulting.ai.title",
-      "config": {
-        "tag": "h3",
-        "text": "",
-        "classes": "zCardTitle"
-      }
-    },
-    {
-      "id": "aiDescription",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.consulting.ai.description",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zCardText"
-      }
-    },
-    {
-      "id": "aiNeedsLabel",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.consulting.needsLabel",
-      "config": {
-        "tag": "strong",
-        "text": "",
-        "classes": "ank-color-titleColor ank-fontSize-0_86rem ank-fontWeight-900"
-      }
-    },
-    {
-      "id": "aiNeeds",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.consulting.ai.needs",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zMeta"
-      }
-    },
-    {
-      "id": "aiLink",
-      "type": "link",
-      "eventInstructions": "trackEvent:whatsapp_click,cta,consultoria_ia,location,consultoria",
-      "valueInstructions": "set:config.text,i18n,page.consulting.ai.cta;set:config.ariaLabel,i18n,page.consulting.ai.ctaAriaLabel;set:config.href,var,ctaTargets.consultingAiWhatsApp",
-      "config": {
-        "href": "#",
-        "text": "",
-        "ariaLabel": "",
-        "target": "_blank",
-        "rel": "noopener noreferrer",
-        "classes": "zSecondaryAction ank-color-titleColor"
-      }
-    },
-    {
-      "id": "aiAction",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "zCardAction",
-        "components": [
-          "aiLink"
-        ]
-      }
-    },
-    {
-      "id": "consultingClosing",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.consulting.closing",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "ank-m-0 ank-maxWidth-58rem ank-paddingTop-8px ank-color-titleColor ank-fontSize-1rem ank-fontWeight-800 ank-lineHeight-1_6"
       }
     },
     {
       "id": "solutionsSection",
       "type": "container",
       "config": {
-        "id": "soluciones",
         "tag": "section",
-        "classes": "zSection",
+        "classes": "zSection zBand",
         "components": [
-          "solutionsInner"
-        ]
+          "commerceShell"
+        ],
+        "id": "soluciones",
+        "styles": {
+          "background": "linear-gradient(135deg, var(--ank-secondaryBgColor), var(--ank-bgColor) 85%)"
+        }
       }
     },
     {
-      "id": "solutionsInner",
+      "id": "commerceShell",
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "zInner",
+        "classes": "zShell zSplit",
         "components": [
-          "solutionsEyebrow",
-          "solutionsTitle",
-          "solutionsIntro",
-          "solutionsGrid",
-          "solutionsClosing",
-          "solutionsProductsLink"
+          "commerceCopy",
+          "commerceImage"
         ]
       }
     },
     {
-      "id": "solutionsProductsLink",
-      "type": "link",
-      "valueInstructions": "set:config.text,i18n,page.solutions.productsLink",
-      "config": {
-        "href": "/productos",
-        "text": "",
-        "scrollRestoration": {
-          "mode": "top",
-          "behavior": "auto"
-        },
-        "classes": "zooberiahSecondaryAction ank-color-linkColor ank-alignSelf-start"
-      }
-    },
-    {
-      "id": "solutionsEyebrow",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.solutions.eyebrow",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zEyebrow"
-      }
-    },
-    {
-      "id": "solutionsTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.solutions.title",
-      "config": {
-        "tag": "h2",
-        "text": "",
-        "classes": "zTitle"
-      }
-    },
-    {
-      "id": "solutionsIntro",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.solutions.intro",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zLead"
-      }
-    },
-    {
-      "id": "solutionsGrid",
+      "id": "commerceCopy",
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD2COM1frED ank-gap-18px ank-marginTop-16px",
+        "classes": "zProse",
         "components": [
-          "zoolandingpageCard",
-          "zoositiowebCard",
-          "zooblogCard",
-          "zootiendadigitalCard"
+          "commerceLabel",
+          "commerceTitle",
+          "commerceLead",
+          "commerceLinks"
         ]
       }
     },
     {
-      "id": "zoolandingpageCard",
+      "id": "commerceLinks",
       "type": "container",
       "config": {
-        "tag": "article",
-        "classes": "zCardSoft",
+        "tag": "div",
+        "classes": "zActions",
         "components": [
-          "zoolandingpageStatus",
-          "zoolandingpageTitle",
-          "zoolandingpageDescription",
-          "zoolandingpageNote",
-          "zoolandingpageAction"
+          "commerceWhatsapp",
+          "commerceDetails"
         ]
       }
     },
     {
-      "id": "zoolandingpageStatus",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.solutions.available",
-      "config": {
-        "tag": "span",
-        "text": "",
-        "classes": "zBadgeAvailable"
-      }
-    },
-    {
-      "id": "zoolandingpageTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.solutions.zoolandingpage.title",
-      "config": {
-        "tag": "h3",
-        "text": "",
-        "classes": "zCardTitle"
-      }
-    },
-    {
-      "id": "zoolandingpageDescription",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.solutions.zoolandingpage.description",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zCardText"
-      }
-    },
-    {
-      "id": "zoolandingpageNote",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.solutions.plansNote",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zMeta"
-      }
-    },
-    {
-      "id": "zoolandingpageLink",
+      "id": "commerceWhatsapp",
       "type": "link",
-      "eventInstructions": "trackEvent:cta_click,cta,zoolandingpage,location,soluciones",
-      "valueInstructions": "set:config.text,i18n,page.solutions.zoolandingpage.cta;set:config.ariaLabel,i18n,page.solutions.zoolandingpage.ctaAriaLabel;set:config.href,var,ctaTargets.zoolandingpagePlans",
       "config": {
-        "href": "#",
-        "text": "",
-        "ariaLabel": "",
+        "text": "Cotizar por WhatsApp",
+        "href": "https://wa.me/525522699563?text=Hola%2C%20ZooBeriah%20Systems.%20Quiero%20cotizar%20una%20tienda%20en%20l%C3%ADnea%20a%20medida%20para%20mi%20negocio.",
+        "classes": "zPrimaryAction ank-color-bgColor",
         "target": "_blank",
         "rel": "noopener noreferrer",
-        "classes": "zSecondaryAction ank-color-titleColor"
-      }
-    },
-    {
-      "id": "zoolandingpageAction",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "zCardAction",
         "components": [
-          "zoolandingpageLink"
-        ]
-      }
+          "commerceChatIcon"
+        ],
+        "ariaLabel": "Cotizar por WhatsApp (se abre en una pestaña nueva)"
+      },
+      "eventInstructions": "trackEvent:whatsapp_click,cta,store_home,location,home"
     },
     {
-      "id": "zoositiowebCard",
-      "type": "container",
+      "id": "commerceChatIcon",
+      "type": "icon",
       "config": {
-        "tag": "article",
-        "classes": "zCardSoft",
-        "components": [
-          "zoositiowebStatus",
-          "zoositiowebTitle",
-          "zoositiowebDescription",
-          "zoositiowebNote",
-          "zoositiowebAction"
-        ]
+        "iconName": "chat",
+        "classes": "ank-fontSize-18px",
+        "ariaHidden": true
       }
     },
     {
-      "id": "zoositiowebStatus",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.solutions.available",
-      "config": {
-        "tag": "span",
-        "text": "",
-        "classes": "zBadgeAvailable"
-      }
-    },
-    {
-      "id": "zoositiowebTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.solutions.zoositioweb.title",
-      "config": {
-        "tag": "h3",
-        "text": "",
-        "classes": "zCardTitle"
-      }
-    },
-    {
-      "id": "zoositiowebDescription",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.solutions.zoositioweb.description",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zCardText"
-      }
-    },
-    {
-      "id": "zoositiowebNote",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.solutions.plansNote",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zMeta"
-      }
-    },
-    {
-      "id": "zoositiowebLink",
+      "id": "commerceDetails",
       "type": "link",
-      "eventInstructions": "trackEvent:cta_click,cta,zoositioweb,location,soluciones",
-      "valueInstructions": "set:config.text,i18n,page.solutions.zoositioweb.cta;set:config.ariaLabel,i18n,page.solutions.zoositioweb.ctaAriaLabel;set:config.href,var,ctaTargets.zoositiowebPlans",
       "config": {
-        "href": "#",
-        "text": "",
-        "ariaLabel": "",
-        "target": "_blank",
-        "rel": "noopener noreferrer",
-        "classes": "zSecondaryAction ank-color-titleColor"
+        "text": "Ver tiendas en línea",
+        "href": "/tiendas-en-linea",
+        "classes": "zTextLink"
       }
     },
     {
-      "id": "zoositiowebAction",
-      "type": "container",
+      "id": "commerceImage",
+      "type": "media",
       "config": {
-        "tag": "div",
-        "classes": "zCardAction",
-        "components": [
-          "zoositiowebLink"
-        ]
-      }
-    },
-    {
-      "id": "zooblogCard",
-      "type": "container",
-      "config": {
-        "tag": "article",
-        "classes": "zCardSoft",
-        "components": [
-          "zooblogStatus",
-          "zooblogTitle",
-          "zooblogDescription",
-          "zooblogAction"
-        ]
-      }
-    },
-    {
-      "id": "zooblogStatus",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.solutions.available",
-      "config": {
-        "tag": "span",
-        "text": "",
-        "classes": "zBadgeAvailable"
-      }
-    },
-    {
-      "id": "zooblogTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.solutions.zooblog.title",
-      "config": {
-        "tag": "h3",
-        "text": "",
-        "classes": "zCardTitle"
-      }
-    },
-    {
-      "id": "zooblogDescription",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.solutions.zooblog.description",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zCardText"
-      }
-    },
-    {
-      "id": "zooblogLink",
-      "type": "link",
-      "eventInstructions": "trackEvent:whatsapp_click,cta,zooblog,location,soluciones",
-      "valueInstructions": "set:config.text,i18n,page.solutions.zooblog.cta;set:config.ariaLabel,i18n,page.solutions.zooblog.ctaAriaLabel;set:config.href,var,ctaTargets.zooblogWhatsApp",
-      "config": {
-        "href": "#",
-        "text": "",
-        "ariaLabel": "",
-        "target": "_blank",
-        "rel": "noopener noreferrer",
-        "classes": "zSecondaryAction ank-color-titleColor"
-      }
-    },
-    {
-      "id": "zooblogAction",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "zCardAction",
-        "components": [
-          "zooblogLink"
-        ]
-      }
-    },
-    {
-      "id": "zootiendadigitalCard",
-      "type": "container",
-      "config": {
-        "tag": "article",
-        "classes": "zCardSoft",
-        "components": [
-          "zootiendadigitalStatus",
-          "zootiendadigitalTitle",
-          "zootiendadigitalDescription"
-        ]
-      }
-    },
-    {
-      "id": "zootiendadigitalStatus",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.solutions.development",
-      "config": {
-        "tag": "span",
-        "text": "",
-        "classes": "zBadgeDevelopment"
-      }
-    },
-    {
-      "id": "zootiendadigitalTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.solutions.zootiendadigital.title",
-      "config": {
-        "tag": "h3",
-        "text": "",
-        "classes": "zCardTitle"
-      }
-    },
-    {
-      "id": "zootiendadigitalDescription",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.solutions.zootiendadigital.description",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zCardText"
-      }
-    },
-    {
-      "id": "solutionsClosing",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.solutions.closing",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "ank-m-0 ank-maxWidth-58rem ank-color-titleColor ank-fontWeight-800 ank-lineHeight-1_6"
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/commerce.webp",
+        "alt": "Preparación de un pedido en un pequeño comercio",
+        "width": 1280,
+        "height": 720,
+        "classes": "zMedia",
+        "loading": "lazy",
+        "decoding": "async"
       }
     },
     {
       "id": "applicationsSection",
       "type": "container",
       "config": {
-        "id": "aplicaciones",
         "tag": "section",
-        "classes": "zSection ank-bg-secondaryBgColor",
+        "classes": "zSection zBand",
         "components": [
-          "applicationsInner"
-        ]
+          "featuredProjects"
+        ],
+        "id": "aplicaciones"
       }
     },
     {
-      "id": "applicationsInner",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "zInner",
-        "components": [
-          "applicationsEyebrow",
-          "applicationsTitle",
-          "applicationsIntro",
-          "applicationsGrid"
-        ]
-      }
-    },
-    {
-      "id": "applicationsEyebrow",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.applications.eyebrow",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zEyebrow"
-      }
-    },
-    {
-      "id": "applicationsTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.applications.title",
-      "config": {
-        "tag": "h2",
-        "text": "",
-        "classes": "zTitle"
-      }
-    },
-    {
-      "id": "applicationsIntro",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.applications.intro",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zLead"
-      }
-    },
-    {
-      "id": "applicationsGrid",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD2COM1frED ank-gap-18px ank-marginTop-16px",
-        "components": [
-          "roadmapCard",
-          "despensaCard"
-        ]
-      }
-    },
-    {
-      "id": "roadmapCard",
+      "id": "projectShell",
       "type": "container",
       "config": {
         "tag": "article",
-        "classes": "zCard",
+        "classes": "zShell zSplit",
         "components": [
-          "roadmapMark",
-          "roadmapTitle",
-          "roadmapDescription",
-          "roadmapAction"
+          "projectCopy",
+          "projectImage"
         ]
       }
     },
     {
-      "id": "roadmapMark",
-      "type": "text",
+      "id": "projectCopy",
+      "type": "container",
       "config": {
-        "tag": "span",
-        "text": "R2U",
-        "ariaHidden": true,
-        "classes": "zNumber"
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "projectLabel",
+          "projectTitle",
+          "projectLead",
+          "projectLinks"
+        ]
       }
     },
     {
-      "id": "roadmapTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.applications.roadmap2u.title",
+      "id": "projectLinks",
+      "type": "container",
       "config": {
-        "tag": "h3",
-        "text": "",
-        "classes": "zCardTitle"
+        "tag": "div",
+        "classes": "zActions",
+        "components": [
+          "projectOpen",
+          "projectDetails"
+        ]
       }
     },
     {
-      "id": "roadmapDescription",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.applications.roadmap2u.description",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zCardText"
-      }
-    },
-    {
-      "id": "roadmapLink",
+      "id": "projectOpen",
       "type": "link",
-      "eventInstructions": "trackEvent:cta_click,cta,roadmap2u,location,aplicaciones",
-      "valueInstructions": "set:config.text,i18n,page.applications.roadmap2u.cta;set:config.ariaLabel,i18n,page.applications.roadmap2u.ctaAriaLabel;set:config.href,var,ctaTargets.roadmap2u",
       "config": {
-        "href": "#",
-        "text": "",
-        "ariaLabel": "",
+        "text": "Visitar DespensaLista",
+        "href": "https://despensalista.com/",
+        "classes": "zPrimaryAction ank-color-bgColor",
         "target": "_blank",
         "rel": "noopener noreferrer",
+        "ariaLabel": "Visitar DespensaLista (se abre en una pestaña nueva)"
+      }
+    },
+    {
+      "id": "projectDetails",
+      "type": "link",
+      "config": {
+        "text": "Conocer DespensaLista",
+        "href": "/proyectos#despensalista",
         "classes": "zSecondaryAction ank-color-titleColor"
       }
     },
     {
-      "id": "roadmapAction",
-      "type": "container",
+      "id": "projectImage",
+      "type": "media",
       "config": {
-        "tag": "div",
-        "classes": "zCardAction",
-        "components": [
-          "roadmapLink"
-        ]
-      }
-    },
-    {
-      "id": "despensaCard",
-      "type": "container",
-      "config": {
-        "tag": "article",
-        "classes": "zCard",
-        "components": [
-          "despensaStatus",
-          "despensaTitle",
-          "despensaDescription"
-        ]
-      }
-    },
-    {
-      "id": "despensaStatus",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.applications.development",
-      "config": {
-        "tag": "span",
-        "text": "",
-        "classes": "zBadgeDevelopment"
-      }
-    },
-    {
-      "id": "despensaTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.applications.despensaLista.title",
-      "config": {
-        "tag": "h3",
-        "text": "",
-        "classes": "zCardTitle"
-      }
-    },
-    {
-      "id": "despensaDescription",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.applications.despensaLista.description",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zCardText"
-      }
-    },
-    {
-      "id": "methodSection",
-      "type": "container",
-      "config": {
-        "id": "como-trabajamos",
-        "tag": "section",
-        "classes": "zSection",
-        "components": [
-          "methodInner"
-        ]
-      }
-    },
-    {
-      "id": "methodInner",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "zInner",
-        "components": [
-          "methodEyebrow",
-          "methodTitle",
-          "methodGrid"
-        ]
-      }
-    },
-    {
-      "id": "methodEyebrow",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.method.eyebrow",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zEyebrow"
-      }
-    },
-    {
-      "id": "methodTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.method.title",
-      "config": {
-        "tag": "h2",
-        "text": "",
-        "classes": "zTitle"
-      }
-    },
-    {
-      "id": "methodGrid",
-      "type": "container",
-      "loopConfig": {
-        "source": "i18n",
-        "path": "page.method.steps",
-        "templateId": "methodCardTemplate",
-        "idPrefix": "methodStep",
-        "bindings": [
-          {
-            "to": "config.title",
-            "sources": [
-              "title"
-            ]
-          },
-          {
-            "to": "config.description",
-            "sources": [
-              "description"
-            ]
-          }
-        ]
-      },
-      "config": {
-        "tag": "div",
-        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gap-16px ank-marginTop-16px",
-        "styles": {
-          "gridTemplateColumns": "repeat(auto-fit, minmax(220px, 1fr))"
-        },
-        "components": []
-      }
-    },
-    {
-      "id": "methodCardTemplate",
-      "type": "generic-card",
-      "config": {
-        "variant": "feature",
-        "icon": "",
-        "title": "",
-        "description": "",
-        "benefits": [],
-        "href": "",
-        "linkLabel": "",
-        "classes": "zCardSoft",
-        "featureIconContainerClasses": "ank-display-none",
-        "featureIconClasses": "ank-display-none",
-        "featureTitleClasses": "zCardTitle",
-        "featureDescriptionClasses": "zCardText",
-        "benefitsListClasses": "ank-display-none",
-        "linkClasses": "ank-display-none"
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/despensalista.webp",
+        "alt": "Página de inicio de DespensaLista con funciones de inventario y lista de compras",
+        "width": 1280,
+        "height": 800,
+        "classes": "zMedia",
+        "loading": "lazy",
+        "decoding": "async"
       }
     },
     {
       "id": "aboutSection",
       "type": "container",
       "config": {
-        "id": "nosotros",
         "tag": "section",
-        "classes": "zSection ank-bg-titleColor",
+        "classes": "zSection zBand",
         "components": [
-          "aboutInner"
-        ]
+          "aboutShell"
+        ],
+        "id": "nosotros"
       }
     },
     {
-      "id": "aboutInner",
+      "id": "aboutShell",
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-lg-0_75fr__1_25fr ank-gap-32px ank-gap-lg-72px ank-alignItems-start",
+        "classes": "zShell zSplit",
         "components": [
-          "aboutHeading",
-          "aboutCopy"
+          "aboutCopy",
+          "methodCopy"
         ]
-      }
-    },
-    {
-      "id": "aboutHeading",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
-        "components": [
-          "aboutEyebrow",
-          "aboutTitle",
-          "aboutTagline"
-        ]
-      }
-    },
-    {
-      "id": "aboutEyebrow",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.about.eyebrow",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "ank-width-fitMINcontent ank-m-0 ank-color-secondaryBgColor ank-fontSize-0_78rem ank-fontWeight-900 ank-letterSpacing-0_08em ank-textTransform-uppercase"
-      }
-    },
-    {
-      "id": "aboutTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.about.title",
-      "config": {
-        "tag": "h2",
-        "text": "",
-        "classes": "zInverseTitle"
-      }
-    },
-    {
-      "id": "aboutTagline",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.about.tagline",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "ank-m-0 ank-color-secondaryBgColor ank-fontSize-1_2rem ank-fontWeight-900 ank-lineHeight-1_35"
       }
     },
     {
@@ -1329,235 +379,745 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "classes": "zProse",
         "components": [
-          "aboutDescription",
-          "aboutApproach",
-          "aboutStory"
+          "aboutTitle",
+          "aboutLead"
         ]
       }
     },
     {
-      "id": "aboutDescription",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.about.description",
+      "id": "methodCopy",
+      "type": "container",
       "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zInverseText"
+        "tag": "div",
+        "classes": "zProse ank-scrollMarginTop-96px",
+        "components": [
+          "methodTitle",
+          "methodLead",
+          "methodLink"
+        ],
+        "id": "como-trabajamos"
       }
     },
     {
-      "id": "aboutApproach",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.about.approach",
+      "id": "methodLink",
+      "type": "link",
       "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zInverseText"
-      }
-    },
-    {
-      "id": "aboutStory",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.about.story",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "ank-m-0 ank-padding-24px ank-borderRadius-12px ank-bg-secondaryBgColor ank-color-titleColor ank-fontSize-1rem ank-fontWeight-800 ank-lineHeight-1_65"
+        "text": "Conocer el proceso",
+        "href": "/servicios#como-trabajamos",
+        "classes": "zTextLink"
       }
     },
     {
       "id": "faqSection",
       "type": "container",
       "config": {
-        "id": "preguntas-frecuentes",
         "tag": "section",
         "classes": "zSection",
         "components": [
-          "faqInner"
-        ]
+          "faqShell"
+        ],
+        "id": "preguntas-frecuentes"
       }
     },
     {
-      "id": "faqInner",
+      "id": "faqShell",
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-lg-0_72fr__1_28fr ank-gap-32px ank-gap-lg-72px ank-alignItems-start",
+        "classes": "zShell zProse",
         "components": [
-          "faqHeading",
-          "faqAccordion"
-        ]
-      }
-    },
-    {
-      "id": "faqHeading",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-display-flex ank-flexDirection-column ank-gap-16px",
-        "components": [
-          "faqEyebrow",
           "faqTitle",
-          "faqLead"
+          "faqRows"
         ]
       }
     },
     {
-      "id": "faqEyebrow",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.faq.eyebrow",
+      "id": "faqRows",
+      "type": "container",
       "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zEyebrow"
+        "tag": "div",
+        "classes": "zList",
+        "components": [
+          "faqServices",
+          "faqRemote"
+        ]
       }
     },
     {
-      "id": "faqTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.faq.title",
+      "id": "faqServices",
+      "type": "container",
       "config": {
-        "tag": "h2",
-        "text": "",
-        "classes": "zTitle"
+        "tag": "div",
+        "classes": "zRow",
+        "components": [
+          "faqServicesQuestion",
+          "faqServicesAnswer"
+        ]
       }
     },
     {
-      "id": "faqLead",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.faq.lead",
+      "id": "faqRemote",
+      "type": "container",
       "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "zLead"
-      }
-    },
-    {
-      "id": "faqAccordion",
-      "type": "accordion",
-      "eventInstructions": "trackEventWhen:event.eventData.expanded,true,faq_open,faq,event.eventData.id",
-      "config": {
-        "itemsSource": {
-          "source": "i18n",
-          "path": "page.faq.items"
-        },
-        "mode": "single",
-        "allowToggle": true,
-        "containerClasses": "ank-display-flex ank-flexDirection-column ank-gap-10px",
-        "defaultItemContainerClasses": "ank-border-1px__solid__linkColor ank-borderRadius-12px ank-bg-secondaryBgColor ank-overflow-hidden",
-        "defaultItemButtonConfig": {
-          "classes": "ank-width-100per ank-minHeight-56px ank-boxSizing-borderMINbox ank-display-flex ank-alignItems-center ank-justifyContent-spaceMINbetween ank-gap-16px ank-textAlign-left ank-paddingInline-18px ank-paddingBlock-16px ank-bg-transparent ank-color-titleColor ank-border-0 ank-fontSize-1rem ank-fontWeight-900 ank-lineHeight-1_4 ank-cursor-pointer ank-outlineFocus-3px__solid__linkColor ank-outlineOffsetFocus-MIN3px",
-          "icon": "expand_more",
-          "iconPosition": "after",
-          "iconClasses": "ank-flexShrink-0 ank-width-24px ank-height-24px"
-        },
-        "defaultItemIconIsExpandedClasses": "ank-tr-rotateSD180degED",
-        "defaultItemPanelClasses": "ank-paddingInline-18px ank-paddingBottom-18px ank-color-secondaryTextColor ank-fontSize-1rem ank-lineHeight-1_65"
+        "tag": "div",
+        "classes": "zRow",
+        "components": [
+          "faqRemoteQuestion",
+          "faqRemoteAnswer"
+        ]
       }
     },
     {
       "id": "contactSection",
       "type": "container",
       "config": {
-        "id": "contacto",
         "tag": "section",
-        "classes": "zSection ank-bg-secondaryBgColor",
+        "classes": "zSection zBand",
         "components": [
-          "contactInner"
-        ]
+          "contactShell"
+        ],
+        "id": "contacto",
+        "styles": {
+          "background": "linear-gradient(120deg, var(--ank-secondaryBgColor), var(--ank-bgColor) 82%)"
+        }
       }
     },
     {
-      "id": "contactInner",
+      "id": "contactShell",
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-boxSizing-borderMINbox ank-display-flex ank-flexDirection-column ank-alignItems-start ank-gap-18px ank-padding-28px ank-padding-md-48px ank-border-1px__solid__linkColor ank-borderRadius-40px ank-bg-bgColor",
+        "classes": "zShell zProse",
         "components": [
-          "contactEyebrow",
           "contactTitle",
-          "contactDescription",
-          "contactAction",
-          "contactNote",
-          "contactFallback",
-          "contactLocation"
+          "contactLead",
+          "contactLink"
         ]
       }
     },
     {
-      "id": "contactEyebrow",
+      "id": "contactLink",
+      "type": "link",
+      "config": {
+        "text": "Ir a contacto",
+        "href": "/contacto",
+        "classes": "zPrimaryAction ank-color-bgColor"
+      }
+    },
+    {
+      "id": "technologyService",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "zHomeService",
+        "components": [
+          "technologyIcon",
+          "technologyTitle",
+          "technologyDetail",
+          "technologyLink"
+        ]
+      }
+    },
+    {
+      "id": "technologyIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "account_tree",
+        "classes": "zIcon",
+        "ariaHidden": true
+      }
+    },
+    {
+      "id": "technologyLink",
+      "type": "link",
+      "config": {
+        "text": "Ver consultoría tecnológica",
+        "href": "/servicios#consultoria-tecnologica",
+        "classes": "zTextLink"
+      }
+    },
+    {
+      "id": "technologyTitle",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.contact.eyebrow",
+      "valueInstructions": "set:config.text,i18n,page.technologyTitle",
+      "config": {
+        "tag": "h3",
+        "text": "Consultoría tecnológica",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_25rem ank-lineHeight-1_2 ank-fontWeight-750"
+      }
+    },
+    {
+      "id": "technologyDetail",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.technologyDetail",
       "config": {
         "tag": "p",
-        "text": "",
+        "text": "Revisamos tus herramientas y procesos para definir qué mantener, qué integrar y qué conviene desarrollar.",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-lineHeight-1_65 ank-maxWidth-68ch"
+      }
+    },
+    {
+      "id": "dataService",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "zHomeService",
+        "components": [
+          "dataIcon",
+          "dataTitle",
+          "dataDetail",
+          "dataLink"
+        ]
+      }
+    },
+    {
+      "id": "dataIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "analytics",
+        "classes": "zIcon",
+        "ariaHidden": true
+      }
+    },
+    {
+      "id": "dataLink",
+      "type": "link",
+      "config": {
+        "text": "Ver datos y analítica",
+        "href": "/servicios#consultoria-de-datos",
+        "classes": "zTextLink"
+      }
+    },
+    {
+      "id": "dataTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.dataTitle",
+      "config": {
+        "tag": "h3",
+        "text": "Datos y analítica",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_25rem ank-lineHeight-1_2 ank-fontWeight-750"
+      }
+    },
+    {
+      "id": "dataDetail",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.dataDetail",
+      "config": {
+        "tag": "p",
+        "text": "Organizamos tus fuentes de información y definimos indicadores para que tu equipo pueda tomar decisiones con datos.",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-lineHeight-1_65 ank-maxWidth-68ch"
+      }
+    },
+    {
+      "id": "aiService",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "zHomeService",
+        "components": [
+          "aiIcon",
+          "aiTitle",
+          "aiDetail",
+          "aiLink"
+        ]
+      }
+    },
+    {
+      "id": "aiIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "auto_awesome",
+        "classes": "zIcon",
+        "ariaHidden": true
+      }
+    },
+    {
+      "id": "aiLink",
+      "type": "link",
+      "config": {
+        "text": "Ver inteligencia artificial",
+        "href": "/servicios#consultoria-de-inteligencia-artificial",
+        "classes": "zTextLink"
+      }
+    },
+    {
+      "id": "aiTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.aiTitle",
+      "config": {
+        "tag": "h3",
+        "text": "Inteligencia artificial",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_25rem ank-lineHeight-1_2 ank-fontWeight-750"
+      }
+    },
+    {
+      "id": "aiDetail",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.aiDetail",
+      "config": {
+        "tag": "p",
+        "text": "Identificamos tareas donde la IA puede ayudar y validamos un primer caso de uso con criterios claros.",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-lineHeight-1_65 ank-maxWidth-68ch"
+      }
+    },
+    {
+      "id": "heroDescriptor",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.heroDescriptor",
+      "config": {
+        "tag": "p",
+        "text": "ZooBeriah Systems · Ciudad de México",
+        "classes": "ank-m-0 ank-color-HASHD9EF8F ank-fontWeight-700 ank-fontSize-0_86rem ank-letterSpacing-0_10em ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "heroTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.heroTitle",
+      "config": {
+        "tag": "h1",
+        "text": "Consultoría tecnológica y desarrollo digital",
+        "classes": "zHeroTitle ank-outline-none ank-outlineFocus-none"
+      }
+    },
+    {
+      "id": "heroLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.heroLead",
+      "config": {
+        "tag": "p",
+        "text": "Creamos sitios web, tiendas en línea y sistemas a medida. También ayudamos a negocios a ordenar sus datos y automatizar procesos.",
+        "classes": "ank-m-0 ank-color-white ank-fontSize-1_08rem ank-fontSize-md-1_22rem ank-lineHeight-1_65 ank-maxWidth-46ch"
+      }
+    },
+    {
+      "id": "consultingLabel",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.consultingLabel",
+      "config": {
+        "tag": "p",
+        "text": "Servicios",
         "classes": "zEyebrow"
+      }
+    },
+    {
+      "id": "consultingTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.consultingTitle",
+      "config": {
+        "tag": "h2",
+        "text": "Tecnología, datos e IA para tu negocio",
+        "classes": "zSectionTitle ank-marginTop-10px"
+      }
+    },
+    {
+      "id": "commerceLabel",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.commerceLabel",
+      "config": {
+        "tag": "p",
+        "text": "Comercio electrónico",
+        "classes": "zEyebrow"
+      }
+    },
+    {
+      "id": "commerceTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.commerceTitle",
+      "config": {
+        "tag": "h2",
+        "text": "Tu tienda en línea, hecha a medida",
+        "classes": "zSectionTitle"
+      }
+    },
+    {
+      "id": "commerceLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.commerceLead",
+      "config": {
+        "tag": "p",
+        "text": "Diseñamos la tienda según tu catálogo y cómo cobras, preparas pedidos y haces entregas. Cuéntanos por WhatsApp cómo vendes hoy para definir el alcance.",
+        "classes": "zLead"
+      }
+    },
+    {
+      "id": "projectLabel",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.projectLabel",
+      "config": {
+        "tag": "p",
+        "text": "Proyecto disponible",
+        "classes": "zEyebrow"
+      }
+    },
+    {
+      "id": "projectTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.projectTitle",
+      "config": {
+        "tag": "h3",
+        "text": "DespensaLista",
+        "classes": "zSectionTitle"
+      }
+    },
+    {
+      "id": "projectLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.projectLead",
+      "config": {
+        "tag": "p",
+        "text": "DespensaLista.com ya está disponible. Te ayuda a saber qué hay en casa, revisar próximas caducidades y organizar la lista del súper.",
+        "classes": "zLead"
+      }
+    },
+    {
+      "id": "aboutTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.aboutTitle",
+      "config": {
+        "tag": "h2",
+        "text": "Quiénes somos",
+        "classes": "zSectionTitle"
+      }
+    },
+    {
+      "id": "aboutLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.aboutLead",
+      "config": {
+        "tag": "p",
+        "text": "Somos una consultoría tecnológica con atención remota desde Ciudad de México. Trabajamos con negocios que buscan mejorar su operación o lanzar un producto digital.",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-lineHeight-1_65 ank-maxWidth-68ch"
+      }
+    },
+    {
+      "id": "methodTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.methodTitle",
+      "config": {
+        "tag": "h2",
+        "text": "Cómo trabajamos",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_25rem ank-lineHeight-1_2 ank-fontWeight-750"
+      }
+    },
+    {
+      "id": "methodLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.methodLead",
+      "config": {
+        "tag": "p",
+        "text": "Primero revisamos tu objetivo y las herramientas que ya usas. A partir de ahí, definimos el alcance y acordamos qué conviene implementar primero.",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-lineHeight-1_65 ank-maxWidth-68ch"
+      }
+    },
+    {
+      "id": "faqTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.faqTitle",
+      "config": {
+        "tag": "h2",
+        "text": "Preguntas frecuentes",
+        "classes": "zSectionTitle"
+      }
+    },
+    {
+      "id": "faqServicesQuestion",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.faqServicesQuestion",
+      "config": {
+        "tag": "h3",
+        "text": "¿Qué servicios ofrece ZooBeriah Systems?",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_25rem ank-lineHeight-1_2 ank-fontWeight-750"
+      }
+    },
+    {
+      "id": "faqServicesAnswer",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.faqServicesAnswer",
+      "config": {
+        "tag": "p",
+        "text": "Ofrecemos consultoría tecnológica, de datos e inteligencia artificial. También desarrollamos sitios web, tiendas en línea a medida y aplicaciones.",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-lineHeight-1_65 ank-maxWidth-68ch"
+      }
+    },
+    {
+      "id": "faqRemoteQuestion",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.faqRemoteQuestion",
+      "config": {
+        "tag": "h3",
+        "text": "¿Puedo consultar mi proyecto a distancia?",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_25rem ank-lineHeight-1_2 ank-fontWeight-750"
+      }
+    },
+    {
+      "id": "faqRemoteAnswer",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.faqRemoteAnswer",
+      "config": {
+        "tag": "p",
+        "text": "Sí. Atendemos de forma remota desde Ciudad de México. Puedes iniciar la conversación directamente por WhatsApp.",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-lineHeight-1_65 ank-maxWidth-68ch"
       }
     },
     {
       "id": "contactTitle",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.contact.title",
+      "valueInstructions": "set:config.text,i18n,page.contactTitle",
       "config": {
         "tag": "h2",
-        "text": "",
-        "classes": "zTitle"
+        "text": "Cuéntanos qué necesita tu negocio",
+        "classes": "zSectionTitle"
       }
     },
     {
-      "id": "contactDescription",
+      "id": "contactLead",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.contact.description",
+      "valueInstructions": "set:config.text,i18n,page.contactLead",
       "config": {
         "tag": "p",
-        "text": "",
+        "text": "Comparte el objetivo de tu proyecto y cómo resuelves hoy ese proceso.",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-lineHeight-1_65 ank-maxWidth-68ch"
+      }
+    },
+    {
+      "id": "websiteSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "websiteShell"
+        ],
+        "id": "sitios-web"
+      }
+    },
+    {
+      "id": "websiteShell",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zSplit",
+        "components": [
+          "websiteCopy",
+          "websiteImage"
+        ]
+      }
+    },
+    {
+      "id": "websiteCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "websiteLabel",
+          "websiteTitle",
+          "websiteLead",
+          "websiteActions"
+        ]
+      }
+    },
+    {
+      "id": "websiteActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zActions",
+        "components": [
+          "websiteLink",
+          "businessLink"
+        ]
+      }
+    },
+    {
+      "id": "websiteLink",
+      "type": "link",
+      "config": {
+        "href": "/sitios-web",
+        "classes": "zPrimaryAction ank-color-bgColor",
+        "text": "Explorar sitios web"
+      }
+    },
+    {
+      "id": "businessLink",
+      "type": "link",
+      "config": {
+        "href": "/soluciones-para-negocios",
+        "classes": "zSecondaryAction ank-color-titleColor",
+        "text": "Ver soluciones para negocios"
+      }
+    },
+    {
+      "id": "websiteImage",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/zoositioweb.webp",
+        "alt": "Página de ZooSitioWeb sobre sitios para consultorios y contacto por WhatsApp",
+        "width": 1280,
+        "height": 800,
+        "classes": "zMedia",
+        "loading": "lazy",
+        "decoding": "async"
+      }
+    },
+    {
+      "id": "featuredProjects",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell ank-display-grid ank-gap-38px ank-gap-lg-50px",
+        "components": [
+          "featuredProjectsTitle",
+          "projectShell",
+          "roadmapShell"
+        ]
+      }
+    },
+    {
+      "id": "roadmapShell",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "zSplit ank-paddingTop-34px ank-borderTop-1px__solid__HASH9EB5AD",
+        "components": [
+          "roadmapCopy",
+          "roadmapImage"
+        ]
+      }
+    },
+    {
+      "id": "roadmapCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "roadmapLabel",
+          "roadmapTitle",
+          "roadmapLead",
+          "roadmapActions"
+        ]
+      }
+    },
+    {
+      "id": "roadmapActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zActions",
+        "components": [
+          "roadmapVisit",
+          "roadmapDetails"
+        ]
+      }
+    },
+    {
+      "id": "roadmapVisit",
+      "type": "link",
+      "config": {
+        "href": "https://roadmap2u.com/",
+        "classes": "zPrimaryAction ank-color-bgColor",
+        "text": "Visitar RoadMap2U",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "ariaLabel": "Visitar RoadMap2U (se abre en una pestaña nueva)"
+      }
+    },
+    {
+      "id": "roadmapDetails",
+      "type": "link",
+      "config": {
+        "href": "/proyectos#roadmap2u",
+        "classes": "zSecondaryAction ank-color-titleColor",
+        "text": "Conocer RoadMap2U"
+      }
+    },
+    {
+      "id": "roadmapImage",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/roadmap2u.webp",
+        "alt": "Portada de RoadMap2U con una ilustración de árbol y la frase «Tus metas y tareas, en un árbol visual»",
+        "width": 1280,
+        "height": 800,
+        "classes": "zMedia",
+        "loading": "lazy",
+        "decoding": "async"
+      }
+    },
+    {
+      "id": "websiteLabel",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.websiteLabel",
+      "config": {
+        "tag": "p",
+        "text": "Diseño y desarrollo web",
+        "classes": "zEyebrow"
+      }
+    },
+    {
+      "id": "websiteTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.websiteTitle",
+      "config": {
+        "tag": "h2",
+        "text": "Sitios web hechos a la medida de tu negocio",
+        "classes": "zSectionTitle"
+      }
+    },
+    {
+      "id": "websiteLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.websiteLead",
+      "config": {
+        "tag": "p",
+        "text": "Diseñamos sitios corporativos y páginas para campañas o servicios. Organiza tu oferta por página, recibe consultas por WhatsApp o formularios, y prepara el sitio para búsquedas locales y asistentes de IA.",
         "classes": "zLead"
       }
     },
     {
-      "id": "contactAction",
-      "type": "link",
-      "eventInstructions": "trackEvent:whatsapp_click,cta,contacto_general,location,contacto",
-      "valueInstructions": "set:config.text,i18n,page.contact.cta;set:config.ariaLabel,i18n,page.contact.ctaAriaLabel;set:config.href,var,ctaTargets.generalWhatsApp",
+      "id": "featuredProjectsTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.featuredProjectsTitle",
       "config": {
-        "href": "#",
-        "text": "",
-        "ariaLabel": "",
-        "target": "_blank",
-        "rel": "noopener noreferrer",
-        "classes": "zPrimaryAction ank-color-bgColor"
+        "tag": "h2",
+        "text": "Proyectos disponibles",
+        "classes": "zSectionTitle"
       }
     },
     {
-      "id": "contactNote",
+      "id": "roadmapLabel",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.contact.note",
+      "valueInstructions": "set:config.text,i18n,page.roadmapLabel",
       "config": {
         "tag": "p",
-        "text": "",
-        "classes": "zMeta"
+        "text": "Aplicación disponible",
+        "classes": "zEyebrow"
       }
     },
     {
-      "id": "contactFallback",
+      "id": "roadmapTitle",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.contact.fallback",
+      "valueInstructions": "set:config.text,i18n,page.roadmapTitle",
       "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1rem ank-fontWeight-900 ank-lineHeight-1_5"
+        "tag": "h3",
+        "text": "RoadMap2U",
+        "classes": "zSectionTitle"
       }
     },
     {
-      "id": "contactLocation",
+      "id": "roadmapLead",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.contact.location",
+      "valueInstructions": "set:config.text,i18n,page.roadmapLead",
       "config": {
         "tag": "p",
-        "text": "",
-        "classes": "zMeta"
+        "text": "Convierte una meta en un árbol visual. Cada rama es un paso, una tarea o una alternativa. Puedes reorganizar el plan y trabajar sin conexión después de crear la cuenta.",
+        "classes": "zLead"
       }
     }
   ]

@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "blog-category",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "sharedBlogMain",
+    "siteFooter"
+  ],
+  "seo": {
+    "title": "Artículos sobre sitios web | ZooBeriah Systems",
+    "description": "Guías sobre sitios web, comercio electrónico y herramientas digitales para negocios.",
+    "canonical": "https://zooberiahsystems.com/blog/web"
+  }
+}

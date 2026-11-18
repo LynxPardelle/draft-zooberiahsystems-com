@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "tiendas-en-linea",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "storeMain",
+    "siteFooter"
+  ],
+  "seo": {
+    "title": "Tiendas en línea a medida | ZooBeriah Systems",
+    "description": "Diseñamos y desarrollamos tiendas en línea a medida para negocios. Cuéntanos por WhatsApp qué vendes y define el alcance de tu tienda con ZooBeriah Systems.",
+    "canonical": "https://zooberiahsystems.com/tiendas-en-linea",
+    "openGraph": {
+      "title": "Tiendas en línea a medida | ZooBeriah Systems",
+      "description": "Diseñamos y desarrollamos tiendas en línea a medida para negocios. Cuéntanos por WhatsApp qué vendes y define el alcance de tu tienda con ZooBeriah Systems.",
+      "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/commerce.webp",
+      "type": "website",
+      "locale": "es_MX",
+      "image:alt": "Una comerciante prepara un pedido en su mesa de trabajo junto a una tableta."
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Tiendas en línea a medida | ZooBeriah Systems",
+      "description": "Diseñamos y desarrollamos tiendas en línea a medida para negocios. Cuéntanos por WhatsApp qué vendes y define el alcance de tu tienda con ZooBeriah Systems.",
+      "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/commerce.webp",
+      "image:alt": "Una comerciante prepara un pedido en su mesa de trabajo junto a una tableta."
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://zooberiahsystems.com/tiendas-en-linea#servicio",
+        "name": "Diseño y desarrollo de tiendas en línea a medida",
+        "serviceType": "Desarrollo de comercio electrónico",
+        "description": "Diseñamos y desarrollamos tiendas en línea a medida para negocios. Cuéntanos por WhatsApp qué vendes y define el alcance de tu tienda con ZooBeriah Systems.",
+        "url": "https://zooberiahsystems.com/tiendas-en-linea",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://zooberiahsystems.com/#organization",
+          "name": "ZooBeriah Systems",
+          "url": "https://zooberiahsystems.com/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://zooberiahsystems.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tiendas en línea",
+            "item": "https://zooberiahsystems.com/tiendas-en-linea"
+          }
+        ]
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "tienda-inicio",
+      "alcance-de-la-tienda",
+      "preguntas-sobre-tiendas",
+      "consultar-por-whatsapp"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}

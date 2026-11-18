@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "soluciones-inventario",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "offerMain",
+    "siteFooter"
+  ],
+  "seo": {
+    "title": "Sistema de control de inventario a medida | ZooBeriah Systems",
+    "description": "Diseñamos sistemas de inventario para registrar entradas, salidas y ajustes, consultar existencias por sucursal y coordinar reposiciones.",
+    "canonical": "https://zooberiahsystems.com/soluciones-para-negocios/inventario",
+    "openGraph": {
+      "title": "Sistema de control de inventario a medida | ZooBeriah Systems",
+      "description": "Diseñamos sistemas de inventario para registrar entradas, salidas y ajustes, consultar existencias por sucursal y coordinar reposiciones.",
+      "type": "website",
+      "locale": "es_MX"
+    },
+    "twitter": {
+      "title": "Sistema de control de inventario a medida | ZooBeriah Systems",
+      "description": "Diseñamos sistemas de inventario para registrar entradas, salidas y ajustes, consultar existencias por sucursal y coordinar reposiciones.",
+      "card": "summary"
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://zooberiahsystems.com/soluciones-para-negocios/inventario#servicio",
+        "name": "Sistema de control de inventario a medida",
+        "serviceType": "Desarrollo de sistemas de inventario y existencias",
+        "description": "Diseñamos sistemas de inventario para registrar entradas, salidas y ajustes, consultar existencias por sucursal y coordinar reposiciones.",
+        "url": "https://zooberiahsystems.com/soluciones-para-negocios/inventario",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://zooberiahsystems.com/#organization",
+          "name": "ZooBeriah Systems",
+          "url": "https://zooberiahsystems.com/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://zooberiahsystems.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Soluciones para negocios",
+            "item": "https://zooberiahsystems.com/soluciones-para-negocios"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Inventario",
+            "item": "https://zooberiahsystems.com/soluciones-para-negocios/inventario"
+          }
+        ]
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "inventario",
+      "alcance-del-proyecto",
+      "preguntas-frecuentes",
+      "consultar-proyecto"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}

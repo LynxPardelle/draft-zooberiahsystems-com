@@ -1,0 +1,899 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "soluciones-para-negocios",
+  "components": [
+    {
+      "id": "businessEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.businessEyebrow",
+      "config": {
+        "tag": "p",
+        "classes": "zEyebrow",
+        "text": ""
+      }
+    },
+    {
+      "id": "businessTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.businessTitle",
+      "config": {
+        "tag": "h1",
+        "classes": "zPageTitle",
+        "text": ""
+      }
+    },
+    {
+      "id": "businessLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.businessLead",
+      "config": {
+        "tag": "p",
+        "classes": "zLead",
+        "text": ""
+      }
+    },
+    {
+      "id": "businessContact",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.businessContact",
+      "config": {
+        "href": "/contacto",
+        "classes": "zPrimaryAction ank-color-bgColor",
+        "text": ""
+      }
+    },
+    {
+      "id": "businessCasesLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.businessCasesLink",
+      "config": {
+        "href": "#restaurantes",
+        "classes": "zTextLink ank-color-linkColor",
+        "text": ""
+      }
+    },
+    {
+      "id": "businessActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zActions",
+        "components": [
+          "businessContact",
+          "businessCasesLink"
+        ]
+      }
+    },
+    {
+      "id": "businessIntro",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "businessEyebrow",
+          "businessTitle",
+          "businessLead",
+          "businessActions"
+        ]
+      }
+    },
+    {
+      "id": "businessImage",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/consulting.webp",
+        "alt": "Personas revisando datos y material de trabajo en una mesa.",
+        "width": 1280,
+        "height": 720,
+        "loading": "eager",
+        "fetchPriority": "high",
+        "decoding": "async",
+        "classes": "zMedia"
+      }
+    },
+    {
+      "id": "businessHeroInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zSplit",
+        "components": [
+          "businessIntro",
+          "businessImage"
+        ]
+      }
+    },
+    {
+      "id": "businessHero",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zPageHero",
+        "components": [
+          "businessHeroInner"
+        ],
+        "id": "soluciones-para-negocios",
+        "styles": {
+          "background": "linear-gradient(135deg, var(--ank-secondaryBgColor), var(--ank-bgColor) 84%)"
+        }
+      }
+    },
+    {
+      "id": "restaurantContact",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.restaurantContact",
+      "config": {
+        "href": "/contacto",
+        "classes": "zPrimaryAction ank-color-bgColor",
+        "text": ""
+      }
+    },
+    {
+      "id": "restaurantRelated",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.restaurantRelated",
+      "config": {
+        "href": "/soluciones-para-negocios/restaurantes",
+        "classes": "zTextLink ank-color-linkColor",
+        "text": ""
+      }
+    },
+    {
+      "id": "restaurantIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "storefront",
+        "classes": "zIcon ank-color-linkColor",
+        "ariaHidden": true
+      }
+    },
+    {
+      "id": "restaurantTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.restaurantTitle",
+      "config": {
+        "tag": "h2",
+        "classes": "zSectionTitle",
+        "text": ""
+      }
+    },
+    {
+      "id": "restaurantCopy",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.restaurantCopy",
+      "config": {
+        "tag": "p",
+        "classes": "zLead",
+        "text": ""
+      }
+    },
+    {
+      "id": "restaurantIntro",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "restaurantIcon",
+          "restaurantTitle",
+          "restaurantCopy"
+        ]
+      }
+    },
+    {
+      "id": "restaurantFeature1Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.restaurantFeature1Text",
+      "config": {
+        "tag": "p",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65 ank-maxWidth-68ch",
+        "text": ""
+      }
+    },
+    {
+      "id": "restaurantFeature1",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "ank-m-0",
+        "components": [
+          "restaurantFeature1Text"
+        ]
+      }
+    },
+    {
+      "id": "restaurantFeature2Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.restaurantFeature2Text",
+      "config": {
+        "tag": "p",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65 ank-maxWidth-68ch",
+        "text": ""
+      }
+    },
+    {
+      "id": "restaurantFeature2",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "ank-m-0",
+        "components": [
+          "restaurantFeature2Text"
+        ]
+      }
+    },
+    {
+      "id": "restaurantFeature3Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.restaurantFeature3Text",
+      "config": {
+        "tag": "p",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65 ank-maxWidth-68ch",
+        "text": ""
+      }
+    },
+    {
+      "id": "restaurantFeature3",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "ank-m-0",
+        "components": [
+          "restaurantFeature3Text"
+        ]
+      }
+    },
+    {
+      "id": "restaurantFeatureItems",
+      "type": "container",
+      "config": {
+        "tag": "ul",
+        "classes": "ank-m-0 ank-paddingInlineStart-22px ank-display-grid ank-gap-10px ank-color-textColor ank-lineHeight-1_55",
+        "components": [
+          "restaurantFeature1",
+          "restaurantFeature2",
+          "restaurantFeature3"
+        ]
+      }
+    },
+    {
+      "id": "restaurantActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zActions",
+        "components": [
+          "restaurantContact",
+          "restaurantRelated"
+        ]
+      }
+    },
+    {
+      "id": "restaurantScope",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "restaurantFeatureItems",
+          "restaurantActions"
+        ]
+      }
+    },
+    {
+      "id": "restaurantCaseInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zSplit",
+        "components": [
+          "restaurantIntro",
+          "restaurantScope"
+        ]
+      }
+    },
+    {
+      "id": "restaurantCase",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "restaurantCaseInner"
+        ],
+        "id": "restaurantes"
+      }
+    },
+    {
+      "id": "inventoryContact",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.inventoryContact",
+      "config": {
+        "href": "/contacto",
+        "classes": "zPrimaryAction ank-color-bgColor",
+        "text": ""
+      }
+    },
+    {
+      "id": "inventoryRelated",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.inventoryRelated",
+      "config": {
+        "href": "/soluciones-para-negocios/inventario",
+        "classes": "zTextLink ank-color-linkColor",
+        "text": ""
+      }
+    },
+    {
+      "id": "inventoryIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "assignment",
+        "classes": "zIcon ank-color-linkColor",
+        "ariaHidden": true
+      }
+    },
+    {
+      "id": "inventoryTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.inventoryTitle",
+      "config": {
+        "tag": "h2",
+        "classes": "zSectionTitle",
+        "text": ""
+      }
+    },
+    {
+      "id": "inventoryCopy",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.inventoryCopy",
+      "config": {
+        "tag": "p",
+        "classes": "zLead",
+        "text": ""
+      }
+    },
+    {
+      "id": "inventoryIntro",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "inventoryIcon",
+          "inventoryTitle",
+          "inventoryCopy"
+        ]
+      }
+    },
+    {
+      "id": "inventoryFeature1Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.inventoryFeature1Text",
+      "config": {
+        "tag": "p",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65 ank-maxWidth-68ch",
+        "text": ""
+      }
+    },
+    {
+      "id": "inventoryFeature1",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "ank-m-0",
+        "components": [
+          "inventoryFeature1Text"
+        ]
+      }
+    },
+    {
+      "id": "inventoryFeature2Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.inventoryFeature2Text",
+      "config": {
+        "tag": "p",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65 ank-maxWidth-68ch",
+        "text": ""
+      }
+    },
+    {
+      "id": "inventoryFeature2",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "ank-m-0",
+        "components": [
+          "inventoryFeature2Text"
+        ]
+      }
+    },
+    {
+      "id": "inventoryFeature3Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.inventoryFeature3Text",
+      "config": {
+        "tag": "p",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65 ank-maxWidth-68ch",
+        "text": ""
+      }
+    },
+    {
+      "id": "inventoryFeature3",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "ank-m-0",
+        "components": [
+          "inventoryFeature3Text"
+        ]
+      }
+    },
+    {
+      "id": "inventoryFeatureItems",
+      "type": "container",
+      "config": {
+        "tag": "ul",
+        "classes": "ank-m-0 ank-paddingInlineStart-22px ank-display-grid ank-gap-10px ank-color-textColor ank-lineHeight-1_55",
+        "components": [
+          "inventoryFeature1",
+          "inventoryFeature2",
+          "inventoryFeature3"
+        ]
+      }
+    },
+    {
+      "id": "inventoryActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zActions",
+        "components": [
+          "inventoryContact",
+          "inventoryRelated"
+        ]
+      }
+    },
+    {
+      "id": "inventoryScope",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "inventoryFeatureItems",
+          "inventoryActions"
+        ]
+      }
+    },
+    {
+      "id": "inventoryCaseInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zSplit",
+        "components": [
+          "inventoryIntro",
+          "inventoryScope"
+        ]
+      }
+    },
+    {
+      "id": "inventoryCase",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection zBand",
+        "components": [
+          "inventoryCaseInner"
+        ],
+        "id": "inventario"
+      }
+    },
+    {
+      "id": "requestsContact",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.requestsContact",
+      "config": {
+        "href": "/contacto",
+        "classes": "zPrimaryAction ank-color-bgColor",
+        "text": ""
+      }
+    },
+    {
+      "id": "requestsRelated",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.requestsRelated",
+      "config": {
+        "href": "/soluciones-para-negocios/seguimiento-de-solicitudes",
+        "classes": "zTextLink ank-color-linkColor",
+        "text": ""
+      }
+    },
+    {
+      "id": "requestsIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "fact_check",
+        "classes": "zIcon ank-color-linkColor",
+        "ariaHidden": true
+      }
+    },
+    {
+      "id": "requestsTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.requestsTitle",
+      "config": {
+        "tag": "h2",
+        "classes": "zSectionTitle",
+        "text": ""
+      }
+    },
+    {
+      "id": "requestsCopy",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.requestsCopy",
+      "config": {
+        "tag": "p",
+        "classes": "zLead",
+        "text": ""
+      }
+    },
+    {
+      "id": "requestsIntro",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "requestsIcon",
+          "requestsTitle",
+          "requestsCopy"
+        ]
+      }
+    },
+    {
+      "id": "requestsFeature1Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.requestsFeature1Text",
+      "config": {
+        "tag": "p",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65 ank-maxWidth-68ch",
+        "text": ""
+      }
+    },
+    {
+      "id": "requestsFeature1",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "ank-m-0",
+        "components": [
+          "requestsFeature1Text"
+        ]
+      }
+    },
+    {
+      "id": "requestsFeature2Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.requestsFeature2Text",
+      "config": {
+        "tag": "p",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65 ank-maxWidth-68ch",
+        "text": ""
+      }
+    },
+    {
+      "id": "requestsFeature2",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "ank-m-0",
+        "components": [
+          "requestsFeature2Text"
+        ]
+      }
+    },
+    {
+      "id": "requestsFeature3Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.requestsFeature3Text",
+      "config": {
+        "tag": "p",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65 ank-maxWidth-68ch",
+        "text": ""
+      }
+    },
+    {
+      "id": "requestsFeature3",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "ank-m-0",
+        "components": [
+          "requestsFeature3Text"
+        ]
+      }
+    },
+    {
+      "id": "requestsFeatureItems",
+      "type": "container",
+      "config": {
+        "tag": "ul",
+        "classes": "ank-m-0 ank-paddingInlineStart-22px ank-display-grid ank-gap-10px ank-color-textColor ank-lineHeight-1_55",
+        "components": [
+          "requestsFeature1",
+          "requestsFeature2",
+          "requestsFeature3"
+        ]
+      }
+    },
+    {
+      "id": "requestsActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zActions",
+        "components": [
+          "requestsContact",
+          "requestsRelated"
+        ]
+      }
+    },
+    {
+      "id": "requestsScope",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "requestsFeatureItems",
+          "requestsActions"
+        ]
+      }
+    },
+    {
+      "id": "requestsCaseInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zSplit",
+        "components": [
+          "requestsIntro",
+          "requestsScope"
+        ]
+      }
+    },
+    {
+      "id": "requestsCase",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "requestsCaseInner"
+        ],
+        "id": "seguimiento-de-solicitudes"
+      }
+    },
+    {
+      "id": "businessFaqTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.businessFaqTitle",
+      "config": {
+        "tag": "h2",
+        "classes": "zSectionTitle",
+        "text": ""
+      }
+    },
+    {
+      "id": "businessFaqQuestion1Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.businessFaqQuestion1Title",
+      "config": {
+        "tag": "h3",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_25rem ank-fontWeight-750 ank-lineHeight-1_3",
+        "text": ""
+      }
+    },
+    {
+      "id": "businessFaqQuestion1Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.businessFaqQuestion1Text",
+      "config": {
+        "tag": "p",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65 ank-maxWidth-68ch",
+        "text": ""
+      }
+    },
+    {
+      "id": "businessFaqQuestion1",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow",
+        "components": [
+          "businessFaqQuestion1Title",
+          "businessFaqQuestion1Text"
+        ]
+      }
+    },
+    {
+      "id": "businessFaqQuestion2Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.businessFaqQuestion2Title",
+      "config": {
+        "tag": "h3",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_25rem ank-fontWeight-750 ank-lineHeight-1_3",
+        "text": ""
+      }
+    },
+    {
+      "id": "businessFaqQuestion2Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.businessFaqQuestion2Text",
+      "config": {
+        "tag": "p",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65 ank-maxWidth-68ch",
+        "text": ""
+      }
+    },
+    {
+      "id": "businessFaqQuestion2",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow",
+        "components": [
+          "businessFaqQuestion2Title",
+          "businessFaqQuestion2Text"
+        ]
+      }
+    },
+    {
+      "id": "businessFaqQuestion3Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.businessFaqQuestion3Title",
+      "config": {
+        "tag": "h3",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_25rem ank-fontWeight-750 ank-lineHeight-1_3",
+        "text": ""
+      }
+    },
+    {
+      "id": "businessFaqQuestion3Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.businessFaqQuestion3Text",
+      "config": {
+        "tag": "p",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65 ank-maxWidth-68ch",
+        "text": ""
+      }
+    },
+    {
+      "id": "businessFaqQuestion3",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow",
+        "components": [
+          "businessFaqQuestion3Title",
+          "businessFaqQuestion3Text"
+        ]
+      }
+    },
+    {
+      "id": "businessFaqQuestionItems",
+      "type": "container",
+      "config": {
+        "tag": "ul",
+        "classes": "zList",
+        "components": [
+          "businessFaqQuestion1",
+          "businessFaqQuestion2",
+          "businessFaqQuestion3"
+        ]
+      }
+    },
+    {
+      "id": "businessFaqInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zProse",
+        "components": [
+          "businessFaqTitle",
+          "businessFaqQuestionItems"
+        ]
+      }
+    },
+    {
+      "id": "businessFaq",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "businessFaqInner"
+        ],
+        "id": "preguntas-soluciones"
+      }
+    },
+    {
+      "id": "businessEndTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.businessEndTitle",
+      "config": {
+        "tag": "h2",
+        "classes": "zSectionTitle",
+        "text": ""
+      }
+    },
+    {
+      "id": "businessEndLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.businessEndLead",
+      "config": {
+        "tag": "p",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65 ank-maxWidth-68ch",
+        "text": ""
+      }
+    },
+    {
+      "id": "businessEndLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.businessEndLink",
+      "config": {
+        "href": "/contacto",
+        "classes": "zPrimaryAction ank-color-bgColor",
+        "text": ""
+      }
+    },
+    {
+      "id": "businessEndInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zProse",
+        "components": [
+          "businessEndTitle",
+          "businessEndLead",
+          "businessEndLink"
+        ]
+      }
+    },
+    {
+      "id": "businessEnd",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection zBand",
+        "components": [
+          "businessEndInner"
+        ],
+        "id": "consultar-solucion"
+      }
+    },
+    {
+      "id": "businessSolutionsMain",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "zMain",
+        "components": [
+          "businessHero",
+          "restaurantCase",
+          "inventoryCase",
+          "requestsCase",
+          "businessFaq",
+          "businessEnd"
+        ],
+        "id": "main-content",
+        "tabindex": -1
+      }
+    }
+  ]
+}

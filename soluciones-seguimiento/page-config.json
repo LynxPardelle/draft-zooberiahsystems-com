@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "soluciones-seguimiento",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "offerMain",
+    "siteFooter"
+  ],
+  "seo": {
+    "title": "Sistema para dar seguimiento a solicitudes y cotizaciones | ZooBeriah Systems",
+    "description": "Diseñamos sistemas de seguimiento para organizar solicitudes, cotizaciones y órdenes de trabajo por estado, responsable y próxima acción.",
+    "canonical": "https://zooberiahsystems.com/soluciones-para-negocios/seguimiento-de-solicitudes",
+    "openGraph": {
+      "title": "Sistema para dar seguimiento a solicitudes y cotizaciones | ZooBeriah Systems",
+      "description": "Diseñamos sistemas de seguimiento para organizar solicitudes, cotizaciones y órdenes de trabajo por estado, responsable y próxima acción.",
+      "type": "website",
+      "locale": "es_MX"
+    },
+    "twitter": {
+      "title": "Sistema para dar seguimiento a solicitudes y cotizaciones | ZooBeriah Systems",
+      "description": "Diseñamos sistemas de seguimiento para organizar solicitudes, cotizaciones y órdenes de trabajo por estado, responsable y próxima acción.",
+      "card": "summary"
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://zooberiahsystems.com/soluciones-para-negocios/seguimiento-de-solicitudes#servicio",
+        "name": "Sistema para dar seguimiento a solicitudes y cotizaciones",
+        "serviceType": "Desarrollo de flujos de seguimiento para equipos de trabajo",
+        "description": "Diseñamos sistemas de seguimiento para organizar solicitudes, cotizaciones y órdenes de trabajo por estado, responsable y próxima acción.",
+        "url": "https://zooberiahsystems.com/soluciones-para-negocios/seguimiento-de-solicitudes",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://zooberiahsystems.com/#organization",
+          "name": "ZooBeriah Systems",
+          "url": "https://zooberiahsystems.com/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://zooberiahsystems.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Soluciones para negocios",
+            "item": "https://zooberiahsystems.com/soluciones-para-negocios"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Seguimiento de solicitudes",
+            "item": "https://zooberiahsystems.com/soluciones-para-negocios/seguimiento-de-solicitudes"
+          }
+        ]
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "seguimiento-de-solicitudes",
+      "alcance-del-proyecto",
+      "preguntas-frecuentes",
+      "consultar-proyecto"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}

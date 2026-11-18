@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "tiendas-en-linea",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "storeEyebrow": "Comercio electrónico",
+      "storeTitle": "Tiendas en línea a medida",
+      "storeLead": "Diseñamos y desarrollamos tu tienda según lo que vendes y cómo operas. Escríbenos directamente por WhatsApp para definir qué necesita tu negocio y cotizar el proyecto.",
+      "storeHeroContact": "Cotizar por WhatsApp",
+      "storeHeroContactLabel": "Cotizar por WhatsApp (se abre en una pestaña nueva)",
+      "storeScopeTitle": "Qué podemos definir para tu tienda",
+      "storeScopeLead": "Revisamos cómo compran tus clientes y cómo atiende los pedidos tu equipo. Con esa información acordamos qué entra en la primera versión.",
+      "storeCatalogTitle": "Catálogo y fichas de producto",
+      "storeCatalogBody": "Organizamos categorías, fotos, precios y variantes como tallas o presentaciones para que tus clientes encuentren lo que buscan.",
+      "storePaymentTitle": "Pedidos y opciones de pago",
+      "storePaymentBody": "Evaluamos cómo quieres recibir los pedidos. Según tu operación, revisamos si conviene empezar con pedidos por WhatsApp o integrar un proveedor de pagos.",
+      "storeDeliveryTitle": "Entregas y administración",
+      "storeDeliveryBody": "Definimos las opciones de envío o recolección, qué información de inventario necesitas y quién actualizará el catálogo. Revisamos integraciones si ya usas otras herramientas.",
+      "storeFaqTitle": "Preguntas sobre tu tienda en línea",
+      "storeFaqPriceTitle": "¿Cuánto cuesta una tienda en línea a medida?",
+      "storeFaqPriceBody": "Cotizamos después de conocer el tamaño del catálogo, las formas de pago y entrega que necesitas y las herramientas que quieres conectar. La propuesta detalla el alcance de la tienda.",
+      "storeFaqWhatsAppTitle": "¿Puedo empezar tomando pedidos por WhatsApp?",
+      "storeFaqWhatsAppBody": "Sí. Podemos definir un catálogo web con un enlace para iniciar el pedido por WhatsApp. Si necesitas carrito o cobro en línea, revisamos esas opciones al acordar el alcance.",
+      "storeFaqExistingTitle": "¿Pueden revisar una tienda que ya existe?",
+      "storeFaqExistingBody": "Sí. Envíanos el enlace, dinos qué te gustaría mejorar y cuéntanos qué plataforma usas. Con eso evaluamos si es viable ajustar tu tienda actual o si conviene migrar.",
+      "storeStartTitle": "Cuéntanos qué quieres vender",
+      "storeStartBody": "En tu mensaje, dinos qué productos vendes, cómo recibes pedidos hoy y cómo haces las entregas. Si ya tienes un catálogo o una tienda, comparte el enlace.",
+      "storeStartContact": "Hablar con ZooBeriah Systems por WhatsApp",
+      "storeStartContactLabel": "Hablar con ZooBeriah Systems por WhatsApp (se abre en una pestaña nueva)"
+    }
+  }
+}

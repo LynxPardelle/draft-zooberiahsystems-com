@@ -9,71 +9,68 @@
     },
     "navigation": [
       {
-        "id": "consultoria",
-        "value": "/#consultoria",
-        "href": "/#consultoria",
-        "label": "Consultoría",
-        "ariaLabel": "Ir a Consultoría"
+        "id": "servicios",
+        "value": "/servicios",
+        "href": "/servicios",
+        "label": "Servicios",
+        "ariaLabel": "Servicios"
       },
       {
-        "id": "soluciones",
-        "value": "/#soluciones",
-        "href": "/#soluciones",
+        "id": "sitios-web",
+        "value": "/sitios-web",
+        "href": "/sitios-web",
+        "label": "Sitios web",
+        "ariaLabel": "Sitios web"
+      },
+      {
+        "id": "tiendas-en-linea",
+        "value": "/tiendas-en-linea",
+        "href": "/tiendas-en-linea",
+        "label": "Tiendas en línea",
+        "ariaLabel": "Tiendas en línea"
+      },
+      {
+        "id": "soluciones-para-negocios",
+        "value": "/soluciones-para-negocios",
+        "href": "/soluciones-para-negocios",
         "label": "Soluciones",
-        "ariaLabel": "Ir a Soluciones"
+        "ariaLabel": "Soluciones"
       },
       {
-        "id": "aplicaciones",
-        "value": "/#aplicaciones",
-        "href": "/#aplicaciones",
-        "label": "Aplicaciones",
-        "ariaLabel": "Ir a Aplicaciones"
-      },
-      {
-        "id": "productos",
-        "value": "/productos",
-        "href": "/productos",
-        "label": "Productos",
-        "ariaLabel": "Ir a Productos",
-        "scrollRestoration": {
-          "mode": "top",
-          "behavior": "auto"
-        }
+        "id": "proyectos",
+        "value": "/proyectos",
+        "href": "/proyectos",
+        "label": "Proyectos",
+        "ariaLabel": "Proyectos"
       },
       {
         "id": "blog",
         "value": "/blog",
         "href": "/blog",
         "label": "Blog",
-        "ariaLabel": "Ir al blog"
-      },
-      {
-        "id": "nosotros",
-        "value": "/#nosotros",
-        "href": "/#nosotros",
-        "label": "Nosotros",
-        "ariaLabel": "Ir a Nosotros"
+        "ariaLabel": "Blog"
       },
       {
         "id": "contacto",
-        "value": "/#contacto",
-        "href": "/#contacto",
-        "label": "Hablemos",
-        "ariaLabel": "Ir a Hablemos"
+        "value": "/contacto",
+        "href": "/contacto",
+        "label": "Contacto",
+        "ariaLabel": "Contacto"
       }
     ],
     "assets": {
-      "logoPrincipalUrl": "",
+      "logoPrincipalUrl": "/assets/brand/zoolandingpage-default-favicon.svg",
       "logoInverseUrl": "",
       "faviconUrl": "",
       "appleTouchIconUrl": "",
-      "openGraphImageUrl": ""
+      "openGraphImageUrl": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/hero.webp"
     },
     "ui": {
       "contact": {
         "whatsappPhone": "+525522699563",
         "whatsappMessageKey": "ui.contact.whatsappMessage"
       }
-    }
+    },
+    "activeNav": ""
   }
 }
