@@ -57,6 +57,11 @@
       "label": "Blog"
     },
     {
+      "path": "/blog/web",
+      "pageId": "blog-category",
+      "label": "Artículos sobre web"
+    },
+    {
       "path": "/blog/:categorySlug/:articleSlug",
       "pageId": "blog-article",
       "label": "Artículo"
