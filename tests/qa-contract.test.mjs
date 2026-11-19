@@ -472,10 +472,10 @@ test('QA-012 presents the three applications separately from the landing page ca
   assert.ok(components.some(({ type, config }) => type === 'link' && config?.href === '/landingpages'), 'The applications page must link to the separate catalogue');
 });
 
-test('QA-013 publishes only the approved 36 landing pages with public destinations and accessible images', () => {
+test('QA-013 publishes only the approved 35 landing pages and keeps GTR Lab in products', () => {
   const items = readJson('landingpages/variables.json').variables.catalog?.items;
   assert.ok(Array.isArray(items), 'The catalogue must declare its public landing pages');
-  assert.equal(items.length, 36, 'Approval covers four existing examples, four courses and 28 masterclasses');
+  assert.equal(items.length, 35, 'Approval covers three existing examples, four courses and 28 masterclasses');
   const canonicalURLs = new Set();
   const ids = new Set();
   for (const item of items) {
@@ -497,7 +497,6 @@ test('QA-013 publishes only the approved 36 landing pages with public destinatio
   }
   const existingExamples = [
     'https://clasesdemusica.zoolandingpage.com.mx/guitarra',
-    'https://clasesdemusica.zoolandingpage.com.mx/gtr-lab',
     'https://zoolandingpage.com.mx/',
     'https://zoositioweb.com.mx/',
   ];
@@ -540,6 +539,9 @@ test('QA-013 publishes only the approved 36 landing pages with public destinatio
   assert.deepEqual(items.map(({ url }) => url).sort(), [...existingExamples, ...approvedCourses, ...approvedMasterclasses].sort(), 'The catalogue must match the approved examples, courses and masterclasses without importing other inventory');
   assert.equal(items.filter(({ url }) => new URL(url).hostname.startsWith('curso-')).length, 4);
   assert.equal(items.filter(({ url }) => new URL(url).hostname.startsWith('masterclass-')).length, 28);
+  const gtrLabURL = 'https://clasesdemusica.zoolandingpage.com.mx/gtr-lab';
+  assert.ok(!items.some(({ url }) => url === gtrLabURL), 'GTR Lab belongs only in the products catalogue');
+  assert.ok(readJson('productos/variables.json').variables.products.items.some(({ url }) => url === gtrLabURL), 'GTR Lab must remain available in products');
   const components = readJson('landingpages/components.json').components;
   const cards = components.find(({ loopConfig }) => loopConfig?.path === 'catalog.items');
   assert.ok(cards, 'The gallery must render the catalogue collection');

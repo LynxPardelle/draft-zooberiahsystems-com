@@ -13,20 +13,9 @@
           "url": "https://clasesdemusica.zoolandingpage.com.mx/guitarra",
           "category": "educacion",
           "categoryLabel": "Educación y música",
-          "imageSrc": "https://clasesdemusica.zoolandingpage.com.mx/drafts/clasesdemusica.zoolandingpage.com.mx/assets/gtr-lab-diapason.jpg",
-          "imageAlt": "Diapasón de GTR Lab utilizado como acompañamiento en las clases de guitarra.",
+          "imageSrc": "https://clasesdemusica.zoolandingpage.com.mx/drafts/clasesdemusica.zoolandingpage.com.mx/assets/guitarra-acustica-electrica.jpg",
+          "imageAlt": "Guitarra acústica y guitarra eléctrica en la portada de las clases con Héctor Coronado.",
           "searchText": "Clases de guitarra con Héctor Coronado Landing de clases de guitarra acústica y eléctrica, en CDMX y en línea. Presenta al profesor, ofrece un ejercicio de GTR Lab y permite agendar por WhatsApp. Educación y música clasesdemusica.zoolandingpage.com.mx"
-        },
-        {
-          "id": "clasesdemusica-zoolandingpage-com-mx-gtr-lab",
-          "title": "GTR Lab",
-          "description": "Landing del producto para estudiar guitarra. Explica la metodología, muestra herramientas de la aplicación y enlaza al ejercicio público y a las clases.",
-          "url": "https://clasesdemusica.zoolandingpage.com.mx/gtr-lab",
-          "category": "educacion",
-          "categoryLabel": "Educación y música",
-          "imageSrc": "https://clasesdemusica.zoolandingpage.com.mx/drafts/clasesdemusica.zoolandingpage.com.mx/assets/gtr-lab-diapason.jpg",
-          "imageAlt": "Diapasón interactivo de GTR Lab para estudiar posiciones y notas.",
-          "searchText": "GTR Lab Landing del producto para estudiar guitarra. Explica la metodología, muestra herramientas de la aplicación y enlaza al ejercicio público y a las clases. Educación y música clasesdemusica.zoolandingpage.com.mx"
         },
         {
           "id": "zoolandingpage-com-mx",
