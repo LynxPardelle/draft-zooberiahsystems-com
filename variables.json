@@ -9,39 +9,25 @@
     },
     "navigation": [
       {
-        "id": "servicios",
-        "value": "/servicios",
         "href": "/servicios",
+        "ariaLabel": "Servicios",
         "label": "Servicios",
-        "ariaLabel": "Servicios"
+        "value": "/servicios",
+        "id": "servicios"
       },
       {
-        "id": "landingpages",
-        "value": "/landingpages",
-        "href": "/landingpages",
-        "label": "Landing pages",
-        "ariaLabel": "Landing pages"
+        "href": "/sitios-web",
+        "ariaLabel": "Sitios web",
+        "label": "Sitios web",
+        "value": "/sitios-web",
+        "id": "sitios-web"
       },
       {
-        "id": "productos",
-        "value": "/productos",
         "href": "/productos",
+        "ariaLabel": "Productos",
         "label": "Productos",
-        "ariaLabel": "Productos"
-      },
-      {
-        "id": "blog",
-        "value": "/blog",
-        "href": "/blog",
-        "label": "Blog",
-        "ariaLabel": "Blog"
-      },
-      {
-        "id": "contacto",
-        "value": "/contacto",
-        "href": "/contacto",
-        "label": "Contacto",
-        "ariaLabel": "Contacto"
+        "value": "/productos",
+        "id": "productos"
       }
     ],
     "assets": {

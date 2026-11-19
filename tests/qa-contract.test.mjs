@@ -16,7 +16,6 @@ const ROUTES = [
   { path: '/soluciones-para-negocios/seguimiento-de-solicitudes', pageId: 'soluciones-seguimiento' },
   { path: '/proyectos', pageId: 'proyectos' },
   { path: '/productos', pageId: 'productos' },
-  { path: '/landingpages', pageId: 'landingpages' },
   { path: '/blog', pageId: 'blog' },
   { path: '/blog/web', pageId: 'blog-category' },
   { path: '/blog/:categorySlug/:articleSlug', pageId: 'blog-article' },
@@ -426,12 +425,13 @@ test('QA-010 keeps every configured foreground pair WCAG-safe', () => {
 test('QA-011 shares available routes across desktop, mobile, footer and first-party links', () => {
   const components = readJson('components.json').components;
   const configById = (id) => components.find((component) => component.id === id).config;
-  const expected = ['/servicios', '/landingpages', '/productos', '/blog', '/contacto'];
+  const expected = ['/servicios', '/sitios-web', '/productos'];
   assert.deepEqual(configById('headerNav').components.map((id) => configById(id).href), expected);
   assert.deepEqual(readJson('variables.json').variables.navigation.map(({ href }) => href), expected);
   assert.match(components.find(({ id }) => id === 'headerMobileNav').valueInstructions, /set:config\.items,var,navigation(?:;|$)/, 'The mobile menu must use the same selected navigation');
   const footerDestinations = configById('footerNav').components.map((id) => configById(id).href);
   for (const path of expected) assert.ok(footerDestinations.includes(path), `The footer must retain ${path}`);
+  for (const path of ['/blog', '/contacto']) assert.ok(footerDestinations.includes(path), `Secondary navigation must retain ${path}`);
   assert.equal(new Set(footerDestinations).size, footerDestinations.length, 'The footer must not repeat destinations');
   assert.equal(configById('headerBrandMark').src, '/assets/brand/zoolandingpage-default-favicon.svg');
   for (const { path, pageId } of [...MARKETING_ROUTES, { path: '/blog', pageId: 'blog' }, { path: '/blog', pageId: 'blog-article' }]) {
@@ -469,11 +469,11 @@ test('QA-012 presents the three applications separately from the landing page ca
     assert.ok(components.some(({ type, config }) => type === 'media' && config?.src === product.imageSrc && config?.alt === product.imageAlt), `${product.title} needs its accessible product image`);
     assert.ok(collectStrings(dictionary).includes(product.title), `${product.title} must appear in page copy`);
   }
-  assert.ok(components.some(({ type, config }) => type === 'link' && config?.href === '/landingpages'), 'The applications page must link to the separate catalogue');
+  assert.ok(components.some(({ type, config }) => type === 'link' && config?.href === '/sitios-web'), 'The applications page must link to the website catalogue');
 });
 
 test('QA-013 publishes only the approved 35 landing pages and keeps GTR Lab in products', () => {
-  const items = readJson('landingpages/variables.json').variables.catalog?.items;
+  const items = readJson('sitios-web/variables.json').variables.catalog?.items;
   assert.ok(Array.isArray(items), 'The catalogue must declare its public landing pages');
   assert.equal(items.length, 35, 'Approval covers three existing examples, four courses and 28 masterclasses');
   const canonicalURLs = new Set();
@@ -542,7 +542,7 @@ test('QA-013 publishes only the approved 35 landing pages and keeps GTR Lab in p
   const gtrLabURL = 'https://clasesdemusica.zoolandingpage.com.mx/gtr-lab';
   assert.ok(!items.some(({ url }) => url === gtrLabURL), 'GTR Lab belongs only in the products catalogue');
   assert.ok(readJson('productos/variables.json').variables.products.items.some(({ url }) => url === gtrLabURL), 'GTR Lab must remain available in products');
-  const components = readJson('landingpages/components.json').components;
+  const components = readJson('sitios-web/components.json').components;
   const cards = components.find(({ loopConfig }) => loopConfig?.path === 'catalog.items');
   assert.ok(cards, 'The gallery must render the catalogue collection');
   assert.ok(components.some(({ id }) => id === cards.loopConfig.templateId), 'The catalogue card template must resolve');
@@ -552,8 +552,8 @@ test('QA-013 publishes only the approved 35 landing pages and keeps GTR Lab in p
 });
 
 test('QA-014 keeps catalogue search, category filters and result counts consistent', () => {
-  const items = readJson('landingpages/variables.json').variables.catalog.items;
-  const components = readJson('landingpages/components.json').components;
+  const items = readJson('sitios-web/variables.json').variables.catalog.items;
+  const components = readJson('sitios-web/components.json').components;
   const cards = components.find(({ loopConfig }) => loopConfig?.path === 'catalog.items');
   const count = components.find(({ type, config }) => type === 'pagination' && config?.collectionPath === 'catalog.items');
   assert.ok(count, 'The catalogue must announce the filtered result count');
@@ -569,10 +569,22 @@ test('QA-014 keeps catalogue search, category filters and result counts consiste
     assert.ok(input.config.ariaLabel?.trim(), `${input.config.fieldId} needs an accessible name`);
   }
   const form = components.find(({ type, config }) => type === 'interaction-scope' && config?.role === 'search');
-  assert.match(form.config.submitEventInstructions, /^navigateWithScopeQuery:\/landingpages,#catalogo,q=values\.q,categoria=values\.categoria$/);
+  assert.match(form.config.submitEventInstructions, /^navigateWithScopeQuery:\/sitios-web,#catalogo,q=values\.q,categoria=values\.categoria$/);
   const reset = components.find(({ type, config }) => type === 'button' && config?.type === 'reset');
   assert.equal(reset.config.label, 'Restablecer');
   assert.ok(reset.config.ariaLabel?.trim());
   assert.match(reset.eventInstructions, /setScopeValue:q,;/);
-  assert.match(reset.eventInstructions, /setScopeValue:categoria,all;navigateToUrl:\/landingpages$/);
+  assert.match(reset.eventInstructions, /setScopeValue:categoria,all;navigateToUrl:\/sitios-web$/);
+});
+
+test('QA-015 moves the legacy catalogue permanently without losing search filters', () => {
+  const site = readJson('site-config.json');
+  assert.deepEqual(site.site.seo.redirects, [{
+    from: '/landingpages',
+    to: '/sitios-web',
+    preserveQueryParams: ['q', 'categoria', 'lang'],
+  }]);
+  assert.ok(!site.routes.some(({ path }) => path === '/landingpages'), 'The redirect source must not publish a duplicate catalogue');
+  const websitePage = readJson('sitios-web/page-config.json');
+  assert.equal(websitePage.seo.canonical, 'https://zooberiahsystems.com/sitios-web');
 });

@@ -561,7 +561,7 @@
       "type": "link",
       "valueInstructions": "set:config.text,i18n,page.digitalProjectsLink",
       "config": {
-        "href": "/landingpages",
+        "href": "/sitios-web",
         "text": "",
         "classes": "zSecondaryAction ank-color-titleColor",
         "scrollRestoration": {
