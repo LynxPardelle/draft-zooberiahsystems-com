@@ -5,13 +5,10 @@
   "lang": "es",
   "dictionary": {
     "page": {
-      "customWebEyebrow": "Diseño y desarrollo web",
-      "customWebTitle": "Sitios web a medida para empresas",
-      "customWebLead": "Creamos sitios web para presentar tus servicios, recibir solicitudes y mostrar tu catálogo. Organizamos cada página a partir de lo que tus clientes necesitan saber y de cómo se ponen en contacto contigo.",
-      "customWebContact": "Cotizar mi sitio web",
-      "customWebProjects": "Ver proyectos",
-      "customWebZooSitioWeb": "Ver el ejemplo en ZooSitioWeb",
-      "customWebZooSitioWebAria": "Ver el ejemplo en ZooSitioWeb (se abre en una pestaña nueva)",
+      "landingCatalogEyebrow": "ZooBeriah Systems",
+      "landingCatalogTitle": "Sitios web de ZooBeriah Systems",
+      "landingCatalogLead": "Explora nuestros sitios web y landing pages de clases, cursos de música y producción, Music Business, masterclasses y plataformas digitales. Conoce cada proyecto y visita su página.",
+      "landingGalleryTitle": "Explora nuestros sitios web",
       "customWebScopeTitle": "Qué sitio necesita tu negocio",
       "customWebType1Title": "Sitio corporativo",
       "customWebType1Text": "Presenta tu empresa, sus servicios, casos y datos de contacto. Podemos dar a cada servicio una página con contenido y llamadas a la acción propios.",

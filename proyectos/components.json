@@ -117,7 +117,7 @@
       "valueInstructions": "set:config.text,i18n,page.projectsLandingpagesCatalogLink",
       "eventInstructions": "trackEvent:cta_click,cta,landingpages,location,proyectos-inicio",
       "config": {
-        "href": "/landingpages",
+        "href": "/sitios-web",
         "text": "Ver catálogo de landing pages",
         "classes": "zSecondaryAction ank-color-titleColor"
       }
