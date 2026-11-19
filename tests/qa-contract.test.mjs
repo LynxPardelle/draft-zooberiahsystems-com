@@ -472,9 +472,10 @@ test('QA-012 presents the three applications separately from the landing page ca
   assert.ok(components.some(({ type, config }) => type === 'link' && config?.href === '/landingpages'), 'The applications page must link to the separate catalogue');
 });
 
-test('QA-013 publishes a deduplicated catalogue with public HTTPS destinations and accessible images', () => {
+test('QA-013 publishes only the approved 36 landing pages with public destinations and accessible images', () => {
   const items = readJson('landingpages/variables.json').variables.catalog?.items;
-  assert.ok(Array.isArray(items) && items.length > 0, 'The catalogue must have public landing pages');
+  assert.ok(Array.isArray(items), 'The catalogue must declare its public landing pages');
+  assert.equal(items.length, 36, 'Approval covers four existing examples, four courses and 28 masterclasses');
   const canonicalURLs = new Set();
   const ids = new Set();
   for (const item of items) {
@@ -494,12 +495,51 @@ test('QA-013 publishes a deduplicated catalogue with public HTTPS destinations a
     assert.equal(new URL(item.imageSrc).protocol, 'https:', `${item.url} needs a public image or an explicit public fallback`);
     assert.ok(item.searchText.includes(item.title) && item.searchText.includes(url.hostname), `${item.url} must be searchable by title and domain`);
   }
-  assert.deepEqual(items.map(({ url }) => url).sort(), [
+  const existingExamples = [
     'https://clasesdemusica.zoolandingpage.com.mx/guitarra',
     'https://clasesdemusica.zoolandingpage.com.mx/gtr-lab',
     'https://zoolandingpage.com.mx/',
     'https://zoositioweb.com.mx/',
-  ].sort(), 'The public catalogue must use the selected owned examples, not automatically expose the remote inventory');
+  ];
+  const approvedCourses = [
+    'https://curso-diseno-sonoro.music.lynxpardelle.com/',
+    'https://curso-music-business.music.lynxpardelle.com/',
+    'https://curso-musica-electronica.music.lynxpardelle.com/',
+    'https://curso-produccion-audiovisual.music.lynxpardelle.com/',
+  ];
+  const approvedMasterclasses = [
+    'acordes',
+    'artista-independiente',
+    'drum-rack',
+    'edicion-del-sonido',
+    'escalas-mayores',
+    'escalas-menores',
+    'estructura-musical',
+    'grabacion-de-voz-e-instrumentos',
+    'impulse',
+    'industria-musical',
+    'instrumentos-y-efectos-midi',
+    'intervalos',
+    'loops-en-vivo',
+    'masterizacion-profesional',
+    'mezcla-digital',
+    'notas-musicales',
+    'procesos-de-audio-1',
+    'procesos-de-audio-2',
+    'profesionaliza-tu-proyecto-musical',
+    'redes-sociales-para-musicos',
+    'ritmo',
+    'ruteo-y-grupos',
+    'sampler',
+    'simpler',
+    'sintesis-aditiva-sustractiva-y-fm',
+    'sintesis-de-tabla-de-ondas',
+    'sintesis-organica-y-granular',
+    'sintesis-por-modelado-fisico',
+  ].map(slug => `https://masterclass-${slug}.music.lynxpardelle.com/`);
+  assert.deepEqual(items.map(({ url }) => url).sort(), [...existingExamples, ...approvedCourses, ...approvedMasterclasses].sort(), 'The catalogue must match the approved examples, courses and masterclasses without importing other inventory');
+  assert.equal(items.filter(({ url }) => new URL(url).hostname.startsWith('curso-')).length, 4);
+  assert.equal(items.filter(({ url }) => new URL(url).hostname.startsWith('masterclass-')).length, 28);
   const components = readJson('landingpages/components.json').components;
   const cards = components.find(({ loopConfig }) => loopConfig?.path === 'catalog.items');
   assert.ok(cards, 'The gallery must render the catalogue collection');

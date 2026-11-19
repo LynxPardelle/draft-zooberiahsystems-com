@@ -41,6 +41,6 @@ Read only the task-specific route in `AGENTS.md`; do not duplicate shared hub pr
 
 The production site uses the apex as canonical and redirects `www`. Analytics use first-party collection with consent. The catalogs reuse existing public images from the Zoolanding asset CDN and the linked product sites.
 
-The local `/productos` and `/landingpages` catalog changes are drafts. They require the protected promotion workflow before publication; this documentation does not indicate that they are live.
+Catalog releases use the protected `dev -> test -> main` promotion workflow. Confirm the deployed version in GitHub Actions and on the live site.
 
-`/productos` lists RoadMap2U, Despensa Lista, and GTR Lab. The initial `/landingpages` selection contains the owned guitar, GTR Lab, Zoolandingpage, and ZooSitioWeb pages. Other discovered pages remain outside the runtime payload until selected for the catalog.
+`/productos` lists RoadMap2U, Despensa Lista, and GTR Lab. The `/landingpages` selection contains 36 pages: guitar classes, GTR Lab, Zoolandingpage, ZooSitioWeb, four music courses including Music Business, and 28 masterclasses. Other discovered pages remain outside the runtime payload until selected for the catalog.

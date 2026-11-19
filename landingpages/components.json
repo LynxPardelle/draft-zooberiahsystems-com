@@ -59,7 +59,7 @@
         "value": "",
         "controlType": "text",
         "inputType": "search",
-        "placeholder": "Guitarra, aplicaciones, negocios…",
+        "placeholder": "Guitarra, producción, Music Business…",
         "classes": "ank-display-flex ank-flexDirection-column ank-gap-6px ank-minWidth-0",
         "labelClasses": "ank-color-titleColor ank-fontWeight-700 ank-fontSize-14px",
         "inputClasses": "ank-width-100per ank-minHeight-48px ank-paddingInline-12px ank-borderRadius-3px ank-border-1px__solid__textColorOPA__0_25 ank-bg-bgColor ank-color-textColor ank-fontSize-16px ank-boxSizing-borderMINbox ank-outlineOffset-3px ank-outlineColor-accentColor"
@@ -83,6 +83,14 @@
           {
             "value": "educacion",
             "label": "Educación y música"
+          },
+          {
+            "value": "cursos",
+            "label": "Cursos de música y producción"
+          },
+          {
+            "value": "masterclasses",
+            "label": "Masterclasses"
           },
           {
             "value": "plataformas",
