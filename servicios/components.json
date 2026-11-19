@@ -561,7 +561,7 @@
       "type": "link",
       "valueInstructions": "set:config.text,i18n,page.digitalProjectsLink",
       "config": {
-        "href": "/proyectos",
+        "href": "/landingpages",
         "text": "",
         "classes": "zSecondaryAction ank-color-titleColor",
         "scrollRestoration": {
@@ -577,7 +577,9 @@
         "tag": "div",
         "classes": "zActions",
         "components": [
+          "digitalWebLink",
           "digitalShopLink",
+          "digitalBusinessLink",
           "digitalProjectsLink"
         ]
       }
@@ -720,6 +722,34 @@
         ],
         "id": "main-content",
         "tabindex": -1
+      }
+    },
+    {
+      "id": "digitalWebLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.digitalWebLink",
+      "config": {
+        "href": "/sitios-web",
+        "text": "",
+        "classes": "zTextLink ank-color-linkColor",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "auto"
+        }
+      }
+    },
+    {
+      "id": "digitalBusinessLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.digitalBusinessLink",
+      "config": {
+        "href": "/soluciones-para-negocios",
+        "text": "",
+        "classes": "zTextLink ank-color-linkColor",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "auto"
+        }
       }
     }
   ]

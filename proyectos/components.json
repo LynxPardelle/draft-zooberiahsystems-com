@@ -83,8 +83,43 @@
         "components": [
           "projectsEyebrow",
           "projectsTitle",
-          "projectsLead"
+          "projectsLead",
+          "projectsCatalogActions"
         ]
+      }
+    },
+    {
+      "id": "projectsCatalogActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zActions",
+        "components": [
+          "projectsProductsCatalogLink",
+          "projectsLandingpagesCatalogLink"
+        ]
+      }
+    },
+    {
+      "id": "projectsProductsCatalogLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.projectsProductsCatalogLink",
+      "eventInstructions": "trackEvent:cta_click,cta,productos,location,proyectos-inicio",
+      "config": {
+        "href": "/productos",
+        "text": "Explorar productos",
+        "classes": "zPrimaryAction ank-color-bgColor"
+      }
+    },
+    {
+      "id": "projectsLandingpagesCatalogLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.projectsLandingpagesCatalogLink",
+      "eventInstructions": "trackEvent:cta_click,cta,landingpages,location,proyectos-inicio",
+      "config": {
+        "href": "/landingpages",
+        "text": "Ver catálogo de landing pages",
+        "classes": "zSecondaryAction ank-color-titleColor"
       }
     },
     {

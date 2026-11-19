@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "productos",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "productsEyebrow": "ZooBeriah Systems",
+      "productsTitle": "Productos de ZooBeriah Systems",
+      "productsLead": "Herramientas para aprender, practicar y organizar el día a día. Descubre qué resuelve cada producto y entra a conocerlo.",
+      "product0Eyebrow": "Da forma a tus metas",
+      "product0Title": "RoadMap2U",
+      "product0Description": "Convierte una meta en un árbol visual. Organiza pasos, tareas y alternativas, reorganiza tu plan y trabaja sin conexión después de crear tu cuenta.",
+      "product0Visit": "Conocer RoadMap2U",
+      "product1Eyebrow": "Tu despensa y tus compras, en orden",
+      "product1Title": "Despensa Lista",
+      "product1Description": "Registra los alimentos que tienes, revisa qué caduca pronto y comparte la lista de compras con tu hogar.",
+      "product1Visit": "Conocer Despensa Lista",
+      "product2Eyebrow": "Práctica de guitarra con dirección",
+      "product2Title": "GTR Lab",
+      "product2Description": "Explora el diapasón y relaciona notas y posiciones para estudiar guitarra. Conoce la metodología y prueba el ejercicio público de pentatónica de La menor, con las clases de Héctor Coronado como acompañamiento.",
+      "product2Visit": "Conocer GTR Lab",
+      "productsWebTitle": "¿Buscas una página para tu negocio?",
+      "productsWebText": "También creamos sitios y landing pages con Zoolandingpage y ZooSitioWeb. Explora las páginas publicadas y cuéntanos qué necesitas.",
+      "productsGallery": "Explorar landing pages",
+      "productsContact": "Hablar de mi proyecto"
+    }
+  }
+}

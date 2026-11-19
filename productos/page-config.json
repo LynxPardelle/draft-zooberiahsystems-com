@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "productos",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "productsMain",
+    "siteFooter"
+  ],
+  "seo": {
+    "title": "Productos y aplicaciones | ZooBeriah Systems",
+    "description": "Conoce RoadMap2U, Despensa Lista y GTR Lab: aplicaciones de ZooBeriah Systems para organizar tu aprendizaje, tus compras y tu práctica musical.",
+    "canonical": "https://zooberiahsystems.com/productos",
+    "openGraph": {
+      "title": "Productos y aplicaciones | ZooBeriah Systems",
+      "description": "Conoce RoadMap2U, Despensa Lista y GTR Lab: aplicaciones de ZooBeriah Systems para organizar tu aprendizaje, tus compras y tu práctica musical.",
+      "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/roadmap2u-demostracion.webp",
+      "image:alt": "Interfaz de RoadMap2U para organizar una ruta de aprendizaje.",
+      "type": "website",
+      "locale": "es_MX"
+    },
+    "twitter": {
+      "title": "Productos y aplicaciones | ZooBeriah Systems",
+      "description": "Conoce RoadMap2U, Despensa Lista y GTR Lab: aplicaciones de ZooBeriah Systems para organizar tu aprendizaje, tus compras y tu práctica musical.",
+      "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/roadmap2u-demostracion.webp",
+      "image:alt": "Interfaz de RoadMap2U para organizar una ruta de aprendizaje.",
+      "card": "summary_large_image"
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": "https://zooberiahsystems.com/productos#pagina",
+        "name": "Aplicaciones de ZooBeriah Systems",
+        "url": "https://zooberiahsystems.com/productos",
+        "description": "Conoce RoadMap2U, Despensa Lista y GTR Lab: aplicaciones de ZooBeriah Systems para organizar tu aprendizaje, tus compras y tu práctica musical.",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://zooberiahsystems.com/#organization",
+          "name": "ZooBeriah Systems",
+          "url": "https://zooberiahsystems.com/"
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "RoadMap2U",
+              "url": "https://roadmap2u.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Despensa Lista",
+              "url": "https://despensalista.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "GTR Lab",
+              "url": "https://clasesdemusica.zoolandingpage.com.mx/gtr-lab"
+            }
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://zooberiahsystems.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Aplicaciones de ZooBeriah Systems",
+            "item": "https://zooberiahsystems.com/productos"
+          }
+        ]
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "productos",
+      "roadmap2u",
+      "despensa-lista",
+      "gtr-lab"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}

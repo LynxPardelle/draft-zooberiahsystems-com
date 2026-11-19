@@ -1,0 +1,477 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "landingpages",
+  "components": [
+    {
+      "id": "landingCatalogEyebrow",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zEyebrow"
+      },
+      "valueInstructions": "set:config.text,i18n,page.landingCatalogEyebrow"
+    },
+    {
+      "id": "landingCatalogTitle",
+      "type": "text",
+      "config": {
+        "tag": "h1",
+        "text": "",
+        "classes": "zPageTitle ank-maxWidth-22ch"
+      },
+      "valueInstructions": "set:config.text,i18n,page.landingCatalogTitle"
+    },
+    {
+      "id": "landingCatalogLead",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead ank-maxWidth-65ch"
+      },
+      "valueInstructions": "set:config.text,i18n,page.landingCatalogLead"
+    },
+    {
+      "id": "landingCatalogHero",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zPageHero",
+        "components": [
+          "landingCatalogHeroContent"
+        ],
+        "id": "landingpages",
+        "styles": {
+          "paddingBlock": "48px"
+        }
+      }
+    },
+    {
+      "id": "landingQuery",
+      "type": "input",
+      "valueInstructions": "set:config.value,queryParamOr,q",
+      "config": {
+        "fieldId": "q",
+        "label": "Buscar páginas",
+        "ariaLabel": "Buscar páginas por nombre, servicio o dominio",
+        "value": "",
+        "controlType": "text",
+        "inputType": "search",
+        "placeholder": "Guitarra, producción, Music Business…",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-6px ank-minWidth-0",
+        "labelClasses": "ank-color-titleColor ank-fontWeight-700 ank-fontSize-14px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-paddingInline-12px ank-borderRadius-3px ank-border-1px__solid__textColorOPA__0_25 ank-bg-bgColor ank-color-textColor ank-fontSize-16px ank-boxSizing-borderMINbox ank-outlineOffset-3px ank-outlineColor-accentColor"
+      }
+    },
+    {
+      "id": "landingCategory",
+      "type": "input",
+      "valueInstructions": "set:config.value,queryParamOr,categoria,all",
+      "config": {
+        "fieldId": "categoria",
+        "label": "Categoría",
+        "ariaLabel": "Categoría",
+        "value": "all",
+        "controlType": "select",
+        "options": [
+          {
+            "value": "all",
+            "label": "Todas las categorías"
+          },
+          {
+            "value": "educacion",
+            "label": "Educación y música"
+          },
+          {
+            "value": "cursos",
+            "label": "Cursos de música y producción"
+          },
+          {
+            "value": "masterclasses",
+            "label": "Masterclasses"
+          },
+          {
+            "value": "plataformas",
+            "label": "Plataformas digitales"
+          }
+        ],
+        "dropdownIndicatorText": "▾",
+        "dropdownIndicatorClasses": "ank-color-titleColor",
+        "dropdownTriggerClasses": "ank-width-100per ank-display-flex ank-justifyContent-spaceMINbetween ank-alignItems-center ank-gap-8px",
+        "dropdownConfig": {
+          "buttonClasses": "ank-width-100per ank-minHeight-48px ank-paddingInline-12px ank-borderRadius-3px ank-border-1px__solid__textColorOPA__0_25 ank-bg-bgColor ank-color-textColor ank-fontSize-16px ank-boxSizing-borderMINbox ank-outlineOffset-3px ank-outlineColor-accentColor ank-cursor-pointer ank-textAlign-left",
+          "menuContainerClasses": "ank-bg-bgColor ank-color-titleColor ank-borderRadius-3px ank-border-1px__solid__textColorOPA__0_25 ank-minWidth-170px",
+          "menuListClasses": "ank-m-0 ank-p-4px ank-listStyle-none",
+          "itemLinkClasses": "ank-minHeight-44px ank-px-12px ank-display-flex ank-alignItems-center ank-textDecoration-none ank-cursor-pointer ank-color-titleColor ank-bgHover-secondaryBgColor",
+          "selectedItemClasses": "ank-bg-secondaryBgColor ank-fontWeight-700",
+          "renderMode": "overlay",
+          "closeOnSelect": true
+        },
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-6px ank-minWidth-0",
+        "labelClasses": "ank-color-titleColor ank-fontWeight-700 ank-fontSize-14px",
+        "inputClasses": "ank-width-100per ank-minHeight-48px ank-paddingInline-12px ank-borderRadius-3px ank-border-1px__solid__textColorOPA__0_25 ank-bg-bgColor ank-color-textColor ank-fontSize-16px ank-boxSizing-borderMINbox ank-outlineOffset-3px ank-outlineColor-accentColor"
+      }
+    },
+    {
+      "id": "landingApply",
+      "type": "button",
+      "config": {
+        "type": "submit",
+        "label": "Buscar",
+        "ariaLabel": "Buscar y aplicar categoría",
+        "classes": "zPrimaryAction ank-color-bgColor"
+      }
+    },
+    {
+      "id": "landingReset",
+      "type": "button",
+      "config": {
+        "type": "reset",
+        "label": "Restablecer",
+        "ariaLabel": "Restablecer búsqueda y categoría",
+        "classes": "zTextLink ank-color-linkColor ank-bg-transparent ank-border-none ank-p-0 ank-fontSize-16px ank-cursor-pointer"
+      },
+      "eventInstructions": "resetScope;setScopeValue:q,;setScopeValue:categoria,all;navigateToUrl:/landingpages"
+    },
+    {
+      "id": "landingFilterActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zActions",
+        "components": [
+          "landingApply",
+          "landingReset"
+        ]
+      }
+    },
+    {
+      "id": "landingFilterFields",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-grid ank-gap-16px ank-alignItems-end",
+        "components": [
+          "landingQuery",
+          "landingCategory",
+          "landingFilterActions"
+        ],
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 230px), 1fr))"
+        }
+      }
+    },
+    {
+      "id": "landingFilters",
+      "type": "interaction-scope",
+      "config": {
+        "tag": "form",
+        "id": "filtros-landingpages",
+        "scopeId": "landingDiscovery",
+        "role": "search",
+        "ariaLabel": "Buscar landing pages",
+        "initialValues": {
+          "q": "",
+          "categoria": "all"
+        },
+        "classes": "ank-width-100per ank-border-0",
+        "components": [
+          "landingFilterFields"
+        ],
+        "submitEventInstructions": "navigateWithScopeQuery:/landingpages,#catalogo,q=values.q,categoria=values.categoria"
+      }
+    },
+    {
+      "id": "landingResultCount",
+      "type": "pagination",
+      "config": {
+        "id": "resultados-landingpages",
+        "ariaLabel": "Cantidad de páginas encontradas",
+        "collectionPath": "catalog.items",
+        "view": {
+          "filters": [
+            {
+              "path": "searchText",
+              "op": "contains",
+              "value": {
+                "source": "queryParam",
+                "key": "q"
+              }
+            },
+            {
+              "path": "category",
+              "op": "equals",
+              "value": {
+                "source": "queryParam",
+                "key": "categoria"
+              },
+              "ignoreValues": [
+                "",
+                "all"
+              ]
+            }
+          ]
+        },
+        "defaultPage": 1,
+        "defaultPageSize": 10000,
+        "showBoundaryLinks": false,
+        "hideWhenEmpty": false,
+        "hideWhenSinglePage": false,
+        "summaryTemplate": "Páginas encontradas: {totalItems}. Si no encuentras lo que buscas, cambia la búsqueda o restablece los filtros.",
+        "classes": "ank-color-secondaryTextColor ank-fontSize-14px",
+        "listClasses": "ank-display-none"
+      }
+    },
+    {
+      "id": "landingCards",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-grid ank-gap-32px",
+        "styles": {
+          "gridTemplateColumns": "repeat(auto-fill, minmax(min(100%, 290px), 1fr))"
+        },
+        "components": []
+      },
+      "loopConfig": {
+        "source": "var",
+        "path": "catalog.items",
+        "templateId": "landingCard",
+        "idPrefix": "landingCard",
+        "bindings": [
+          {
+            "to": "config.title",
+            "sources": [
+              "title"
+            ]
+          },
+          {
+            "to": "config.description",
+            "sources": [
+              "description"
+            ]
+          },
+          {
+            "to": "config.imageSrc",
+            "sources": [
+              "imageSrc"
+            ]
+          },
+          {
+            "to": "config.imageAlt",
+            "sources": [
+              "imageAlt"
+            ]
+          },
+          {
+            "to": "config.href",
+            "sources": [
+              "url"
+            ]
+          }
+        ],
+        "view": {
+          "filters": [
+            {
+              "path": "searchText",
+              "op": "contains",
+              "value": {
+                "source": "queryParam",
+                "key": "q"
+              }
+            },
+            {
+              "path": "category",
+              "op": "equals",
+              "value": {
+                "source": "queryParam",
+                "key": "categoria"
+              },
+              "ignoreValues": [
+                "",
+                "all"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "landingCard",
+      "type": "generic-card",
+      "config": {
+        "variant": "feature",
+        "title": "",
+        "description": "",
+        "href": "",
+        "linkLabel": "Visitar página",
+        "imageSrc": "",
+        "imageAlt": "",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-12px ank-paddingBlock-16px ank-width-100per ank-borderTop-2px__solid__accentColor",
+        "imageContainerClasses": "ank-height-190px ank-overflow-hidden ank-borderRadius-3px",
+        "imageClasses": "ank-width-100per ank-height-100per ank-objectFit-cover",
+        "featureTitleClasses": "ank-color-titleColor ank-fontSize-22px ank-m-0 ank-lineHeight-1_25",
+        "featureDescriptionClasses": "ank-color-textColor ank-fontSize-16px ank-lineHeight-1_5",
+        "linkClasses": "zTextLink ank-color-linkColor"
+      }
+    },
+    {
+      "id": "landingGalleryTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zSectionTitle"
+      },
+      "valueInstructions": "set:config.text,i18n,page.landingGalleryTitle"
+    },
+    {
+      "id": "landingGallery",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "landingGalleryContent"
+        ],
+        "id": "catalogo",
+        "styles": {
+          "paddingTop": "40px"
+        }
+      }
+    },
+    {
+      "id": "landingContactTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zSectionTitle"
+      },
+      "valueInstructions": "set:config.text,i18n,page.landingContactTitle"
+    },
+    {
+      "id": "landingContactLead",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead"
+      },
+      "valueInstructions": "set:config.text,i18n,page.landingContactLead"
+    },
+    {
+      "id": "landingContactLink",
+      "type": "link",
+      "config": {
+        "text": "",
+        "href": "/contacto",
+        "classes": "zPrimaryAction ank-color-bgColor"
+      },
+      "valueInstructions": "set:config.text,i18n,page.landingContactLink"
+    },
+    {
+      "id": "landingPlatformLink",
+      "type": "link",
+      "config": {
+        "text": "",
+        "href": "https://zoolandingpage.com.mx/",
+        "classes": "zTextLink ank-color-linkColor"
+      },
+      "valueInstructions": "set:config.text,i18n,page.landingPlatformLink"
+    },
+    {
+      "id": "landingProductsLink",
+      "type": "link",
+      "config": {
+        "text": "",
+        "href": "/productos",
+        "classes": "zTextLink ank-color-linkColor"
+      },
+      "valueInstructions": "set:config.text,i18n,page.landingProductsLink"
+    },
+    {
+      "id": "landingContactActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zActions",
+        "components": [
+          "landingContactLink",
+          "landingPlatformLink",
+          "landingProductsLink"
+        ]
+      }
+    },
+    {
+      "id": "landingContact",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "landingContactContent"
+        ],
+        "id": "crear-landingpage"
+      }
+    },
+    {
+      "id": "landingCatalogMain",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "zMain",
+        "components": [
+          "landingCatalogHero",
+          "landingGallery",
+          "landingContact"
+        ],
+        "id": "main-content",
+        "role": "main",
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "landingCatalogHeroContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zProse",
+        "components": [
+          "landingCatalogEyebrow",
+          "landingCatalogTitle",
+          "landingCatalogLead"
+        ]
+      }
+    },
+    {
+      "id": "landingGalleryContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell ank-display-flex ank-flexDirection-column ank-gap-24px",
+        "components": [
+          "landingGalleryTitle",
+          "landingFilters",
+          "landingResultCount",
+          "landingCards"
+        ]
+      }
+    },
+    {
+      "id": "landingContactContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zProse",
+        "components": [
+          "landingContactTitle",
+          "landingContactLead",
+          "landingContactActions"
+        ]
+      }
+    }
+  ]
+}
