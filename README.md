@@ -43,4 +43,4 @@ The production site uses the apex as canonical and redirects `www`. Analytics us
 
 Catalog releases use the protected `dev -> test -> main` promotion workflow. Confirm the deployed version in GitHub Actions and on the live site.
 
-`/productos` lists RoadMap2U, Despensa Lista, and GTR Lab. The `/landingpages` selection contains 36 pages: guitar classes, GTR Lab, Zoolandingpage, ZooSitioWeb, four music courses including Music Business, and 28 masterclasses. Other discovered pages remain outside the runtime payload until selected for the catalog.
+`/productos` lists RoadMap2U, Despensa Lista, and GTR Lab. The `/landingpages` selection contains 35 pages: guitar classes, Zoolandingpage, ZooSitioWeb, four music courses including Music Business, and 28 masterclasses. GTR Lab appears in the product catalogue. Other discovered pages remain outside the runtime payload until selected for the catalog.
