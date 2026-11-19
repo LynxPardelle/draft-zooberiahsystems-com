@@ -52,6 +52,16 @@
       "label": "Proyectos"
     },
     {
+      "path": "/productos",
+      "pageId": "productos",
+      "label": "Productos"
+    },
+    {
+      "path": "/landingpages",
+      "pageId": "landingpages",
+      "label": "Landing pages"
+    },
+    {
       "path": "/blog",
       "pageId": "blog",
       "label": "Blog"

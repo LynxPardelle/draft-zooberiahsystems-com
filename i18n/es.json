@@ -11,7 +11,9 @@
       "blog": "Blog",
       "contact": "Contacto",
       "web": "Sitios web",
-      "business": "Soluciones"
+      "business": "Soluciones",
+      "products": "Productos",
+      "landingpages": "Landing pages"
     },
     "ui": {
       "accessibility": {

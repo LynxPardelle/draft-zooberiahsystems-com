@@ -15,6 +15,8 @@ const ROUTES = [
   { path: '/soluciones-para-negocios/inventario', pageId: 'soluciones-inventario' },
   { path: '/soluciones-para-negocios/seguimiento-de-solicitudes', pageId: 'soluciones-seguimiento' },
   { path: '/proyectos', pageId: 'proyectos' },
+  { path: '/productos', pageId: 'productos' },
+  { path: '/landingpages', pageId: 'landingpages' },
   { path: '/blog', pageId: 'blog' },
   { path: '/blog/web', pageId: 'blog-category' },
   { path: '/blog/:categorySlug/:articleSlug', pageId: 'blog-article' },
@@ -424,10 +426,13 @@ test('QA-010 keeps every configured foreground pair WCAG-safe', () => {
 test('QA-011 shares available routes across desktop, mobile, footer and first-party links', () => {
   const components = readJson('components.json').components;
   const configById = (id) => components.find((component) => component.id === id).config;
-  const expected = ['/servicios', '/sitios-web', '/tiendas-en-linea', '/soluciones-para-negocios', '/proyectos', '/blog', '/contacto'];
+  const expected = ['/servicios', '/landingpages', '/productos', '/blog', '/contacto'];
   assert.deepEqual(configById('headerNav').components.map((id) => configById(id).href), expected);
-  assert.deepEqual(configById('footerNav').components.map((id) => configById(id).href), expected);
   assert.deepEqual(readJson('variables.json').variables.navigation.map(({ href }) => href), expected);
+  assert.match(components.find(({ id }) => id === 'headerMobileNav').valueInstructions, /set:config\.items,var,navigation(?:;|$)/, 'The mobile menu must use the same selected navigation');
+  const footerDestinations = configById('footerNav').components.map((id) => configById(id).href);
+  for (const path of expected) assert.ok(footerDestinations.includes(path), `The footer must retain ${path}`);
+  assert.equal(new Set(footerDestinations).size, footerDestinations.length, 'The footer must not repeat destinations');
   assert.equal(configById('headerBrandMark').src, '/assets/brand/zoolandingpage-default-favicon.svg');
   for (const { path, pageId } of [...MARKETING_ROUTES, { path: '/blog', pageId: 'blog' }, { path: '/blog', pageId: 'blog-article' }]) {
     assert.equal(readJson(pageId + '/variables.json').variables.activeNav, path.split('/')[1]);
@@ -442,4 +447,132 @@ test('QA-011 shares available routes across desktop, mobile, footer and first-pa
       assert.ok(targetComponents.some(({ config }) => config.id === fragment), component.id + ' has an unknown fragment');
     }
   }
+});
+
+test('QA-012 presents the three applications separately from the landing page catalogue', () => {
+  const products = readJson('productos/variables.json').variables.products?.items;
+  assert.ok(Array.isArray(products), 'The products page must declare its application collection');
+  assert.deepEqual(products.map(({ title, url }) => [title.replace(/\s+/g, ''), url]), [
+    ['RoadMap2U', 'https://roadmap2u.com/'],
+    ['DespensaLista', 'https://despensalista.com/'],
+    ['GTRLab', 'https://clasesdemusica.zoolandingpage.com.mx/gtr-lab'],
+  ]);
+
+  const components = readJson('productos/components.json').components;
+  const dictionary = readJson('productos/i18n/es.json').dictionary;
+  const destinations = components.filter(({ type, config }) => type === 'link' && config?.href?.startsWith('https://'));
+  assert.deepEqual(destinations.map(({ config }) => config.href).sort(), products.map(({ url }) => url).sort());
+  for (const product of products) {
+    const link = destinations.find(({ config }) => config.href === product.url);
+    assert.ok(link, `${product.title} must have a visible destination`);
+    assert.ok(product.description?.trim(), `${product.title} needs a description`);
+    assert.ok(components.some(({ type, config }) => type === 'media' && config?.src === product.imageSrc && config?.alt === product.imageAlt), `${product.title} needs its accessible product image`);
+    assert.ok(collectStrings(dictionary).includes(product.title), `${product.title} must appear in page copy`);
+  }
+  assert.ok(components.some(({ type, config }) => type === 'link' && config?.href === '/landingpages'), 'The applications page must link to the separate catalogue');
+});
+
+test('QA-013 publishes only the approved 35 landing pages and keeps GTR Lab in products', () => {
+  const items = readJson('landingpages/variables.json').variables.catalog?.items;
+  assert.ok(Array.isArray(items), 'The catalogue must declare its public landing pages');
+  assert.equal(items.length, 35, 'Approval covers three existing examples, four courses and 28 masterclasses');
+  const canonicalURLs = new Set();
+  const ids = new Set();
+  for (const item of items) {
+    assert.ok(item.id?.trim() && !ids.has(item.id), `Duplicate or empty catalogue ID: ${item.id}`);
+    ids.add(item.id);
+    const url = new URL(item.url);
+    assert.equal(url.protocol, 'https:', item.url);
+    assert.equal(url.username + url.password + url.search + url.hash, '', `${item.url} must be a public canonical destination`);
+    assert.doesNotMatch(url.hostname, /^(?:test|preview|localhost)(?:\.|$)|(?:^|\.)localhost$|^127\./i, item.url);
+    assert.doesNotMatch(url.pathname, /^\/(?:admin|auth|login|debug|404|blog)(?:\/|$)/i, item.url);
+    const normalized = `${url.hostname.toLowerCase().replace(/^www\./, '')}${url.pathname.replace(/\/+$/, '')}`;
+    assert.ok(!canonicalURLs.has(normalized), `Duplicate catalogue destination: ${item.url}`);
+    canonicalURLs.add(normalized);
+    for (const field of ['title', 'description', 'category', 'categoryLabel', 'imageAlt', 'searchText']) {
+      assert.ok(typeof item[field] === 'string' && item[field].trim(), `${item.url} needs ${field}`);
+    }
+    assert.equal(new URL(item.imageSrc).protocol, 'https:', `${item.url} needs a public image or an explicit public fallback`);
+    assert.ok(item.searchText.includes(item.title) && item.searchText.includes(url.hostname), `${item.url} must be searchable by title and domain`);
+  }
+  const existingExamples = [
+    'https://clasesdemusica.zoolandingpage.com.mx/guitarra',
+    'https://zoolandingpage.com.mx/',
+    'https://zoositioweb.com.mx/',
+  ];
+  const approvedCourses = [
+    'https://curso-diseno-sonoro.music.lynxpardelle.com/',
+    'https://curso-music-business.music.lynxpardelle.com/',
+    'https://curso-musica-electronica.music.lynxpardelle.com/',
+    'https://curso-produccion-audiovisual.music.lynxpardelle.com/',
+  ];
+  const approvedMasterclasses = [
+    'acordes',
+    'artista-independiente',
+    'drum-rack',
+    'edicion-del-sonido',
+    'escalas-mayores',
+    'escalas-menores',
+    'estructura-musical',
+    'grabacion-de-voz-e-instrumentos',
+    'impulse',
+    'industria-musical',
+    'instrumentos-y-efectos-midi',
+    'intervalos',
+    'loops-en-vivo',
+    'masterizacion-profesional',
+    'mezcla-digital',
+    'notas-musicales',
+    'procesos-de-audio-1',
+    'procesos-de-audio-2',
+    'profesionaliza-tu-proyecto-musical',
+    'redes-sociales-para-musicos',
+    'ritmo',
+    'ruteo-y-grupos',
+    'sampler',
+    'simpler',
+    'sintesis-aditiva-sustractiva-y-fm',
+    'sintesis-de-tabla-de-ondas',
+    'sintesis-organica-y-granular',
+    'sintesis-por-modelado-fisico',
+  ].map(slug => `https://masterclass-${slug}.music.lynxpardelle.com/`);
+  assert.deepEqual(items.map(({ url }) => url).sort(), [...existingExamples, ...approvedCourses, ...approvedMasterclasses].sort(), 'The catalogue must match the approved examples, courses and masterclasses without importing other inventory');
+  assert.equal(items.filter(({ url }) => new URL(url).hostname.startsWith('curso-')).length, 4);
+  assert.equal(items.filter(({ url }) => new URL(url).hostname.startsWith('masterclass-')).length, 28);
+  const gtrLabURL = 'https://clasesdemusica.zoolandingpage.com.mx/gtr-lab';
+  assert.ok(!items.some(({ url }) => url === gtrLabURL), 'GTR Lab belongs only in the products catalogue');
+  assert.ok(readJson('productos/variables.json').variables.products.items.some(({ url }) => url === gtrLabURL), 'GTR Lab must remain available in products');
+  const components = readJson('landingpages/components.json').components;
+  const cards = components.find(({ loopConfig }) => loopConfig?.path === 'catalog.items');
+  assert.ok(cards, 'The gallery must render the catalogue collection');
+  assert.ok(components.some(({ id }) => id === cards.loopConfig.templateId), 'The catalogue card template must resolve');
+  for (const [target, source] of [['title', 'title'], ['description', 'description'], ['href', 'url'], ['imageSrc', 'imageSrc'], ['imageAlt', 'imageAlt']]) {
+    assert.ok(cards.loopConfig.bindings.some(({ to, sources }) => to === `config.${target}` && sources.includes(source)), `Catalogue cards must bind ${source}`);
+  }
+});
+
+test('QA-014 keeps catalogue search, category filters and result counts consistent', () => {
+  const items = readJson('landingpages/variables.json').variables.catalog.items;
+  const components = readJson('landingpages/components.json').components;
+  const cards = components.find(({ loopConfig }) => loopConfig?.path === 'catalog.items');
+  const count = components.find(({ type, config }) => type === 'pagination' && config?.collectionPath === 'catalog.items');
+  assert.ok(count, 'The catalogue must announce the filtered result count');
+  assert.deepEqual(cards.loopConfig.view.filters, count.config.view.filters, 'Result count and cards must apply the same filters');
+  const filters = cards.loopConfig.view.filters;
+  assert.ok(filters.some(({ path, op, value }) => path === 'searchText' && op === 'contains' && value.source === 'queryParam' && value.key === 'q'));
+  assert.ok(filters.some(({ path, op, value, ignoreValues }) => path === 'category' && op === 'equals' && value.source === 'queryParam' && value.key === 'categoria' && ignoreValues.includes('all')));
+  const category = components.find(({ config }) => config?.fieldId === 'categoria');
+  assert.deepEqual(new Set(category.config.options.map(({ value }) => value)), new Set(['all', ...items.map(({ category }) => category)]));
+  const query = components.find(({ config }) => config?.fieldId === 'q');
+  for (const input of [query, category]) {
+    assert.ok(input.config.label?.trim(), `${input.config.fieldId} needs a visible label`);
+    assert.ok(input.config.ariaLabel?.trim(), `${input.config.fieldId} needs an accessible name`);
+  }
+  const form = components.find(({ type, config }) => type === 'interaction-scope' && config?.role === 'search');
+  assert.match(form.config.submitEventInstructions, /^navigateWithScopeQuery:\/landingpages,#catalogo,q=values\.q,categoria=values\.categoria$/);
+  const reset = components.find(({ type, config }) => type === 'button' && config?.type === 'reset');
+  assert.equal(reset.config.label, 'Restablecer');
+  assert.ok(reset.config.ariaLabel?.trim());
+  assert.match(reset.eventInstructions, /setScopeValue:q,;/);
+  assert.match(reset.eventInstructions, /setScopeValue:categoria,all;navigateToUrl:\/landingpages$/);
 });
