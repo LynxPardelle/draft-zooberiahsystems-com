@@ -957,7 +957,7 @@
       "valueInstructions": "set:config.text,i18n,page.landingpagesCatalogLink",
       "eventInstructions": "trackEvent:cta_click,cta,landingpages,location,inicio-sitios-web",
       "config": {
-        "href": "/landingpages",
+        "href": "/sitios-web",
         "text": "Ver landing pages creadas con Zoolandingpage",
         "classes": "zTextLink ank-justifySelf-start"
       }

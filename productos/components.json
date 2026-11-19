@@ -347,7 +347,7 @@
       "type": "link",
       "config": {
         "text": "",
-        "href": "/landingpages",
+        "href": "/sitios-web",
         "classes": "zTextLink ank-color-linkColor"
       },
       "valueInstructions": "set:config.text,i18n,page.productsGallery"

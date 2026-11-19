@@ -31,8 +31,8 @@ Read only the task-specific route in `AGENTS.md`; do not duplicate shared hub pr
 
 ## Scope And Preview
 
-- Routes: `/`, `/servicios`, `/sitios-web`, `/tiendas-en-linea`, `/soluciones-para-negocios`, `/proyectos`, `/productos`, `/landingpages`, `/contacto`, `/blog`, `/blog/web`, `/blog/:categorySlug/:articleSlug`, and `/404`
-- Primary navigation: Servicios, Landing pages, Productos, Blog, Contacto. Existing service pages remain linked from Services, the home page, and the footer.
+- Routes: `/`, `/servicios`, `/sitios-web`, `/tiendas-en-linea`, `/soluciones-para-negocios`, `/proyectos`, `/productos`, `/contacto`, `/blog`, `/blog/web`, `/blog/:categorySlug/:articleSlug`, and `/404`; `/landingpages` permanently redirects to `/sitios-web`.
+- Primary navigation: Servicios, Sitios web, Productos. Blog and Contacto remain available from the footer and contextual links. Existing service pages remain linked from Services, the home page, and the footer.
 - Custom operations consultations: `/soluciones-para-negocios/restaurantes`, `/soluciones-para-negocios/inventario`, and `/soluciones-para-negocios/seguimiento-de-solicitudes`
 - Language: Spanish (`es`)
 - Environments: protected `test` and `production` promotion
@@ -43,4 +43,4 @@ The production site uses the apex as canonical and redirects `www`. Analytics us
 
 Catalog releases use the protected `dev -> test -> main` promotion workflow. Confirm the deployed version in GitHub Actions and on the live site.
 
-`/productos` lists RoadMap2U, Despensa Lista, and GTR Lab. The `/landingpages` selection contains 35 pages: guitar classes, Zoolandingpage, ZooSitioWeb, four music courses including Music Business, and 28 masterclasses. GTR Lab appears in the product catalogue. Other discovered pages remain outside the runtime payload until selected for the catalog.
+`/productos` lists RoadMap2U, Despensa Lista, and GTR Lab. The `/sitios-web` selection contains 35 pages: guitar classes, Zoolandingpage, ZooSitioWeb, four music courses including Music Business, and 28 masterclasses. It also retains the web service's scope, process, and frequently asked questions. GTR Lab appears in the product catalogue. Other discovered pages remain outside the runtime payload until selected for the catalog.
