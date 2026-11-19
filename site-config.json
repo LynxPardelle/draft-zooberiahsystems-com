@@ -57,11 +57,6 @@
       "label": "Productos"
     },
     {
-      "path": "/landingpages",
-      "pageId": "landingpages",
-      "label": "Landing pages"
-    },
-    {
       "path": "/blog",
       "pageId": "blog",
       "label": "Blog"
@@ -164,7 +159,18 @@
           "ZooBeriah Systems"
         ]
       },
-      "robots": "index,follow"
+      "robots": "index,follow",
+      "redirects": [
+        {
+          "from": "/landingpages",
+          "to": "/sitios-web",
+          "preserveQueryParams": [
+            "q",
+            "categoria",
+            "lang"
+          ]
+        }
+      ]
     },
     "i18n": {
       "defaultLanguage": "es",
