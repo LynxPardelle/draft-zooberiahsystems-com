@@ -1,0 +1,467 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "productos",
+  "components": [
+    {
+      "id": "productsEyebrow",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zEyebrow"
+      },
+      "valueInstructions": "set:config.text,i18n,page.productsEyebrow"
+    },
+    {
+      "id": "productsTitle",
+      "type": "text",
+      "config": {
+        "tag": "h1",
+        "text": "",
+        "classes": "zPageTitle ank-maxWidth-22ch"
+      },
+      "valueInstructions": "set:config.text,i18n,page.productsTitle"
+    },
+    {
+      "id": "productsLead",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead ank-maxWidth-65ch"
+      },
+      "valueInstructions": "set:config.text,i18n,page.productsLead"
+    },
+    {
+      "id": "productsHero",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zPageHero",
+        "components": [
+          "productsHeroContent"
+        ],
+        "id": "productos"
+      }
+    },
+    {
+      "id": "product0Image",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/roadmap2u-demostracion.webp",
+        "alt": "Interfaz de RoadMap2U para organizar una ruta de aprendizaje.",
+        "width": 1280,
+        "height": 800,
+        "loading": "eager",
+        "fetchPriority": "high",
+        "decoding": "async",
+        "classes": "zMedia"
+      }
+    },
+    {
+      "id": "product0Eyebrow",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zEyebrow"
+      },
+      "valueInstructions": "set:config.text,i18n,page.product0Eyebrow"
+    },
+    {
+      "id": "product0Title",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zSectionTitle"
+      },
+      "valueInstructions": "set:config.text,i18n,page.product0Title"
+    },
+    {
+      "id": "product0Description",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead"
+      },
+      "valueInstructions": "set:config.text,i18n,page.product0Description"
+    },
+    {
+      "id": "product0Visit",
+      "type": "link",
+      "config": {
+        "text": "",
+        "href": "https://roadmap2u.com/",
+        "classes": "zPrimaryAction ank-color-bgColor"
+      },
+      "valueInstructions": "set:config.text,i18n,page.product0Visit"
+    },
+    {
+      "id": "product0Copy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "product0Eyebrow",
+          "product0Title",
+          "product0Description",
+          "product0Visit"
+        ]
+      }
+    },
+    {
+      "id": "product0Split",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zSplit",
+        "components": [
+          "product0Image",
+          "product0Copy"
+        ]
+      }
+    },
+    {
+      "id": "product0Section",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "product0SectionContent"
+        ],
+        "id": "roadmap2u"
+      }
+    },
+    {
+      "id": "product1Image",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/despensalista.webp",
+        "alt": "Interfaz de Despensa Lista para organizar productos y compras.",
+        "width": 1280,
+        "height": 800,
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "zMedia"
+      }
+    },
+    {
+      "id": "product1Eyebrow",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zEyebrow"
+      },
+      "valueInstructions": "set:config.text,i18n,page.product1Eyebrow"
+    },
+    {
+      "id": "product1Title",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zSectionTitle"
+      },
+      "valueInstructions": "set:config.text,i18n,page.product1Title"
+    },
+    {
+      "id": "product1Description",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead"
+      },
+      "valueInstructions": "set:config.text,i18n,page.product1Description"
+    },
+    {
+      "id": "product1Visit",
+      "type": "link",
+      "config": {
+        "text": "",
+        "href": "https://despensalista.com/",
+        "classes": "zPrimaryAction ank-color-bgColor"
+      },
+      "valueInstructions": "set:config.text,i18n,page.product1Visit"
+    },
+    {
+      "id": "product1Copy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "product1Eyebrow",
+          "product1Title",
+          "product1Description",
+          "product1Visit"
+        ]
+      }
+    },
+    {
+      "id": "product1Split",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zSplit",
+        "components": [
+          "product1Image",
+          "product1Copy"
+        ]
+      }
+    },
+    {
+      "id": "product1Section",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "product1SectionContent"
+        ],
+        "id": "despensa-lista"
+      }
+    },
+    {
+      "id": "product2Image",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://clasesdemusica.zoolandingpage.com.mx/drafts/clasesdemusica.zoolandingpage.com.mx/assets/gtr-lab-diapason.jpg",
+        "alt": "Diapasón interactivo de GTR Lab con posiciones y notas para estudiar guitarra.",
+        "width": 1280,
+        "height": 800,
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "zMedia"
+      }
+    },
+    {
+      "id": "product2Eyebrow",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zEyebrow"
+      },
+      "valueInstructions": "set:config.text,i18n,page.product2Eyebrow"
+    },
+    {
+      "id": "product2Title",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zSectionTitle"
+      },
+      "valueInstructions": "set:config.text,i18n,page.product2Title"
+    },
+    {
+      "id": "product2Description",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead"
+      },
+      "valueInstructions": "set:config.text,i18n,page.product2Description"
+    },
+    {
+      "id": "product2Visit",
+      "type": "link",
+      "config": {
+        "text": "",
+        "href": "https://clasesdemusica.zoolandingpage.com.mx/gtr-lab",
+        "classes": "zPrimaryAction ank-color-bgColor"
+      },
+      "valueInstructions": "set:config.text,i18n,page.product2Visit"
+    },
+    {
+      "id": "product2Copy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "product2Eyebrow",
+          "product2Title",
+          "product2Description",
+          "product2Visit"
+        ]
+      }
+    },
+    {
+      "id": "product2Split",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zSplit",
+        "components": [
+          "product2Image",
+          "product2Copy"
+        ]
+      }
+    },
+    {
+      "id": "product2Section",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "product2SectionContent"
+        ],
+        "id": "gtr-lab"
+      }
+    },
+    {
+      "id": "productsWebTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "zSectionTitle"
+      },
+      "valueInstructions": "set:config.text,i18n,page.productsWebTitle"
+    },
+    {
+      "id": "productsWebText",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "zLead"
+      },
+      "valueInstructions": "set:config.text,i18n,page.productsWebText"
+    },
+    {
+      "id": "productsGallery",
+      "type": "link",
+      "config": {
+        "text": "",
+        "href": "/landingpages",
+        "classes": "zTextLink ank-color-linkColor"
+      },
+      "valueInstructions": "set:config.text,i18n,page.productsGallery"
+    },
+    {
+      "id": "productsContact",
+      "type": "link",
+      "config": {
+        "text": "",
+        "href": "/contacto",
+        "classes": "zTextLink ank-color-linkColor"
+      },
+      "valueInstructions": "set:config.text,i18n,page.productsContact"
+    },
+    {
+      "id": "productsWebActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zActions",
+        "components": [
+          "productsGallery",
+          "productsContact"
+        ]
+      }
+    },
+    {
+      "id": "productsWeb",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "productsWebContent"
+        ],
+        "id": "crear-landingpage"
+      }
+    },
+    {
+      "id": "productsMain",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "zMain",
+        "components": [
+          "productsHero",
+          "product0Section",
+          "product1Section",
+          "product2Section",
+          "productsWeb"
+        ],
+        "id": "main-content",
+        "role": "main",
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "productsHeroContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zProse",
+        "components": [
+          "productsEyebrow",
+          "productsTitle",
+          "productsLead"
+        ]
+      }
+    },
+    {
+      "id": "product0SectionContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell",
+        "components": [
+          "product0Split"
+        ]
+      }
+    },
+    {
+      "id": "product1SectionContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell",
+        "components": [
+          "product1Split"
+        ]
+      }
+    },
+    {
+      "id": "product2SectionContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell",
+        "components": [
+          "product2Split"
+        ]
+      }
+    },
+    {
+      "id": "productsWebContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zProse",
+        "components": [
+          "productsWebTitle",
+          "productsWebText",
+          "productsWebActions"
+        ]
+      }
+    }
+  ]
+}

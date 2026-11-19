@@ -81,10 +81,8 @@
         "classes": "zooberiahDesktopNav",
         "components": [
           "headerServicesLink",
-          "headerWebLink",
-          "headerCommerceLink",
-          "headerBusinessLink",
-          "headerProjectsLink",
+          "headerLandingpagesLink",
+          "headerProductsLink",
           "headerBlogLink",
           "headerTalkLink"
         ]
@@ -243,7 +241,8 @@
           "footerWebLink",
           "footerCommerceLink",
           "footerBusinessLink",
-          "footerProjectsLink",
+          "footerLandingpagesLink",
+          "footerProductsLink",
           "footerBlogLink",
           "footerContactLink"
         ]
@@ -356,6 +355,28 @@
       "valueInstructions": "set:config.classes,when,\"all:varEq,activeNav,proyectos\",\"zooberiahNavLink ank-color-textColor ank-bg-secondaryBgColor ank-fontWeight-800\",\"zooberiahNavLink ank-color-textColor\";set:config.ariaCurrent,when,\"all:varEq,activeNav,proyectos\",page,null"
     },
     {
+      "id": "headerProductsLink",
+      "type": "link",
+      "config": {
+        "text": "Productos",
+        "href": "/productos",
+        "classes": "zooberiahNavLink ank-color-textColor"
+      },
+      "eventInstructions": "trackEvent:nav_click,navigation,productos,location,header",
+      "valueInstructions": "set:config.classes,when,\"all:varEq,activeNav,productos\",\"zooberiahNavLink ank-color-textColor ank-bg-secondaryBgColor ank-fontWeight-800\",\"zooberiahNavLink ank-color-textColor\";set:config.ariaCurrent,when,\"all:varEq,activeNav,productos\",page,null"
+    },
+    {
+      "id": "headerLandingpagesLink",
+      "type": "link",
+      "config": {
+        "text": "Landing pages",
+        "href": "/landingpages",
+        "classes": "zooberiahNavLink ank-color-textColor"
+      },
+      "eventInstructions": "trackEvent:nav_click,navigation,landingpages,location,header",
+      "valueInstructions": "set:config.classes,when,\"all:varEq,activeNav,landingpages\",\"zooberiahNavLink ank-color-textColor ank-bg-secondaryBgColor ank-fontWeight-800\",\"zooberiahNavLink ank-color-textColor\";set:config.ariaCurrent,when,\"all:varEq,activeNav,landingpages\",page,null"
+    },
+    {
       "id": "headerBlogLink",
       "type": "link",
       "config": {
@@ -390,6 +411,24 @@
       "config": {
         "text": "Proyectos",
         "href": "/proyectos",
+        "classes": "zooberiahFooterLink"
+      }
+    },
+    {
+      "id": "footerProductsLink",
+      "type": "link",
+      "config": {
+        "text": "Productos",
+        "href": "/productos",
+        "classes": "zooberiahFooterLink"
+      }
+    },
+    {
+      "id": "footerLandingpagesLink",
+      "type": "link",
+      "config": {
+        "text": "Landing pages",
+        "href": "/landingpages",
         "classes": "zooberiahFooterLink"
       }
     },

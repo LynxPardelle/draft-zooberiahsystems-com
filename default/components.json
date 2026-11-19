@@ -916,7 +916,8 @@
           "websiteLabel",
           "websiteTitle",
           "websiteLead",
-          "websiteActions"
+          "websiteActions",
+          "landingpagesCatalogLink"
         ]
       }
     },
@@ -951,6 +952,17 @@
       }
     },
     {
+      "id": "landingpagesCatalogLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.landingpagesCatalogLink",
+      "eventInstructions": "trackEvent:cta_click,cta,landingpages,location,inicio-sitios-web",
+      "config": {
+        "href": "/landingpages",
+        "text": "Ver landing pages creadas con Zoolandingpage",
+        "classes": "zTextLink ank-justifySelf-start"
+      }
+    },
+    {
       "id": "websiteImage",
       "type": "media",
       "config": {
@@ -971,10 +983,44 @@
         "tag": "div",
         "classes": "zShell ank-display-grid ank-gap-38px ank-gap-lg-50px",
         "components": [
-          "featuredProjectsTitle",
+          "featuredProjectsIntro",
           "projectShell",
           "roadmapShell"
         ]
+      }
+    },
+    {
+      "id": "featuredProjectsIntro",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "featuredProjectsTitle",
+          "productsCatalogLead",
+          "productsCatalogLink"
+        ]
+      }
+    },
+    {
+      "id": "productsCatalogLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.productsCatalogLead",
+      "config": {
+        "tag": "p",
+        "text": "Explora RoadMap2U, Despensa Lista y GTR Lab, las aplicaciones que desarrollamos para planear, organizar y aprender.",
+        "classes": "zLead"
+      }
+    },
+    {
+      "id": "productsCatalogLink",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.productsCatalogLink",
+      "eventInstructions": "trackEvent:cta_click,cta,productos,location,inicio-aplicaciones",
+      "config": {
+        "href": "/productos",
+        "text": "Conocer todos nuestros productos",
+        "classes": "zTextLink ank-justifySelf-start"
       }
     },
     {

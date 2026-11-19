@@ -1,0 +1,302 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "landingpages",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "landingCatalogMain",
+    "siteFooter"
+  ],
+  "seo": {
+    "title": "Landing pages de cursos y productos | ZooBeriah Systems",
+    "description": "Explora landing pages de Zoolandingpage para guitarra, cursos de música y producción, Music Business, masterclasses y productos de ZooBeriah Systems.",
+    "canonical": "https://zooberiahsystems.com/landingpages",
+    "openGraph": {
+      "title": "Landing pages de cursos y productos | ZooBeriah Systems",
+      "description": "Explora landing pages de Zoolandingpage para guitarra, cursos de música y producción, Music Business, masterclasses y productos de ZooBeriah Systems.",
+      "image": "https://clasesdemusica.zoolandingpage.com.mx/drafts/clasesdemusica.zoolandingpage.com.mx/assets/gtr-lab-diapason.jpg",
+      "image:alt": "Diapasón de GTR Lab utilizado como acompañamiento en las clases de guitarra.",
+      "type": "website",
+      "locale": "es_MX"
+    },
+    "twitter": {
+      "title": "Landing pages de cursos y productos | ZooBeriah Systems",
+      "description": "Explora landing pages de Zoolandingpage para guitarra, cursos de música y producción, Music Business, masterclasses y productos de ZooBeriah Systems.",
+      "image": "https://clasesdemusica.zoolandingpage.com.mx/drafts/clasesdemusica.zoolandingpage.com.mx/assets/gtr-lab-diapason.jpg",
+      "image:alt": "Diapasón de GTR Lab utilizado como acompañamiento en las clases de guitarra.",
+      "card": "summary_large_image"
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": "https://zooberiahsystems.com/landingpages#pagina",
+        "name": "Landing pages hechas con Zoolandingpage",
+        "url": "https://zooberiahsystems.com/landingpages",
+        "description": "Explora landing pages de Zoolandingpage para guitarra, cursos de música y producción, Music Business, masterclasses y productos de ZooBeriah Systems.",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://zooberiahsystems.com/#organization",
+          "name": "ZooBeriah Systems",
+          "url": "https://zooberiahsystems.com/"
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Clases de guitarra con Héctor Coronado",
+              "url": "https://clasesdemusica.zoolandingpage.com.mx/guitarra"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "GTR Lab",
+              "url": "https://clasesdemusica.zoolandingpage.com.mx/gtr-lab"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Zoolandingpage",
+              "url": "https://zoolandingpage.com.mx/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "ZooSitioWeb",
+              "url": "https://zoositioweb.com.mx/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Creación de música electrónica y diseño sonoro",
+              "url": "https://curso-musica-electronica.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Diseño sonoro digital",
+              "url": "https://curso-diseno-sonoro.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "Music Business para artistas independientes",
+              "url": "https://curso-music-business.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "Producción audiovisual, edición y animación",
+              "url": "https://curso-produccion-audiovisual.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "Acordes: tríadas, séptimas y extensiones",
+              "url": "https://masterclass-acordes.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "Baterías con Drum Rack",
+              "url": "https://masterclass-drum-rack.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 11,
+              "name": "Baterías con Impulse",
+              "url": "https://masterclass-impulse.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 12,
+              "name": "Edición de muestras con Simpler",
+              "url": "https://masterclass-simpler.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 13,
+              "name": "Edición y transformación del sonido",
+              "url": "https://masterclass-edicion-del-sonido.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 14,
+              "name": "Escalas I: escala mayor y armonización",
+              "url": "https://masterclass-escalas-mayores.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 15,
+              "name": "Escalas II: escalas menores",
+              "url": "https://masterclass-escalas-menores.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 16,
+              "name": "Estructura y arreglo musical",
+              "url": "https://masterclass-estructura-musical.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 17,
+              "name": "Grabación de voz e instrumentos",
+              "url": "https://masterclass-grabacion-de-voz-e-instrumentos.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 18,
+              "name": "Hazlo tú mismo: gestión para artistas independientes",
+              "url": "https://masterclass-artista-independiente.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 19,
+              "name": "Instrumentos y efectos MIDI",
+              "url": "https://masterclass-instrumentos-y-efectos-midi.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 20,
+              "name": "Intervalos melódicos y armónicos",
+              "url": "https://masterclass-intervalos.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 21,
+              "name": "Introducción a Sampler",
+              "url": "https://masterclass-sampler.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 22,
+              "name": "La industria musical",
+              "url": "https://masterclass-industria-musical.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 23,
+              "name": "Loops en vivo",
+              "url": "https://masterclass-loops-en-vivo.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 24,
+              "name": "Masterización musical",
+              "url": "https://masterclass-masterizacion-profesional.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 25,
+              "name": "Mezcla digital",
+              "url": "https://masterclass-mezcla-digital.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 26,
+              "name": "Notas musicales y lectura básica",
+              "url": "https://masterclass-notas-musicales.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 27,
+              "name": "Procesos de audio I: tiempo, dinámica y filtros",
+              "url": "https://masterclass-procesos-de-audio-1.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 28,
+              "name": "Procesos de audio II: modulación y utilidades",
+              "url": "https://masterclass-procesos-de-audio-2.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 29,
+              "name": "Profesionaliza tu proyecto musical",
+              "url": "https://masterclass-profesionaliza-tu-proyecto-musical.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 30,
+              "name": "Redes sociales y difusión para músicos",
+              "url": "https://masterclass-redes-sociales-para-musicos.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 31,
+              "name": "Ritmo y escritura para percusión",
+              "url": "https://masterclass-ritmo.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 32,
+              "name": "Ruteo avanzado y grupos de audio y MIDI",
+              "url": "https://masterclass-ruteo-y-grupos.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 33,
+              "name": "Síntesis aditiva, sustractiva y FM",
+              "url": "https://masterclass-sintesis-aditiva-sustractiva-y-fm.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 34,
+              "name": "Síntesis de tabla de ondas",
+              "url": "https://masterclass-sintesis-de-tabla-de-ondas.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 35,
+              "name": "Síntesis orgánica y granular",
+              "url": "https://masterclass-sintesis-organica-y-granular.music.lynxpardelle.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 36,
+              "name": "Síntesis por modelado físico",
+              "url": "https://masterclass-sintesis-por-modelado-fisico.music.lynxpardelle.com/"
+            }
+          ],
+          "numberOfItems": 36
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://zooberiahsystems.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Landing pages hechas con Zoolandingpage",
+            "item": "https://zooberiahsystems.com/landingpages"
+          }
+        ]
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "landingpages",
+      "catalogo",
+      "crear-landingpage"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}
