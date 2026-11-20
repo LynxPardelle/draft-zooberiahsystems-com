@@ -87,7 +87,7 @@
       "config": {
         "tag": "div",
         "html": "",
-        "classes": "ank-color-textColor ank-fontSize-17px ank-lineHeight-1_7",
+        "classes": "ank-color-textColor ank-fontSize-17px ank-lineHeight-1_7 ank-colorSEL__a-linkColor ank-colorSEL__aVisited-linkColor ank-colorSEL__aHover-white ank-textDecorationSEL__a-underline ank-textUnderlineOffsetSEL__a-3px ank-outlineSEL__aFocusVisible-2px__solid__accentColor ank-outlineOffsetSEL__aFocusVisible-3px",
         "styles": {
           "overflowWrap": "anywhere"
         }
