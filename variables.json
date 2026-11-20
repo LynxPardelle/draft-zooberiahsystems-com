@@ -5,7 +5,7 @@
   "variables": {
     "brand": {
       "displayName": "ZooBeriah Systems",
-      "tagline": "Ideas que toman forma digital."
+      "tagline": "Creamos sistemas que conectan caminos."
     },
     "navigation": [
       {
@@ -31,11 +31,11 @@
       }
     ],
     "assets": {
-      "logoPrincipalUrl": "/assets/brand/zoolandingpage-default-favicon.svg",
-      "logoInverseUrl": "",
-      "faviconUrl": "",
-      "appleTouchIconUrl": "",
-      "openGraphImageUrl": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/hero.webp"
+      "logoPrincipalUrl": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/logos/identity-20261120-logo.webp",
+      "logoInverseUrl": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/logos/identity-20261120-logo.webp",
+      "faviconUrl": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/logos/identity-20261120-favicon.png",
+      "appleTouchIconUrl": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/logos/identity-20261120-touch-icon.png",
+      "openGraphImageUrl": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/seo-images/identity-20261120-social.jpg"
     },
     "ui": {
       "contact": {
