@@ -125,7 +125,10 @@
         "components": [
           "storeHeroShell"
         ],
-        "id": "tienda-inicio"
+        "id": "tienda-inicio",
+        "styles": {
+          "background": "radial-gradient(ellipse at 85% 0%,rgba(0,245,242,.10),transparent 58%),linear-gradient(180deg,#011218,#000000)"
+        }
       }
     },
     {

@@ -84,47 +84,47 @@
   ],
   "site": {
     "theme": {
-      "defaultMode": "light",
+      "defaultMode": "dark",
       "palettes": {
         "light": {
-          "bgColor": "#F6F4EE",
-          "textColor": "#102D32",
-          "titleColor": "#102D32",
-          "linkColor": "#126B59",
-          "accentColor": "#126B59",
-          "secondaryBgColor": "#E4EEE7",
-          "secondaryTextColor": "#536765",
-          "secondaryTitleColor": "#102D32",
-          "secondaryLinkColor": "#126B59",
-          "secondaryAccentColor": "#D9EF8F",
-          "successColor": "#126B59",
-          "onSuccessColor": "#FFFFFF",
-          "errorColor": "#102D32",
-          "onErrorColor": "#FFFFFF",
-          "warningColor": "#D9EF8F",
-          "onWarningColor": "#102D32",
-          "infoColor": "#E4EEE7",
-          "onInfoColor": "#102D32"
+          "bgColor": "#000000",
+          "textColor": "#FFFFFF",
+          "titleColor": "#FFFFFF",
+          "linkColor": "#00F5F2",
+          "accentColor": "#00F5F2",
+          "secondaryBgColor": "#011218",
+          "secondaryTextColor": "#B8CED1",
+          "secondaryTitleColor": "#FFFFFF",
+          "secondaryLinkColor": "#00F5F2",
+          "secondaryAccentColor": "#B3F71F",
+          "successColor": "#08F394",
+          "onSuccessColor": "#000000",
+          "errorColor": "#FF4DA6",
+          "onErrorColor": "#000000",
+          "warningColor": "#B3F71F",
+          "onWarningColor": "#000000",
+          "infoColor": "#07BDDB",
+          "onInfoColor": "#000000"
         },
         "dark": {
-          "bgColor": "#102D32",
-          "textColor": "#F6F4EE",
+          "bgColor": "#000000",
+          "textColor": "#FFFFFF",
           "titleColor": "#FFFFFF",
-          "linkColor": "#D9EF8F",
-          "accentColor": "#D9EF8F",
-          "secondaryBgColor": "#126B59",
-          "secondaryTextColor": "#F6F4EE",
+          "linkColor": "#00F5F2",
+          "accentColor": "#00F5F2",
+          "secondaryBgColor": "#011218",
+          "secondaryTextColor": "#B8CED1",
           "secondaryTitleColor": "#FFFFFF",
-          "secondaryLinkColor": "#D9EF8F",
-          "secondaryAccentColor": "#E4D9C5",
-          "successColor": "#D9EF8F",
-          "onSuccessColor": "#102D32",
-          "errorColor": "#E4D9C5",
-          "onErrorColor": "#102D32",
-          "warningColor": "#D9EF8F",
-          "onWarningColor": "#102D32",
-          "infoColor": "#126B59",
-          "onInfoColor": "#FFFFFF"
+          "secondaryLinkColor": "#00F5F2",
+          "secondaryAccentColor": "#B3F71F",
+          "successColor": "#08F394",
+          "onSuccessColor": "#000000",
+          "errorColor": "#FF4DA6",
+          "onErrorColor": "#000000",
+          "warningColor": "#B3F71F",
+          "onWarningColor": "#000000",
+          "infoColor": "#07BDDB",
+          "onInfoColor": "#000000"
         }
       }
     },
@@ -144,11 +144,13 @@
       "openGraph": {
         "type": "website",
         "site_name": "ZooBeriah Systems",
-        "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/hero.webp"
+        "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/seo-images/identity-20261120-social.jpg",
+        "imageAlt": "ZooBeriah Systems: jaguar luminoso, nodos conectados y onda verde y turquesa sobre negro."
       },
       "twitter": {
         "card": "summary_large_image",
-        "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/hero.webp"
+        "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/seo-images/identity-20261120-social.jpg",
+        "imageAlt": "ZooBeriah Systems: jaguar luminoso, nodos conectados y onda verde y turquesa sobre negro."
       },
       "keywords": {
         "es": [
@@ -184,13 +186,29 @@
       ]
     },
     "icons": {
-      "themeColor": "#102D32"
-    }
+      "themeColor": "#000000",
+      "favicon": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/logos/identity-20261120-favicon.png",
+      "appleTouchIcon": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/logos/identity-20261120-touch-icon.png"
+    },
+    "fonts": [
+      {
+        "family": "Rajdhani",
+        "src": "https://fonts.gstatic.com/s/rajdhani/v17/LDI2apCSOBg7S-QT7pbYF_Oreec.woff2",
+        "weight": "600",
+        "style": "normal"
+      },
+      {
+        "family": "Rajdhani",
+        "src": "https://fonts.gstatic.com/s/rajdhani/v17/LDI2apCSOBg7S-QT7pa8FvOreec.woff2",
+        "weight": "700",
+        "style": "normal"
+      }
+    ]
   },
   "defaults": {
     "brand": {
       "displayName": "ZooBeriah Systems",
-      "tagline": "Ideas que toman forma digital."
+      "tagline": "Creamos sistemas que conectan caminos."
     },
     "ui": {
       "contact": {

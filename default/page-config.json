@@ -22,15 +22,15 @@
       "title": "ZooBeriah Systems | Consultoría y desarrollo digital en CDMX",
       "description": "Diseñamos sitios web, tiendas en línea y sistemas a medida para negocios. Consultoría tecnológica, datos e inteligencia artificial desde Ciudad de México.",
       "type": "website",
-      "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/hero.webp",
-      "image:alt": "Sesión de planeación en un espacio de trabajo"
+      "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/seo-images/identity-20261120-social.jpg",
+      "image:alt": "ZooBeriah Systems: jaguar luminoso, nodos conectados y onda verde y turquesa sobre negro."
     },
     "twitter": {
       "title": "ZooBeriah Systems | Consultoría y desarrollo digital en CDMX",
       "description": "Diseñamos sitios web, tiendas en línea y sistemas a medida para negocios. Consultoría tecnológica, datos e inteligencia artificial desde Ciudad de México.",
       "card": "summary_large_image",
-      "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/hero.webp",
-      "image:alt": "Sesión de planeación en un espacio de trabajo"
+      "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/seo-images/identity-20261120-social.jpg",
+      "image:alt": "ZooBeriah Systems: jaguar luminoso, nodos conectados y onda verde y turquesa sobre negro."
     }
   },
   "analytics": {
@@ -60,7 +60,7 @@
         "name": "ZooBeriah Systems",
         "url": "https://zooberiahsystems.com/",
         "description": "Diseñamos sitios web, tiendas en línea y sistemas a medida para negocios. Consultoría tecnológica, datos e inteligencia artificial desde Ciudad de México.",
-        "logo": "https://zooberiahsystems.com/assets/brand/zoolandingpage-default-favicon.svg"
+        "logo": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/logos/identity-20261120-logo-large.webp"
       },
       {
         "@context": "https://schema.org",

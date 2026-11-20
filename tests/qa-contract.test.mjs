@@ -369,11 +369,11 @@ test('QA-009 keeps action and footer colors as direct utilities', () => {
     ['components.json', {
       skipToMainLink: 'ank-color-bgColor',
       headerTalkLink: 'ank-color-textColor',
-      siteFooter: 'ank-color-HASHF6F4EE',
-      footerWhatsappLink: 'ank-color-HASH102D32',
+      siteFooter: 'ank-color-white',
+      footerWhatsappLink: 'ank-color-HASH000000',
     }],
     ['default/components.json', {
-      heroPrimaryAction: 'ank-color-HASH102D32',
+      heroPrimaryAction: 'ank-color-HASH000000',
       heroSecondaryAction: 'ank-color-white',
       commerceWhatsapp: 'ank-color-bgColor',
       projectOpen: 'ank-color-bgColor',
@@ -419,7 +419,7 @@ test('QA-010 keeps every configured foreground pair WCAG-safe', () => {
       ['warning action', palette.onWarningColor, palette.warningColor, 4.5],
     ]) assertContrast(`${mode} ${label}`, foreground, background, minimum);
   }
-  assertContrast('footer text', '#FFFFFF', '#102D32', 4.5);
+  assertContrast('footer text', '#FFFFFF', '#000000', 4.5);
 });
 
 test('QA-011 shares available routes across desktop, mobile, footer and first-party links', () => {
@@ -433,7 +433,11 @@ test('QA-011 shares available routes across desktop, mobile, footer and first-pa
   for (const path of expected) assert.ok(footerDestinations.includes(path), `The footer must retain ${path}`);
   for (const path of ['/blog', '/contacto']) assert.ok(footerDestinations.includes(path), `Secondary navigation must retain ${path}`);
   assert.equal(new Set(footerDestinations).size, footerDestinations.length, 'The footer must not repeat destinations');
-  assert.equal(configById('headerBrandMark').src, '/assets/brand/zoolandingpage-default-favicon.svg');
+  assert.equal(configById('headerBrandMark').src, readJson('variables.json').variables.assets.logoPrincipalUrl);
+  const brandAsset = new URL(configById('headerBrandMark').src, 'https://zooberiahsystems.com');
+  assert.equal(brandAsset.origin, 'https://assets.zoolandingpage.com.mx');
+  assert.ok(brandAsset.pathname.startsWith('/zooberiahsystems.com/shared/logos/'));
+  assert.equal(readJson('site-config.json').site.icons.favicon, readJson('variables.json').variables.assets.faviconUrl);
   for (const { path, pageId } of [...MARKETING_ROUTES, { path: '/blog', pageId: 'blog' }, { path: '/blog', pageId: 'blog-article' }]) {
     assert.equal(readJson(pageId + '/variables.json').variables.activeNav, path.split('/')[1]);
   }

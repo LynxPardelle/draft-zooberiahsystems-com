@@ -32,6 +32,7 @@
         "components": [
           "heroImage",
           "heroOverlay",
+          "heroBrandLight",
           "heroInner"
         ],
         "id": "inicio"
@@ -66,7 +67,7 @@
         "classes": "zHeroOverlay gradientShiftAnimation ank-and-1400ms ank-antf-easeMINout",
         "components": [],
         "styles": {
-          "background": "linear-gradient(90deg, rgba(8,26,25,.91) 0%, rgba(8,26,25,.77) 52%, rgba(8,26,25,.40) 100%)",
+          "background": "linear-gradient(90deg, rgba(0,0,0,.95) 0%, rgba(0,0,0,.78) 48%, rgba(1,18,24,.36) 100%)",
           "backgroundSize": "116% 100%"
         }
       }
@@ -114,7 +115,7 @@
       "config": {
         "text": "Explorar servicios",
         "href": "/servicios",
-        "classes": "zHeroPrimary ank-color-HASH102D32"
+        "classes": "zHeroPrimary ank-color-HASH000000"
       }
     },
     {
@@ -669,7 +670,7 @@
       "config": {
         "tag": "p",
         "text": "ZooBeriah Systems · Ciudad de México",
-        "classes": "ank-m-0 ank-color-HASHD9EF8F ank-fontWeight-700 ank-fontSize-0_86rem ank-letterSpacing-0_10em ank-textTransform-uppercase"
+        "classes": "ank-m-0 ank-color-HASHB3F71F ank-fontWeight-700 ank-fontSize-0_86rem ank-letterSpacing-0_10em ank-textTransform-uppercase"
       }
     },
     {
@@ -1028,7 +1029,7 @@
       "type": "container",
       "config": {
         "tag": "article",
-        "classes": "zSplit ank-paddingTop-34px ank-borderTop-1px__solid__HASH9EB5AD",
+        "classes": "zSplit ank-paddingTop-34px ank-borderTop-1px__solid__HASH1B444E",
         "components": [
           "roadmapCopy",
           "roadmapImage"
@@ -1164,6 +1165,18 @@
         "tag": "p",
         "text": "Convierte una meta en un árbol visual. Cada rama es un paso, una tarea o una alternativa. Puedes reorganizar el plan y trabajar sin conexión después de crear la cuenta.",
         "classes": "zLead"
+      }
+    },
+    {
+      "id": "heroBrandLight",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-position-absolute ank-bottom-0 ank-left-0 ank-width-100per ank-height-3px",
+        "components": [],
+        "styles": {
+          "background": "linear-gradient(90deg,#B3F71F 0%,#22E90F 22%,#08F394 45%,#00F5F2 74%,#07BDDB 100%)"
+        }
       }
     }
   ]

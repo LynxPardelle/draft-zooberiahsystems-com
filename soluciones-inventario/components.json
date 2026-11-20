@@ -133,7 +133,7 @@
         ],
         "id": "inventario",
         "styles": {
-          "background": "linear-gradient(135deg, var(--ank-secondaryBgColor), var(--ank-bgColor) 84%)"
+          "background": "radial-gradient(ellipse at 85% 0%,rgba(0,245,242,.10),transparent 58%),linear-gradient(180deg,#011218,#000000)"
         }
       }
     },
