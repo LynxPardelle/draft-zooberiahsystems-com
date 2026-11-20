@@ -7,7 +7,7 @@
       "ank-position-fixed ank-top-8px ank-left-8px ank-zIndex-1400 ank-transform-translateYSDMIN160perED ank-transformFocus-translateYSD0ED ank-display-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-44px ank-paddingInline-16px ank-paddingBlock-10px ank-borderRadius-3px ank-bg-accentColor ank-color-bgColor ank-fontWeight-600 ank-textDecoration-none ank-outlineFocus-3px__solid__titleColor ank-outlineOffsetFocus-4px"
     ],
     "zooberiahHeader": [
-      "ank-position-sticky ank-top-0 ank-zIndex-1200 ank-width-100per ank-display-flex ank-flexDirection-column ank-alignItems-center ank-boxSizing-borderMINbox ank-paddingInline-24px ank-paddingInline-md-40px ank-paddingBlock-12px ank-bg-bgColorOPA__0_96 ank-borderBottom-1px__solid__HASH84948F ank-backdropFilter-blurSD8pxED"
+      "ank-position-sticky ank-top-0 ank-zIndex-1200 ank-width-100per ank-display-flex ank-flexDirection-column ank-alignItems-center ank-boxSizing-borderMINbox ank-paddingInline-24px ank-paddingInline-md-40px ank-paddingBlock-8px ank-bg-black ank-borderBottom-1px__solid__HASH15373E ank-backdropFilter-blurSD8pxED"
     ],
     "zooberiahWrap": [
       "ank-width-100per ank-maxWidth-1200px ank-marginInline-auto ank-boxSizing-borderMINbox"
@@ -16,7 +16,7 @@
       "ank-minHeight-56px ank-display-flex ank-alignItems-center ank-justifyContent-spaceMINbetween ank-gap-16px"
     ],
     "zooberiahBrand": [
-      "ank-display-flex ank-alignItems-center ank-flexDirection-rowMINreverse ank-gap-10px ank-flexShrink-0 ank-minHeight-44px ank-color-titleColor ank-colorHover-linkColor ank-fontSize-1_07rem ank-fontSize-md-1_2rem ank-fontWeight-800 ank-letterSpacing-MIN0_035em ank-textDecoration-none ank-outlineFocus-none ank-textDecorationFocus-underline ank-textUnderlineOffset-6px"
+      "ank-display-inlineMINflex ank-alignItems-center ank-flexShrink-0 ank-textDecoration-none ank-outlineFocus-2px__solid__accentColor ank-outlineOffsetFocus-4px ank-opacityHover-0_85 ank-transition-opacity__180ms__ease"
     ],
     "zooberiahDesktopCluster": [
       "ank-display-none ank-display-xl-flex ank-alignItems-center ank-gap-20px ank-marginLeft-auto"
@@ -61,7 +61,7 @@
       "ank-m-0 ank-color-linkColor ank-fontSize-0_8rem ank-fontWeight-600 ank-letterSpacing-0_08em ank-textTransform-uppercase ank-lineHeight-1_4"
     ],
     "zooberiahPageTitle": [
-      "ank-m-0 ank-color-titleColor ank-fontSize-2_4rem ank-fontSize-md-4rem ank-fontWeight-600 ank-lineHeight-1_05 ank-letterSpacing-MIN0_03em ank-overflowWrap-anywhere"
+      "ank-m-0 ank-color-titleColor ank-fontSize-2_4rem ank-fontSize-md-4rem ank-fontWeight-600 ank-lineHeight-1_05 ank-letterSpacing-MIN0_03em ank-overflowWrap-anywhere ank-fontFamily-RajdhaniCOMArialCOMsansMINserif"
     ],
     "zooberiahBody": [
       "ank-m-0 ank-maxWidth-68ch ank-color-secondaryTextColor ank-fontSize-1_125rem ank-lineHeight-1_6 ank-overflowWrap-anywhere"
@@ -70,13 +70,13 @@
       "ank-m-0 ank-color-inherit ank-fontSize-0_95rem ank-fontWeight-500 ank-lineHeight-1_5"
     ],
     "zooberiahFooter": [
-      "ank-width-100per ank-display-flex ank-justifyContent-center ank-boxSizing-borderMINbox ank-paddingInline-24px ank-paddingInline-md-40px ank-paddingBlock-55px ank-bg-HASH102D32 ank-color-white ank-borderTop-4px__solid__HASHD9EF8F"
+      "ank-width-100per ank-display-flex ank-justifyContent-center ank-boxSizing-borderMINbox ank-paddingInline-24px ank-paddingInline-md-40px ank-paddingBlock-55px ank-bg-HASH000000 ank-color-white ank-borderTop-4px__solid__HASHB3F71F"
     ],
     "zooberiahFooterInner": [
       "ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD3COMminmaxSD0COM1frEDED ank-gap-32px ank-alignItems-start"
     ],
     "zooberiahFooterBrand": [
-      "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-color-white ank-fontSize-1_1rem ank-fontWeight-600 ank-textDecoration-none ank-textDecorationHover-underline ank-outlineFocus-3px__solid__HASHD9EF8F ank-outlineOffsetFocus-4px"
+      "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-color-white ank-fontSize-1_1rem ank-fontWeight-600 ank-textDecoration-none ank-textDecorationHover-underline ank-outlineFocus-3px__solid__HASHB3F71F ank-outlineOffsetFocus-4px"
     ],
     "zooberiahFooterText": [
       "ank-m-0 ank-color-white ank-fontSize-0_9rem ank-lineHeight-1_6"
@@ -85,13 +85,13 @@
       "ank-display-flex ank-flexDirection-column ank-alignItems-start ank-gap-4px"
     ],
     "zooberiahFooterLink": [
-      "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-color-white ank-fontSize-0_9rem ank-fontWeight-500 ank-textDecoration-none ank-textDecorationHover-underline ank-outlineFocus-3px__solid__HASHD9EF8F ank-outlineOffsetFocus-4px"
+      "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-color-white ank-fontSize-0_9rem ank-fontWeight-500 ank-textDecoration-none ank-textDecorationHover-underline ank-outlineFocus-3px__solid__HASHB3F71F ank-outlineOffsetFocus-4px"
     ],
     "zooberiahFooterAction": [
       "ank-display-flex ank-flexDirection-column ank-alignItems-start ank-gap-12px"
     ],
     "zooberiahFooterActionLink": [
-      "ank-display-inlineMINflex ank-alignItems-center ank-justifyContent-center ank-minHeight-44px ank-paddingInline-18px ank-paddingBlock-12px ank-border-1px__solid__HASHD9EF8F ank-borderRadius-3px ank-bg-HASHD9EF8F ank-bgHover-white ank-color-titleColor ank-fontWeight-600 ank-textAlign-center ank-textDecoration-none ank-outlineFocus-3px__solid__HASHD9EF8F ank-outlineOffsetFocus-4px ank-gap-9px ank-transition-backgroundMINcolor__180ms__ease"
+      "ank-display-inlineMINflex ank-alignItems-center ank-justifyContent-center ank-minHeight-44px ank-paddingInline-18px ank-paddingBlock-12px ank-border-1px__solid__HASHB3F71F ank-borderRadius-3px ank-bg-HASHB3F71F ank-bgHover-white ank-color-bgColor ank-fontWeight-600 ank-textAlign-center ank-textDecoration-none ank-outlineFocus-3px__solid__HASHB3F71F ank-outlineOffsetFocus-4px ank-gap-9px ank-transition-backgroundMINcolor__180ms__ease"
     ],
     "zMain": [
       "ank-width-100per ank-minHeight-60vh ank-bg-bgColor ank-color-textColor ank-outline-none ank-outlineFocus-none"
@@ -100,22 +100,22 @@
       "ank-width-100per ank-maxWidth-1220px ank-marginInline-auto ank-boxSizing-borderMINbox"
     ],
     "zPageHero": [
-      "ank-paddingInline-24px ank-paddingInline-md-40px ank-paddingBlock-62px ank-paddingBlock-lg-96px ank-borderBottom-1px__solid__HASHC8DAD0 ank-bg-secondaryBgColor"
+      "ank-paddingInline-24px ank-paddingInline-md-40px ank-paddingBlock-62px ank-paddingBlock-lg-96px ank-borderBottom-1px__solid__HASH14323A ank-bg-secondaryBgColor"
     ],
     "zEyebrow": [
       "ank-m-0 ank-color-linkColor ank-fontSize-0_79rem ank-lineHeight-1_5 ank-fontWeight-700 ank-textTransform-uppercase ank-letterSpacing-0_12em"
     ],
     "zPageTitle": [
-      "ank-m-0 ank-color-titleColor ank-fontSize-2_55rem ank-fontSize-md-3_35rem ank-fontSize-lg-4_15rem ank-lineHeight-1_02 ank-letterSpacing-MIN0_045em ank-fontWeight-800 ank-overflowWrap-anywhere"
+      "ank-m-0 ank-color-titleColor ank-fontSize-2_55rem ank-fontSize-md-3_35rem ank-fontSize-lg-4_15rem ank-lineHeight-1_02 ank-letterSpacing-MIN0_015em ank-fontWeight-700 ank-overflowWrap-anywhere ank-fontFamily-RajdhaniCOMArialCOMsansMINserif"
     ],
     "zLead": [
       "ank-m-0 ank-color-secondaryTextColor ank-fontSize-1_07rem ank-fontSize-md-1_21rem ank-lineHeight-1_65 ank-maxWidth-62ch"
     ],
     "zSection": [
-      "ank-paddingInline-24px ank-paddingInline-md-40px ank-paddingBlock-58px ank-paddingBlock-lg-88px ank-scrollMarginTop-85px"
+      "ank-paddingInline-24px ank-paddingInline-md-40px ank-paddingBlock-58px ank-paddingBlock-lg-88px ank-scrollMarginTop-144px"
     ],
     "zSectionTitle": [
-      "ank-m-0 ank-color-titleColor ank-fontSize-1_9rem ank-fontSize-md-2_6rem ank-fontSize-lg-3rem ank-letterSpacing-MIN0_04em ank-fontWeight-800 ank-lineHeight-1_09"
+      "ank-m-0 ank-color-titleColor ank-fontSize-1_9rem ank-fontSize-md-2_6rem ank-fontSize-lg-3rem ank-letterSpacing-MIN0_015em ank-fontWeight-700 ank-lineHeight-1_09 ank-fontFamily-RajdhaniCOMArialCOMsansMINserif"
     ],
     "zSplit": [
       "ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-lg-minmaxSD0COM1frED__minmaxSD0COM1frED ank-alignItems-center ank-gap-30px ank-gap-lg-64px"
@@ -127,7 +127,7 @@
       "ank-margin-0 ank-padding-0 ank-display-grid ank-width-100per ank-listStyle-none"
     ],
     "zRow": [
-      "ank-display-grid ank-alignItems-start ank-gap-12px ank-paddingBlock-22px ank-borderTop-1px__solid__HASH9EB5AD"
+      "ank-display-grid ank-alignItems-start ank-gap-12px ank-paddingBlock-22px ank-borderTop-1px__solid__HASH1B444E"
     ],
     "zTextLink": [
       "ank-display-inlineMINflex ank-alignItems-center ank-gap-9px ank-minHeight-44px ank-fontWeight-700 ank-textDecoration-underline ank-textUnderlineOffset-5px ank-color-linkColor ank-colorHover-titleColor ank-outlineFocus-3px__solid__accentColor ank-outlineOffsetFocus-4px ank-transition-color__180ms__ease"
@@ -139,7 +139,7 @@
       "ank-display-inlineMINflex ank-alignItems-center ank-justifyContent-center ank-gap-10px ank-boxSizing-borderMINbox ank-minHeight-48px ank-paddingBlock-12px ank-paddingInline-20px ank-borderRadius-3px ank-fontWeight-700 ank-textAlign-center ank-textDecoration-none ank-overflowWrap-anywhere ank-transition-backgroundMINcolor__180ms__ease ank-outlineFocus-3px__solid__accentColor ank-outlineOffsetFocus-4px ank-bg-transparent ank-color-titleColor ank-bgHover-secondaryBgColor ank-border-1px__solid__accentColor"
     ],
     "zMedia": [
-      "ank-display-block ank-width-100per ank-maxWidth-100per ank-height-auto ank-objectFit-cover ank-borderRadius-3px ank-boxShadow-0__14px__32px__rgbaSD16COM45COM50COM0_15ED"
+      "ank-display-block ank-width-100per ank-maxWidth-100per ank-height-auto ank-objectFit-cover ank-borderRadius-3px ank-boxShadow-0__14px__42px__rgbaSD0COM245COM242COM0_08ED"
     ],
     "zActions": [
       "ank-display-flex ank-flexWrap-wrap ank-gap-12px ank-alignItems-center"
@@ -148,10 +148,10 @@
       "ank-display-inlineMINflex ank-alignItems-center ank-justifyContent-center ank-width-34px ank-height-34px ank-fontSize-27px ank-color-linkColor"
     ],
     "zBrandMark": [
-      "ank-display-block ank-width-35px ank-height-35px ank-flexShrink-0"
+      "ank-display-block ank-width-150px ank-width-md-168px ank-height-auto ank-flexShrink-0"
     ],
     "zHeroSurface": [
-      "ank-paddingInline-24px ank-paddingInline-md-40px ank-position-relative ank-isolation-isolate ank-display-flex ank-alignItems-center ank-overflow-hidden ank-minHeight-540px ank-minHeight-lg-590px ank-paddingBlock-54px ank-paddingBlock-lg-72px ank-color-white ank-bg-HASH102D32"
+      "ank-paddingInline-24px ank-paddingInline-md-40px ank-position-relative ank-isolation-isolate ank-display-flex ank-alignItems-center ank-overflow-hidden ank-minHeight-540px ank-minHeight-lg-590px ank-paddingBlock-54px ank-paddingBlock-lg-72px ank-color-white ank-bg-HASH000000"
     ],
     "zHeroMedia": [
       "ank-position-absolute ank-inset-0 ank-width-100per ank-height-100per ank-objectFit-cover ank-zIndex-MIN2"
@@ -160,13 +160,13 @@
       "ank-position-absolute ank-inset-0 ank-zIndex-MIN1"
     ],
     "zHeroTitle": [
-      "ank-m-0 ank-color-white ank-fontSize-2_7rem ank-fontSize-md-3_8rem ank-fontSize-lg-4_8rem ank-fontWeight-800 ank-letterSpacing-MIN0_05em ank-lineHeight-1_01 ank-maxWidth-16ch"
+      "ank-m-0 ank-color-white ank-fontSize-2_7rem ank-fontSize-md-3_8rem ank-fontSize-lg-4_8rem ank-fontWeight-700 ank-letterSpacing-MIN0_015em ank-lineHeight-1_01 ank-maxWidth-16ch ank-fontFamily-RajdhaniCOMArialCOMsansMINserif"
     ],
     "zHeroPrimary": [
-      "ank-display-inlineMINflex ank-alignItems-center ank-justifyContent-center ank-gap-10px ank-boxSizing-borderMINbox ank-minHeight-48px ank-paddingBlock-12px ank-paddingInline-20px ank-borderRadius-3px ank-fontWeight-700 ank-textAlign-center ank-textDecoration-none ank-overflowWrap-anywhere ank-transition-backgroundMINcolor__180ms__ease ank-outlineFocus-3px__solid__accentColor ank-outlineOffsetFocus-4px ank-bg-HASHD9EF8F ank-bgHover-white ank-border-1px__solid__HASHD9EF8F ank-outlineFocus-3px__solid__HASHD9EF8F"
+      "ank-display-inlineMINflex ank-alignItems-center ank-justifyContent-center ank-gap-10px ank-boxSizing-borderMINbox ank-minHeight-48px ank-paddingBlock-12px ank-paddingInline-20px ank-borderRadius-3px ank-fontWeight-700 ank-textAlign-center ank-textDecoration-none ank-overflowWrap-anywhere ank-transition-backgroundMINcolor__180ms__ease ank-outlineFocus-3px__solid__accentColor ank-outlineOffsetFocus-4px ank-bg-HASHB3F71F ank-bgHover-white ank-border-1px__solid__HASHB3F71F ank-outlineFocus-3px__solid__HASHB3F71F"
     ],
     "zHeroSecondary": [
-      "ank-display-inlineMINflex ank-alignItems-center ank-justifyContent-center ank-gap-10px ank-boxSizing-borderMINbox ank-minHeight-48px ank-paddingBlock-12px ank-paddingInline-20px ank-borderRadius-3px ank-fontWeight-700 ank-textAlign-center ank-textDecoration-none ank-overflowWrap-anywhere ank-transition-backgroundMINcolor__180ms__ease ank-outlineFocus-3px__solid__accentColor ank-outlineOffsetFocus-4px ank-color-white ank-bg-HASH102D32OPA__0_65 ank-bgHover-HASH102D32 ank-border-1px__solid__white ank-outlineFocus-3px__solid__HASHD9EF8F"
+      "ank-display-inlineMINflex ank-alignItems-center ank-justifyContent-center ank-gap-10px ank-boxSizing-borderMINbox ank-minHeight-48px ank-paddingBlock-12px ank-paddingInline-20px ank-borderRadius-3px ank-fontWeight-700 ank-textAlign-center ank-textDecoration-none ank-overflowWrap-anywhere ank-transition-backgroundMINcolor__180ms__ease ank-outlineFocus-3px__solid__accentColor ank-outlineOffsetFocus-4px ank-color-white ank-bg-HASH000000OPA__0_65 ank-bgHover-HASH000000 ank-border-1px__solid__white ank-outlineFocus-3px__solid__HASHB3F71F"
     ],
     "zHomeServices": [
       "ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD3COMminmaxSD0COM1frEDED ank-gap-22px ank-gap-lg-38px ank-marginTop-26px"
@@ -175,7 +175,10 @@
       "ank-display-grid ank-gap-12px ank-alignContent-start ank-borderTop-2px__solid__accentColor ank-paddingBlock-22px ank-transition-backgroundMINcolor__180ms__ease ank-bgHover-secondaryBgColor"
     ],
     "zBand": [
-      "ank-bg-secondaryBgColor ank-borderTop-1px__solid__HASHC8DAD0 ank-borderBottom-1px__solid__HASHC8DAD0"
+      "ank-bg-secondaryBgColor ank-borderTop-1px__solid__HASH14323A ank-borderBottom-1px__solid__HASH14323A"
+    ],
+    "zFooterBrandMark": [
+      "ank-display-block ank-width-220px ank-maxWidth-100per ank-height-auto"
     ]
   }
 }

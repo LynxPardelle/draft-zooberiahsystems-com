@@ -156,7 +156,10 @@
         "components": [
           "projectsHeroShell"
         ],
-        "id": "proyectos-inicio"
+        "id": "proyectos-inicio",
+        "styles": {
+          "background": "radial-gradient(ellipse at 85% 0%,rgba(0,245,242,.10),transparent 58%),linear-gradient(180deg,#011218,#000000)"
+        }
       }
     },
     {
@@ -605,7 +608,7 @@
       "type": "container",
       "config": {
         "tag": "article",
-        "classes": "zSplit ank-scrollMarginTop-96px ank-paddingTop-34px ank-borderTop-1px__solid__HASH9EB5AD",
+        "classes": "zSplit ank-scrollMarginTop-96px ank-paddingTop-34px ank-borderTop-1px__solid__HASH1B444E",
         "components": [
           "projectsRoadmapCopy",
           "projectsRoadmapImage"

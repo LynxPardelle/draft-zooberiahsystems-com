@@ -44,11 +44,11 @@
     {
       "id": "brandLink",
       "type": "link",
-      "valueInstructions": "set:config.text,var,brand.displayName;set:config.ariaLabel,i18n,ui.accessibility.homeAriaLabel",
+      "valueInstructions": "set:config.ariaLabel,i18n,ui.accessibility.homeAriaLabel",
       "config": {
         "id": "site-brand",
         "href": "/",
-        "text": "ZooBeriah Systems",
+        "text": "",
         "ariaLabel": "",
         "scrollRestoration": {
           "mode": "top",
@@ -159,7 +159,7 @@
       "config": {
         "tag": "footer",
         "id": "site-footer",
-        "classes": "zooberiahFooter ank-color-HASHF6F4EE",
+        "classes": "zooberiahFooter ank-color-white",
         "components": [
           "footerInner"
         ]
@@ -194,16 +194,19 @@
     {
       "id": "footerBrandLink",
       "type": "link",
-      "valueInstructions": "set:config.text,var,brand.displayName;set:config.ariaLabel,i18n,ui.accessibility.homeAriaLabel",
+      "valueInstructions": "set:config.ariaLabel,i18n,ui.accessibility.homeAriaLabel",
       "config": {
         "href": "/",
-        "text": "ZooBeriah Systems",
+        "text": "",
         "ariaLabel": "",
         "scrollRestoration": {
           "mode": "top",
           "behavior": "auto"
         },
-        "classes": "zooberiahFooterBrand"
+        "classes": "zooberiahFooterBrand",
+        "components": [
+          "footerBrandMark"
+        ]
       }
     },
     {
@@ -269,7 +272,7 @@
         "ariaLabel": "",
         "target": "_blank",
         "rel": "noopener noreferrer",
-        "classes": "zooberiahFooterActionLink ank-color-HASH102D32",
+        "classes": "zooberiahFooterActionLink ank-color-HASH000000",
         "components": [
           "footerWhatsappIcon"
         ]
@@ -300,12 +303,14 @@
       "type": "media",
       "config": {
         "tag": "image",
-        "src": "/assets/brand/zoolandingpage-default-favicon.svg",
-        "alt": "",
-        "width": 35,
-        "height": 35,
+        "src": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/logos/identity-20261120-logo.webp",
+        "alt": "ZooBeriah Systems",
+        "width": 400,
+        "height": 267,
         "decoding": "async",
-        "classes": "zBrandMark"
+        "classes": "zBrandMark",
+        "loading": "eager",
+        "fetchPriority": "high"
       },
       "valueInstructions": "set:config.src,var,assets.logoPrincipalUrl"
     },
@@ -465,6 +470,21 @@
         "href": "/soluciones-para-negocios",
         "classes": "zooberiahFooterLink",
         "text": "Soluciones"
+      }
+    },
+    {
+      "id": "footerBrandMark",
+      "type": "media",
+      "valueInstructions": "set:config.src,var,assets.logoPrincipalUrl",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/logos/identity-20261120-logo.webp",
+        "alt": "ZooBeriah Systems",
+        "width": 400,
+        "height": 267,
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "zFooterBrandMark"
       }
     }
   ]

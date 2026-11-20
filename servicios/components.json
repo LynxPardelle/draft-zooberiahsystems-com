@@ -446,7 +446,8 @@
         ],
         "ariaLabelledby": "services-title",
         "styles": {
-          "backgroundImage": "linear-gradient(135deg, var(--ank-secondaryBgColor), var(--ank-bgColor))"
+          "backgroundImage": "linear-gradient(135deg, var(--ank-secondaryBgColor), var(--ank-bgColor))",
+          "background": "radial-gradient(ellipse at 85% 0%,rgba(0,245,242,.10),transparent 58%),linear-gradient(180deg,#011218,#000000)"
         }
       }
     },
