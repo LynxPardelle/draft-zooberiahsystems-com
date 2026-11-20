@@ -14,7 +14,9 @@
           "url": "https://roadmap2u.com/",
           "imageSrc": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/roadmap2u-demostracion.webp",
           "imageAlt": "Interfaz de RoadMap2U para organizar una ruta de aprendizaje.",
-          "linkLabel": "Conocer RoadMap2U"
+          "linkLabel": "Conocer RoadMap2U",
+          "imageLoading": "eager",
+          "imageFetchPriority": "high"
         },
         {
           "id": "despensa-lista",
