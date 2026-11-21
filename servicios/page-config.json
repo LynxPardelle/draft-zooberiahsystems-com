@@ -88,6 +88,44 @@
           "name": "ZooBeriah Systems",
           "url": "https://zooberiahsystems.com/"
         }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "@id": "https://zooberiahsystems.com/servicios#soluciones",
+        "name": "Soluciones digitales para tu negocio",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ZooLandingPage",
+            "url": "https://zooberiahsystems.com/servicios/zoolandingpage"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "ZooSitioWeb",
+            "url": "https://zooberiahsystems.com/servicios/zoositioweb"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "ZooBlog",
+            "url": "https://zooberiahsystems.com/servicios/zooblog"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Tiendas en línea a medida",
+            "url": "https://zooberiahsystems.com/tiendas-en-linea"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Software a medida para negocios",
+            "url": "https://zooberiahsystems.com/soluciones-para-negocios"
+          }
+        ]
       }
     ]
   },

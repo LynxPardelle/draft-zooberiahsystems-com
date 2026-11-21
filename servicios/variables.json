@@ -3,6 +3,7 @@
   "domain": "zooberiahsystems.com",
   "pageId": "servicios",
   "variables": {
-    "activeNav": "servicios"
+    "activeNav": "servicios",
+    "activePageNav": "servicios"
   }
 }

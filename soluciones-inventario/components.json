@@ -471,7 +471,8 @@
         "classes": "zActions",
         "components": [
           "offerEndContact",
-          "offerRelated1"
+          "offerRelated1",
+          "relatedArticleGuide"
         ]
       }
     },
@@ -514,6 +515,15 @@
         ],
         "id": "main-content",
         "tabindex": -1
+      }
+    },
+    {
+      "id": "relatedArticleGuide",
+      "type": "link",
+      "config": {
+        "text": "Guía: control de inventario por sucursal",
+        "href": "/blog/web/control-inventario-por-sucursal",
+        "classes": "zTextLink ank-color-linkColor"
       }
     }
   ]

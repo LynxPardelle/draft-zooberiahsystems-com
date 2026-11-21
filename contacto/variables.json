@@ -3,6 +3,7 @@
   "domain": "zooberiahsystems.com",
   "pageId": "contacto",
   "variables": {
-    "activeNav": "contacto"
+    "activeNav": "contacto",
+    "activePageNav": "contacto"
   }
 }

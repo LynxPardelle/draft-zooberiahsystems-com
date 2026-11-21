@@ -32,7 +32,8 @@ Read only the task-specific route in `AGENTS.md`; do not duplicate shared hub pr
 ## Scope And Preview
 
 - Routes: `/`, `/servicios`, `/sitios-web`, `/tiendas-en-linea`, `/soluciones-para-negocios`, `/proyectos`, `/productos`, `/contacto`, `/blog`, `/blog/web`, `/blog/:categorySlug/:articleSlug`, and `/404`; `/landingpages` permanently redirects to `/sitios-web`.
-- Primary navigation: Servicios, Sitios web, Productos. Blog and Contacto remain available from the footer and contextual links. Existing service pages remain linked from Services, the home page, and the footer.
+- Primary navigation: Servicios, Sitios web, Tiendas en línea, Software a medida, Productos, Proyectos, Blog, and Contacto. The website menu links to ZooLandingPage, ZooSitioWeb, ZooBlog, and the published-site catalogue; the software menu links to its overview, restaurants, inventory, and request tracking. Mobile navigation and the footer expose the same 14 destinations.
+- Dedicated web services: `/servicios/zoolandingpage`, `/servicios/zoositioweb`, and `/servicios/zooblog`, with scope, process, questions, contextual guides, and WhatsApp contact.
 - Custom operations consultations: `/soluciones-para-negocios/restaurantes`, `/soluciones-para-negocios/inventario`, and `/soluciones-para-negocios/seguimiento-de-solicitudes`
 - Language: Spanish (`es`)
 - Environments: protected `test` and `production` promotion

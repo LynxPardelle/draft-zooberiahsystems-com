@@ -2,5 +2,7 @@
   "version": 1,
   "domain": "zooberiahsystems.com",
   "pageId": "not-found",
-  "variables": {}
+  "variables": {
+    "activePageNav": ""
+  }
 }

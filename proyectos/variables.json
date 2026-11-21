@@ -3,6 +3,7 @@
   "domain": "zooberiahsystems.com",
   "pageId": "proyectos",
   "variables": {
-    "activeNav": "proyectos"
+    "activeNav": "proyectos",
+    "activePageNav": "proyectos"
   }
 }

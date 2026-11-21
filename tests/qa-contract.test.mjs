@@ -8,6 +8,9 @@ const DISPLAY_PHONE = '+52 55 2269 9563';
 const ROUTES = [
   { path: '/', pageId: 'default' },
   { path: '/servicios', pageId: 'servicios' },
+  { path: '/servicios/zoolandingpage', pageId: 'servicios-zoolandingpage' },
+  { path: '/servicios/zoositioweb', pageId: 'servicios-zoositioweb' },
+  { path: '/servicios/zooblog', pageId: 'servicios-zooblog' },
   { path: '/sitios-web', pageId: 'sitios-web' },
   { path: '/tiendas-en-linea', pageId: 'tiendas-en-linea' },
   { path: '/soluciones-para-negocios', pageId: 'soluciones-para-negocios' },
@@ -425,11 +428,23 @@ test('QA-010 keeps every configured foreground pair WCAG-safe', () => {
 test('QA-011 shares available routes across desktop, mobile, footer and first-party links', () => {
   const components = readJson('components.json').components;
   const configById = (id) => components.find((component) => component.id === id).config;
-  const expected = ['/servicios', '/sitios-web', '/productos'];
-  assert.deepEqual(configById('headerNav').components.map((id) => configById(id).href), expected);
-  assert.deepEqual(readJson('variables.json').variables.navigation.map(({ href }) => href), expected);
+  const variables = readJson('variables.json').variables;
+  const expected = ['/servicios', '/servicios/zoolandingpage', '/servicios/zoositioweb', '/servicios/zooblog', '/sitios-web', '/tiendas-en-linea', '/soluciones-para-negocios', '/soluciones-para-negocios/restaurantes', '/soluciones-para-negocios/inventario', '/soluciones-para-negocios/seguimiento-de-solicitudes', '/productos', '/proyectos', '/blog', '/contacto'];
+  const destinations = (ids) => ids.flatMap((id) => {
+    const component = components.find((candidate) => candidate.id === id);
+    assert.ok(component, `Missing navigation component ${id}`);
+    if (component.type === 'link') return [component.config.href];
+    if (component.type === 'dropdown') {
+      const variable = component.valueInstructions.match(/set:config\.items,var,([a-zA-Z]+)/)?.[1];
+      assert.ok(Array.isArray(variables[variable]), `Dropdown ${id} has no navigation data`);
+      return variables[variable].map(({ href }) => href);
+    }
+    return destinations(component.config.components ?? []);
+  });
+  assert.deepEqual(destinations(configById('headerNav').components).sort(), [...expected].sort());
+  assert.deepEqual(variables.navigation.map(({ href }) => href).sort(), [...expected].sort());
   assert.match(components.find(({ id }) => id === 'headerMobileNav').valueInstructions, /set:config\.items,var,navigation(?:;|$)/, 'The mobile menu must use the same selected navigation');
-  const footerDestinations = configById('footerNav').components.map((id) => configById(id).href);
+  const footerDestinations = destinations(configById('footerNav').components);
   for (const path of expected) assert.ok(footerDestinations.includes(path), `The footer must retain ${path}`);
   for (const path of ['/blog', '/contacto']) assert.ok(footerDestinations.includes(path), `Secondary navigation must retain ${path}`);
   assert.equal(new Set(footerDestinations).size, footerDestinations.length, 'The footer must not repeat destinations');
@@ -439,15 +454,16 @@ test('QA-011 shares available routes across desktop, mobile, footer and first-pa
   assert.ok(brandAsset.pathname.startsWith('/zooberiahsystems.com/shared/logos/'));
   assert.equal(readJson('site-config.json').site.icons.favicon, readJson('variables.json').variables.assets.faviconUrl);
   for (const { path, pageId } of [...MARKETING_ROUTES, { path: '/blog', pageId: 'blog' }, { path: '/blog', pageId: 'blog-article' }]) {
-    assert.equal(readJson(pageId + '/variables.json').variables.activeNav, path.split('/')[1]);
+    assert.equal(readJson(pageId + '/variables.json').variables.activeNav, pageId.startsWith('servicios-') ? 'sitios-web' : path.split('/')[1]);
   }
 
   const routes = new Map(ROUTES.map(({ path, pageId }) => [path, pageId]));
   for (const component of allComponents().filter(({ type, config }) => type === 'link' && config?.href.startsWith('/'))) {
     const [path, fragment] = component.config.href.split('#');
-    assert.ok(routes.has(path), component.id + ' has an unknown route');
+    const articlePath = /^\/blog\/[a-z0-9-]+\/[a-z0-9-]+$/.test(path);
+    assert.ok(routes.has(path) || articlePath, component.id + ' has an unknown route');
     if (fragment) {
-      const targetComponents = readJson(routes.get(path) + '/components.json').components;
+      const targetComponents = readJson((routes.get(path) ?? 'blog-article') + '/components.json').components;
       assert.ok(targetComponents.some(({ config }) => config.id === fragment), component.id + ' has an unknown fragment');
     }
   }
