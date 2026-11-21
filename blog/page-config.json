@@ -11,6 +11,12 @@
   "seo": {
     "title": "Blog de ZooBeriah Systems",
     "description": "Guías y comparativas sobre sitios web, campañas, datos y aplicaciones para negocios.",
-    "canonical": "https://zooberiahsystems.com/blog"
+    "canonical": "https://zooberiahsystems.com/blog",
+    "paginationCanonical": {
+      "pageParam": "pagina",
+      "pageSizeParam": "porPagina",
+      "defaultPageSize": 6,
+      "collectionPath": "contentHub.publicArticles.items"
+    }
   }
 }
