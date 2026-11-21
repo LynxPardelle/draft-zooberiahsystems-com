@@ -13,6 +13,7 @@
         "components": [
           "sharedBlogTitle",
           "sharedBlogIntro",
+          "blogArchiveLink",
           "sharedBlogFilters",
           "sharedBlogResults"
         ],
@@ -426,6 +427,15 @@
         "linkClasses": "ank-minWidth-44px ank-minHeight-44px ank-display-inlineMINflex ank-alignItems-center ank-justifyContent-center ank-px-12px ank-borderRadius-3px ank-color-titleColor ank-bgHover-secondaryBgColor ank-textDecoration-none ank-fontWeight-700",
         "activeLinkClasses": "ank-bg-secondaryBgColor ank-color-titleColor",
         "summaryClasses": "ank-color-secondaryTextColor ank-fontSize-14px"
+      }
+    },
+    {
+      "id": "blogArchiveLink",
+      "type": "link",
+      "config": {
+        "text": "Explorar artículos sobre sitios web y tecnología",
+        "href": "/blog/web",
+        "classes": "zTextLink ank-color-linkColor"
       }
     }
   ]

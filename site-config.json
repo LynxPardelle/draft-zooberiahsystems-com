@@ -17,6 +17,21 @@
       "label": "Servicios"
     },
     {
+      "path": "/servicios/zoolandingpage",
+      "pageId": "servicios-zoolandingpage",
+      "label": "ZooLandingPage"
+    },
+    {
+      "path": "/servicios/zoositioweb",
+      "pageId": "servicios-zoositioweb",
+      "label": "ZooSitioWeb"
+    },
+    {
+      "path": "/servicios/zooblog",
+      "pageId": "servicios-zooblog",
+      "label": "ZooBlog"
+    },
+    {
       "path": "/sitios-web",
       "pageId": "sitios-web",
       "label": "Sitios web"

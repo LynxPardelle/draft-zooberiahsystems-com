@@ -609,7 +609,8 @@
         "components": [
           "storeStartTitle",
           "storeStartBody",
-          "storeStartActions"
+          "storeStartActions",
+          "storeGuide"
         ]
       }
     },
@@ -623,6 +624,15 @@
           "storeStartShell"
         ],
         "id": "consultar-por-whatsapp"
+      }
+    },
+    {
+      "id": "storeGuide",
+      "type": "link",
+      "config": {
+        "text": "Guía: qué definir para una tienda en línea a medida",
+        "href": "/blog/web/que-definir-para-tienda-en-linea-a-medida",
+        "classes": "zTextLink ank-color-linkColor"
       }
     }
   ]

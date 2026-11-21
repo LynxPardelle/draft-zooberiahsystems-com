@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "servicios-zooblog",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "offerMain",
+    "siteFooter"
+  ],
+  "seo": {
+    "title": "ZooBlog: blog empresarial con artículos y portadas | ZooBeriah Systems",
+    "description": "Organiza el contenido de tu negocio con ZooBlog: artículos, portadas, categorías, búsqueda y enlaces a tus servicios. Consulta el proyecto con ZooBeriah Systems.",
+    "canonical": "https://zooberiahsystems.com/servicios/zooblog",
+    "robots": "index,follow,max-image-preview:large",
+    "openGraph": {
+      "title": "ZooBlog: blog empresarial con artículos y portadas | ZooBeriah Systems",
+      "description": "Organiza el contenido de tu negocio con ZooBlog: artículos, portadas, categorías, búsqueda y enlaces a tus servicios. Consulta el proyecto con ZooBeriah Systems.",
+      "type": "website",
+      "locale": "es_MX",
+      "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/hero.webp",
+      "image:alt": "Dos personas trabajan con una computadora y documentos en una mesa junto a un ventanal."
+    },
+    "twitter": {
+      "title": "ZooBlog: blog empresarial con artículos y portadas | ZooBeriah Systems",
+      "description": "Organiza el contenido de tu negocio con ZooBlog: artículos, portadas, categorías, búsqueda y enlaces a tus servicios. Consulta el proyecto con ZooBeriah Systems.",
+      "card": "summary_large_image",
+      "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/hero.webp",
+      "image:alt": "Dos personas trabajan con una computadora y documentos en una mesa junto a un ventanal."
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://zooberiahsystems.com/servicios/zooblog#servicio",
+        "name": "ZooBlog para responder las dudas de tus clientes",
+        "serviceType": "Diseño e implementación de blogs empresariales y contenido editorial",
+        "description": "Organiza el contenido de tu negocio con ZooBlog: artículos, portadas, categorías, búsqueda y enlaces a tus servicios. Consulta el proyecto con ZooBeriah Systems.",
+        "url": "https://zooberiahsystems.com/servicios/zooblog",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://zooberiahsystems.com/#organization",
+          "name": "ZooBeriah Systems",
+          "url": "https://zooberiahsystems.com/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://zooberiahsystems.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Servicios",
+            "item": "https://zooberiahsystems.com/servicios"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "ZooBlog",
+            "item": "https://zooberiahsystems.com/servicios/zooblog"
+          }
+        ]
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "zooblog",
+      "caso-de-uso",
+      "alcance-del-proyecto",
+      "proceso",
+      "preguntas-frecuentes",
+      "servicios-relacionados",
+      "consultar-proyecto"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}

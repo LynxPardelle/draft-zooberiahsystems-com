@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "servicios-zoositioweb",
+  "variables": {
+    "activeNav": "sitios-web",
+    "activePageNav": "servicios-zoositioweb"
+  }
+}

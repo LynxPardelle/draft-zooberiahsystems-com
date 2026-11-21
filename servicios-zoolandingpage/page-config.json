@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "servicios-zoolandingpage",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "offerMain",
+    "siteFooter"
+  ],
+  "seo": {
+    "title": "ZooLandingPage: landing pages para campañas | ZooBeriah Systems",
+    "description": "Creamos landing pages para campañas y lanzamientos: una oferta clara, contenido enfocado y contacto por WhatsApp. Define tu proyecto con ZooBeriah Systems.",
+    "canonical": "https://zooberiahsystems.com/servicios/zoolandingpage",
+    "robots": "index,follow,max-image-preview:large",
+    "openGraph": {
+      "title": "ZooLandingPage: landing pages para campañas | ZooBeriah Systems",
+      "description": "Creamos landing pages para campañas y lanzamientos: una oferta clara, contenido enfocado y contacto por WhatsApp. Define tu proyecto con ZooBeriah Systems.",
+      "type": "website",
+      "locale": "es_MX",
+      "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/consulting.webp",
+      "image:alt": "Dos personas revisan gráficas y documentos junto a una computadora en una mesa de trabajo."
+    },
+    "twitter": {
+      "title": "ZooLandingPage: landing pages para campañas | ZooBeriah Systems",
+      "description": "Creamos landing pages para campañas y lanzamientos: una oferta clara, contenido enfocado y contacto por WhatsApp. Define tu proyecto con ZooBeriah Systems.",
+      "card": "summary_large_image",
+      "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/consulting.webp",
+      "image:alt": "Dos personas revisan gráficas y documentos junto a una computadora en una mesa de trabajo."
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://zooberiahsystems.com/servicios/zoolandingpage#servicio",
+        "name": "ZooLandingPage para tu campaña",
+        "serviceType": "Diseño y desarrollo de landing pages para campañas",
+        "description": "Creamos landing pages para campañas y lanzamientos: una oferta clara, contenido enfocado y contacto por WhatsApp. Define tu proyecto con ZooBeriah Systems.",
+        "url": "https://zooberiahsystems.com/servicios/zoolandingpage",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://zooberiahsystems.com/#organization",
+          "name": "ZooBeriah Systems",
+          "url": "https://zooberiahsystems.com/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://zooberiahsystems.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Servicios",
+            "item": "https://zooberiahsystems.com/servicios"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "ZooLandingPage",
+            "item": "https://zooberiahsystems.com/servicios/zoolandingpage"
+          }
+        ]
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "zoolandingpage",
+      "caso-de-uso",
+      "alcance-del-proyecto",
+      "proceso",
+      "preguntas-frecuentes",
+      "servicios-relacionados",
+      "consultar-proyecto"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}

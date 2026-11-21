@@ -3,6 +3,7 @@
   "domain": "zooberiahsystems.com",
   "pageId": "soluciones-seguimiento",
   "variables": {
-    "activeNav": "soluciones-para-negocios"
+    "activeNav": "soluciones-para-negocios",
+    "activePageNav": "soluciones-seguimiento"
   }
 }
