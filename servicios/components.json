@@ -593,6 +593,7 @@
         "classes": "zProse",
         "components": [
           "digitalIntro",
+          "webServiceList",
           "digitalActions"
         ]
       }
@@ -751,6 +752,139 @@
           "mode": "top",
           "behavior": "auto"
         }
+      }
+    },
+    {
+      "id": "webService0Title",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "ZooLandingPage",
+        "classes": "ank-m-0 ank-fontSize-1_3rem ank-fontWeight-700 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "webService0Description",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Una página centrada en una campaña, un lanzamiento o una solicitud de contacto.",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "webService0Link",
+      "type": "link",
+      "config": {
+        "text": "Conocer ZooLandingPage",
+        "href": "/servicios/zoolandingpage",
+        "classes": "zTextLink ank-color-linkColor"
+      }
+    },
+    {
+      "id": "webService0",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow",
+        "components": [
+          "webService0Title",
+          "webService0Description",
+          "webService0Link"
+        ]
+      }
+    },
+    {
+      "id": "webService1Title",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "ZooSitioWeb",
+        "classes": "ank-m-0 ank-fontSize-1_3rem ank-fontWeight-700 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "webService1Description",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Un sitio empresarial con páginas para tus servicios, proyectos y formas de contacto.",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "webService1Link",
+      "type": "link",
+      "config": {
+        "text": "Conocer ZooSitioWeb",
+        "href": "/servicios/zoositioweb",
+        "classes": "zTextLink ank-color-linkColor"
+      }
+    },
+    {
+      "id": "webService1",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow",
+        "components": [
+          "webService1Title",
+          "webService1Description",
+          "webService1Link"
+        ]
+      }
+    },
+    {
+      "id": "webService2Title",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "ZooBlog",
+        "classes": "ank-m-0 ank-fontSize-1_3rem ank-fontWeight-700 ank-color-titleColor"
+      }
+    },
+    {
+      "id": "webService2Description",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Un espacio editorial para publicar artículos, responder preguntas y apoyar tus campañas.",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65"
+      }
+    },
+    {
+      "id": "webService2Link",
+      "type": "link",
+      "config": {
+        "text": "Conocer ZooBlog",
+        "href": "/servicios/zooblog",
+        "classes": "zTextLink ank-color-linkColor"
+      }
+    },
+    {
+      "id": "webService2",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow",
+        "components": [
+          "webService2Title",
+          "webService2Description",
+          "webService2Link"
+        ]
+      }
+    },
+    {
+      "id": "webServiceList",
+      "type": "container",
+      "config": {
+        "tag": "ul",
+        "classes": "zList",
+        "components": [
+          "webService0",
+          "webService1",
+          "webService2"
+        ]
       }
     }
   ]

@@ -9,25 +9,102 @@
     },
     "navigation": [
       {
+        "id": "servicios",
+        "label": "Servicios y consultoría",
+        "ariaLabel": "Servicios y consultoría",
         "href": "/servicios",
-        "ariaLabel": "Servicios",
-        "label": "Servicios",
-        "value": "/servicios",
-        "id": "servicios"
+        "value": "/servicios"
       },
       {
+        "id": "servicios-zoolandingpage",
+        "label": "ZooLandingPage · páginas de campaña",
+        "ariaLabel": "ZooLandingPage · páginas de campaña",
+        "href": "/servicios/zoolandingpage",
+        "value": "/servicios/zoolandingpage"
+      },
+      {
+        "id": "servicios-zoositioweb",
+        "label": "ZooSitioWeb · sitios empresariales",
+        "ariaLabel": "ZooSitioWeb · sitios empresariales",
+        "href": "/servicios/zoositioweb",
+        "value": "/servicios/zoositioweb"
+      },
+      {
+        "id": "servicios-zooblog",
+        "label": "ZooBlog · blogs para negocios",
+        "ariaLabel": "ZooBlog · blogs para negocios",
+        "href": "/servicios/zooblog",
+        "value": "/servicios/zooblog"
+      },
+      {
+        "id": "sitios-web",
+        "label": "Ver sitios web publicados",
+        "ariaLabel": "Ver sitios web publicados",
         "href": "/sitios-web",
-        "ariaLabel": "Sitios web",
-        "label": "Sitios web",
-        "value": "/sitios-web",
-        "id": "sitios-web"
+        "value": "/sitios-web"
       },
       {
+        "id": "tiendas-en-linea",
+        "label": "Tiendas en línea · ZooTiendaOnline",
+        "ariaLabel": "Tiendas en línea · ZooTiendaOnline",
+        "href": "/tiendas-en-linea",
+        "value": "/tiendas-en-linea"
+      },
+      {
+        "id": "soluciones-para-negocios",
+        "label": "Todo el software a medida",
+        "ariaLabel": "Todo el software a medida",
+        "href": "/soluciones-para-negocios",
+        "value": "/soluciones-para-negocios"
+      },
+      {
+        "id": "soluciones-restaurantes",
+        "label": "Menús y sistemas para restaurantes",
+        "ariaLabel": "Menús y sistemas para restaurantes",
+        "href": "/soluciones-para-negocios/restaurantes",
+        "value": "/soluciones-para-negocios/restaurantes"
+      },
+      {
+        "id": "soluciones-inventario",
+        "label": "Control de inventario",
+        "ariaLabel": "Control de inventario",
+        "href": "/soluciones-para-negocios/inventario",
+        "value": "/soluciones-para-negocios/inventario"
+      },
+      {
+        "id": "soluciones-seguimiento",
+        "label": "Solicitudes y cotizaciones",
+        "ariaLabel": "Solicitudes y cotizaciones",
+        "href": "/soluciones-para-negocios/seguimiento-de-solicitudes",
+        "value": "/soluciones-para-negocios/seguimiento-de-solicitudes"
+      },
+      {
+        "id": "productos",
+        "label": "Productos: RoadMap2U, Despensa Lista y GTR Lab",
+        "ariaLabel": "Productos: RoadMap2U, Despensa Lista y GTR Lab",
         "href": "/productos",
-        "ariaLabel": "Productos",
-        "label": "Productos",
-        "value": "/productos",
-        "id": "productos"
+        "value": "/productos"
+      },
+      {
+        "id": "proyectos",
+        "label": "Proyectos",
+        "ariaLabel": "Proyectos",
+        "href": "/proyectos",
+        "value": "/proyectos"
+      },
+      {
+        "id": "blog",
+        "label": "Blog",
+        "ariaLabel": "Blog",
+        "href": "/blog",
+        "value": "/blog"
+      },
+      {
+        "id": "contacto",
+        "label": "Contacto",
+        "ariaLabel": "Contacto",
+        "href": "/contacto",
+        "value": "/contacto"
       }
     ],
     "assets": {
@@ -43,6 +120,67 @@
         "whatsappMessageKey": "ui.contact.whatsappMessage"
       }
     },
-    "activeNav": ""
+    "activeNav": "",
+    "webNavigation": [
+      {
+        "id": "servicios-zoolandingpage",
+        "label": "ZooLandingPage · páginas de campaña",
+        "ariaLabel": "ZooLandingPage · páginas de campaña",
+        "href": "/servicios/zoolandingpage",
+        "value": "/servicios/zoolandingpage"
+      },
+      {
+        "id": "servicios-zoositioweb",
+        "label": "ZooSitioWeb · sitios empresariales",
+        "ariaLabel": "ZooSitioWeb · sitios empresariales",
+        "href": "/servicios/zoositioweb",
+        "value": "/servicios/zoositioweb"
+      },
+      {
+        "id": "servicios-zooblog",
+        "label": "ZooBlog · blogs para negocios",
+        "ariaLabel": "ZooBlog · blogs para negocios",
+        "href": "/servicios/zooblog",
+        "value": "/servicios/zooblog"
+      },
+      {
+        "id": "sitios-web",
+        "label": "Ver sitios web publicados",
+        "ariaLabel": "Ver sitios web publicados",
+        "href": "/sitios-web",
+        "value": "/sitios-web"
+      }
+    ],
+    "businessNavigation": [
+      {
+        "id": "soluciones-para-negocios",
+        "label": "Todo el software a medida",
+        "ariaLabel": "Todo el software a medida",
+        "href": "/soluciones-para-negocios",
+        "value": "/soluciones-para-negocios"
+      },
+      {
+        "id": "soluciones-restaurantes",
+        "label": "Menús y sistemas para restaurantes",
+        "ariaLabel": "Menús y sistemas para restaurantes",
+        "href": "/soluciones-para-negocios/restaurantes",
+        "value": "/soluciones-para-negocios/restaurantes"
+      },
+      {
+        "id": "soluciones-inventario",
+        "label": "Control de inventario",
+        "ariaLabel": "Control de inventario",
+        "href": "/soluciones-para-negocios/inventario",
+        "value": "/soluciones-para-negocios/inventario"
+      },
+      {
+        "id": "soluciones-seguimiento",
+        "label": "Solicitudes y cotizaciones",
+        "ariaLabel": "Solicitudes y cotizaciones",
+        "href": "/soluciones-para-negocios/seguimiento-de-solicitudes",
+        "value": "/soluciones-para-negocios/seguimiento-de-solicitudes"
+      }
+    ],
+    "activePageNav": ""
   }
 }

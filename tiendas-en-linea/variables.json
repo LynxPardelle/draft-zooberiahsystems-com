@@ -3,6 +3,7 @@
   "domain": "zooberiahsystems.com",
   "pageId": "tiendas-en-linea",
   "variables": {
-    "activeNav": "tiendas-en-linea"
+    "activeNav": "tiendas-en-linea",
+    "activePageNav": "tiendas-en-linea"
   }
 }

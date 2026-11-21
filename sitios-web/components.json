@@ -898,6 +898,7 @@
         "classes": "zMain",
         "components": [
           "landingCatalogHero",
+          "catalogServiceActionsWrap",
           "landingGallery",
           "customWebScope",
           "customWebProcess",
@@ -907,6 +908,57 @@
         "id": "main-content",
         "role": "main",
         "tabindex": -1
+      }
+    },
+    {
+      "id": "catalogSiteService",
+      "type": "link",
+      "config": {
+        "text": "Crear mi sitio con ZooSitioWeb",
+        "href": "/servicios/zoositioweb",
+        "classes": "zPrimaryAction ank-color-bgColor"
+      }
+    },
+    {
+      "id": "catalogLandingService",
+      "type": "link",
+      "config": {
+        "text": "Conocer ZooLandingPage",
+        "href": "/servicios/zoolandingpage",
+        "classes": "zTextLink ank-color-linkColor"
+      }
+    },
+    {
+      "id": "catalogBlogService",
+      "type": "link",
+      "config": {
+        "text": "Conocer ZooBlog",
+        "href": "/servicios/zooblog",
+        "classes": "zTextLink ank-color-linkColor"
+      }
+    },
+    {
+      "id": "catalogServiceActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zActions ank-paddingBlock-24px",
+        "components": [
+          "catalogSiteService",
+          "catalogLandingService",
+          "catalogBlogService"
+        ]
+      }
+    },
+    {
+      "id": "catalogServiceActionsWrap",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-boxSizing-borderMINbox ank-paddingInline-24px ank-paddingInline-md-40px",
+        "components": [
+          "catalogServiceActions"
+        ]
       }
     }
   ]

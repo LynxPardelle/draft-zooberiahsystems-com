@@ -471,7 +471,8 @@
         "classes": "zActions",
         "components": [
           "offerEndContact",
-          "offerRelated1"
+          "offerRelated1",
+          "relatedArticleGuide"
         ]
       }
     },
@@ -514,6 +515,15 @@
         ],
         "id": "main-content",
         "tabindex": -1
+      }
+    },
+    {
+      "id": "relatedArticleGuide",
+      "type": "link",
+      "config": {
+        "text": "Guía: seguimiento de cotizaciones para tu negocio",
+        "href": "/blog/web/seguimiento-cotizaciones-negocio",
+        "classes": "zTextLink ank-color-linkColor"
       }
     }
   ]

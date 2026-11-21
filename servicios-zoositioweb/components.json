@@ -1,0 +1,896 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "servicios-zoositioweb",
+  "components": [
+    {
+      "id": "offerTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerTitle",
+      "config": {
+        "tag": "h1",
+        "classes": "zPageTitle",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerLead",
+      "config": {
+        "tag": "p",
+        "classes": "zLead",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerContact",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.offerContact;set:config.href,i18n,ui.contact.whatsappUrl;set:config.ariaLabel,i18n,page.offerContactAria",
+      "config": {
+        "href": "#",
+        "classes": "zPrimaryAction ank-color-bgColor",
+        "text": "",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "ariaLabel": ""
+      },
+      "eventInstructions": "trackEvent:whatsapp_click,cta,offerContact,location,servicios-zoositioweb"
+    },
+    {
+      "id": "offerCatalog",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.offerCatalog",
+      "config": {
+        "href": "/sitios-web",
+        "classes": "zTextLink ank-color-linkColor",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerHeroActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zActions",
+        "components": [
+          "offerContact",
+          "offerCatalog"
+        ]
+      }
+    },
+    {
+      "id": "offerIntro",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "offerBreadcrumb",
+          "offerEyebrow",
+          "offerTitle",
+          "offerLead",
+          "offerHeroActions"
+        ]
+      }
+    },
+    {
+      "id": "offerExampleTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerExampleTitle",
+      "config": {
+        "tag": "h2",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_25rem ank-fontWeight-750 ank-lineHeight-1_3",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerExampleText",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerExampleText",
+      "config": {
+        "tag": "p",
+        "classes": "zLead",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerExample",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zSplit",
+        "components": [
+          "offerExampleTitle",
+          "offerExampleCopy"
+        ]
+      }
+    },
+    {
+      "id": "offerHeroInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zSplit",
+        "components": [
+          "offerIntro",
+          "offerVisualGroup"
+        ]
+      }
+    },
+    {
+      "id": "offerHero",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zPageHero",
+        "components": [
+          "offerHeroInner"
+        ],
+        "id": "zoositioweb",
+        "styles": {
+          "background": "radial-gradient(ellipse at 85% 0%,rgba(0,245,242,.10),transparent 58%),linear-gradient(180deg,#011218,#000000)",
+          "paddingBlock": "clamp(32px, 6vw, 72px)"
+        }
+      }
+    },
+    {
+      "id": "offerScopeTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerScopeTitle",
+      "config": {
+        "tag": "h2",
+        "classes": "zSectionTitle",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerScopeItem1Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerScopeItem1Title",
+      "config": {
+        "tag": "h3",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_25rem ank-fontWeight-750 ank-lineHeight-1_3",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerScopeItem1Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerScopeItem1Text",
+      "config": {
+        "tag": "p",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65 ank-maxWidth-68ch",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerScopeItem1",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow",
+        "components": [
+          "offerScopeItem1Title",
+          "offerScopeItem1Text"
+        ]
+      }
+    },
+    {
+      "id": "offerScopeItem2Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerScopeItem2Title",
+      "config": {
+        "tag": "h3",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_25rem ank-fontWeight-750 ank-lineHeight-1_3",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerScopeItem2Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerScopeItem2Text",
+      "config": {
+        "tag": "p",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65 ank-maxWidth-68ch",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerScopeItem2",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow",
+        "components": [
+          "offerScopeItem2Title",
+          "offerScopeItem2Text"
+        ]
+      }
+    },
+    {
+      "id": "offerScopeItem3Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerScopeItem3Title",
+      "config": {
+        "tag": "h3",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_25rem ank-fontWeight-750 ank-lineHeight-1_3",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerScopeItem3Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerScopeItem3Text",
+      "config": {
+        "tag": "p",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65 ank-maxWidth-68ch",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerScopeItem3",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow",
+        "components": [
+          "offerScopeItem3Title",
+          "offerScopeItem3Text"
+        ]
+      }
+    },
+    {
+      "id": "offerScopeItemItems",
+      "type": "container",
+      "config": {
+        "tag": "ul",
+        "classes": "zList",
+        "components": [
+          "offerScopeItem1",
+          "offerScopeItem2",
+          "offerScopeItem3"
+        ]
+      }
+    },
+    {
+      "id": "offerScopeInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zProse",
+        "components": [
+          "offerScopeTitle",
+          "offerScopeItemItems"
+        ]
+      }
+    },
+    {
+      "id": "offerScope",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "offerScopeInner"
+        ],
+        "id": "alcance-del-proyecto"
+      }
+    },
+    {
+      "id": "offerFaqTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerFaqTitle",
+      "config": {
+        "tag": "h2",
+        "classes": "zSectionTitle",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerFaqQuestion1Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerFaqQuestion1Title",
+      "config": {
+        "tag": "h3",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_25rem ank-fontWeight-750 ank-lineHeight-1_3",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerFaqQuestion1Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerFaqQuestion1Text",
+      "config": {
+        "tag": "p",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65 ank-maxWidth-68ch",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerFaqQuestion1",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow",
+        "components": [
+          "offerFaqQuestion1Title",
+          "offerFaqQuestion1Text"
+        ]
+      }
+    },
+    {
+      "id": "offerFaqQuestion2Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerFaqQuestion2Title",
+      "config": {
+        "tag": "h3",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_25rem ank-fontWeight-750 ank-lineHeight-1_3",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerFaqQuestion2Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerFaqQuestion2Text",
+      "config": {
+        "tag": "p",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65 ank-maxWidth-68ch",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerFaqQuestion2",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow",
+        "components": [
+          "offerFaqQuestion2Title",
+          "offerFaqQuestion2Text"
+        ]
+      }
+    },
+    {
+      "id": "offerFaqQuestion3Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerFaqQuestion3Title",
+      "config": {
+        "tag": "h3",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_25rem ank-fontWeight-750 ank-lineHeight-1_3",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerFaqQuestion3Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerFaqQuestion3Text",
+      "config": {
+        "tag": "p",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65 ank-maxWidth-68ch",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerFaqQuestion3",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow",
+        "components": [
+          "offerFaqQuestion3Title",
+          "offerFaqQuestion3Text"
+        ]
+      }
+    },
+    {
+      "id": "offerFaqQuestionItems",
+      "type": "container",
+      "config": {
+        "tag": "ul",
+        "classes": "zList",
+        "components": [
+          "offerFaqQuestion1",
+          "offerFaqQuestion2",
+          "offerFaqQuestion3"
+        ]
+      }
+    },
+    {
+      "id": "offerFaqInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zProse",
+        "components": [
+          "offerFaqTitle",
+          "offerFaqQuestionItems"
+        ]
+      }
+    },
+    {
+      "id": "offerFaq",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "offerFaqInner"
+        ],
+        "id": "preguntas-frecuentes"
+      }
+    },
+    {
+      "id": "offerEndTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerEndTitle",
+      "config": {
+        "tag": "h2",
+        "classes": "zSectionTitle",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerEndLead",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerEndLead",
+      "config": {
+        "tag": "p",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65 ank-maxWidth-68ch",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerEndContact",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.offerEndContact;set:config.href,i18n,ui.contact.whatsappUrl;set:config.ariaLabel,i18n,page.offerContactAria",
+      "config": {
+        "href": "#",
+        "classes": "zPrimaryAction ank-color-bgColor",
+        "text": "",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "ariaLabel": ""
+      },
+      "eventInstructions": "trackEvent:whatsapp_click,cta,offerEndContact,location,servicios-zoositioweb"
+    },
+    {
+      "id": "offerRelated1",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.offerRelated1",
+      "config": {
+        "href": "/servicios/zoolandingpage",
+        "classes": "zTextLink ank-color-linkColor",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerEndActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zActions",
+        "components": [
+          "offerEndContact",
+          "offerEndCatalog"
+        ]
+      }
+    },
+    {
+      "id": "offerEndInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zProse",
+        "components": [
+          "offerEndTitle",
+          "offerEndLead",
+          "offerEndActions"
+        ]
+      }
+    },
+    {
+      "id": "offerEnd",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection zBand",
+        "components": [
+          "offerEndInner"
+        ],
+        "id": "consultar-proyecto"
+      }
+    },
+    {
+      "id": "offerMain",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "zMain",
+        "components": [
+          "offerHero",
+          "offerUseCase",
+          "offerScope",
+          "offerProcess",
+          "offerFaq",
+          "offerRelated",
+          "offerEnd"
+        ],
+        "id": "main-content",
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "offerBreadcrumb",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "classes": "zActions ank-gap-12px ank-fontSize-0_85rem",
+        "components": [
+          "offerBreadcrumbHome",
+          "offerBreadcrumbServices",
+          "offerBreadcrumbCurrent"
+        ],
+        "ariaLabel": "Ruta de navegación"
+      },
+      "valueInstructions": "set:config.ariaLabel,i18n,page.offerBreadcrumbAria"
+    },
+    {
+      "id": "offerBreadcrumbHome",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.offerBreadcrumbHome",
+      "config": {
+        "href": "/",
+        "classes": "zTextLink ank-color-linkColor",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerBreadcrumbServices",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.offerBreadcrumbServices",
+      "config": {
+        "href": "/servicios",
+        "classes": "zTextLink ank-color-linkColor",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerBreadcrumbCurrent",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerBreadcrumbCurrent",
+      "config": {
+        "tag": "span",
+        "classes": "ank-color-titleColor ank-fontWeight-700",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerEyebrow",
+      "config": {
+        "tag": "p",
+        "classes": "zEyebrow",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerVisual",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/zoositioweb.webp",
+        "alt": "Página publicada de ZooSitioWeb con información para consultorios y contacto por WhatsApp.",
+        "width": 1280,
+        "height": 800,
+        "loading": "eager",
+        "decoding": "async",
+        "fetchPriority": "high",
+        "classes": "zMedia"
+      }
+    },
+    {
+      "id": "offerVisualCaption",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerVisualCaption",
+      "config": {
+        "tag": "figcaption",
+        "classes": "ank-m-0 ank-color-secondaryTextColor ank-fontSize-0_9rem ank-lineHeight-1_5",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerVisualGroup",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "classes": "zProse ank-m-0",
+        "components": [
+          "offerVisual",
+          "offerVisualCaption",
+          "offerVisit"
+        ]
+      }
+    },
+    {
+      "id": "offerUseCase",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection zBand",
+        "components": [
+          "offerExample"
+        ],
+        "id": "caso-de-uso"
+      }
+    },
+    {
+      "id": "offerProcessTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerProcessTitle",
+      "config": {
+        "tag": "h2",
+        "classes": "zSectionTitle",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerEndCatalog",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.offerCatalog",
+      "config": {
+        "href": "/sitios-web",
+        "classes": "zTextLink ank-color-linkColor",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerRelatedTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerRelatedTitle",
+      "config": {
+        "tag": "h2",
+        "classes": "zSectionTitle",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerRelated2",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.offerRelated2",
+      "config": {
+        "href": "/servicios/zooblog",
+        "classes": "zTextLink ank-color-linkColor",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerRelatedStore",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.offerRelatedStore",
+      "config": {
+        "href": "/tiendas-en-linea",
+        "classes": "zTextLink ank-color-linkColor",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerRelatedCatalog",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.offerRelatedCatalog",
+      "config": {
+        "href": "/sitios-web",
+        "classes": "zTextLink ank-color-linkColor",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerRelatedLinks",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "classes": "zActions",
+        "components": [
+          "offerRelated1",
+          "offerRelated2",
+          "offerRelatedStore",
+          "offerRelatedCatalog"
+        ],
+        "ariaLabel": "Servicios relacionados"
+      }
+    },
+    {
+      "id": "offerRelatedInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zProse",
+        "components": [
+          "offerRelatedTitle",
+          "offerRelatedLinks"
+        ]
+      }
+    },
+    {
+      "id": "offerRelated",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "offerRelatedInner"
+        ],
+        "id": "servicios-relacionados"
+      }
+    },
+    {
+      "id": "offerProcess1Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerProcess1Title",
+      "config": {
+        "tag": "h3",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_25rem ank-fontWeight-750 ank-lineHeight-1_3",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerProcess1Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerProcess1Text",
+      "config": {
+        "tag": "p",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65 ank-maxWidth-68ch",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerProcess1",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow",
+        "components": [
+          "offerProcess1Title",
+          "offerProcess1Text"
+        ]
+      }
+    },
+    {
+      "id": "offerProcess2Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerProcess2Title",
+      "config": {
+        "tag": "h3",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_25rem ank-fontWeight-750 ank-lineHeight-1_3",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerProcess2Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerProcess2Text",
+      "config": {
+        "tag": "p",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65 ank-maxWidth-68ch",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerProcess2",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow",
+        "components": [
+          "offerProcess2Title",
+          "offerProcess2Text"
+        ]
+      }
+    },
+    {
+      "id": "offerProcess3Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerProcess3Title",
+      "config": {
+        "tag": "h3",
+        "classes": "ank-m-0 ank-color-titleColor ank-fontSize-1_25rem ank-fontWeight-750 ank-lineHeight-1_3",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerProcess3Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.offerProcess3Text",
+      "config": {
+        "tag": "p",
+        "classes": "ank-m-0 ank-color-textColor ank-lineHeight-1_65 ank-maxWidth-68ch",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerProcess3",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "classes": "zRow",
+        "components": [
+          "offerProcess3Title",
+          "offerProcess3Text"
+        ]
+      }
+    },
+    {
+      "id": "offerProcessItems",
+      "type": "container",
+      "config": {
+        "tag": "ol",
+        "classes": "zList",
+        "components": [
+          "offerProcess1",
+          "offerProcess2",
+          "offerProcess3"
+        ]
+      }
+    },
+    {
+      "id": "offerProcessInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zShell zProse",
+        "components": [
+          "offerProcessTitle",
+          "offerProcessItems"
+        ]
+      }
+    },
+    {
+      "id": "offerProcess",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "zSection",
+        "components": [
+          "offerProcessInner"
+        ],
+        "id": "proceso"
+      }
+    },
+    {
+      "id": "offerVisit",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.offerVisit",
+      "config": {
+        "href": "https://zoositioweb.com.mx/",
+        "classes": "zTextLink ank-color-linkColor",
+        "text": "",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "ariaLabel": "Visitar ZooSitioWeb; se abre en una pestaña nueva"
+      }
+    },
+    {
+      "id": "offerGuide",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.offerGuide",
+      "config": {
+        "href": "/blog/web/que-debe-tener-sitio-web-pyme",
+        "classes": "zTextLink ank-color-linkColor",
+        "text": ""
+      }
+    },
+    {
+      "id": "offerExampleCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "zProse",
+        "components": [
+          "offerExampleText",
+          "offerGuide"
+        ]
+      }
+    }
+  ]
+}

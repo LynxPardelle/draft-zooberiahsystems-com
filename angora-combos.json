@@ -43,7 +43,7 @@
       "ank-display-flex ank-alignItems-center ank-minHeight-48px ank-paddingInline-16px ank-paddingBlock-12px ank-bgHover-secondaryBgColor ank-textDecorationFocus-underline ank-textUnderlineOffset-6px ank-outlineFocus-none ank-textDecoration-none ank-color-titleColor ank-fontWeight-600"
     ],
     "zooberiahMobileMenuContainer": [
-      "ank-display-xl-none ank-width-100per ank-boxSizing-borderMINbox ank-marginTop-12px ank-paddingInline-24px ank-paddingBottom-16px ank-bg-bgColor ank-borderTop-1px__solid__accentColor"
+      "ank-display-xl-none ank-width-100per ank-boxSizing-borderMINbox ank-marginTop-12px ank-paddingInline-24px ank-paddingBottom-16px ank-bg-bgColor ank-borderTop-1px__solid__accentColor ank-maxHeight-65vh ank-overflowY-auto ank-overscrollBehavior-contain"
     ],
     "zooberiahMobileMenuList": [
       "ank-listStyle-none ank-padding-0 ank-margin-0 ank-display-flex ank-flexDirection-column ank-gap-8px"
@@ -82,7 +82,7 @@
       "ank-m-0 ank-color-white ank-fontSize-0_9rem ank-lineHeight-1_6"
     ],
     "zooberiahFooterNav": [
-      "ank-display-flex ank-flexDirection-column ank-alignItems-start ank-gap-4px"
+      "ank-display-grid ank-gridTemplateColumns-repeatSD2COMminmaxSD0COM1frEDED ank-gap-8px__20px ank-alignItems-start"
     ],
     "zooberiahFooterLink": [
       "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-color-white ank-fontSize-0_9rem ank-fontWeight-500 ank-textDecoration-none ank-textDecorationHover-underline ank-outlineFocus-3px__solid__HASHB3F71F ank-outlineOffsetFocus-4px"
@@ -179,6 +179,12 @@
     ],
     "zFooterBrandMark": [
       "ank-display-block ank-width-220px ank-maxWidth-100per ank-height-auto"
+    ],
+    "zooberiahDesktopMenu": [
+      "ank-minWidth-280px ank-maxWidth-360px ank-boxSizing-borderMINbox ank-padding-12px ank-bg-secondaryBgColor ank-color-titleColor ank-borderTop-2px__solid__accentColor ank-borderRadius-0 ank-boxShadow-0__18px__48px__HASH000000"
+    ],
+    "zooberiahSubmenuItem": [
+      "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-paddingInline-12px ank-paddingBlock-10px ank-color-titleColor ank-textDecoration-none ank-textDecorationFocus-underline ank-textUnderlineOffset-5px ank-bgHover-bgColor ank-outlineFocus-2px__solid__accentColor ank-outlineOffsetFocus-1px ank-fontSize-0_95rem ank-lineHeight-1_4"
     ]
   }
 }

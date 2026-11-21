@@ -3,6 +3,7 @@
   "domain": "zooberiahsystems.com",
   "pageId": "blog-category",
   "variables": {
-    "activeNav": "blog"
+    "activeNav": "blog",
+    "activePageNav": "blog"
   }
 }

@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "domain": "zooberiahsystems.com",
+  "pageId": "servicios-zoositioweb",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "offerMain",
+    "siteFooter"
+  ],
+  "seo": {
+    "title": "ZooSitioWeb: sitios web empresariales a medida | ZooBeriah Systems",
+    "description": "Diseñamos sitios web empresariales con varias páginas, identidad propia, información de servicios y contacto claro. Conoce ZooSitioWeb de ZooBeriah Systems.",
+    "canonical": "https://zooberiahsystems.com/servicios/zoositioweb",
+    "robots": "index,follow,max-image-preview:large",
+    "openGraph": {
+      "title": "ZooSitioWeb: sitios web empresariales a medida | ZooBeriah Systems",
+      "description": "Diseñamos sitios web empresariales con varias páginas, identidad propia, información de servicios y contacto claro. Conoce ZooSitioWeb de ZooBeriah Systems.",
+      "type": "website",
+      "locale": "es_MX",
+      "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/zoositioweb.webp",
+      "image:alt": "Página publicada de ZooSitioWeb con información para consultorios y contacto por WhatsApp."
+    },
+    "twitter": {
+      "title": "ZooSitioWeb: sitios web empresariales a medida | ZooBeriah Systems",
+      "description": "Diseñamos sitios web empresariales con varias páginas, identidad propia, información de servicios y contacto claro. Conoce ZooSitioWeb de ZooBeriah Systems.",
+      "card": "summary_large_image",
+      "image": "https://assets.zoolandingpage.com.mx/zooberiahsystems.com/shared/images/zoositioweb.webp",
+      "image:alt": "Página publicada de ZooSitioWeb con información para consultorios y contacto por WhatsApp."
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://zooberiahsystems.com/servicios/zoositioweb#servicio",
+        "name": "ZooSitioWeb para tu empresa",
+        "serviceType": "Diseño y desarrollo de sitios web empresariales multipágina",
+        "description": "Diseñamos sitios web empresariales con varias páginas, identidad propia, información de servicios y contacto claro. Conoce ZooSitioWeb de ZooBeriah Systems.",
+        "url": "https://zooberiahsystems.com/servicios/zoositioweb",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://zooberiahsystems.com/#organization",
+          "name": "ZooBeriah Systems",
+          "url": "https://zooberiahsystems.com/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://zooberiahsystems.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Servicios",
+            "item": "https://zooberiahsystems.com/servicios"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "ZooSitioWeb",
+            "item": "https://zooberiahsystems.com/servicios/zoositioweb"
+          }
+        ]
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [
+      "zoositioweb",
+      "caso-de-uso",
+      "alcance-del-proyecto",
+      "proceso",
+      "preguntas-frecuentes",
+      "servicios-relacionados",
+      "consultar-proyecto"
+    ],
+    "scrollMilestones": [
+      25,
+      50,
+      75,
+      100
+    ]
+  }
+}

@@ -482,7 +482,8 @@
         "components": [
           "offerEndContact",
           "offerRelated1",
-          "offerRelated2"
+          "offerRelated2",
+          "relatedArticleGuide"
         ]
       }
     },
@@ -525,6 +526,15 @@
         ],
         "id": "main-content",
         "tabindex": -1
+      }
+    },
+    {
+      "id": "relatedArticleGuide",
+      "type": "link",
+      "config": {
+        "text": "Guía: menú QR y reservas para restaurantes",
+        "href": "/blog/web/menu-qr-reservas-restaurante",
+        "classes": "zTextLink ank-color-linkColor"
       }
     }
   ]
