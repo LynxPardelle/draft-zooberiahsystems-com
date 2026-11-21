@@ -11,6 +11,12 @@
   "seo": {
     "title": "Artículos sobre sitios web | ZooBeriah Systems",
     "description": "Guías sobre sitios web, comercio electrónico y herramientas digitales para negocios.",
-    "canonical": "https://zooberiahsystems.com/blog/web"
+    "canonical": "https://zooberiahsystems.com/blog/web",
+    "paginationCanonical": {
+      "pageParam": "pagina",
+      "pageSizeParam": "porPagina",
+      "defaultPageSize": 6,
+      "collectionPath": "contentHub.publicArticles.items"
+    }
   }
 }
