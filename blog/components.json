@@ -162,7 +162,7 @@
         "imageSrc": "",
         "imageAlt": "",
         "classes": "ank-display-flex ank-flexDirection-column ank-gap-12px ank-paddingBlock-16px ank-width-100per ank-borderTop-2px__solid__accentColor",
-        "imageContainerClasses": "ank-height-180px ank-overflow-hidden ank-borderRadius-3px",
+        "imageContainerClasses": "ank-width-100per ank-ar-16SLASH9 ank-overflow-hidden ank-borderRadius-3px",
         "imageClasses": "ank-width-100per ank-height-100per ank-objectFit-cover",
         "featureTitleClasses": "ank-color-titleColor ank-fontSize-22px ank-m-0 ank-lineHeight-1_25",
         "featureDescriptionClasses": "ank-color-textColor ank-fontSize-16px ank-lineHeight-1_5",
